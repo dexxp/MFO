@@ -1,0 +1,20 @@
+{
+  "name": "mfo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "npm run clean && parcel ./src/*.pug",
+    "build": "npm run clean && parcel build ./src/*.pug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.6.2",
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2",
+    "rimraf": "^3.0.2"
+  }
+}
