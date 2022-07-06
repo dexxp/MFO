@@ -1,0 +1,12 @@
+include ../blocks/index
+include ../page-blocks/index
+
+doctype html
+html(lang="ru")
+  head
+    block head
+  body 
+    +header 
+    block content 
+    +footer 
+    block scripts
