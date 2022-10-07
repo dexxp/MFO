@@ -1,11 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
-
-@import "bem_blocks";
+ @font-face {
+     font-family: "AvenirNext";
+     src: url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ @font-face {
+     font-family: "AvenirNext";
+     src: url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: "AvenirNext", sans-serif;
+     font-weight: 700;
+ }
+ 
+ .container {
+     max-width: 1170px;
+     margin: 0 auto;
+ }
+ 
+ .caption {
+     text-transform: uppercase;
+     color: #3F5770;
+     font-size: 30px;
+     line-height: 120%;
+ }
+ 
+ .promo-case__p {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 22px;
+     color: rgba(67, 67, 67, 0.35);
+     text-align: center;
+ }
+ 
+ .promo-case__button {
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+     border-radius: 24px;
+ }
+ 
+ .promo-case__switch {
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ @import "bem_blocks";
