@@ -1,0 +1,295 @@
+.header {
+  background: #eef7ff;
+  max-width: 1920px;
+  padding: 25px 60px;
+  margin: 0 auto;
+}
+
+.header__container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+.header__logo-img--white {
+  display: none;
+}
+
+.menu .menu-button {
+  display: none;
+  position: absolute;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 20;
+}
+.menu .menu-button span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  margin: 6px 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu.active .menu-button span {
+  position: absolute;
+  left: 1px;
+  top: 13px;
+}
+.menu.active .menu-button span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.menu.active .menu-button span:nth-child(2) {
+  display: none;
+}
+.menu.active .menu-button span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.menu.active .menu__list {
+  width: 100%;
+}
+.menu .menu__list .menu__item {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.menu .menu__list .menu__item:hover .drop-menu {
+  z-index: 99;
+  opacity: 1;
+  top: calc(100% + 5px);
+  min-width: 225px;
+}
+.menu .menu__list .menu__item .menu__link {
+  position: relative;
+  display: block;
+  padding: 10px 33px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #434343;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.menu .menu__list .menu__item .menu__link.menu__link--arrow {
+  background: url(../img/menu-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.menu .menu__list .menu__item .drop-menu {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  background: #fff;
+  top: calc(100% + 25px);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.menu .menu__list .menu__item .drop-menu__button {
+  display: none;
+  position: absolute;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  top: -35px;
+  right: 15px;
+}
+.menu .menu__list .menu__item .drop-menu__button span {
+  display: block;
+  margin: 4px 0;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu .menu__list .menu__item .drop-menu__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu .menu__list .menu__item .drop-menu.active .drop-menu__button span {
+  position: absolute;
+  left: 5px;
+  top: 7px;
+}
+.menu .menu__list .menu__item .drop-menu.active .drop-menu__button span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.menu .menu__list .menu__item .drop-menu.active .drop-menu__button span:nth-child(2) {
+  display: none;
+}
+.menu .menu__list .menu__item .drop-menu.active .drop-menu__button span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.menu .menu__list .menu__item .drop-menu.active ul {
+  display: block;
+}
+.menu .menu__list .menu__item .drop-menu ul {
+  padding: 10px 0;
+}
+.menu .menu__list .menu__item .drop-menu ul li a {
+  display: block;
+  padding: 10px 25px;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.menu .menu__list .menu__item .drop-menu ul li a:hover {
+  background: #febc58;
+}
+
+.menu .menu__list .menu__item .menu__link:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #febb54;
+  content: '';
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu .menu__list .menu__item:hover .menu__link:before {
+  width: 100%;
+}
+
+.header__logo-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3f5770;
+  max-width: 100px;
+  padding-left: 15px;
+  margin-left: 15px;
+  border-left: 2px solid #f8ae35;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 32px;
+}
+
+.header__logo {
+  text-decoration: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.menu__list {
+  margin: 0 55px 0 60px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__cont a {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  color: #57a6ee;
+  margin-right: 30px;
+}
+
+.header__cont-phone svg {
+  display: none;
+}
+
+.header__cont {
+}
+
+.header__button {
+  background: -o-linear-gradient(182.33deg, #f9a321 0%, #ffc162 100%);
+  background: linear-gradient(267.67deg, #f9a321 0%, #ffc162 100%);
+  border-radius: 40px;
+  padding: 14px 25px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.header__cont a span {
+  margin-left: 5px;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.header__cont a:hover span {
+  color: #434343;
+}
+
+.header__button:before {
+  background: -o-linear-gradient(6deg, #f9a321 0%, #ffc162 100%);
+  background: linear-gradient(84deg, #f9a321 0%, #ffc162 100%);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.header__button:hover:before {
+  opacity: 1;
+}
+
+body.scroll {
+  position: relative;
+  padding: 95px 0 0 0;
+}
+
+body.scroll .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding: 5px 55px;
+  right: 0;
+}
+
+.header {
+  top: -95px;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
