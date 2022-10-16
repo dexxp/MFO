@@ -1,3 +1,15 @@
 .check-list {
-
+    list-style-image: url(/src/img/check-list.svg);
+    padding-left: 32px;
+    &__span {
+        position: relative;
+        top: -6px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #434343;
+    }
+    &__item {
+        margin-bottom: 10px;
+    }
 }
