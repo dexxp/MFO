@@ -1,0 +1,10 @@
+.inner-case {
+  .main-container {
+    max-width: 975px;
+    width: 100%;
+    margin: 72px auto;
+  }
+
+  @import "promo-case";
+  @import "variants";
+}

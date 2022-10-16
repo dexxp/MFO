@@ -1,0 +1,40 @@
+.promo-case__date {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(67, 67, 67, 0.35);
+  text-align: center;
+  margin-top: 80px;
+}
+
+.promo-case__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+.promo-case__switch {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 48px;
+}
+
+.promo-text__mfo {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #434343;
+  margin-bottom: 16px;
+}
+
+.promo-text__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #434343;
+}
+
+.promo-text__descr:not(:last-child) {
+  margin-bottom: 15px;
+}
