@@ -1,0 +1,11 @@
+.banner {
+    background-color: #EEF7FF;
+    padding: 64px 98px;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    &__container {
+        margin-bottom: 72px;
+    }
+}

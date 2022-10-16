@@ -1,0 +1,18 @@
+.image-with-text {
+    &__wrapper {
+        display: flex;
+        gap: 64px;
+    }
+    .image-block {
+        flex: 1;
+        &__img {
+            height: 400px;
+        }
+    }
+    &__text {
+        flex: 1;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
