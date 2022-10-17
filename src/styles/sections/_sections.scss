@@ -1,9 +1,26 @@
 .inner-case {
+    &__wrapper {
+        background-color: #EEF7FF;
+
+        background-image: url("../img/promo-case.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 24px;
+        background-size: cover;
+    }
+
     .main-container {
         max-width: 975px;
         width: 100%;
         margin: 72px auto;
     }
+
+    &__final-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
     @import "promo-case";
     @import "variants";
     @import "questions";

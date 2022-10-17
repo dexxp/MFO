@@ -1,4 +1,27 @@
 .button {
+  background: none;
+  border: none;
   display: inline-flex;
-  background-color: blue;
+  cursor: pointer;
+
+  &-slider {
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);;
+  }
+
+  &--dir {
+    &_l {
+      transform: rotate(90deg);
+    }
+    &_b {
+      transform: rotate(180deg);
+    }
+    &_r {
+      transform: rotate(270deg);
+    }
+  }
 }
