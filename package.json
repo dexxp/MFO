@@ -2,11 +2,13 @@
   "name": "mfo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "clean": "rimraf dist",
-    "start": "npm run clean && parcel ./src/*.html",
-    "build": "npm run clean && parcel build ./src/*.html"
+    "dev": "parcel ./src/index.html --open",
+    "start": "parcel src/index.html -p 3000 --open",
+    "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps --no-minify",
+    "build": "npm run clean && npm run build:parcel",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
+    "parcel-bundler": "^1.12.5",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2"
   },
