@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+
+  &-more {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #57A6EE;
+
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+  }
+}

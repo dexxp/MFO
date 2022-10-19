@@ -1,0 +1,11 @@
+.cases {
+  &__title {
+    margin-top: 80px;
+  }
+  &__inner {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+  }
+}
