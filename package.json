@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "parcel ./src/index.html --open",
+    "dev": "parcel ./src/*.html --open",
     "start": "parcel src/*.html -p 3000 --open",
-    "build:parcel": "parcel build ./src/index.html --public-url ./ --no-source-maps --no-minify",
+    "build:parcel": "parcel build ./src/*.html --public-url ./ --no-source-maps --no-minify",
     "build": "npm run clean && npm run build:parcel",
     "clean": "rimraf dist"
   },
