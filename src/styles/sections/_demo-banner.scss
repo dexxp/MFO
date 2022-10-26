@@ -1,0 +1,91 @@
+.demo-banner {
+    &__wrapper {
+        background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
+        border-radius: 48px;
+        box-shadow: 0px 4px 60px rgba(85, 118, 157, 0.15);
+        position: relative;
+    }
+    &__inner {
+        padding: 144px 0 242px;
+        // background-image: url("../img/demo-banner.png");
+        // background-position: center bottom;
+        // background-size: contain;
+        // background-repeat: no-repeat;
+    }
+    &__title-h2 {
+        max-width: 727px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    &__title-h3 {
+        min-width: 493px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__chip {
+        position: absolute;
+        padding: 24px 32px 24px 32px;
+        background-color: #fff;
+        display: flex;
+        border-radius: 16px;
+        top: 40px;
+        left: -32px;
+        box-shadow: 0px 4px 60px rgba(85, 118, 157, 0.15);
+    }
+    &__span {
+        display: block;
+        max-width: 124px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #57A6EE;
+    }
+    &__img {
+        margin-right: 16px;
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+    &__access {
+        padding: 21px 52px;
+        background: linear-gradient(84.38deg, #F9D85F 0%, #FFE68C 100%), #F9D85F;
+        box-shadow: 0px 4px 30px rgba(249, 216, 95, 0.75);
+        border-radius: 32px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #434343;
+    }
+    &__circle {
+        background-color: #fff;
+        border-radius: 100%;
+        width: 64px;
+        align-items: center;
+        justify-content: center;
+        height: 64px;
+        display: inline-flex;
+    }
+    &__video {
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
+    }
+    &__video-span {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 132px;
+        width: 100%;
+    }
+}
