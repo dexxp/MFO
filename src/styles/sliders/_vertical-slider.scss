@@ -1,0 +1,78 @@
+.vertical-slider {
+  position: relative;
+  &__wrapper {
+    height: 356px;
+    width: 553px;
+    padding: 80px 55px !important;
+    margin: 50px 0;
+  }
+
+  .swiper-wrapper {
+    max-width: 513px;
+    width: 100%;
+  }
+
+  &__pagination {
+    position: absolute;
+    right: 0;
+  }
+
+  .swiper-slide-prev, .swiper-slide-next {
+    opacity: 0.5;
+  }
+
+  &__item {
+    a {
+      display: block;
+      position: relative;
+
+      &:before {
+        position: absolute;
+        content: "";
+        right: 15px;
+        bottom: 15px;
+        width: 48px;
+        height: 48px;
+        background: #ffc162 url(../img/zoom.svg) center center no-repeat;
+        border-radius: 50%;
+        transition: all 0.5s ease-out;
+        opacity: 0.5;
+      }
+
+      &:hover:before {
+        background-color: #f9a321;
+        opacity: 1;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 2;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    &-next {
+      bottom: -20px;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    &-prev {
+      top: -20px;
+    }
+
+  }
+}

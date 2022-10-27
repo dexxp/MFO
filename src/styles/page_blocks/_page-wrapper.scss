@@ -1,0 +1,14 @@
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  &__bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: -24px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

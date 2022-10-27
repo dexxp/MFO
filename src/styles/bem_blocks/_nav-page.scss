@@ -1,3 +1,40 @@
 .nav-page {
-  &__list {}
+  $self: &;
+
+  &__list {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 12px;
+    column-gap: 33px;
+  }
+
+  &__item {
+    max-width: 340px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #57A6EE;
+    padding-left: 4px;
+
+    margin-left: 16px;
+  }
+
+  &__sub-list {
+    margin-top: 11px;
+    padding-left: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+
+    #{$self}__item {
+      padding-left: 6px;
+    }
+  }
+
+  &__link {
+    display: block;
+  }
 }

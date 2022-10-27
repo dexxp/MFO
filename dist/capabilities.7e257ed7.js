@@ -12004,7 +12004,7 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/main.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/capabilities.js":[function(require,module,exports) {
 "use strict";
 
 var _swiperBundle = _interopRequireDefault(require("swiper/swiper-bundle"));
@@ -12012,33 +12012,65 @@ var _ui = require("@fancyapps/ui");
 require("@fancyapps/ui/dist/fancybox.css");
 require("swiper/swiper-bundle.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-var centerSlider = new _swiperBundle.default(".center-slider__wrapper", {
+var swiperFunction = new _swiperBundle.default(".function-slider", {
+  direction: "horizontal",
   centeredSlides: true,
   loop: true,
   effect: "coverflow",
-  autoHeight: true,
-  slidesPerView: 3,
   coverflowEffect: {
     rotate: 0,
-    stretch: 0,
-    depth: 20,
-    modifier: 0,
+    stretch: 3,
+    depth: 100,
+    modifier: 3,
     slideShadows: false
   },
+  breakpoints: {
+    768: {
+      direction: "vertical"
+    }
+  },
   pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets'
+    el: ".function-slider-pagination",
+    clickable: true
   },
   navigation: {
-    nextEl: '.center-slider__button-next',
-    prevEl: '.center-slider__button-prev'
+    nextEl: ".vertical-slider__button-next",
+    prevEl: ".vertical-slider__button-prev"
+  }
+});
+var verticalSlider = new _swiperBundle.default(".vertical-slider__wrapper", {
+  direction: "horizontal",
+  centeredSlides: true,
+  loop: true,
+  effect: "coverflow",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 3,
+    depth: 100,
+    modifier: 3,
+    slideShadows: false
+  },
+  breakpoints: {
+    768: {
+      direction: "vertical"
+    }
+  },
+  pagination: {
+    el: ".vertical-slider__pagination",
+    clickable: true
+  },
+  navigation: {
+    nextEl: ".vertical-slider__button-next",
+    prevEl: ".vertical-slider__button-prev"
   }
 });
 _ui.Fancybox.bind('[data-fancybox="gallery"]', {
-  Thumbs: {
-    Carousel: {
-      fill: false,
-      center: true
+  Image: {
+    Panzoom: {
+      zoomFriction: 0.5,
+      maxScale: function maxScale() {
+        return 2;
+      }
     }
   }
 });
@@ -12211,5 +12243,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/main.js"], null)
-//# sourceMappingURL=/main.d8ebb8d6.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/capabilities.js"], null)
+//# sourceMappingURL=/capabilities.7e257ed7.js.map
