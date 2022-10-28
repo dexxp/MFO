@@ -7,18 +7,17 @@ const centerSlider = new Swiper(".center-slider__wrapper", {
   centeredSlides: true,
   loop: true,
   effect: "coverflow",
-  autoHeight: true,
-  slidesPerView: 3,
   coverflowEffect: {
     rotate: 0,
-    stretch: 0,
-    depth: 20,
-    modifier: 0,
+    stretch: 3,
+    depth: 100,
+    modifier: 3,
     slideShadows: false,
   },
   pagination: {
     el: '.swiper-pagination',
-    type: 'bullets'
+    type: 'bullets',
+    clickable: true,
   },
   navigation: {
     nextEl: '.center-slider__button-next',

@@ -7,8 +7,6 @@ const centerSlider = new Swiper(".center-slider__wrapper", {
   centeredSlides: true,
   loop: true,
   effect: "coverflow",
-  autoHeight: true,
-  slidesPerView: 3,
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
