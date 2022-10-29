@@ -1,0 +1,32 @@
+.main-nav {
+  $self: &;
+
+  &__wrapper {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+  }
+
+  &__item {
+    position: relative;
+
+    &--open {
+      #{$self}__drop-menu {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__drop-menu {
+    padding: 15px 0;
+    top: calc(100%);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

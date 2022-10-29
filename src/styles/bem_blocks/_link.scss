@@ -17,6 +17,32 @@
     font-size: 16px;
     line-height: 1.3;
     text-decoration: underline;
-    color: #57A6EE;
+    color: $primary;
+  }
+
+  &-dark {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.15;
+    text-align: center;
+    color: $dark-900;
+    padding: 5px 0;
+  }
+
+  &-svg {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &-primary {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.15;
+    color: $primary;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

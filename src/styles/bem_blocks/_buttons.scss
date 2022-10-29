@@ -5,6 +5,37 @@
   cursor: pointer;
   text-decoration: none;
 
+  &-primary {
+    position: relative;
+
+    padding: 14px 28px;
+    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: $white;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: "";
+      background: linear-gradient(84deg, #f9a321 0%, #ffc162 100%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.5s ease-out;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+
   &-slider {
     width: 48px;
     height: 48px;
@@ -15,18 +46,6 @@
 
     &:hover {
       background: linear-gradient(0deg, #F9A321 0%, #FFC162 100%), linear-gradient(0deg, #4CA3F2 0%, #80C2FF 100%);
-    }
-  }
-
-  &--dir {
-    &_l {
-      transform: rotate(90deg);
-    }
-    &_b {
-      transform: rotate(180deg);
-    }
-    &_r {
-      transform: rotate(270deg);
     }
   }
 }
