@@ -4,12 +4,14 @@
         border-radius: 48px;
         box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
         position: relative;
+        z-index: 0;
     }
     &__bg {
         position: absolute;
         bottom: -5px;
-        left: -61px;
-        right: -60px;
+        left: -60px;
+        right: -65px;
+        z-index: -1;
     }
     &__inner {
         padding: 144px 0 242px;
@@ -22,7 +24,7 @@
         margin-bottom: 24px;
     }
     &__title-h3 {
-        min-width: 493px;
+        max-width: 493px;
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -57,14 +59,14 @@
     }
     &__access {
         padding: 21px 52px;
-        background: linear-gradient(84.38deg, #F9D85F 0%, #FFE68C 100%), #F9D85F;
+        background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(84.38deg, #F9D85F 0%, #FFE68C 100%), #F9D85F;
         box-shadow: 0px 4px 30px rgba(249, 216, 95, 0.75);
         border-radius: 32px;
         text-decoration: none;
-        font-weight: 600;
         font-size: 16px;
         line-height: 22px;
-        color: #434343;
+        font-weight: 500;
+        color: #FFFFFD;
     }
     &__circle {
         background-color: #fff;

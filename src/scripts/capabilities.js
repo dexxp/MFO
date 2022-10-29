@@ -4,67 +4,51 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
 import "swiper/swiper-bundle.css";
 
-const swiperFunction = new Swiper(".function-slider", {
-  direction: "horizontal",
-  centeredSlides: true,
-  loop: true,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 3,
-    depth: 100,
-    modifier: 3,
-    slideShadows: false,
-  },
-  breakpoints: {
-    768: {
-      direction: "vertical",
-    }
-  },
-  pagination: {
-    el: ".function-slider-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".vertical-slider__button-next",
-    prevEl: ".vertical-slider__button-prev",
-  },
-});
+window.addEventListener("DOMContentLoaded", () => {
+  const verticalSliders = [...document.querySelectorAll(".vertical-slider")];
 
-const verticalSlider = new Swiper(".vertical-slider__wrapper", {
-  direction: "horizontal",
-  centeredSlides: true,
-  loop: true,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 3,
-    depth: 100,
-    modifier: 3,
-    slideShadows: false,
-  },
-  breakpoints: {
-    768: {
-      direction: "vertical",
-    }
-  },
-  pagination: {
-    el: ".vertical-slider__pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".vertical-slider__button-next",
-    prevEl: ".vertical-slider__button-prev",
-  },
-});
+  for (const verticalSlider of verticalSliders) {
+    const wrapper = verticalSlider.querySelector(".vertical-slider__wrapper");
+    const pagination = verticalSlider.querySelector(".vertical-slider__pagination");
+    const buttonNext = verticalSlider.querySelector(".vertical-slider__button-next");
+    const buttonPrev = verticalSlider.querySelector(".vertical-slider__button-prev");
 
-Fancybox.bind('[data-fancybox="gallery"]', {
-  Image: {
-    Panzoom: {
-      zoomFriction: 0.5,
-      maxScale: function () {
-        return 2;
+    const swiper = new Swiper(wrapper, {
+      direction: "horizontal",
+      centeredSlides: true,
+      loop: true,
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 3,
+        depth: 100,
+        modifier: 3,
+        slideShadows: false,
+      },
+      breakpoints: {
+        768: {
+          direction: "vertical",
+        }
+      },
+      pagination: {
+        el: pagination,
+        clickable: true,
+      },
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
+      },
+    });
+  }
+
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    Image: {
+      Panzoom: {
+        zoomFriction: 0.5,
+        maxScale: function () {
+          return 2;
+        },
       },
     },
-  },
+  });
 });
