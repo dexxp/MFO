@@ -11949,74 +11949,55 @@ for (const [t, e] of Object.entries(R.Plugins || {})) "function" == typeof e.cre
 
 },{}],"yypP":[function(require,module,exports) {
 
-},{}],"QrGZ":[function(require,module,exports) {
+},{}],"JBWM":[function(require,module,exports) {
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.centerSlider = void 0;
 var _swiperBundle = _interopRequireDefault(require("swiper/swiper-bundle"));
 var _ui = require("@fancyapps/ui");
 require("@fancyapps/ui/dist/fancybox.css");
 require("swiper/swiper-bundle.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-var swiperFunction = new _swiperBundle.default(".function-slider", {
-  direction: "horizontal",
-  centeredSlides: true,
-  loop: true,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 3,
-    depth: 100,
-    modifier: 3,
-    slideShadows: false
-  },
-  breakpoints: {
-    768: {
-      direction: "vertical"
+var centerSlider = function centerSlider() {
+  var centerSlider = new _swiperBundle.default(".center-slider__wrapper", {
+    centeredSlides: true,
+    loop: true,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 3,
+      depth: 100,
+      modifier: 3,
+      slideShadows: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.center-slider__button-next',
+      prevEl: '.center-slider__button-prev'
     }
-  },
-  pagination: {
-    el: ".function-slider-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".vertical-slider__button-next",
-    prevEl: ".vertical-slider__button-prev"
-  }
-});
-var verticalSlider = new _swiperBundle.default(".vertical-slider__wrapper", {
-  direction: "horizontal",
-  centeredSlides: true,
-  loop: true,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 3,
-    depth: 100,
-    modifier: 3,
-    slideShadows: false
-  },
-  breakpoints: {
-    768: {
-      direction: "vertical"
-    }
-  },
-  pagination: {
-    el: ".vertical-slider__pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".vertical-slider__button-next",
-    prevEl: ".vertical-slider__button-prev"
-  }
-});
-_ui.Fancybox.bind('[data-fancybox="gallery"]', {
-  Image: {
-    Panzoom: {
-      zoomFriction: 0.5,
-      maxScale: function maxScale() {
-        return 2;
+  });
+  _ui.Fancybox.bind('[data-fancybox="gallery"]', {
+    Thumbs: {
+      Carousel: {
+        fill: false,
+        center: true
       }
     }
-  }
+  });
+};
+exports.centerSlider = centerSlider;
+},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}],"oeTc":[function(require,module,exports) {
+"use strict";
+
+var _centerSlider = require("./sliders/center-slider");
+window.addEventListener("DOMContentLoaded", function () {
+  (0, _centerSlider.centerSlider)();
 });
-},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}]},{},["QrGZ"], null)
+},{"./sliders/center-slider":"JBWM"}]},{},["oeTc"], null)
