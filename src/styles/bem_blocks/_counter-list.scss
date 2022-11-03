@@ -1,0 +1,46 @@
+.counter-list {
+  &__wrapper {
+    display: flex;
+    list-style-type: none;
+    gap: 33px;
+    padding-top: 24px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid #DEEFFF;
+    padding: 40px 48px;
+  }
+
+  &__digit {
+    position: absolute;
+    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    border-radius: 24px;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__content {
+    max-width: 207px;
+    width: 100%;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__add-info {
+    color: $primary;
+    text-align: center;
+    margin-top: 8px;
+  }
+}

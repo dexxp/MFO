@@ -1,0 +1,22 @@
+.s-transition-banner {
+
+  margin-bottom: 128px;
+
+  &__wrapper {
+    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+  }
+  &__inner {
+    background-image: url("../img/banner-transition.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 42px 165px 42px 195px;
+  }
+  &__title {
+    text-transform: uppercase;
+    max-width: 485px;
+    width: 100%;
+  }
+}

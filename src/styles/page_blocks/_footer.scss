@@ -1,7 +1,9 @@
 .footer {
-  background: url(../img/footer-bg.png);
-  background-position: bottom center;
+  margin-top: 120px;
+  background-image: url(../img/footer.png);
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 0 40px 0;
   color: white;
 }

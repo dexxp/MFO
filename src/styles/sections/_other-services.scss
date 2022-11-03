@@ -1,0 +1,49 @@
+.other-services {
+
+  &__title {
+    text-align: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+  }
+
+  &__card {
+    position: relative;
+    max-width: 569px;
+    width: 100%;
+
+    &-wrapper {
+      padding: 64px 97px 64px 64px;
+    }
+
+    &-title {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__button {
+    padding: 21px 52px;
+    background-color: $white;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

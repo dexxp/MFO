@@ -1,0 +1,21 @@
+.transition {
+  &__first-screen {
+    min-height: calc(666px - 87px);
+
+    .page-wrapper__bg {
+      bottom: -230px;
+    }
+  }
+
+  &__title {
+    max-width: 579px;
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  &__text {
+    margin-top: 24px;
+    max-width: 891px;
+    width: 100%;
+  }
+}
