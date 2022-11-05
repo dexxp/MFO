@@ -1,0 +1,60 @@
+.escort-packages {
+    &__wrapper {
+        max-width: 268px;
+        min-height: 427px;
+        padding: 32px 32px 40px 32px;
+        box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+        border-radius: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__init {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: #57A6EE;
+        margin-bottom: 2px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+        text-transform: uppercase;
+        color: #57A6EE;
+        margin-bottom: 16px;
+    }
+    &__list {
+        border-top: 1px solid #57A6EE;
+        list-style-image: url(../img/list-style.svg);
+        padding-left: 15px;
+        max-width: 188px;
+        padding-top: 24px;
+        margin-bottom: 16px;
+    }
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #3F5770;
+        margin-bottom: 8px;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #3F5770;
+        margin-bottom: 24px;
+    }
+    &__action {
+        padding: 21px 77px;
+        background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+        border-radius: 32px;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+    }
+}
