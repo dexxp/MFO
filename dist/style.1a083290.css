@@ -54,7 +54,7 @@ body {
 
 .footer {
   margin-top: 120px;
-  background-image: url(/footer.4085eb4b.png);
+  background-image: url(footer.40c0a5e9.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -194,21 +194,21 @@ body {
 
 @font-face {
   font-family: "AvenirNext";
-  src: url("/AvenirNextCyr-Bold.22752d2b.woff") format("woff");
+  src: url("AvenirNextCyr-Bold.6b574f28.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("/AvenirNextCyr-Regular.932d179f.woff") format("woff");
+  src: url("AvenirNextCyr-Regular.4b454052.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("/AvenirNextCyr-Demi.b606c422.woff") format("woff");
+  src: url("AvenirNextCyr-Demi.65b8fea4.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -342,7 +342,7 @@ body {
 }
 
 .check-list {
-  list-style-image: url(/check-list.0d76ac12.svg);
+  list-style-image: url(check-list.c6f9be95.svg);
   padding-left: 31px;
 }
 .check-list__span {
@@ -796,7 +796,7 @@ body {
 }
 .escort-packages__list {
   border-top: 1px solid #57A6EE;
-  list-style-image: url(/list-style.57a1418e.svg);
+  list-style-image: url(list-style.26e6ec6d.svg);
   padding-left: 15px;
   max-width: 188px;
   padding-top: 24px;
@@ -1003,7 +1003,7 @@ body {
 
 .inner-case__wrapper {
   background-color: #EEF7FF;
-  background-image: url("/promo-case.dd24a4c7.png");
+  background-image: url("promo-case.dc255b02.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 24px;
@@ -1072,7 +1072,7 @@ body {
   position: relative;
 }
 .inner-case .variants__digit {
-  background-image: url(/variants.badea927.png);
+  background-image: url(variants.35ac61b5.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1234,7 +1234,7 @@ body {
   background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
 }
 .s-transition-banner__inner {
-  background-image: url("/banner-transition.7605efda.png");
+  background-image: url("banner-transition.3a3b3d62.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1268,6 +1268,15 @@ body {
   position: relative;
   max-width: 569px;
   width: 100%;
+  box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
+  border-radius: 24px;
+  z-index: 0;
+}
+.other-services__card--orange {
+  background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+}
+.other-services__card--blue {
+  background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
 }
 .other-services__card-wrapper {
   padding: 64px 97px 64px 64px;
@@ -1286,6 +1295,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 24px;
 }
 .other-services__button {
   padding: 21px 52px;
@@ -1385,7 +1395,7 @@ body {
   bottom: 24px;
   width: 48px;
   height: 48px;
-  background: #ffc162 url(/zoom.489babda.svg) center center no-repeat;
+  background: #ffc162 url(zoom.8b3adaed.svg) center center no-repeat;
   border-radius: 50%;
   transition: all 0.5s ease-out;
   opacity: 0.5;
@@ -1458,7 +1468,7 @@ body {
   bottom: 25px;
   width: 48px;
   height: 48px;
-  background: #ffc162 url(/zoom.489babda.svg) center center no-repeat;
+  background: #ffc162 url(zoom.8b3adaed.svg) center center no-repeat;
   border-radius: 50%;
   transition: all 0.5s ease-out;
   opacity: 0.5;
@@ -1531,5 +1541,3 @@ body {
   transform: rotate(-90deg) translateY(-50%);
   left: 15%;
 }
-
-/*# sourceMappingURL=/style.ff1c4cab.css.map */
