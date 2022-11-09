@@ -1,0 +1,43 @@
+.add-services {
+    &__wrapper {
+        max-width: 569px;
+        min-height: 280px;
+        padding: 56px 64px;
+        box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+        border-radius: 24px;
+        cursor: default;
+    }
+    &__name-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    &__image {
+        margin-right: 24px;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 125%;
+        color: #57A6EE;
+    }
+    &__price-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #3F5770;
+        margin-right: 125px;
+    }
+    &__action {
+        padding: 21px 38px;
+        color: #57A6EE;
+        border: 1px solid #57A6EE;
+        border-radius: 32px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}

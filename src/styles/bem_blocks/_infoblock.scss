@@ -1,0 +1,22 @@
+    .infoblock {
+        &__wrapper {
+            padding: 26px 300px 26px 313px;
+            border: 1px solid #57A6EE;
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            display: flex;
+            position: relative;
+            cursor: default;
+        }
+        &__icon {
+            position: absolute;
+            top: 26px;
+            left: 272px;
+        }
+        &__descr {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #57A6EE;
+        }
+    }
