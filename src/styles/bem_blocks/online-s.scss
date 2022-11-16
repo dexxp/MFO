@@ -1,0 +1,23 @@
+.online-s {
+    max-width: 368px;
+    width: 100%;
+    min-height: 466px;
+    &__wripper {
+        background-image: url("../img/online-s.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 88px 35px 88px 35px;
+    }
+    &__image {
+        margin-bottom: 16px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+}
