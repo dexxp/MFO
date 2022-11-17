@@ -12012,26 +12012,12 @@ var _ui = require("@fancyapps/ui");
 require("@fancyapps/ui/dist/fancybox.css");
 require("swiper/swiper-bundle.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-<<<<<<< HEAD
 window.addEventListener("DOMContentLoaded", function () {
   var certSlider = new _swiperBundle.default(".cert-slider__wrapper", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
     spaceBetween: 40,
-=======
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-window.addEventListener("DOMContentLoaded", function () {
-  var certSlider = new _swiperBundle.default(".cert-slider__wrapper", {
-    centeredSlides: true,
-    slidesPerView: 5,
-    loop: true,
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
     pagination: {
       el: ".cert-slider__pagination",
       clickable: true
@@ -12041,23 +12027,6 @@ window.addEventListener("DOMContentLoaded", function () {
       prevEl: ".cert-slider__button-prev"
     }
   });
-<<<<<<< HEAD
-=======
-  var activeSlide = document.querySelector(".swiper-slide-active");
-  activeSlide.previousElementSibling.previousElementSibling.style.opacity = 0.5;
-  activeSlide.nextElementSibling.nextElementSibling.style.opacity = 0.5;
-  certSlider.on("slideChangeTransitionEnd", function (e) {
-    var slides = _toConsumableArray(e.slides);
-    var activeSlide = slides.find(function (el) {
-      return el.classList.contains("swiper-slide-active");
-    });
-    slides.forEach(function (el) {
-      return el.style.opacity = 1;
-    });
-    activeSlide.previousElementSibling.previousElementSibling.style.opacity = 0.5;
-    activeSlide.nextElementSibling.nextElementSibling.style.opacity = 0.5;
-  });
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 });
 },{"swiper/swiper-bundle":"../node_modules/swiper/swiper-bundle.js","@fancyapps/ui":"../node_modules/@fancyapps/ui/dist/fancybox.esm.js","@fancyapps/ui/dist/fancybox.css":"../node_modules/@fancyapps/ui/dist/fancybox.css","swiper/swiper-bundle.css":"../node_modules/swiper/swiper-bundle.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -12084,11 +12053,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52057" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59567" + '/');
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53392" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

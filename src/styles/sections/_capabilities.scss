@@ -1,0 +1,15 @@
+.s-capabilities {
+  margin: 128px 0;
+  &__inner {
+    padding: 96px 93px 96px 98px;
+    border-radius: 48px;
+    background-color: $primary-bg;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__check-list-wrapper {
+    display: flex;
+    gap: 82px;
+  }
+}

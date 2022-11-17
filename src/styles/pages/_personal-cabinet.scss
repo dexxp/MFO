@@ -42,4 +42,21 @@
       }
     }
   }
+
+  .s-schedule-webinars {
+    margin-top: 32px;
+    &__title {
+      max-width: 183px;
+    }
+
+    &__text {
+      max-width: 314px;
+    }
+
+    &__button-group {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+  }
 }
