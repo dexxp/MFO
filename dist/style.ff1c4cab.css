@@ -1121,6 +1121,145 @@ body {
   color: #FFFFFF;
 }
 
+.extradition {
+  max-width: 368px;
+  min-height: 510px;
+}
+.extradition__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  border-radius: 32px;
+  padding: 56px 72px 48px 72px;
+  position: relative;
+}
+.extradition__image {
+  margin-bottom: 16px;
+}
+.extradition__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  color: #57A6EE;
+  margin-bottom: 8px;
+}
+.extradition__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #434343;
+  margin-bottom: 16px;
+}
+.extradition__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #3F5770;
+  margin-bottom: 24px;
+}
+.extradition__button {
+  padding: 21px 85px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.extradition__marker {
+  position: absolute;
+  max-width: 102px;
+  min-height: 31px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+  border-radius: 4px;
+  padding: 10px 16px 8px 16px;
+  top: -15px;
+}
+
+.site {
+  max-width: 368px;
+  min-height: 510px;
+}
+.site__wrapper {
+  background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%), #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  border-radius: 32px;
+  padding: 55px 52px 48px 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.site__marker {
+  display: none;
+}
+.site__name {
+  max-width: 160px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  color: #fff;
+  margin-bottom: 24px;
+  padding-right: 20px;
+}
+.site__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.site__list {
+  list-style-image: url(/list-style-white.38874b3a.svg);
+  margin-bottom: 36px;
+}
+.site__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.site__button {
+  padding: 21px 85px;
+  background: #fff;
+  color: #57A6EE;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.rent {
+  max-width: 368px;
+  padding: 37px 39px 37px 148px;
+  min-height: 124px;
+  background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
+  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  border-radius: 32px;
+  position: relative;
+}
+.rent__flag {
+  width: 92px;
+  height: 92px;
+  background-color: #fff;
+  border-radius: 0px 0px 16px 16px;
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rent__descr {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #fff;
+}
+
 .cases__title {
   margin-top: 80px;
 }
