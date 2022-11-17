@@ -1,0 +1,27 @@
+.rent {
+    max-width: 368px;
+    padding: 37px 39px 37px 148px;
+    min-height: 124px;
+    background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
+    box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+    border-radius: 32px;
+    position: relative;
+    &__flag {
+        width: 92px;
+        height: 92px;
+        background-color: #fff;
+        border-radius: 0px 0px 16px 16px;
+        position: absolute;
+        top: 0px;
+        left: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__descr {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 125%;
+        color: #fff;
+    }
+}

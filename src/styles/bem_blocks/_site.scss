@@ -1,0 +1,52 @@
+.site {
+    max-width: 368px;
+    min-height: 510px;
+    &__wrapper {
+        background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%), #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+        border-radius: 32px;
+        padding: 55px 52px 48px 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__marker {
+        display: none;
+    }
+    &__name {
+        max-width: 160px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 110%;
+        color: #fff;
+        margin-bottom: 24px;
+        padding-right: 20px;
+    }
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    &__list {
+        list-style-image: url(../img/list-style-white.svg);
+        margin-bottom: 36px;
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    &__button {
+        padding: 21px 85px;
+        background: #fff;
+        color: #57A6EE;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
