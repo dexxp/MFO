@@ -1,17 +1,36 @@
 .cert-slider {
   position: relative;
 
+  .swiper-wrapper {
+    align-items: center;
+  }
+
   &__slide {
     text-align: center;
+    opacity: .5;
+    width: 340px !important;
+    height: 468px !important;
     img {
       width: 340px;
       height: 468px;
     }
+
+    &--hor {
+      width: 468px !important;
+      height: 340px !important;
+      img {
+        width: 468px;
+        height: 340px;
+      }
+    }
+
   }
 
   .swiper-slide-active {
     width: 390px;
     height: 538px;
+    opacity: 1;
+
   }
 
   &__pagination {

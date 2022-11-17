@@ -1,0 +1,23 @@
+.s-schedule-webinars {
+  margin: 120px 0;
+  &__inner {
+    padding: 95px 97px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
+    border-radius: 48px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 217px;
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 370px;
+    width: 100%;
+  }
+}

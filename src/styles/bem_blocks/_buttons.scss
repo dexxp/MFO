@@ -16,6 +16,8 @@
     line-height: 19px;
     color: $white;
     z-index: 1;
+    gap: 10px;
+    align-items: center;
 
     &:before {
       position: absolute;
@@ -34,6 +36,18 @@
     &:hover:before {
       opacity: 1;
     }
+  }
+
+  &-secondary {
+    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    border-radius: 40px;
+    padding: 21px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    gap: 10px;
+    align-items: center;
   }
 
   &-slider {

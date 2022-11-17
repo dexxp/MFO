@@ -1,0 +1,20 @@
+.p-webinar {
+
+  &__bg {
+    height: 478px;
+
+    img {
+      height: 478px;
+      object-fit: cover;
+    }
+  }
+
+  &__page-switcher {
+    margin-bottom: 32px;
+  }
+
+  &__download-button {
+    margin: 0 0 72px;
+    text-align: center;
+  }
+}
