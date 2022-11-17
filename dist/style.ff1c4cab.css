@@ -183,7 +183,6 @@ body {
   z-index: 1;
 }
 .page-wrapper__bg {
-<<<<<<< HEAD
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -197,15 +196,6 @@ body {
   height: 100%;
   object-fit: cover;
   bottom: 0;
-=======
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-  bottom: -24px;
-}
-.page-wrapper__bg img {
-  max-width: 100%;
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 }
 
 @font-face {
@@ -279,11 +269,8 @@ body {
   line-height: 19px;
   color: #FFFFFF;
   z-index: 1;
-<<<<<<< HEAD
   gap: 10px;
   align-items: center;
-=======
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 }
 .button-primary:before {
   position: absolute;
@@ -301,7 +288,11 @@ body {
 .button-primary:hover:before {
   opacity: 1;
 }
-<<<<<<< HEAD
+.button-white {
+  background-color: #fff;
+  color: #3F5770;
+  border-radius: 32px;
+}
 .button-secondary {
   background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
   border-radius: 40px;
@@ -312,15 +303,9 @@ body {
   color: #FFFFFF;
   gap: 10px;
   align-items: center;
-=======
-.button-white {
-  background-color: #fff;
-  color: #3F5770;
-  border-radius: 32px;
 }
 .button--size_lg {
   padding: 21px 52px;
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 }
 .button-slider {
   width: 48px;
@@ -416,23 +401,17 @@ body {
   font-size: 16px;
   line-height: 140%;
 }
-<<<<<<< HEAD
 .text--md + .text--lg {
   margin-top: 16px;
 }
-=======
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 .text--lg {
   font-weight: 600;
   font-size: 20px;
   line-height: 140%;
 }
-<<<<<<< HEAD
 .text--lg + .text--md {
   margin-top: 16px;
 }
-=======
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 
 .case-card {
   position: relative;
@@ -478,13 +457,10 @@ body {
   line-height: 16px;
   color: rgba(67, 67, 67, 0.35);
 }
-<<<<<<< HEAD
 .date--md {
   font-size: 16px;
   line-height: 22px;
 }
-=======
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 
 .link {
   text-decoration: none;
@@ -976,7 +952,6 @@ body {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .page-switcher__header {
   display: flex;
   justify-content: space-between;
@@ -999,7 +974,8 @@ body {
   height: 591px;
   background: #D9D9D9;
   border-radius: 24px;
-=======
+}
+
 .accountant {
   max-width: 569px;
   width: 100%;
@@ -1104,7 +1080,6 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 32px;
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 }
 
 .extradition {
@@ -1246,6 +1221,75 @@ body {
   color: #fff;
 }
 
+.polls {
+  max-width: 975px;
+  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  border-radius: 16px;
+  min-height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 56px;
+  padding-right: 48px;
+  position: relative;
+}
+.polls__descr {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  color: #57A6EE;
+}
+.polls__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.team {
+  max-width: 363px;
+  display: flex;
+  align-items: center;
+}
+.team__image {
+  border-radius: 90px;
+  margin-right: 24px;
+}
+.team__username {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #3F5770;
+  margin-bottom: 8px;
+}
+.team__username__name {
+  margin-bottom: 4px;
+}
+.team__job {
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  line-height: 120%;
+  color: #3F5770;
+  margin-bottom: 8px;
+}
+.team__link {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.team__emal {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #57A6EE;
+}
+.team__svg {
+  margin-right: 8px;
+}
+
 .cases__title {
   margin-top: 80px;
 }
@@ -1332,7 +1376,6 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .p-webinar__bg {
   height: 478px;
 }
@@ -1385,8 +1428,6 @@ body {
   object-position: center;
 }
 
-=======
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 .inner-case__wrapper {
   background-color: #EEF7FF;
   background-image: url("/promo-case.dd24a4c7.png");
@@ -1715,7 +1756,6 @@ body {
   margin: 24px 0 16px;
 }
 
-<<<<<<< HEAD
 .s-schedule-webinars {
   margin: 120px 0;
 }
@@ -1737,8 +1777,6 @@ body {
   width: 100%;
 }
 
-=======
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 .primary-pagination .swiper-pagination-bullet {
   background: linear-gradient(267.67deg, #f9a321 0%, #ffc162 100%);
   opacity: 1;
@@ -1918,7 +1956,6 @@ body {
 .cert-slider {
   position: relative;
 }
-<<<<<<< HEAD
 .cert-slider .swiper-wrapper {
   align-items: center;
 }
@@ -1927,16 +1964,11 @@ body {
   opacity: 0.5;
   width: 340px !important;
   height: 468px !important;
-=======
-.cert-slider__slide {
-  text-align: center;
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 }
 .cert-slider__slide img {
   width: 340px;
   height: 468px;
 }
-<<<<<<< HEAD
 .cert-slider__slide--hor {
   width: 468px !important;
   height: 340px !important;
@@ -1949,11 +1981,6 @@ body {
   width: 390px;
   height: 538px;
   opacity: 1;
-=======
-.cert-slider .swiper-slide-active {
-  width: 390px;
-  height: 538px;
->>>>>>> f8376bbb24374d0ac05443b494355058d21378ef
 }
 .cert-slider__pagination {
   display: flex;
