@@ -1,0 +1,40 @@
+        .lessons {
+            max-width: 770px;
+            width: 100%;
+            &__wrapper {
+                background-image: url(../img/lessons.jpg);
+            }
+            &__name {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 120%;
+                text-transform: uppercase;
+                max-width: 285px;
+                color: #fff;
+                margin-bottom: 16px;
+            }
+            &__descr {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #fff;
+                max-width: 382px;
+                margin-bottom: 70px;
+            }
+            &__action {
+                padding: 21px 52px;
+                background: linear-gradient(271.68deg, #F9A321 0%, #FFC162 100%);
+                border-radius: 32px;
+                color: #fff;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 22px;
+            }
+            &__inner {
+                max-width: 770px;
+                min-height: 466px;
+                padding: 104px 10px 20px 72px;
+                background-image: url(../img/lessons_two.png);
+                background-repeat: no-repeat;
+            }
+        }
