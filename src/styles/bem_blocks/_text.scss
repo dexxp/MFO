@@ -1,4 +1,6 @@
 .text {
+  $self: &;
+
   color: #434343;
 
   &--white {
@@ -15,11 +17,19 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+
+    & + #{$self}--lg {
+      margin-top: 16px;
+    }
   }
 
   &--lg {
     font-weight: 600;
     font-size: 20px;
     line-height: 140%;
+
+    & + #{$self}--md {
+      margin-top: 16px;
+    }
   }
 }

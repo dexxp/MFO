@@ -1,0 +1,45 @@
+.p-personal-cabinet {
+  &__bg {
+    height: 558px;
+  }
+
+  &__main {
+    padding-top: 80px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__promo {
+    display: flex;
+    position: relative;
+    margin-bottom: 295px;
+
+    &-box {
+      max-width: 406px;
+      width: 100%;
+    }
+
+    &-text {
+      margin-bottom: 40px;
+    }
+
+    &-img {
+      position: absolute;
+      top: -80px;
+      right: 0;
+      img {
+        width: 780px;
+        height: 526px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
