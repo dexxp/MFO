@@ -1,0 +1,42 @@
+.team {
+    max-width: 363px;
+    display: flex;
+    align-items: center;
+    &__image {
+        border-radius: 90px;
+        margin-right: 24px;
+    }
+    &__username {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 120%;
+        color: #3F5770;
+        margin-bottom: 8px;
+        &__name {
+            margin-bottom: 4px;
+        }
+    }
+    &__job {
+        font-weight: 400;
+        display: block;
+        font-size: 16px;
+        line-height: 120%;
+        color: #3F5770;
+        margin-bottom: 8px;
+    }
+    &__link {
+        display: block;
+        display: flex;
+        align-items: center;
+    }
+    &__emal {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #57A6EE;
+    }
+    &__svg {
+        margin-right: 8px;
+    }
+}

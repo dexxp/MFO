@@ -1,0 +1,25 @@
+.polls {
+    max-width: 975px;
+    box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+    border-radius: 16px;
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 56px;
+    padding-right: 48px;
+    position: relative;
+    &__descr {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 110%;
+        color: #57A6EE;
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
