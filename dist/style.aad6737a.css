@@ -54,7 +54,7 @@ body {
 
 .footer {
   margin-top: 120px;
-  background-image: url(/footer.4085eb4b.png);
+  background-image: url(footer.40c0a5e9.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,21 +200,21 @@ body {
 
 @font-face {
   font-family: "AvenirNext";
-  src: url("/AvenirNextCyr-Bold.22752d2b.woff") format("woff");
+  src: url("AvenirNextCyr-Bold.6b574f28.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("/AvenirNextCyr-Regular.932d179f.woff") format("woff");
+  src: url("AvenirNextCyr-Regular.4b454052.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("/AvenirNextCyr-Demi.b606c422.woff") format("woff");
+  src: url("AvenirNextCyr-Demi.65b8fea4.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -288,8 +288,6 @@ body {
 .button-primary:hover:before {
   opacity: 1;
 }
-<<<<<<< HEAD
-=======
 .button-outlined {
   border: 1px solid #FFFFFF;
   border-radius: 32px;
@@ -298,7 +296,6 @@ body {
   line-height: 22px;
   color: #FFFFFF;
 }
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 .button-white {
   background-color: #fff;
   color: #3F5770;
@@ -380,7 +377,7 @@ body {
 }
 
 .check-list {
-  list-style-image: url(/check-list.0d76ac12.svg);
+  list-style-image: url(check-list.c6f9be95.svg);
   padding-left: 31px;
 }
 .check-list__span {
@@ -844,7 +841,7 @@ body {
 }
 .escort-packages__list {
   border-top: 1px solid #57A6EE;
-  list-style-image: url(/list-style.57a1418e.svg);
+  list-style-image: url(list-style.26e6ec6d.svg);
   padding-left: 15px;
   max-width: 188px;
   padding-top: 24px;
@@ -986,8 +983,6 @@ body {
   background: #D9D9D9;
   border-radius: 24px;
 }
-<<<<<<< HEAD
-=======
 .page-switcher__button {
   display: flex;
   text-decoration: none;
@@ -999,14 +994,13 @@ body {
   letter-spacing: 0.01em;
   color: #434343;
 }
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 
 .accountant {
   max-width: 569px;
   width: 100%;
 }
 .accountant__wrapper {
-  background-image: url(/acc_fon.40bad8e0.jpg);
+  background-image: url(acc_fon.9679f429.jpg);
 }
 .accountant__name {
   font-weight: 700;
@@ -1038,7 +1032,7 @@ body {
   max-width: 569px;
   min-height: 466px;
   padding: 72px 10px 20px 72px;
-  background-image: url(/acc_fon_2.1022f1bc.png);
+  background-image: url(acc_fon_2.34af901d.png);
   background-repeat: no-repeat;
 }
 
@@ -1047,7 +1041,7 @@ body {
   width: 100%;
 }
 .lessons__wrapper {
-  background-image: url(/lessons.98f4b286.jpg);
+  background-image: url(lessons.35f24b97.jpg);
 }
 .lessons__name {
   font-weight: 700;
@@ -1079,7 +1073,7 @@ body {
   max-width: 770px;
   min-height: 466px;
   padding: 104px 10px 20px 72px;
-  background-image: url(/lessons_two.6ce31818.png);
+  background-image: url(lessons_two.8e72f03a.png);
   background-repeat: no-repeat;
 }
 
@@ -1089,7 +1083,7 @@ body {
   min-height: 466px;
 }
 .online-s__wripper {
-  background-image: url("/online-s.1b6ca86b.jpg");
+  background-image: url("online-s.cc3c5c82.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1105,8 +1099,6 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 32px;
-<<<<<<< HEAD
-=======
 }
 
 .input {
@@ -1127,7 +1119,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 }
 
 .extradition {
@@ -1235,7 +1226,7 @@ body {
   margin-bottom: 8px;
 }
 .site__list {
-  list-style-image: url(/list-style-white.38874b3a.svg);
+  list-style-image: url(list-style-white.94fe7726.svg);
   margin-bottom: 36px;
   padding-left: 18px;
 }
@@ -1294,6 +1285,7 @@ body {
   padding-left: 56px;
   padding-right: 48px;
   position: relative;
+  background-color: #FFFFFF;
 }
 .polls__descr {
   font-weight: 600;
@@ -1438,12 +1430,9 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .p-webinar__main {
   padding-top: 80px;
 }
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 .p-webinar__bg {
   height: 478px;
 }
@@ -1568,9 +1557,33 @@ body {
   margin-bottom: 32px;
 }
 
+.p-polls-clients__bg {
+  height: 478px;
+}
+.p-polls-clients__bg img {
+  height: 478px;
+  object-fit: cover;
+}
+.p-polls-clients__main {
+  padding-top: 80px;
+}
+.p-polls-clients__text {
+  max-width: 878px;
+  width: 100%;
+}
+.p-polls-clients__title {
+  margin-bottom: 24px;
+}
+.p-polls-clients__inner {
+  margin: 40px 0 128px;
+}
+.p-polls-clients .polls + .polls {
+  margin-top: 12px;
+}
+
 .inner-case__wrapper {
   background-color: #EEF7FF;
-  background-image: url("/promo-case.dd24a4c7.png");
+  background-image: url("promo-case.dc255b02.png");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 24px;
@@ -1639,7 +1652,7 @@ body {
   position: relative;
 }
 .inner-case .variants__digit {
-  background-image: url(/variants.badea927.png);
+  background-image: url(variants.35ac61b5.png);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1788,7 +1801,7 @@ body {
   background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
 }
 .s-transition-banner__inner {
-  background-image: url("/banner-transition.7605efda.png");
+  background-image: url("banner-transition.3a3b3d62.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -1908,8 +1921,6 @@ body {
   font-weight: 600;
 }
 
-<<<<<<< HEAD
-=======
 .s-capabilities {
   margin: 128px 0;
 }
@@ -1956,7 +1967,6 @@ body {
   align-items: center;
 }
 
-<<<<<<< HEAD
 .s-cost-lk__title {
   margin: 0 auto 56px;
   max-width: 364px;
@@ -1980,9 +1990,6 @@ body {
   flex-wrap: wrap;
 }
 
-=======
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
->>>>>>> 2c6775022e20d683ed0b336f72f674e05a23a225
 .primary-pagination .swiper-pagination-bullet {
   background: linear-gradient(267.67deg, #f9a321 0%, #ffc162 100%);
   opacity: 1;
@@ -2049,7 +2056,7 @@ body {
   bottom: 24px;
   width: 48px;
   height: 48px;
-  background: #ffc162 url(/zoom.489babda.svg) center center no-repeat;
+  background: #ffc162 url(zoom.8b3adaed.svg) center center no-repeat;
   border-radius: 50%;
   transition: all 0.5s ease-out;
   opacity: 0.5;
@@ -2122,7 +2129,7 @@ body {
   bottom: 25px;
   width: 48px;
   height: 48px;
-  background: #ffc162 url(/zoom.489babda.svg) center center no-repeat;
+  background: #ffc162 url(zoom.8b3adaed.svg) center center no-repeat;
   border-radius: 50%;
   transition: all 0.5s ease-out;
   opacity: 0.5;
@@ -2210,5 +2217,3 @@ body {
   transform: rotate(-90deg) translateY(-50%);
   left: 15%;
 }
-
-/*# sourceMappingURL=/style.ff1c4cab.css.map */
