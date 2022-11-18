@@ -25,4 +25,16 @@
     background: #D9D9D9;
     border-radius: 24px;
   }
+
+  &__button {
+    display: flex;
+    text-decoration: none;
+    gap: 16px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #434343;
+  }
 }

@@ -1,0 +1,24 @@
+.p-learn {
+  &__main {
+    padding-top: 80px;
+  }
+
+  &__bg {
+    height: 478px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-bottom: 79px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+}

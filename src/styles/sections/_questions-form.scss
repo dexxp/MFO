@@ -1,0 +1,33 @@
+.s-questions-form {
+  margin-top: 128px;
+  &__inner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 86px 96px 86px 98px;
+    border-radius: 48px;
+  }
+
+  &__header {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    margin-bottom: 38px;
+  }
+
+  &__title {
+    max-width: 256px;
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 574px;
+    width: 100%;
+  }
+
+  &__form {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+}
