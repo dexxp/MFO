@@ -168,11 +168,7 @@ function reloadCSS() {
   }, 50);
 }
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\img\\footer.png":[["footer.4085eb4b.png","img/footer.png"],"img/footer.png"],"./..\\fonts\\AvenirNextCyr-Bold.woff":[["AvenirNextCyr-Bold.22752d2b.woff","fonts/AvenirNextCyr-Bold.woff"],"fonts/AvenirNextCyr-Bold.woff"],"./..\\fonts\\AvenirNextCyr-Regular.woff":[["AvenirNextCyr-Regular.932d179f.woff","fonts/AvenirNextCyr-Regular.woff"],"fonts/AvenirNextCyr-Regular.woff"],"./..\\fonts\\AvenirNextCyr-Demi.woff":[["AvenirNextCyr-Demi.b606c422.woff","fonts/AvenirNextCyr-Demi.woff"],"fonts/AvenirNextCyr-Demi.woff"],"./..\\img\\check-list.svg":[["check-list.0d76ac12.svg","img/check-list.svg"],"img/check-list.svg"],"./..\\img\\list-style.svg":[["list-style.57a1418e.svg","img/list-style.svg"],"img/list-style.svg"],"./..\\img\\acc_fon.jpg":[["acc_fon.40bad8e0.jpg","img/acc_fon.jpg"],"img/acc_fon.jpg"],"./..\\img\\acc_fon_2.png":[["acc_fon_2.1022f1bc.png","img/acc_fon_2.png"],"img/acc_fon_2.png"],"./..\\img\\lessons.jpg":[["lessons.98f4b286.jpg","img/lessons.jpg"],"img/lessons.jpg"],"./..\\img\\lessons_two.png":[["lessons_two.6ce31818.png","img/lessons_two.png"],"img/lessons_two.png"],"./..\\img\\online-s.jpg":[["online-s.1b6ca86b.jpg","img/online-s.jpg"],"img/online-s.jpg"],"./..\\img\\list-style-white.svg":[["list-style-white.38874b3a.svg","img/list-style-white.svg"],"img/list-style-white.svg"],"./..\\img\\promo-case.png":[["promo-case.dd24a4c7.png","img/promo-case.png"],"img/promo-case.png"],"./..\\img\\variants.png":[["variants.badea927.png","img/variants.png"],"img/variants.png"],"./..\\img\\banner-transition.png":[["banner-transition.7605efda.png","img/banner-transition.png"],"img/banner-transition.png"],"./..\\img\\zoom.svg":[["zoom.489babda.svg","img/zoom.svg"],"img/zoom.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -342,4 +338,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/style.ff1c4cab.js.map
+//# sourceMappingURL=/capabilities.js.map

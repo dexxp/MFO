@@ -1,1 +1,12 @@
-.s-cost-lk {}
+.s-cost-lk {
+  &__title {
+    margin: 0 auto 56px;
+    max-width: 364px;
+    width: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 32px;
+  }
+}
