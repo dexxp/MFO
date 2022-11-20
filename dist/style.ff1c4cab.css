@@ -288,8 +288,6 @@ body {
 .button-primary:hover:before {
   opacity: 1;
 }
-<<<<<<< HEAD
-=======
 .button-outlined {
   border: 1px solid #FFFFFF;
   border-radius: 32px;
@@ -298,7 +296,15 @@ body {
   line-height: 22px;
   color: #FFFFFF;
 }
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
+.button-outlined-blue {
+  border: 1px solid #57A6EE;
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  background: transparent;
+  color: #57A6EE;
+}
 .button-white {
   background-color: #fff;
   color: #3F5770;
@@ -986,8 +992,6 @@ body {
   background: #D9D9D9;
   border-radius: 24px;
 }
-<<<<<<< HEAD
-=======
 .page-switcher__button {
   display: flex;
   text-decoration: none;
@@ -999,7 +1003,6 @@ body {
   letter-spacing: 0.01em;
   color: #434343;
 }
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 
 .accountant {
   max-width: 569px;
@@ -1105,8 +1108,6 @@ body {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 32px;
-<<<<<<< HEAD
-=======
 }
 
 .input {
@@ -1127,7 +1128,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 }
 
 .extradition {
@@ -1424,12 +1424,9 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .p-webinar__main {
   padding-top: 80px;
 }
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 .p-webinar__bg {
   height: 478px;
 }
@@ -1902,8 +1899,6 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .s-capabilities {
   margin: 128px 0;
 }
@@ -1950,7 +1945,6 @@ body {
   align-items: center;
 }
 
->>>>>>> 571876d29a78892a1e1fb5a465beae46102fd623
 .primary-pagination .swiper-pagination-bullet {
   background: linear-gradient(267.67deg, #f9a321 0%, #ffc162 100%);
   opacity: 1;
