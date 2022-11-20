@@ -1,1 +1,15 @@
-.s-services {}
+.s-services {
+  &__title {
+    max-width: 682px;
+    width: 100%;
+    margin: 0 auto 48px;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

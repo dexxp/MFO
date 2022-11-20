@@ -1,0 +1,31 @@
+.p-polls-clients {
+  &__bg {
+    height: 478px;
+
+    img {
+      height: 478px;
+      object-fit: cover;
+    }
+  }
+
+  &__main {
+    padding-top: 80px;
+  }
+
+  &__text {
+    max-width: 878px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    margin: 40px 0 128px;
+  }
+
+  .polls + .polls {
+    margin-top: 12px;
+  }
+}
