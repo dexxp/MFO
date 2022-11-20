@@ -1,0 +1,24 @@
+.benefits {
+    max-width: 569px;
+    padding: 48px 48px 48px 56px;
+    border: 1px solid #DEEFFF;
+    border-radius: 24px;
+    display: flex;
+    width: 100%;
+    &__wrapper {
+        margin-right: 20px;
+    }
+    &__name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 125%;
+        color: #57A6EE;
+        margin-bottom: 8px;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #434343;
+    }
+}
