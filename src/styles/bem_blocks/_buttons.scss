@@ -4,6 +4,7 @@
   display: inline-flex;
   cursor: pointer;
   text-decoration: none;
+  transition: .2s all;
 
   &-primary {
     position: relative;
@@ -67,6 +68,43 @@
   &--size {
     &_lg {
       padding: 21px 52px;
+    }
+  }
+
+  &-circle {
+
+    align-items: center;
+    gap: 16px;
+    padding-right: 32px;
+    border-radius: 34px;
+
+    &__img {
+      background-color: $white;
+      border-radius: 100%;
+      width: 64px;
+      align-items: center;
+      justify-content: center;
+      height: 64px;
+      display: inline-flex;
+      box-shadow: 0 4px 30px rgba(85, 118, 157, 0.15);
+    }
+
+    &__text {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: $primary;
+      max-width: 132px;
+      transition: .2s all;
+    }
+
+    &:hover {
+      background-color: $primary;
+    }
+
+    &:hover &__text {
+      color: $white;
     }
   }
 

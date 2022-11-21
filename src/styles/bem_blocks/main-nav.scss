@@ -9,11 +9,16 @@
 
   &__item {
     position: relative;
+  }
 
-    &--open {
-      #{$self}__drop-menu {
-        display: block;
-      }
+  &__item.drop-menu-open {
+
+    #{$self}__link {
+      color: $primary;
+    }
+
+    & > .drop-menu {
+      display: block;
     }
   }
 
@@ -21,12 +26,16 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+
+    transition: .2s all;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
-  &__drop-menu {
+  & > .drop-menu-open {
     padding: 15px 0;
-    top: calc(100%);
-    left: 50%;
-    transform: translateX(-50%);
+    left: -24px;
   }
 }

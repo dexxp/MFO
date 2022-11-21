@@ -33,6 +33,38 @@
     display: inline-flex;
     gap: 8px;
     align-items: center;
+
+    svg path {
+      fill: $primary;
+      transition: .2s all;
+    }
+
+    span {
+      position: relative;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &:hover svg path {
+      fill: $dark-700;
+    }
+
+    & > span:before {
+      content: "";
+      background-color: $dark-700;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      transition: .2s width;
+    }
+
+    &:hover > span:before {
+      width: 100%;
+    }
   }
 
   &-primary {
@@ -40,9 +72,26 @@
     font-size: 16px;
     line-height: 1.15;
     color: $primary;
+    transition: .2s all;
+    position: relative;
+
+    &:before {
+      content: "";
+      background-color: $dark-700;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      transition: .2s width;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
 
     &:hover {
-      text-decoration: underline;
+      color: $dark-700;
     }
   }
 
