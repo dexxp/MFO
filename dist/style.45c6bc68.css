@@ -721,18 +721,16 @@ body {
 .main-nav__link:hover {
   color: #57A6EE;
 }
-.main-nav > .drop-menu-open {
-  padding: 15px 0;
+.main-nav .drop-menu {
+  padding: 16px 0;
   left: -24px;
 }
 
 .drop-menu {
   position: absolute;
   display: none;
-  background-color: transparent;
   z-index: 10;
   min-width: 240px;
-  border-radius: 8px;
 }
 .drop-menu__drop-menu {
   left: 100%;
@@ -742,6 +740,7 @@ body {
   list-style-type: none;
   box-shadow: 0 4px 30px rgba(85, 118, 157, 0.15);
   border-radius: 8px;
+  background-color: #FFFFFF;
 }
 .drop-menu__item {
   position: relative;
@@ -758,7 +757,7 @@ body {
   background: rgba(255, 255, 255, 0.85);
   display: flex;
   align-items: center;
-  padding: 16px 24px;
+  padding: 16px 22px;
   text-align: left;
   font-weight: 400;
   backdrop-filter: blur(10px);
