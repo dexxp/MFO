@@ -1,0 +1,35 @@
+.prompt {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 491px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 26px 32px;
+    border: 1px solid $primary;
+    border-radius: 24px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $primary;
+  }
+
+  &:before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(270deg, #57A6EE 0%, rgba(87, 166, 238, 0) 100%);
+  }
+}

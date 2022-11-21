@@ -1,5 +1,7 @@
 .primary-pagination {
   .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
     background: linear-gradient(267.67deg, #f9a321 0%, #ffc162 100%);
     opacity: 1;
     margin: 0 !important;
@@ -10,6 +12,7 @@
       width: 12px;
       height: 12px;
       margin-left: -2px !important;
+      background: transparent;
     }
   }
 }

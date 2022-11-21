@@ -54,10 +54,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const swiperClientsOne = new Swiper(".clients-slider-one", {
     slidesPerView: 'auto',
-    effect: 'slide',
-    slidesPerGroup: 1,
     spaceBetween: 60,
-    speed: 10000,
+    speed: 5000,
+    parallax: true,
+    autoplayDisableOnInteraction: false,
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -67,14 +67,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const swiperClientsTwo = new Swiper(".clients-slider-two", {
     slidesPerView: 'auto',
-    effect: 'slide',
-    slidesPerGroup: 1,
+    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 10000,
+    speed: 35000,
     loop: true,
     centeredSlides: true,
     autoplay: {
-      /*pauseOnMouseEnter: true,*/
       reverseDirection: true
     },
   });
