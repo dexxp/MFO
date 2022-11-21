@@ -1,0 +1,17 @@
+.s-banner-companies {
+  &__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 975px;
+    display: flex;
+    gap: 117px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img {
+    img {
+      max-width: 100%;
+    }
+  }
+}

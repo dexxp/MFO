@@ -1,0 +1,20 @@
+.s-reviews {
+  &__inner {
+    padding: 42px 0 48px;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 48px;
+  }
+
+  &__button {
+    text-align: center;
+  }
+}

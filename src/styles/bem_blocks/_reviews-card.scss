@@ -1,0 +1,20 @@
+.reviews-card {
+  padding: 40px;
+
+  &__apostrophe {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__logotype {
+    img {
+      object-fit: contain;
+      object-position: center;
+      width: 175px;
+      height: 64px;
+    }
+  }
+}

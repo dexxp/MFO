@@ -1,0 +1,28 @@
+.capabilities-card {
+  $self: &;
+
+  &--right {
+    #{$self}__wrapper {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__details {
+    max-width: 553px;
+    width: 100%;
+  }
+
+  &__check-list {
+    margin: 16px 0;
+  }
+}

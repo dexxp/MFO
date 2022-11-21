@@ -1,0 +1,18 @@
+.s-advantage {
+  background-color: $white;
+
+  &__inner {
+    padding: 128px 0;
+  }
+
+  &__title {
+    margin: 0 auto 48px;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}

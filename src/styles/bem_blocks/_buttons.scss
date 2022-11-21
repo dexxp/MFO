@@ -18,7 +18,6 @@
     z-index: 1;
     gap: 10px;
     align-items: center;
-
     &:before {
       position: absolute;
       content: "";
@@ -32,43 +31,26 @@
       opacity: 0;
       transition: all 0.5s ease-out;
     }
-
     &:hover:before {
-      opacity: 1;
+        opacity: 1;
     }
   }
-
   &-outlined {
-    border: 1px solid #FFFFFF;
-    border-radius: 32px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      border-radius: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
   }
-
-  &-white {
-    background-color: #fff;
-    color: #3F5770;
-    border-radius: 32px;
-  }
-
-  &-secondary {
-    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
-    border-radius: 40px;
-    padding: 21px 40px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: $white;
-    gap: 10px;
-    align-items: center;
-  }
-
-  &--size {
-    &_lg {
-      padding: 21px 52px;
-    }
+  &-outlined-blue {
+      border: 1px solid $primary;
+      border-radius: 32px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      background: transparent;
+      color: $primary;
   }
 
   &-circle {
@@ -108,16 +90,39 @@
     }
   }
 
-  &-slider {
-    width: 48px;
-    height: 48px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%;
-    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+  &-white {
+      background-color: #fff;
+      color: #3F5770;
+      border-radius: 32px;
+  }
 
-    &:hover {
-      background: linear-gradient(0deg, #F9A321 0%, #FFC162 100%), linear-gradient(0deg, #4CA3F2 0%, #80C2FF 100%);
-    }
+  &-secondary {
+      background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+      border-radius: 40px;
+      padding: 21px 40px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+      gap: 10px;
+      align-items: center;
+  }
+
+  &--size {
+      &_lg {
+          padding: 21px 52px;
+      }
+  }
+
+  &-slider {
+      width: 48px;
+      height: 48px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+      &:hover {
+          background: linear-gradient(0deg, #F9A321 0%, #FFC162 100%), linear-gradient(0deg, #4CA3F2 0%, #80C2FF 100%);
+      }
   }
 }

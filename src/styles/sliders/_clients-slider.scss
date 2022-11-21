@@ -1,0 +1,14 @@
+.clients-slider {
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  &__item {
+    width: auto !important;
+  }
+
+  & + & {
+    margin-top: 40px;
+  }
+}

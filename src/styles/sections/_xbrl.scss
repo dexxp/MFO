@@ -1,0 +1,21 @@
+.s-xbrl {
+  background-color: $primary;
+
+  &__inner {
+    padding: 128px 0 208px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  &__title {
+    max-width: 646px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    max-width: 501px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.s-functions {
+  &__inner {
+    padding: 98px 0 128px;
+  }
+
+  &__title {
+    max-width: 531px;
+    width: 100%;
+    margin-bottom: 56px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+}
