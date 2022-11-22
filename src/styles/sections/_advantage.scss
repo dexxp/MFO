@@ -1,6 +1,10 @@
 .s-advantage {
   background-color: $white;
 
+  &__wrapper-outer {
+    background-repeat: no-repeat;
+  }
+
   &__inner {
     padding: 128px 0;
   }
