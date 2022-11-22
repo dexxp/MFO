@@ -26,6 +26,16 @@
     @import "questions";
 }
 
+.section {
+    &__wrapper-outer {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &--blue {
+        background-color: $primary-bg;
+    }
+}
+
 @import "banner";
 @import "image-with-text";
 @import "demo-banner";

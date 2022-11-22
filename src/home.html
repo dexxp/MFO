@@ -15,7 +15,7 @@
   <div class="p-home__wrapper">
     <main class="p-home__main">
       <section class="section home-promo">
-        <div class="section__wrapper-outer">
+        <div class="section__wrapper-outer home-promo__wrapper-outer" style="background-image: url('./img/home-promo-bg.svg');">
           <div class="section__wrapper home-promo__wrapper">
             <div class="container">
               <div class="home-promo__inner">
@@ -41,6 +41,9 @@
                   <div class="home-promo__pulse-circle home-promo__pulse-circle-3"></div>
                   <div class="home-promo__pulse-circle home-promo__pulse-circle-4"></div>
                   <div class="home-promo__circle home-promo__circle--sm"></div>
+                  <div class="home-promo__rocket">
+                    <img src="./img/rocket.svg" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -48,7 +51,7 @@
         </div>
       </section>
       <section class="section s-home-banner">
-        <div class="section__wrapper-outer s-home-banner__wrapper-outer">
+        <div class="section__wrapper-outer s-home-banner__wrapper-outer" style="background-image: url('./img/home-banner-bg.svg');">
           <div class="section__wrapper s-home-banner__wrapper">
             <div class="container">
               <div class="s-home-banner__inner">
@@ -63,7 +66,7 @@
         </div>
       </section>
 
-      <section class="section s-advantage">
+      <section class="section section--blue s-advantage">
         <div class="section__wrapper-outer s-advantage__wrapper-outer" style="background-image: url('./img/pattern.svg');">
           <div class="section__wrapper s-advantage__wrapper">
             <div class="container">
@@ -72,7 +75,7 @@
                 <div class="s-advantage__items">
                   <div class="benefits">
                     <div class="benefits__wrapper">
-                      <h3 class="benefits__name">Выдача займов и бухгалтерия в одной программе</h3>
+                      <h3 class="benefits__name">Выдача займов и бухгалтерия в&nbsp;одной программе</h3>
                       <p class="benefits__descr">Все действия при выдаче и возврате займов сразу появляются в 1С:Бухгалтерия, без дополнительных перегрузок. Бухгалтер всегда будет видеть актуальную информацию, при этом все бухгалтерские проводки программа делает сама.</p>
                     </div>
                     <div class="benefits__image">
@@ -81,29 +84,29 @@
                   </div>
                   <div class="benefits">
                     <div class="benefits__wrapper">
-                      <h3 class="benefits__name">Выдача займов и бухгалтерия в одной программе</h3>
-                      <p class="benefits__descr">Все действия при выдаче и возврате займов сразу появляются в 1С:Бухгалтерия, без дополнительных перегрузок. Бухгалтер всегда будет видеть актуальную информацию, при этом все бухгалтерские проводки программа делает сама.</p>
+                      <h3 class="benefits__name">Простой и понятный интерфейс программы </h3>
+                      <p class="benefits__descr">«Моя МФО» — это самая простаяв использовании программа на рынке программного обеспечения для МФО. Все ваши действия в программе будут простыми и понятными.</p>
                     </div>
                     <div class="benefits__image">
-                      <img src="./img/benefits__svg.svg" alt="">
+                      <img src="./img/bene-1.svg" alt="">
                     </div>
                   </div>
                   <div class="benefits">
                     <div class="benefits__wrapper">
-                      <h3 class="benefits__name">Выдача займов и бухгалтерия в одной программе</h3>
-                      <p class="benefits__descr">Программа содержит функционал, который позволяет вести полноценный учет на ЕПС и ОСБУ без дополнительных интеграций и выгрузок в сторонние программные продукты.</p>
+                      <h3 class="benefits__name">Удобная работа на ЕПС и ОСБУ</h3>
+                      <p class="benefits__descr">Программа содержит функционал, который позволяет вести полноценный учет на ЕПСи ОСБУ без дополнительных интеграцийи выгрузок в сторонние программные продукты.</p>
                     </div>
                     <div class="benefits__image">
-                      <img src="./img/benefits__svg.svg" alt="">
+                      <img src="./img/bene-2.svg" alt="">
                     </div>
                   </div>
                   <div class="benefits">
                     <div class="benefits__wrapper">
-                      <h3 class="benefits__name">Выдача займов и бухгалтерия в одной программе</h3>
-                      <p class="benefits__descr">Мы постоянно отслеживаем динамику цен на рынке и поэтому предлагаем самые выгодные условия на приобретение программы «Моя МФО».</p>
+                      <h3 class="benefits__name">Лучшая цена на рынке</h3>
+                      <p class="benefits__descr">Мы постоянно отслеживаем динамику ценна рынке и поэтому предлагаем самыевыгодные условия на приобретениепрограммы «Моя МФО».</p>
                     </div>
                     <div class="benefits__image">
-                      <img src="./img/benefits__svg.svg" alt="">
+                      <img src="./img/bene-3.svg" alt="">
                     </div>
                   </div>
                 </div>
@@ -113,7 +116,7 @@
         </div>
       </section>
 
-      <section class="section s-functions">
+      <section class="section section--blue s-functions">
         <div class="section__wrapper-outer s-functions__wrapper-outer">
           <div class="section__wrapper s-functions__wrapper">
             <div class="container">
@@ -132,40 +135,34 @@
                     <div class="container">
                       <div class="capabilities-card__wrapper">
                         <div class="capabilities-card__details">
-                          <h3 class="title title--blue title--level_h3 capabilities-card__title">1. Оформление анкеты заемщика/пайщика</h3>
-                          <div class="text text--md capabilities-card__text">
-                            <p>
-                              Процесс работы с заемщиком/пайщиком начинается с заполнения анкеты.
-                              Анкету заполняет специалист по выдаче займов, либо она может быть подгружена с сайта.
-                            </p>
-                          </div>
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">Выдача и прием займов</h3>
                           <ul class="check-list capabilities-card__check-list">
                             <li class="check-list__item">
-                              <span class="check-list__span">Будет ли обмен разовым или постоянным?</span>
+                              <span class="check-list__span">процесс оформления заемщика/пайщика и печать анкеты</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">невозвраты (количество, сумма, процентное соотношение к выданным)</span>
+                              <span class="check-list__span">оформление договора займа, печать документов</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">Какой объем операций требуется перегрузить?</span>
+                              <span class="check-list__span">ежедневное начисление процентов по займу с расчетом суммына любую дату (возможные различные схемы начислений процентов и пеней)</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">Будет ли обмен разовым или постоянным?</span>
+                              <span class="check-list__span">прием оплаты с печатью соответствующих документов</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">невозвраты (количество, сумма, процентное соотношение к выданным)</span>
+                              <span class="check-list__span">продление займа</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">Какой объем операций требуется перегрузить?</span>
+                              <span class="check-list__span">различные схемы погашения займов (в конце срока, аннуитентные и дифференцированные платежи, платежи разв неделю/месяц/с произвольным интервалом)</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">Будет ли обмен разовым или постоянным?</span>
+                              <span class="check-list__span">процесс приостановки начислений, реструктуризация займа, печать доп.соглашения и измененного графика погашений</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">невозвраты (количество, сумма, процентное соотношение к выданным)</span>
+                              <span class="check-list__span">продуманный функционал работы с залогами и поручительством</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">Какой объем операций требуется перегрузить?</span>
+                              <span class="check-list__span">продажа и списание займов</span>
                             </li>
                           </ul>
                         </div>
@@ -203,22 +200,348 @@
                     <div class="container">
                       <div class="capabilities-card__wrapper">
                         <div class="capabilities-card__details">
-                          <h3 class="title title--blue title--level_h3 capabilities-card__title">1. Оформление анкеты заемщика/пайщика</h3>
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">Параллельный учет на РСБУ и ЕПС</h3>
+                          <ul class="check-list capabilities-card__check-list">
+                            <li class="check-list__item">
+                              <span class="check-list__span">автоматическое правильное построение проводокпо 1С:Бухгалтерия — не нужно ничего перегружать</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">ведение параллельного учета на РСБУ и едином плане счетов бухгалтерского учета (ЕПС) по новым отраслевым стандартам (ОСБУ)</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">автоматическое начисление процентов по текущим займам для бухгалтерии и требованиям общей системы налогообложения</span>
+                            </li>
+                             <li class="check-list__item">
+                              <span class="check-list__span">автоматическое начисление резервов на возможные потерипо займам и резервов под обесценение</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="vertical-slider">
+                          <div class="swiper vertical-slider__wrapper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination primary-pagination vertical-slider__pagination"></div>
+                          </div>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capabilities-card capabilities-card--left">
+                    <div class="container">
+                      <div class="capabilities-card__wrapper">
+                        <div class="capabilities-card__details">
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">Отчетность в СРО и ЦБ</h3>
+                          <ul class="check-list capabilities-card__check-list">
+                            <li class="check-list__item">
+                              <span class="check-list__span">отчет о микрофинансовой деятельности</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">отчет о движении денежных средств</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">отчеты предоставляемые по запросу</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="vertical-slider">
+                          <div class="swiper vertical-slider__wrapper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination primary-pagination vertical-slider__pagination"></div>
+                          </div>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capabilities-card capabilities-card--right">
+                    <div class="container">
+                      <div class="capabilities-card__wrapper">
+                        <div class="capabilities-card__details">
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">Обмен с БКИ и другими сервисами</h3>
+                          <ul class="check-list capabilities-card__check-list">
+                            <li class="check-list__item">
+                              <span class="check-list__span">автоматическая проверка по Бюро Кредитных Историй(НБКИ и ОКБ)</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">получение кредитных отчетов и выгрузка кредитных историй</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">автоматические проверки по сайтам УФМС, ФССП, Скориста и др.</span>
+                            </li>
+                             <li class="check-list__item">
+                              <span class="check-list__span">открытое API и интеграция с личными кабинетами</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="vertical-slider">
+                          <div class="swiper vertical-slider__wrapper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination primary-pagination vertical-slider__pagination"></div>
+                          </div>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capabilities-card capabilities-card--left">
+                    <div class="container">
+                      <div class="capabilities-card__wrapper">
+                        <div class="capabilities-card__details">
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">SMS и E-mail оповещение</h3>
                           <div class="text text--md capabilities-card__text">
                             <p>
-                              Процесс работы с заемщиком/пайщиком начинается с заполнения анкеты.
-                              Анкету заполняет специалист по выдаче займов, либо она может быть подгружена с сайта.
+                             Гибкая настройка расписания рассылок и шаблонов сообщений:
                             </p>
                           </div>
                           <ul class="check-list capabilities-card__check-list">
                             <li class="check-list__item">
-                              <span class="check-list__span">Будет ли обмен разовым или постоянным?</span>
+                              <span class="check-list__span">о решении по займу</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">невозвраты (количество, сумма, процентное соотношение к выданным)</span>
+                              <span class="check-list__span">о предстоящем платеже</span>
                             </li>
                             <li class="check-list__item">
-                              <span class="check-list__span">Какой объем операций требуется перегрузить?</span>
+                              <span class="check-list__span">о просрочке</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">рекламные рассылки</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="vertical-slider">
+                          <div class="swiper vertical-slider__wrapper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination primary-pagination vertical-slider__pagination"></div>
+                          </div>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capabilities-card capabilities-card--right">
+                    <div class="container">
+                      <div class="capabilities-card__wrapper">
+                        <div class="capabilities-card__details">
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">ПОД/ФТ (Росфинмониторинг)</h3>
+                          <div class="text text--md capabilities-card__text">
+                            <p>
+                           Широкие возможности по соблюдении 115-ФЗ по ПОД/ФТ:
+                            </p>
+                          </div>
+                          <ul class="check-list capabilities-card__check-list">
+                            <li class="check-list__item">
+                              <span class="check-list__span">загрузка списков эктремистов (4 списка)</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">автоматические проверки по спискам</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">фиксация факта проверки</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">печать анкет и досье</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">отчет по проверкам в Росфинмониторинг</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="vertical-slider">
+                          <div class="swiper vertical-slider__wrapper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination primary-pagination vertical-slider__pagination"></div>
+                          </div>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capabilities-card capabilities-card--left">
+                    <div class="container">
+                      <div class="capabilities-card__wrapper">
+                        <div class="capabilities-card__details">
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">Судопроизводство</h3>
+                          <div class="text text--md capabilities-card__text">
+                            <p>
+                              Весь функционал по взысканию задолженности и отслеживания судебной стадии:
+                            </p>
+                          </div>
+                          <ul class="check-list capabilities-card__check-list">
+                            <li class="check-list__item">
+                              <span class="check-list__span">подача заявлений</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">печать исковых заявлений и заявлений о выдаче судебного приказа</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">расчет и оплата пошлины</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">расчет сумм к подаче в суд</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">фиксация событий о решении</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">фильтрация договоров по статусам судопроизводства и т.д.</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="vertical-slider">
+                          <div class="swiper vertical-slider__wrapper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                              <div class="swiper-slide vertical-slider__item">
+                                <a data-fancybox="gallery" href="./img/function-slider-img.jpg">
+                                  <img src="./img/function-slider-img.jpg">
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination primary-pagination vertical-slider__pagination"></div>
+                          </div>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                          <button class="button button-slider vertical-slider__button vertical-slider__button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                              <path d="M17 10L9 2M9 2L0.999999 10M9 2L9 19.5" stroke="#ffffff" stroke-width="2"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capabilities-card capabilities-card--right">
+                    <div class="container">
+                      <div class="capabilities-card__wrapper">
+                        <div class="capabilities-card__details">
+                          <h3 class="title title--blue title--level_h3 capabilities-card__title">Аналитические отчеты</h3>
+                          <div class="text text--md capabilities-card__text">
+                            <p>
+                            Широкий выбор отчетов для руководства по различным метрикам:
+                            </p>
+                          </div>
+                          <ul class="check-list capabilities-card__check-list">
+                            <li class="check-list__item">
+                              <span class="check-list__span">выдача и возврат</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">пролонгации</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">невозвраты</span>
+                            </li>
+                             <li class="check-list__item">
+                              <span class="check-list__span">доходы и расходы</span>
+                            </li>
+                            <li class="check-list__item">
+                              <span class="check-list__span">кредитный портфель и т.д.</span>
                             </li>
                           </ul>
                         </div>
@@ -253,6 +576,9 @@
                     </div>
                   </div>
                 </div>
+                <div class="s-functions__button">
+                  <a href="#" class="button button-outlined-blue button--size_lg s-functions__toggle">Развернуть</a>
+                </div>
               </div>
             </div>
           </div>
@@ -260,7 +586,7 @@
       </section>
 
       <section class="section s-capabilities-kpk">
-        <div class="section__wrapper-outer s-capabilities-kpk__wrapper-outer">
+        <div class="section__wrapper-outer s-capabilities-kpk__wrapper-outer" style="background-image: url('./img/pattern.svg');">
           <div class="section__wrapper s-capabilities-kpk__wrapper">
             <div class="container">
               <div class="s-capabilities-kpk__inner">
@@ -277,7 +603,7 @@
                   </div>
                   <div class="pk-features">
                     <div class="pk-features__image">
-                      <img src="./img/pk-featurs__svg.svg" alt="">
+                      <img src="./img/pk-1.svg" alt="">
                     </div>
                     <div class="pk-features__wrapper">
                       <h3 class="pk-features__name">Учет паевых и членских взносов</h3>
@@ -286,7 +612,7 @@
                   </div>
                   <div class="pk-features">
                     <div class="pk-features__image">
-                      <img src="./img/pk-featurs__svg.svg" alt="">
+                      <img src="./img/pk-2.svg" alt="">
                     </div>
                     <div class="pk-features__wrapper">
                       <h3 class="pk-features__name">Отчетность КПК в ЦБ</h3>
@@ -295,7 +621,7 @@
                   </div>
                   <div class="pk-features">
                     <div class="pk-features__image">
-                      <img src="./img/pk-featurs__svg.svg" alt="">
+                      <img src="./img/pk-3.svg" alt="">
                     </div>
                     <div class="pk-features__wrapper">
                       <h3 class="pk-features__name">Автоматический расчет</h3>
@@ -313,7 +639,7 @@
         </div>
       </section>
 
-      <section class="section s-capabilities-online">
+      <section class="section section--blue s-capabilities-online">
         <div class="section__wrapper-outer s-capabilities-online__wrapper-outer">
           <div class="section__wrapper s-capabilities-online__wrapper">
             <div class="container">
@@ -382,7 +708,7 @@
       </section>
 
       <section class="section s-xbrl">
-        <div class="section__wrapper-outer s-xbrl__wrapper-outer">
+        <div class="section__wrapper-outer s-xbrl__wrapper-outer" style="background-image: url('./img/xbrl-bg.svg')">
           <div class="section__wrapper s-xbrl__wrapper">
             <div class="container">
               <div class="s-xbrl__inner">
@@ -404,7 +730,7 @@
       </section>
 
       <section class="section s-clients">
-        <div class="section__wrapper-outer s-clients__wrapper-outer">
+        <div class="section__wrapper-outer s-clients__wrapper-outer" style="background-image: url('./img/pattern.svg');">
           <div class="section__wrapper s-clients__wrapper">
             <div class="container">
               <div class="s-clients__inner">
@@ -439,8 +765,8 @@
         </div>
       </section>
 
-      <section class="section s-cases">
-        <div class="section__wrapper-outer s-cases__wrapper-outer">
+      <section class="section section--blue s-cases">
+        <div class="section__wrapper-outer s-cases__wrapper-outer" style="background-image: url('./img/pattern-white.svg');">
           <div class="section__wrapper s-cases__wrapper">
             <div class="container">
               <div class="s-cases__inner">
@@ -453,13 +779,15 @@
                         <img src="./img/case-card.jpg" alt="">
                       </div>
                       <div class="case-card__inner">
-                        <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
-                        <h4 class="title title--blue title--level_h4 case-card__title">Интеграционный модуль</h4>
-                        <p class="text text--sm case-card__text">Как перегрузить данные из существующей системы в систему «Моя МФО»?</p>
+                        <div class="case-card__descr">
+                          <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
+                          <h4 class="title title--blue title--level_h4 case-card__title">Интеграционный модуль</h4>
+                          <p class="text text--sm case-card__text">Как перегрузить данные из существующей системы в систему «Моя МФО»?</p>
+                        </div>
                         <a href="#" class="link link-more">
-                    <span>
-                      Подробнее
-                    </span>
+                          <span>
+                            Подробнее
+                          </span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="19" viewBox="0 0 6 19" fill="none">
                             <path d="M1 7L4.5 10.5L1 14" stroke="#57A6EE" stroke-width="1.5"/>
                           </svg>
@@ -471,16 +799,18 @@
                     <a href="#" class="case-card__link-contain"></a>
                     <div class="case-card__wrapper">
                       <div class="case-card__img">
-                        <img src="./img/case-card.jpg" alt="">
+                        <img src="./img/case-1.jpg" alt="">
                       </div>
                       <div class="case-card__inner">
-                        <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
-                        <h4 class="title title--blue title--level_h4 case-card__title">Интеграционный модуль</h4>
-                        <p class="text text--sm case-card__text">Как перегрузить данные из существующей системы в систему «Моя МФО»?</p>
+                        <div class="case-card__descr">
+                          <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
+                          <h4 class="title title--blue title--level_h4 case-card__title">Кейс «Фаст Финанс»</h4>
+                          <p class="text text--sm case-card__text">Как мы переводили на ЕПС известную МФО «Фаст Финанс» с большой сетью франчайзи.</p>
+                        </div>
                         <a href="#" class="link link-more">
-                    <span>
-                      Подробнее
-                    </span>
+                          <span>
+                            Подробнее
+                          </span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="19" viewBox="0 0 6 19" fill="none">
                             <path d="M1 7L4.5 10.5L1 14" stroke="#57A6EE" stroke-width="1.5"/>
                           </svg>
@@ -492,16 +822,18 @@
                     <a href="#" class="case-card__link-contain"></a>
                     <div class="case-card__wrapper">
                       <div class="case-card__img">
-                        <img src="./img/case-card.jpg" alt="">
+                        <img src="./img/case-2.jpg" alt="">
                       </div>
                       <div class="case-card__inner">
-                        <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
-                        <h4 class="title title--blue title--level_h4 case-card__title">Интеграционный модуль</h4>
-                        <p class="text text--sm case-card__text">Как перегрузить данные из существующей системы в систему «Моя МФО»?</p>
+                        <div class="case-card__descr">
+                          <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
+                          <h4 class="title title--blue title--level_h4 case-card__title">Заголовок кейса в&nbsp;несколько строк</h4>
+                          <p class="text text--sm case-card__text">Моя МФО — универсальная программа для микрофинансированияи кредитной кооперации.</p>
+                        </div>
                         <a href="#" class="link link-more">
-                    <span>
-                      Подробнее
-                    </span>
+                          <span>
+                            Подробнее
+                          </span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="19" viewBox="0 0 6 19" fill="none">
                             <path d="M1 7L4.5 10.5L1 14" stroke="#57A6EE" stroke-width="1.5"/>
                           </svg>
@@ -513,16 +845,18 @@
                     <a href="#" class="case-card__link-contain"></a>
                     <div class="case-card__wrapper">
                       <div class="case-card__img">
-                        <img src="./img/case-card.jpg" alt="">
+                        <img src="./img/case-3.jpg" alt="">
                       </div>
                       <div class="case-card__inner">
-                        <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
-                        <h4 class="title title--blue title--level_h4 case-card__title">Интеграционный модуль</h4>
-                        <p class="text text--sm case-card__text">Как перегрузить данные из существующей системы в систему «Моя МФО»?</p>
+                        <div class="case-card__descr">
+                          <time datetime="2021-09-01" class="date case-card__date">1.09.2021</time>
+                          <h4 class="title title--blue title--level_h4 case-card__title">Заголовок кейса в&nbsp;несколько строк</h4>
+                          <p class="text text--sm case-card__text">Моя МФО — универсальная программа для микрофинансированияи кредитной кооперации.</p>
+                        </div>
                         <a href="#" class="link link-more">
-                    <span>
-                      Подробнее
-                    </span>
+                          <span>
+                            Подробнее
+                          </span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="19" viewBox="0 0 6 19" fill="none">
                             <path d="M1 7L4.5 10.5L1 14" stroke="#57A6EE" stroke-width="1.5"/>
                           </svg>

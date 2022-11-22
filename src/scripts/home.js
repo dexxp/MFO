@@ -76,4 +76,20 @@ window.addEventListener("DOMContentLoaded", () => {
       reverseDirection: true
     },
   });
+
+  const toggleFunctions = document.querySelector(".s-functions__toggle");
+  const functionWrap = document.querySelector(".s-functions__items");
+
+  toggleFunctions.addEventListener("click", (e) => {
+    e.preventDefault();
+    const functionOpened = functionWrap.classList.contains("s-functions__items--opened");
+
+    if (functionOpened) {
+      toggleFunctions.innerHTML = "Развернуть";
+      functionWrap.classList.remove("s-functions__items--opened");
+    } else {
+      toggleFunctions.innerHTML = "Свернуть";
+      functionWrap.classList.add("s-functions__items--opened");
+    }
+  });
 });

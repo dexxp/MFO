@@ -3,6 +3,8 @@
 
   &__inner {
     padding: 98px 0 128px;
+    position: relative;
+    overflow: hidden;
   }
 
   &__title {
@@ -18,11 +20,46 @@
     display: flex;
     flex-direction: column;
     gap: 64px;
+
+    .capabilities-card {
+      display: none;
+    }
+
+    .capabilities-card:nth-child(-n + 4) {
+      display: block;
+    }
+
+    .capabilities-card:nth-child(4) {
+      position: absolute;
+      top: 100%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      opacity: 0.3;
+    }
+
+    &--opened {
+      .capabilities-card {
+        display: block;
+      }
+
+      .capabilities-card:nth-child(4) {
+        position: static;
+        top: 100%;
+        transform: translateY(0);
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
   }
 
   &__prompt {
     &:before {
       width: 268px;
     }
+  }
+
+  &__button {
+    text-align: center;
+    margin-top: 48px;
   }
 }
