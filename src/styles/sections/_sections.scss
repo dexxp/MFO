@@ -28,7 +28,8 @@
 
 .section {
     &__wrapper-outer {
-        background-size: cover;
+        background-position: center bottom;
+        background-size: 100% auto;
         background-repeat: no-repeat;
     }
     &--blue {

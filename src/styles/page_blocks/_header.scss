@@ -6,13 +6,126 @@
   z-index: 50;
   background-color: $primary-bg;
 
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    left: -100%;
+    bottom: 0;
+    top: 0;
+    margin-top: 85px;
+    padding-bottom: 100px;
+    max-height: 100vh;
+    height: 100%;
+    overflow: auto;
+    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    transition: left 0.2s;
+
+    &--open {
+      left: 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    &__contacts {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+
+      &-name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 125%;
+        color: $white;
+      }
+    }
+
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 115%;
+      color: #FFFFFF;
+    }
+
+    &__button {
+      display: flex;
+      margin: 0 auto 32px;
+      justify-content: center;
+      max-width: 420px;
+      width: 100%;
+    }
+  }
+
+  &__accordion-menu {
+    margin-bottom: 32px;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   &__main-nav {
     margin: 0 auto;
+  }
+
+  &__burger {
+    $burger: &;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 5px;
+
+    &-line {
+      background-color: $white;
+      height: 3px;
+      border-radius: 2px;
+
+      &--1 {
+        width: 20px;
+      }
+      &--2 {
+        width: 25px;
+      }
+      &--3 {
+        width: 15px;
+      }
+    }
+
+    &--open {
+      #{$burger}-line {
+        flex-shrink: 0;
+        &--1 {
+          width: 0;
+        }
+        &--2 {
+          transform: rotate(45deg);
+        }
+        &--3 {
+          transform: rotate(-45deg) translate(5.2px, -5.2px);
+          width: 25px;
+        }
+      }
+    }
   }
 
   &__links {
@@ -24,5 +137,158 @@
 
   &__button {
     font-size: 14px;
+  }
+
+  .logo {
+    &__word {
+      fill: $primary;
+    }
+
+    &__circle {
+      fill: $primary;
+    }
+
+    &__params {
+      fill: $white;
+    }
+  }
+
+  &__contacts-mobile {
+    gap: 24px;
+    margin-left: auto;
+    align-items: center;
+    .link {
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+      svg path {
+        fill: white;
+        transition: .2s all;
+      }
+    }
+    display: none;
+  }
+}
+
+@include mq(xxl) {
+  .header {
+    .container--wide {
+      padding: 0 25px;
+    }
+
+    &__links {
+      gap: 24px;
+
+      .link-primary {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include mq(xl) {
+  .header {
+
+    .container--wide {
+      padding: 0 15px;
+    }
+
+    &__links {
+      gap: 15px;
+
+      .button--size_sm {
+        padding: 14px 20px;
+      }
+    }
+
+    .logo {
+      img {
+        width: 118px;
+      }
+      &__text {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mq(md) {
+  .header {
+    background-color: $primary;
+    .main-nav {
+      display: none;
+    }
+
+    &__links {
+      display: none;
+    }
+
+    &__contacts-mobile {
+      display: flex;
+    }
+
+    .logo {
+      margin: 0 auto;
+      &__circle {
+        fill: $white;
+      }
+
+      &__params {
+        fill: $primary;
+      }
+
+      &__word {
+        fill: $white;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .header {
+    padding: 10px 0;
+
+    .mobile-menu {
+      margin-top: 65px;
+    }
+
+    &__burger {
+      $burger: &;
+      padding: 10px;
+      &-line {
+        height: 2px;
+        &--1 {
+          width: 15px;
+        }
+
+        &--2 {
+          width: 17px;
+        }
+
+        &--3 {
+          width: 10px;
+        }
+      }
+
+      &--open {
+        #{$burger}-line {
+          &--3 {
+            transform: rotate(-45deg) translate(5px, -5px);
+            width: 17px;
+          }
+        }
+      }
+    }
+
+    &__contacts-mobile {
+      .link {
+        padding: 4px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
   }
 }

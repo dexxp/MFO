@@ -39,3 +39,29 @@
     left: -24px;
   }
 }
+
+@include mq(xxl) {
+  .main-nav {
+    &__wrapper {
+      gap: 24px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
+
+@include mq(xl) {
+  .main-nav {
+    &__wrapper {
+      gap: 20px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .main-nav {
+    display: none;
+  }
+}

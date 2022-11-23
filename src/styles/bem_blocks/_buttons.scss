@@ -109,9 +109,12 @@
   }
 
   &--size {
-      &_lg {
-          padding: 21px 52px;
-      }
+    &_lg {
+        padding: 21px 52px;
+    }
+    &_sm {
+      font-size: 14px;
+    }
   }
 
   &-slider {

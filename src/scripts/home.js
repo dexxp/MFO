@@ -54,14 +54,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const swiperClientsOne = new Swiper(".clients-slider-one", {
     slidesPerView: 'auto',
+    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 5000,
-    parallax: true,
-    autoplayDisableOnInteraction: false,
+    speed: 35000,
     loop: true,
     centeredSlides: true,
     autoplay: {
-      /*pauseOnMouseEnter: true*/
+      delay: 1,
+    },
+    freeMode: {
+      enabled: true,
+      sticky: true,
     },
   });
 
@@ -73,7 +76,12 @@ window.addEventListener("DOMContentLoaded", () => {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      reverseDirection: true
+      reverseDirection: true,
+      delay: 1,
+    },
+    freeMode: {
+      enabled: true,
+      sticky: true,
     },
   });
 

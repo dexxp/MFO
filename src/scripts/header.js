@@ -46,4 +46,13 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
+
+  const burger = document.querySelector(".header__burger");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("header__burger--open");
+    mobileMenu.classList.toggle("mobile-menu--open");
+  })
+
 });

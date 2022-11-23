@@ -12,3 +12,11 @@ $dark-900: #434343;
 $primary: $blue;
 $secondary: $yellow;
 $primary-bg: $light-blue;
+
+$breakpoints: (
+  xs : 600px,
+  sm: 980px,
+  md: 1250px,
+  xl: 1530px,
+  xxl : 1770px
+);
