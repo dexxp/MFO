@@ -1,5 +1,4 @@
 @import "base";
-@import "page_blocks";
 
 @font-face {
      font-family: "AvenirNext";
@@ -27,6 +26,7 @@
 
 
 @import "bem_blocks";
+@import "page_blocks";
 @import "pages";
 @import "sections";
 @import "sliders";
