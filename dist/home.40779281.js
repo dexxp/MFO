@@ -12019,14 +12019,17 @@ window.addEventListener("DOMContentLoaded", function () {
   });
   var swiperClientsOne = new _swiperBundle.default(".clients-slider-one", {
     slidesPerView: 'auto',
+    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 5000,
-    parallax: true,
-    autoplayDisableOnInteraction: false,
+    speed: 35000,
     loop: true,
     centeredSlides: true,
     autoplay: {
-      /*pauseOnMouseEnter: true*/
+      delay: 1
+    },
+    freeMode: {
+      enabled: true,
+      sticky: true
     }
   });
   var swiperClientsTwo = new _swiperBundle.default(".clients-slider-two", {
@@ -12037,7 +12040,12 @@ window.addEventListener("DOMContentLoaded", function () {
     loop: true,
     centeredSlides: true,
     autoplay: {
-      reverseDirection: true
+      reverseDirection: true,
+      delay: 1
+    },
+    freeMode: {
+      enabled: true,
+      sticky: true
     }
   });
   var toggleFunctions = document.querySelector(".s-functions__toggle");

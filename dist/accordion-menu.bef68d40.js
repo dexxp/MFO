@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"BSv9":[function(require,module,exports) {
+})({"OAP7":[function(require,module,exports) {
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -126,22 +126,16 @@ function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symb
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 window.addEventListener("DOMContentLoaded", function () {
-  var mainNav = document.querySelector(".main-nav");
-  var lies = _toConsumableArray(mainNav.querySelectorAll("li"));
-  var _iterator = _createForOfIteratorHelper(lies),
+  var accordionItems = _toConsumableArray(document.querySelectorAll(".accordion-menu__item"));
+  var _iterator = _createForOfIteratorHelper(accordionItems),
     _step;
   try {
     var _loop = function _loop() {
-      var li = _step.value;
-      var dropMenu = mainNav.querySelector(".drop-menu");
-      if (dropMenu !== undefined) {
-        li.addEventListener("mouseenter", function () {
-          li.classList.add("drop-menu-open");
-        });
-        li.addEventListener("mouseleave", function () {
-          li.classList.remove("drop-menu-open");
-        });
-      }
+      var accordionItem = _step.value;
+      var toggler = accordionItem.querySelector(".accordion-menu__title");
+      toggler.addEventListener("click", function () {
+        accordionItem.classList.toggle("accordion-menu__item--open");
+      });
     };
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
       _loop();
@@ -151,53 +145,5 @@ window.addEventListener("DOMContentLoaded", function () {
   } finally {
     _iterator.f();
   }
-  var mainNavItems = _toConsumableArray(mainNav.querySelectorAll(".main-nav__item"));
-  var _iterator2 = _createForOfIteratorHelper(mainNavItems),
-    _step2;
-  try {
-    var _loop2 = function _loop2() {
-      var mainNavItem = _step2.value;
-      var dropMenu = mainNavItem.querySelector(".drop-menu");
-      if (dropMenu !== undefined) {
-        mainNavItem.addEventListener("mouseenter", function () {
-          mainNavItem.classList.add("main-nav__item--open");
-        });
-        mainNavItem.addEventListener("mouseleave", function () {
-          mainNavItem.classList.remove("main-nav__item--open");
-        });
-      }
-    };
-    for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-      _loop2();
-    }
-  } catch (err) {
-    _iterator2.e(err);
-  } finally {
-    _iterator2.f();
-  }
-  var dropMenuItems = _toConsumableArray(document.querySelectorAll(".drop-menu__item"));
-  var _iterator3 = _createForOfIteratorHelper(dropMenuItems),
-    _step3;
-  try {
-    var _loop3 = function _loop3() {
-      var dropMenuItem = _step3.value;
-      var dropMenu = dropMenuItem.querySelector(".drop-menu__drop-menu");
-      if (dropMenu !== undefined) {
-        dropMenuItem.addEventListener("mouseenter", function () {
-          dropMenuItem.classList.add("drop-menu__item--open");
-        });
-        dropMenuItem.addEventListener("mouseleave", function () {
-          dropMenuItem.classList.remove("drop-menu__item--open");
-        });
-      }
-    };
-    for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-      _loop3();
-    }
-  } catch (err) {
-    _iterator3.e(err);
-  } finally {
-    _iterator3.f();
-  }
 });
-},{}]},{},["BSv9"], null)
+},{}]},{},["OAP7"], null)
