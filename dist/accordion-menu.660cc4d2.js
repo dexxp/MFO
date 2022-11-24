@@ -134,7 +134,31 @@ window.addEventListener("DOMContentLoaded", function () {
       var accordionItem = _step.value;
       var toggler = accordionItem.querySelector(".accordion-menu__title");
       toggler.addEventListener("click", function () {
-        accordionItem.classList.toggle("accordion-menu__item--open");
+        // const active = document.querySelector(".accordion-menu__item--open");
+        // if (active !== undefined) {
+        //   active.classList.remove("accordion-menu__item--open");
+        // }
+        // accordionItem.classList.toggle("accordion-menu__item--open");
+
+        if (accordionItem.classList.contains("accordion-menu__item--open")) {
+          accordionItem.classList.remove("accordion-menu__item--open");
+        } else {
+          var _iterator2 = _createForOfIteratorHelper(accordionItems),
+            _step2;
+          try {
+            for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+              var ai = _step2.value;
+              if (ai.classList.contains("accordion-menu__item--open")) {
+                ai.classList.remove("accordion-menu__item--open");
+              }
+            }
+          } catch (err) {
+            _iterator2.e(err);
+          } finally {
+            _iterator2.f();
+          }
+          accordionItem.classList.add("accordion-menu__item--open");
+        }
       });
     };
     for (_iterator.s(); !(_step = _iterator.n()).done;) {

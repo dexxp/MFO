@@ -22,4 +22,21 @@
         line-height: 140%;
         color: #434343;
     }
+
+    &__image {
+        width: 72px;
+        height: 72px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+        border-radius: 16px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }

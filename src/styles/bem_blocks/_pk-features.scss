@@ -28,5 +28,19 @@
     }
     &__image {
         margin-right: 24px;
+        width: 72px;
+        height: 72px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: $white;
+        border-radius: 16px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
     }
 }

@@ -11,8 +11,7 @@
     width: 100%;
     left: -100%;
     bottom: 0;
-    top: 0;
-    margin-top: 85px;
+    top: 85px;
     padding-bottom: 100px;
     max-height: 100vh;
     height: 100%;
@@ -23,6 +22,10 @@
 
     &--open {
       left: 0;
+    }
+
+    &__button-wrap {
+      padding: 0 32px;
     }
 
     &__wrapper {
@@ -47,6 +50,8 @@
       flex-direction: column;
       gap: 8px;
       align-items: center;
+      max-width: 163px;
+      width: 100%;
 
       &-name {
         font-style: normal;
@@ -123,6 +128,7 @@
         }
         &--2 {
           transform: rotate(45deg);
+          width: 25px;
         }
         &--3 {
           transform: rotate(-45deg) translate(5.2px, -5.2px);
@@ -258,7 +264,7 @@
     padding: 10px 0;
 
     .mobile-menu {
-      margin-top: 56px;
+      top: 56px;
     }
 
     .logo {
@@ -288,6 +294,9 @@
 
       &--open {
         #{$burger}-line {
+          &--2 {
+            width: 17px;
+          }
           &--3 {
             transform: rotate(-45deg) translate(5px, -5px);
             width: 17px;
@@ -305,5 +314,6 @@
         }
       }
     }
+
   }
 }

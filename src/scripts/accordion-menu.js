@@ -5,7 +5,22 @@ window.addEventListener("DOMContentLoaded", () => {
     const toggler = accordionItem.querySelector(".accordion-menu__title");
 
     toggler.addEventListener("click", () => {
-      accordionItem.classList.toggle("accordion-menu__item--open");
+      // const active = document.querySelector(".accordion-menu__item--open");
+      // if (active !== undefined) {
+      //   active.classList.remove("accordion-menu__item--open");
+      // }
+      // accordionItem.classList.toggle("accordion-menu__item--open");
+
+      if (accordionItem.classList.contains("accordion-menu__item--open")) {
+        accordionItem.classList.remove("accordion-menu__item--open");
+      } else {
+        for (const ai of accordionItems) {
+          if (ai.classList.contains("accordion-menu__item--open")) {
+            ai.classList.remove("accordion-menu__item--open");
+          }
+        }
+        accordionItem.classList.add("accordion-menu__item--open");
+      }
     });
   }
 });

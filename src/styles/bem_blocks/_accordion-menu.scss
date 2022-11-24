@@ -13,13 +13,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 110%;
     color: $white;
     cursor: pointer;
+    padding: 16px 0;
 
     svg {
       transform: rotate(0);
@@ -35,10 +35,13 @@
 
   &__item {
     border-bottom: 1px solid $white;
-
+    transition: all .5s;
     &--open {
+      padding-bottom: 16px;
       #{$self}__ul {
-        display: flex;
+        max-height: 1000px;
+        transition: all 2s;
+
       }
 
       #{$self}__title {
@@ -52,10 +55,12 @@
   &__ul {
     @include ul-reset;
 
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 4px;
-    padding-bottom: 16px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s;
   }
 
   &__link {

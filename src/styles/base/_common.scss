@@ -29,3 +29,13 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
+.carousel {
+  &__slide {
+    opacity: 0.5 !important;
+  }
+
+  &__slide.is-nav-selected {
+    opacity: 1 !important;
+  }
+}
