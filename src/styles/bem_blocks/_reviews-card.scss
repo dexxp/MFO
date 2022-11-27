@@ -1,6 +1,8 @@
 .reviews-card {
   padding: 40px;
   background: $primary-bg;
+  max-width: 390px;
+  width: 100%;
 
   &:first-child {
     border-radius: 16px 0 0 16px;

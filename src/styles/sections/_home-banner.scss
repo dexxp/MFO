@@ -31,3 +31,45 @@
     width: 100%;
   }
 }
+
+@include mq(sm) {
+  .s-home-banner {
+
+    border-radius: 32px;
+    margin: 32px 16px 0;
+
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 56px 16px;
+    }
+
+    &__count {
+      margin-top: 8px;
+      margin-left: 0;
+      border: none;
+      text-align: center;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      max-width: 100%;
+      text-transform: uppercase;
+      padding: 0;
+    }
+
+    &__title {
+      order: 1;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-home-banner {
+    &__count {
+      font-size: 10px;
+    }
+  }
+}

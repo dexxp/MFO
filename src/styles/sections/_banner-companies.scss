@@ -16,3 +16,43 @@
     }
   }
 }
+
+@include mq(md) {
+  .s-banner-companies {
+    &__wrapper {
+      gap: 80px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-banner-companies {
+    &__wrapper {
+      gap: 40px;
+    }
+    &__item {
+      img {
+
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-banner-companies {
+    &__item {
+      max-width: 100px;
+      img {
+
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-banner-companies {
+    &__wrapper {
+      gap: 20px;
+    }
+  }
+}

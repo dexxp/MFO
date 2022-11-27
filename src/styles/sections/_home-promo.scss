@@ -43,6 +43,9 @@
         display: flex;
         gap: 32px;
     }
+    &__img-mobile {
+        display: none;
+    }
     &__img {
         position: relative;
         box-shadow: 0 4px 50px rgba(85, 118, 157, 0.25);
@@ -147,5 +150,93 @@
     100% {
         width: 1885px;
         height: 1885px;
+    }
+}
+
+@include mq(md) {
+    .home-promo {
+        &__img {
+            display: none;
+        }
+
+        &__inner {
+            padding: 38px 16px 32px;
+        }
+
+        &__title {
+            margin-bottom: 8px;
+        }
+
+        &__subtitle {
+            margin-bottom: 0;
+        }
+
+        &__img-mobile {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            max-width: 375px;
+            width: 100%;
+            z-index: 1;
+
+            img {
+                max-width: 100%;
+            }
+
+            .home-promo__rocket {
+                width: 165px;
+                height: 244px;
+                left: 50%;
+                z-index: 0;
+                top: 180px;
+                transform: translateX(-50%);
+                img {
+                    max-width: 100%;
+                    width: 165px;
+                    height: 244px;
+                }
+            }
+        }
+
+        &__content {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__button-group {
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+
+            .button-primary {
+                max-width: 311px;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@include mq(xs) {
+    .home-promo {
+        &__badge {
+            color: $primary;
+            background-color: $primary-bg;
+            margin-bottom: 8px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        &__img-mobile {
+            .home-promo__rocket {
+                top: 42%;
+            }
+        }
     }
 }

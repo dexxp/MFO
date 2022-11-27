@@ -40,3 +40,38 @@
         }
     }
 }
+
+@include mq(md) {
+    .benefits {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 370px;
+        width: 100%;
+        padding: 40px 32px;
+
+        &__wrapper {
+            margin-right: 0;
+            max-width: 279px;
+            width: 100%;
+            text-align: center;
+            margin-top: 16px;
+        }
+
+        &__image {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+@include mq(xs) {
+    .benefits {
+        &__name {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
+}

@@ -33,3 +33,57 @@
     background: linear-gradient(270deg, #57A6EE 0%, rgba(87, 166, 238, 0) 100%);
   }
 }
+
+@include mq(lg) {
+  .prompt {
+    &__wrapper {
+      padding: 22px 30px;
+    }
+  }
+}
+
+
+@include mq(md) {
+  .prompt {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: none;
+    margin-top: 32px;
+
+    &__wrapper {
+      padding: 48px 32px 40px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__img {
+      border: 1px solid $primary;
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-bg;
+      top: -32px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 12px;
+    }
+
+
+    background: #EEF7FF;
+    border-radius: 12px;
+  }
+}
+
+@include mq(xs) {
+  .prompt {
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

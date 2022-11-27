@@ -18,5 +18,22 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
+  }
+}
+
+@include mq(md) {
+  .s-advantage {
+    &__items {
+      gap: 16px;
+    }
+
+    &__title {
+      margin: 0 auto 24px;
+    }
+
+    &__inner {
+      padding: 72px 16px 146px;
+    }
   }
 }

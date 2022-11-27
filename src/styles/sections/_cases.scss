@@ -18,3 +18,29 @@
     text-align: center;
   }
 }
+
+@include mq(md) {
+  .s-cases {
+    &__items {
+      gap: 0;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__items {
+      margin-bottom: 40px;
+    }
+
+    &__inner {
+      padding: 72px 0 144px;
+    }
+
+    .button {
+      max-width: 311px;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
         slideShadows: false,
       },
       breakpoints: {
-        768: {
+        1250: {
           direction: "vertical",
         }
       },
@@ -41,16 +41,20 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  Fancybox.bind('[data-fancybox="gallery"]', {
-    Image: {
-      Panzoom: {
-        zoomFriction: 0.5,
-        maxScale: function () {
-          return 2;
+  for (let i = 0; i < verticalSliders.length; i++) {
+    const verticalSlider = verticalSliders[i];
+    Fancybox.bind(`[data-fancybox="gallery-${i+1}"]`, {
+      Image: {
+        Panzoom: {
+          zoomFriction: 0.5,
+          maxScale: function () {
+            return 2;
+          },
         },
       },
-    },
-  });
+    });
+  }
+
 
   const swiperClientsOne = new Swiper(".clients-slider-one", {
     slidesPerView: 'auto',
@@ -100,4 +104,52 @@ window.addEventListener("DOMContentLoaded", () => {
       functionWrap.classList.add("s-functions__items--opened");
     }
   });
+
+  const observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  }, {threshold: 0.1});
+  observer.observe(document.querySelector('.s-realization__wrapper'));
+
+  const mql = window.matchMedia( '(max-width: 1250px)' );
+  let casesSlider, reviewsSlider;
+
+  const breakpointChecker = function() {
+    if ( mql.matches !== true ) {
+      if (casesSlider !== undefined) {
+        casesSlider.destroy(true, true);
+        reviewsSlider.destroy(true, true);
+      }
+    } else {
+      return enableSwiper();
+    }
+  };
+
+  const enableSwiper = function() {
+    casesSlider = new Swiper ('.s-cases__slider', {
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      loop: false,
+      centeredSlides: true,
+      spaceBetween: 16,
+    });
+    reviewsSlider = new Swiper ('.s-reviews__slider', {
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      loop: false,
+      spaceBetween: 0,
+      centeredSlides: true,
+    });
+
+  };
+
+  mql.addEventListener("change", breakpointChecker);
+
+  breakpointChecker();
+
 });

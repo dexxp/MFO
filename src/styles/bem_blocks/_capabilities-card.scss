@@ -15,6 +15,11 @@
 
   &__title {
     margin-bottom: 16px;
+
+    &-mobile {
+      display: none;
+      order: 1;
+    }
   }
 
   &__details {
@@ -24,5 +29,42 @@
 
   &__check-list {
     margin: 16px 0;
+  }
+}
+
+@include mq(md) {
+  .capabilities-card {
+    $self: &;
+
+    &__title {
+      display: none;
+
+      &-mobile {
+        display: block;
+        margin: 80px auto 0;
+        text-align: center;
+      }
+    }
+
+    &__wrapper {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+
+    &--right {
+      #{$self}__wrapper {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .capabilities-card {
+    &__title {
+      &-mobile {
+        margin-top: 40px;
+      }
+    }
   }
 }

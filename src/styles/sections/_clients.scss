@@ -15,3 +15,21 @@
         font-weight: 700;
     }
 }
+
+@include mq(md) {
+    .s-clients {
+        &__wrapper {
+            padding: 72px 0 137px;
+        }
+
+        &__title {
+            margin-bottom: 8px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 40px;
+        }
+    }
+}

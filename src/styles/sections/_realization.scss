@@ -1,0 +1,254 @@
+.s-realization {
+
+  position: relative;
+
+
+  &__wrapper-outer {
+    padding: 135px 0 210px 0;
+    background-size: cover;
+  }
+
+  &__item {
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__main-img {
+    text-align: center;
+    position: relative;
+  }
+
+  &__title {
+    color: white;
+    max-width: 510px;
+    margin: 0 auto 45px auto;
+    text-align: center;
+  }
+
+  &__main-img:before {
+    position: absolute;
+    content: "";
+    right: 60%;
+    top: -38%;
+    bottom: 0;
+    margin: auto;
+    width: 270px;
+    height: 300px;
+    background: url(../img/realization-arrow-1.png);
+  }
+
+  &__main-img:after {
+    position: absolute;
+    content: "";
+    top: -53%;
+    left: 60%;
+    bottom: 0;
+    margin: auto;
+    width: 285px;
+    height: 222px;
+    background: url(../img/realization-arrow-2.png);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 140%;
+    text-align: center;
+    max-width: 676px;
+    margin: 20px auto 30px auto;
+  }
+
+
+  &:before {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    content: '';
+  }
+
+  &__button {
+    text-decoration: none;
+    background: #ffffff;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #57a6ee;
+    padding: 20px 50px;
+    margin: 0 auto;
+    display: block;
+    width: 210px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+
+  &__button:hover {
+    color: #ffffff;
+    background: #57a6ee;
+  }
+
+  &__item {
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 1.5s cubic-bezier(1, -0.04, 0.67, 0.84);
+    max-width: 0;
+  }
+
+  &__item--1 {
+    left: 39%;
+    bottom: 63%;
+  }
+  &__item--2 {
+    left: 36%;
+    bottom: 55%;
+  }
+
+  &__item--3 {
+    left: 36%;
+    bottom: 59%;
+  }
+
+  &__item--4 {
+    left: 35%;
+    bottom: 59%;
+  }
+
+  &__item--5 {
+    left: 34%;
+    bottom: 61%;
+  }
+
+  &__item--6 {
+    left: 35%;
+    bottom: 64%;
+  }
+
+  &__item--7 {
+    right: 33%;
+    bottom: 62%;
+  }
+
+  &__item--8 {
+    right: 33%;
+    bottom: 62%;
+  }
+
+  &__item--9 {
+    right: 33%;
+    bottom: 62%;
+  }
+
+  &__item--10 {
+    right: 33%;
+    bottom: 52%;
+  }
+
+  &__item--11 {
+    right: 33%;
+    bottom: 52%;
+  }
+
+  &__wrapper.active &__item {
+    max-width: 400px;
+  }
+
+  &__wrapper.active &__item--1 {
+    left: 0;
+    bottom: 40%;
+  }
+
+  &__wrapper.active &__item--2 {
+    left: 9%;
+    bottom: 25%;
+  }
+
+  &__wrapper.active &__item--3 {
+    left: 12%;
+    bottom: 48%;
+  }
+
+  &__wrapper.active &__item--4 {
+    left: 12%;
+    bottom: 78%;
+  }
+
+  &__wrapper.active &__item--5 {
+    left: 3%;
+    bottom: 93%;
+  }
+
+  &__wrapper.active &__item--6 {
+    left: 15%;
+    bottom: 99%;
+  }
+
+  &__wrapper.active &__item--7 {
+    right: 12%;
+    bottom: 99%;
+  }
+
+  &__wrapper.active &__item--8 {
+    right: -2%;
+    bottom: 86%;
+  }
+
+  &__wrapper.active &__item--9 {
+    right: 11%;
+    bottom: 71%;
+  }
+
+  &__wrapper.active &__item--10 {
+    right: 2%;
+    bottom: 40%;
+  }
+
+  &__wrapper.active &__item--11 {
+    right: 15%;
+    bottom: 32%;
+  }
+
+
+  &__main-img:before {
+    max-width: 0;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 1.5s cubic-bezier(1, -0.04, 0.67, 0.84);
+  }
+
+  &__wrapper.active &__main-img:before {
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+  &__main-img:after {
+    max-width: 0;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 1.5s cubic-bezier(1, -0.04, 0.67, 0.84);
+  }
+
+  &__wrapper.active &__main-img:after {
+    max-width: 600px;
+    max-height: 600px;
+  }
+}
+

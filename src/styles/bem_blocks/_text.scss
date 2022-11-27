@@ -33,3 +33,11 @@
     }
   }
 }
+
+@include mq(xs) {
+  .text {
+    &--md {
+      font-size: 14px;
+    }
+  }
+}

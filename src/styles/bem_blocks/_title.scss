@@ -31,3 +31,31 @@
     color: #ffffff;
   }
 }
+
+@include mq(xl) {
+  .title {
+    &--level {
+      &_h1 {
+        font-size: 26px;
+      }
+
+      &_h2 {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .title {
+    &--level {
+      &_h1 {
+        font-size: 22px;
+      }
+
+      &_h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}

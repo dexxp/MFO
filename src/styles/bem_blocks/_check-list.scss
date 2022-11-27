@@ -14,3 +14,16 @@
         margin-bottom: 8px;
     }
 }
+
+@include mq(xs) {
+    .check-list {
+        &__item {
+            margin-bottom: 5px;
+            padding-left: 2px;
+        }
+        &__span {
+            font-size: 14px;
+            top: -8px;
+        }
+    }
+}
