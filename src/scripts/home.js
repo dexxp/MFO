@@ -135,7 +135,7 @@ window.addEventListener("DOMContentLoaded", () => {
       slidesPerView: 'auto',
       slidesPerGroup: 1,
       loop: false,
-      centeredSlides: true,
+      centeredSlides: false,
       spaceBetween: 16,
     });
     reviewsSlider = new Swiper ('.s-reviews__slider', {
@@ -143,7 +143,7 @@ window.addEventListener("DOMContentLoaded", () => {
       slidesPerGroup: 1,
       loop: false,
       spaceBetween: 0,
-      centeredSlides: true,
+      centeredSlides: false,
     });
 
   };
