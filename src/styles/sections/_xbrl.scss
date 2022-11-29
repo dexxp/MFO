@@ -22,6 +22,7 @@
 
 @include mq(md) {
   .s-xbrl {
+
     &__inner {
       flex-direction: column;
       align-items: center;
@@ -50,6 +51,10 @@
 
 @include mq(xs) {
   .s-xbrl {
+    &__wrapper-outer {
+      background-image: url("../img/xbrl-mobile.svg") !important;
+    }
+
     &__img {
       width: 128px;
       height: 72px;

@@ -32,11 +32,9 @@
   }
 }
 
-@include mq(sm) {
+@include mq(md) {
   .s-home-banner {
 
-    border-radius: 32px;
-    margin: 32px 16px 0;
 
     &__inner {
       flex-direction: column;
@@ -63,11 +61,20 @@
       text-align: center;
       margin: 0;
     }
+
   }
 }
 
 @include mq(xs) {
   .s-home-banner {
+    margin: 32px 16px 0;
+    border-radius: 32px;
+
+    &__wrapper-outer {
+      background-image: url("../img/home-banner-bg-mobile.svg") !important;
+      border-radius: 32px;
+    }
+
     &__count {
       font-size: 10px;
     }

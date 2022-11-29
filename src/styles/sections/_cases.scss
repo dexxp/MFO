@@ -21,6 +21,7 @@
 
 @include mq(md) {
   .s-cases {
+
     &__items {
       gap: 0;
     }
@@ -45,6 +46,14 @@
       max-width: 311px;
       width: 100%;
       justify-content: center;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-cases {
+    &__wrapper-outer {
+      background-image: url("../img/cases-mobile.svg") !important;
     }
   }
 }

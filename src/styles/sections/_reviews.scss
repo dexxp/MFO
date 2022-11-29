@@ -22,6 +22,10 @@
 @include mq(md) {
   .s-reviews {
 
+    &__wrapper-outer {
+      background-image: none !important;
+    }
+
     &__inner {
       padding: 72px 0 64px;
     }

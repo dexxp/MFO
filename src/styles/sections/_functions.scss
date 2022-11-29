@@ -19,15 +19,18 @@
   &__items {
     display: flex;
     flex-direction: column;
+    max-height: 1536px;
+    overflow: hidden;
     gap: 64px;
+    transition: all 1s ease-in;
 
-    .capabilities-card {
-      display: none;
-    }
-
-    .capabilities-card:nth-child(-n + 4) {
-      display: block;
-    }
+    //.capabilities-card {
+    //  display: none;
+    //}
+    //
+    //.capabilities-card:nth-child(-n + 4) {
+    //  display: block;
+    //}
 
     .capabilities-card:nth-child(4) {
       position: absolute;
@@ -42,6 +45,8 @@
     }
 
     &--opened {
+      max-height: auto;
+
       .capabilities-card {
         display: block;
       }
@@ -149,6 +154,10 @@
 
 @include mq(xs) {
   .s-functions {
+    &__wrapper-outer {
+      background-image: none !important;
+    }
+
     .capabilities-card:nth-child(4) {
       top: 105%;
     }

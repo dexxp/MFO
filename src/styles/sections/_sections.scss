@@ -37,6 +37,14 @@
     }
 }
 
+@include mq(xs) {
+    .section {
+        &__wrapper-outer {
+            background-image: url("../img/mobile-pattern.svg") !important;
+        }
+    }
+}
+
 @import "banner";
 @import "image-with-text";
 @import "demo-banner";
