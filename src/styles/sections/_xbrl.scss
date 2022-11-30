@@ -55,6 +55,11 @@
       background-image: url("../img/xbrl-mobile.svg") !important;
     }
 
+    &__title {
+      max-width: 340px;
+      width: 100%;
+    }
+
     &__img {
       width: 128px;
       height: 72px;

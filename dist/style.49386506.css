@@ -3233,6 +3233,11 @@ body {
     margin: 32px 16px 0;
     border-radius: 32px;
   }
+  .s-home-banner__title {
+    max-width: 208px;
+    width: 100%;
+    text-align: center;
+  }
   .s-home-banner__wrapper-outer {
     background-image: url("home-banner-bg-mobile.3a1398c2.svg") !important;
     border-radius: 32px;
@@ -3267,6 +3272,8 @@ body {
   }
   .s-advantage__title {
     margin: 0 auto 24px;
+    max-width: 300px;
+    width: 100%;
   }
   .s-advantage__inner {
     padding: 72px 16px 146px;
@@ -3498,6 +3505,10 @@ body {
   .s-xbrl__wrapper-outer {
     background-image: url("xbrl-mobile.b7ff5cef.svg") !important;
   }
+  .s-xbrl__title {
+    max-width: 340px;
+    width: 100%;
+  }
   .s-xbrl__img {
     width: 128px;
     height: 72px;
@@ -3537,7 +3548,7 @@ body {
   display: none;
 }
 .s-functions__items--opened {
-  max-height: auto;
+  max-height: 10000px;
 }
 .s-functions__items--opened .capabilities-card {
   display: block;
@@ -4394,7 +4405,7 @@ body {
 
 .clients-slider .swiper-wrapper {
   align-items: center;
-  transition-timing-function: linear;
+  transition-timing-function: linear !important;
 }
 .clients-slider__item {
   width: auto !important;

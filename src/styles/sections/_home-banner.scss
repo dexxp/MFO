@@ -70,6 +70,12 @@
     margin: 32px 16px 0;
     border-radius: 32px;
 
+    &__title {
+      max-width: 208px;
+      width: 100%;
+      text-align: center;
+    }
+
     &__wrapper-outer {
       background-image: url("../img/home-banner-bg-mobile.svg") !important;
       border-radius: 32px;

@@ -58,34 +58,27 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const swiperClientsOne = new Swiper(".clients-slider-one", {
     slidesPerView: 'auto',
-    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 35000,
-    loop: true,
     centeredSlides: true,
+    speed: 8000,
+    loop: true,
     autoplay: {
-      delay: 1,
-    },
-    freeMode: {
-      enabled: true,
-      sticky: true,
-    },
+      delay: 0,
+      disableOnInteraction: false
+    }
   });
 
   const swiperClientsTwo = new Swiper(".clients-slider-two", {
     slidesPerView: 'auto',
-    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 35000,
-    loop: true,
     centeredSlides: true,
+    speed: 8000,
+    loop: true,
+    //allowTouchMove: false, // можно ещё отключить свайп
     autoplay: {
+      delay: 0,
+      disableOnInteraction: false, // или сделать так, чтобы восстанавливался autoplay после взаимодействия
       reverseDirection: true,
-      delay: 1,
-    },
-    freeMode: {
-      enabled: true,
-      sticky: true,
     },
   });
 

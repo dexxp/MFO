@@ -45,7 +45,7 @@
     }
 
     &--opened {
-      max-height: auto;
+      max-height: 10000px;
 
       .capabilities-card {
         display: block;

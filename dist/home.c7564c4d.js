@@ -12022,33 +12022,27 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   var swiperClientsOne = new _swiperBundle.default(".clients-slider-one", {
     slidesPerView: 'auto',
-    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 35000,
-    loop: true,
     centeredSlides: true,
+    speed: 8000,
+    loop: true,
     autoplay: {
-      delay: 1
-    },
-    freeMode: {
-      enabled: true,
-      sticky: true
+      delay: 0,
+      disableOnInteraction: false
     }
   });
   var swiperClientsTwo = new _swiperBundle.default(".clients-slider-two", {
     slidesPerView: 'auto',
-    slidesPerGroupAuto: true,
     spaceBetween: 60,
-    speed: 35000,
-    loop: true,
     centeredSlides: true,
+    speed: 8000,
+    loop: true,
+    //allowTouchMove: false, // можно ещё отключить свайп
     autoplay: {
-      reverseDirection: true,
-      delay: 1
-    },
-    freeMode: {
-      enabled: true,
-      sticky: true
+      delay: 0,
+      disableOnInteraction: false,
+      // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+      reverseDirection: true
     }
   });
   var toggleFunctions = document.querySelector(".s-functions__toggle");
