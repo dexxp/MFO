@@ -1,0 +1,14 @@
+.s-benefits {
+  margin: 128px 0;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+  }
+}

@@ -1,0 +1,35 @@
+.benefit-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #DEEFFF;
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  max-width: 368px;
+  width: 100%;
+
+  &__wrapper {
+    padding: 48px 35px 48px 56px;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    border-radius: 16px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+}

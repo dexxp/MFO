@@ -16,41 +16,11 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const mainNavItems = [...mainNav.querySelectorAll(".main-nav__item")];
-
-  for (const mainNavItem of mainNavItems) {
-    const dropMenu = mainNavItem.querySelector(".drop-menu");
-
-    if (dropMenu !== undefined) {
-      mainNavItem.addEventListener("mouseenter", () => {
-        mainNavItem.classList.add("main-nav__item--open");
-      });
-      mainNavItem.addEventListener("mouseleave", () => {
-        mainNavItem.classList.remove("main-nav__item--open");
-      });
-    }
-
-  }
-
-  const dropMenuItems = [...document.querySelectorAll(".drop-menu__item")];
-
-  for (const dropMenuItem of dropMenuItems) {
-    const dropMenu = dropMenuItem.querySelector(".drop-menu__drop-menu");
-
-    if (dropMenu !== undefined) {
-      dropMenuItem.addEventListener("mouseenter", () => {
-        dropMenuItem.classList.add("drop-menu__item--open");
-      });
-      dropMenuItem.addEventListener("mouseleave", () => {
-        dropMenuItem.classList.remove("drop-menu__item--open");
-      });
-    }
-  }
-
   const burger = document.querySelector(".header__burger");
   const mobileMenu = document.querySelector(".mobile-menu");
 
-  burger.addEventListener("click", () => {
+  burger.addEventListener("click", (e) => {
+    e.preventDefault();
     burger.classList.toggle("header__burger--open");
     mobileMenu.classList.toggle("mobile-menu--open");
   })

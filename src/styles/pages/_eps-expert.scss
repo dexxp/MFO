@@ -1,0 +1,53 @@
+.p-eps-expert {
+  &__bg {
+    height: 650px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  &__first-screen {
+    margin-bottom: 309px;
+  }
+
+  &__title {
+    margin-top: 80px;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    max-width: 451px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .s-schedule-webinars {
+    margin-bottom: 0;
+    &__inner {
+      align-items: center;
+    }
+
+    &__title {
+      max-width: 249px;
+      width: 100%;
+    }
+
+    &__text {
+      margin-left: 54px;
+      max-width: 336px;
+      width: 100%;
+    }
+
+    .button {
+      padding: 21px 82px;
+      margin-left: auto;
+    }
+  }
+}
