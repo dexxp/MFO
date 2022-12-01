@@ -19,18 +19,14 @@
   &__items {
     display: flex;
     flex-direction: column;
-    max-height: 1536px;
-    overflow: hidden;
     gap: 64px;
-    transition: all 1s ease-in;
 
-    //.capabilities-card {
-    //  display: none;
-    //}
-    //
-    //.capabilities-card:nth-child(-n + 4) {
-    //  display: block;
-    //}
+    &-hidden {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 4s ease-out;
+    }
 
     .capabilities-card:nth-child(4) {
       position: absolute;
@@ -45,8 +41,6 @@
     }
 
     &--opened {
-      max-height: 10000px;
-
       .capabilities-card {
         display: block;
       }
@@ -55,6 +49,10 @@
         position: static;
         transform: translateY(0);
         pointer-events: all;
+        opacity: 1;
+      }
+
+      .s-functions__items-hidden {
         opacity: 1;
       }
     }

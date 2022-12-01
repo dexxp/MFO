@@ -84,17 +84,24 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const toggleFunctions = document.querySelector(".s-functions__toggle");
   const functionWrap = document.querySelector(".s-functions__items");
+  const functionWrapHidden = document.querySelector(".s-functions__items-hidden");
 
   toggleFunctions.addEventListener("click", (e) => {
     e.preventDefault();
+    const top = document.documentElement.scrollTop;
     const functionOpened = functionWrap.classList.contains("s-functions__items--opened");
 
     if (functionOpened) {
+      scrollBy(0, -functionWrapHidden.scrollHeight - 100);
       toggleFunctions.innerHTML = "Развернуть";
       functionWrap.classList.remove("s-functions__items--opened");
+      functionWrapHidden.style.maxHeight = null;
+
+
     } else {
       toggleFunctions.innerHTML = "Свернуть";
       functionWrap.classList.add("s-functions__items--opened");
+      functionWrapHidden.style.maxHeight = functionWrapHidden.scrollHeight + "px";
     }
   });
 

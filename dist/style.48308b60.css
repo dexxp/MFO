@@ -1720,6 +1720,77 @@ body {
   text-decoration: underline;
 }
 
+.accordion__wrapper {
+  max-width: 975px;
+  width: 100%;
+  margin: 0 auto;
+}
+.accordion__item {
+  background: #FFFFFF;
+  box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
+  border-radius: 16px;
+  padding-bottom: 31px;
+}
+.accordion__item + .accordion__item {
+  margin-top: 12px;
+}
+.accordion__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 56px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.accordion__header img {
+  transition: all 0.2s;
+}
+.accordion__header--active {
+  padding-bottom: 15px;
+}
+.accordion__header--active img {
+  transform: rotate(180deg);
+}
+.accordion__body {
+  padding: 0 56px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion__text {
+  max-width: 522px;
+  width: 100%;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #DEEFFF;
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  max-width: 368px;
+  width: 100%;
+}
+.benefit-card__wrapper {
+  padding: 48px 35px 48px 56px;
+}
+.benefit-card__img {
+  margin-bottom: 24px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+  border-radius: 16px;
+}
+.benefit-card__img img {
+  width: 40px;
+  height: 40px;
+}
+.benefit-card__title {
+  margin-bottom: 8px;
+}
+
 .header {
   top: 0;
   position: fixed;
@@ -2524,6 +2595,50 @@ body {
   margin-top: 12px;
 }
 
+.p-eps-expert__bg {
+  height: 650px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.p-eps-expert__first-screen {
+  margin-bottom: 309px;
+}
+.p-eps-expert__title {
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+.p-eps-expert__subtitle {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.p-eps-expert__text {
+  max-width: 451px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.p-eps-expert .s-schedule-webinars {
+  margin-bottom: 0;
+}
+.p-eps-expert .s-schedule-webinars__inner {
+  align-items: center;
+}
+.p-eps-expert .s-schedule-webinars__title {
+  max-width: 249px;
+  width: 100%;
+}
+.p-eps-expert .s-schedule-webinars__text {
+  margin-left: 54px;
+  max-width: 336px;
+  width: 100%;
+}
+.p-eps-expert .s-schedule-webinars .button {
+  padding: 21px 82px;
+  margin-left: auto;
+}
+
 .inner-case__wrapper {
   background-color: #EEF7FF;
   background-image: url("promo-case.dc255b02.png");
@@ -3240,6 +3355,7 @@ body {
   }
   .s-home-banner__wrapper-outer {
     background-image: url("home-banner-bg-mobile.3a1398c2.svg") !important;
+    background-size: cover;
     border-radius: 32px;
   }
   .s-home-banner__count {
@@ -3532,10 +3648,13 @@ body {
 .s-functions__items {
   display: flex;
   flex-direction: column;
-  max-height: 1536px;
-  overflow: hidden;
   gap: 64px;
-  transition: all 1s ease-in;
+}
+.s-functions__items-hidden {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 4s ease-out;
 }
 .s-functions__items .capabilities-card:nth-child(4) {
   position: absolute;
@@ -3547,9 +3666,6 @@ body {
 .s-functions__items .capabilities-card:nth-child(4) .capabilities-card__title-mobile {
   display: none;
 }
-.s-functions__items--opened {
-  max-height: 10000px;
-}
 .s-functions__items--opened .capabilities-card {
   display: block;
 }
@@ -3557,6 +3673,9 @@ body {
   position: static;
   transform: translateY(0);
   pointer-events: all;
+  opacity: 1;
+}
+.s-functions__items--opened .s-functions__items-hidden {
   opacity: 1;
 }
 .s-functions__prompt:before {
@@ -4105,6 +4224,27 @@ body {
     transform: scale(1);
   }
 }
+.s-learn-includes {
+  margin: 128px 0;
+}
+.s-learn-includes__title {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.s-benefits {
+  margin: 128px 0;
+}
+.s-benefits__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.s-benefits__items {
+  display: flex;
+  justify-content: center;
+  gap: 33px;
+}
+
 .primary-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
