@@ -1,0 +1,19 @@
+.s-accounting-services {
+  margin: 90px 0 128px;
+
+  &__title {
+    max-width: 585px;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__lists {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__check-list {
+    flex: 1;
+    flex-shrink: 0;
+  }
+}

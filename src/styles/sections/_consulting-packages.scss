@@ -1,0 +1,11 @@
+.s-consulting-packages {
+  margin: 128px auto 32px;
+  &__title {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+  &__items {
+    display: flex;
+    gap: 32px;
+  }
+}

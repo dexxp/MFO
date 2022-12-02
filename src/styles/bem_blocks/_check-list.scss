@@ -13,6 +13,13 @@
         padding-left: 5px;
         margin-bottom: 8px;
     }
+
+    &--white {
+        list-style-image: url(../icons/check-list-white.svg);
+        span {
+            color: $white;
+        }
+    }
 }
 
 @include mq(xs) {

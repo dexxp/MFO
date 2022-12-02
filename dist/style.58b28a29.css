@@ -291,6 +291,12 @@ body {
   padding-left: 5px;
   margin-bottom: 8px;
 }
+.check-list--white {
+  list-style-image: url(check-list-white.050453df.svg);
+}
+.check-list--white span {
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 600px) {
   .check-list__item {
@@ -830,6 +836,7 @@ body {
   min-height: 427px;
   padding: 32px 32px 40px 32px;
   box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  background-color: #FFFFFF;
   border-radius: 32px;
   display: flex;
   flex-direction: column;
@@ -2639,6 +2646,48 @@ body {
   margin-left: auto;
 }
 
+.p-cost-accounting__bg {
+  height: 650px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.p-cost-accounting__title {
+  margin: 80px 0 16px;
+  max-width: 390px;
+  width: 100%;
+}
+.p-cost-accounting__subtitle {
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.p-cost-accounting__text {
+  margin-bottom: 40px;
+  max-width: 487px;
+  width: 100%;
+}
+.p-cost-accounting__button {
+  margin-bottom: 172px;
+}
+.p-cost-accounting .s-schedule-webinars__inner {
+  align-items: center;
+}
+.p-cost-accounting .s-schedule-webinars__title {
+  max-width: 287px;
+  width: 100%;
+}
+.p-cost-accounting .s-schedule-webinars__text {
+  max-width: 370px;
+  width: 100%;
+  margin-left: 21px;
+}
+.p-cost-accounting .s-schedule-webinars .button {
+  margin-left: auto;
+}
+
 .inner-case__wrapper {
   background-color: #EEF7FF;
   background-image: url("promo-case.dc255b02.png");
@@ -4243,6 +4292,104 @@ body {
   display: flex;
   justify-content: center;
   gap: 33px;
+}
+
+.s-what-benefit {
+  margin: 90px 0;
+}
+.s-what-benefit__wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.s-what-benefit__inner {
+  padding-bottom: 38px;
+  max-width: 682px;
+  width: 100%;
+}
+.s-what-benefit__title {
+  margin-bottom: 24px;
+}
+.s-what-benefit__text-lg {
+  margin-bottom: 16px;
+}
+.s-what-benefit__text__check-list {
+  margin-bottom: 16px;
+}
+.s-what-benefit__img img {
+  width: 464px;
+  height: 497px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.s-accounting-services {
+  margin: 90px 0 128px;
+}
+.s-accounting-services__title {
+  max-width: 585px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.s-accounting-services__lists {
+  display: flex;
+  gap: 48px;
+}
+.s-accounting-services__check-list {
+  flex: 1;
+  flex-shrink: 0;
+}
+
+.s-maintenance-packages {
+  margin: 128px 0;
+}
+.s-maintenance-packages__wrapper {
+  padding: 128px 0 268px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.s-maintenance-packages__title {
+  text-align: center;
+  margin: 0 auto 32px;
+}
+.s-maintenance-packages__items {
+  display: flex;
+  gap: 33px;
+  margin-bottom: 40px;
+}
+.s-maintenance-packages__wrap {
+  display: flex;
+  gap: 114px;
+  align-items: flex-end;
+}
+.s-maintenance-packages__list-wrap {
+  max-width: 488px;
+  width: 100%;
+}
+.s-maintenance-packages__text-lg {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+.s-maintenance-packages__info {
+  display: flex;
+  padding: 26px 72px 26px 69px;
+  border: 1px solid #FFFFFF;
+  gap: 13px;
+  border-radius: 24px;
+}
+
+.s-consulting-packages {
+  margin: 128px auto 32px;
+}
+.s-consulting-packages__title {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.s-consulting-packages__items {
+  display: flex;
+  gap: 32px;
 }
 
 .primary-pagination .swiper-pagination-bullet {

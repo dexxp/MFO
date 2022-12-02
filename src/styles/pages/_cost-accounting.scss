@@ -1,0 +1,54 @@
+.p-cost-accounting {
+
+  &__bg {
+    height: 650px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  &__title {
+    margin: 80px 0 16px;
+    max-width: 390px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    max-width: 487px;
+    width: 100%;
+  }
+
+  &__button {
+    margin-bottom: 172px;
+  }
+
+  .s-schedule-webinars {
+    &__inner {
+      align-items: center;
+    }
+
+    &__title {
+      max-width: 287px;
+      width: 100%;
+    }
+
+    &__text {
+      max-width: 370px;
+      width: 100%;
+      margin-left: 21px;
+    }
+
+    .button {
+      margin-left: auto;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.s-maintenance-packages {
+  margin: 128px 0;
+  &__wrapper {
+    padding: 128px 0 268px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 32px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 33px;
+    margin-bottom: 40px;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 114px;
+    align-items: flex-end;
+  }
+
+  &__list-wrap {
+    max-width: 488px;
+    width: 100%;
+  }
+
+  &__text-lg {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info {
+    display: flex;
+    padding: 26px 72px 26px 69px;
+    border: 1px solid #FFFFFF;
+    gap: 13px;
+    border-radius: 24px;
+  }
+}
