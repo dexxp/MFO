@@ -1,0 +1,33 @@
+.add-module-card {
+
+  & + & {
+    margin-top: 8px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 25px 32px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9F9F9;
+    border-radius: 8px;
+  }
+
+  &__text {
+    &-lg {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 0;
+
+      & + .add-module-card__text-md {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &__button {
+    padding: 21px 38px;
+  }
+}

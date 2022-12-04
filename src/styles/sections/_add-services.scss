@@ -1,0 +1,12 @@
+.s-add-services {
+  margin: 128px 0;
+  &__title {
+    margin: 0 auto 56px;
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}

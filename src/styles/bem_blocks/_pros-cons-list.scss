@@ -1,0 +1,35 @@
+.pros-list {
+  list-style-image: url("../icons/pros.svg");
+  padding-left: 16px;
+  align-self: flex-start;
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #3F5770;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+}
+
+.pros-list + .cons-list {
+  margin-top: 8px;
+}
+
+.cons-list {
+  list-style-image: url("../icons/cons.svg");
+  padding-left: 16px;
+  align-self: flex-start;
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #D3D3D3;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+}

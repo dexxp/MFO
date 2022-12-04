@@ -54,6 +54,7 @@
   }
 
   &-circle {
+    $self: &;
 
     align-items: center;
     gap: 16px;
@@ -79,6 +80,17 @@
       color: $primary;
       max-width: 132px;
       transition: .2s all;
+    }
+
+    &--blue {
+      #{$self}__text {
+        color: white;
+      }
+
+      &:hover {
+        background: $white;
+        color: $primary;
+      }
     }
 
     &:hover {
@@ -109,6 +121,9 @@
   }
 
   &--size {
+    &_xl {
+      padding: 21px 85px;
+    }
     &_lg {
         padding: 21px 52px;
     }

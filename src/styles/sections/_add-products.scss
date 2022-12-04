@@ -1,0 +1,19 @@
+.s-add-products {
+  margin: 128px 0;
+  &__title {
+    max-width: 435px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+  &__text {
+    max-width: 873px;
+    width: 100%;
+    margin: 0 auto 56px;
+  }
+  &__items {
+    display: flex;
+    gap: 33px;
+    justify-content: center;
+  }
+}

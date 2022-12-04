@@ -1,0 +1,57 @@
+.module {
+  & + & {
+    margin-top: 128px;
+  }
+
+  &__header {
+    margin-bottom: 48px;
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  &__badge {
+    margin-bottom: 16px;
+    width: fit-content;
+    padding: 10px 16px 8px;
+    background: $primary;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+
+  &__info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: $white;
+  }
+
+  &__title {
+    max-width: 683px;
+    width: 100%;
+  }
+}

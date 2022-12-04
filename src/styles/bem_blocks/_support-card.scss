@@ -1,0 +1,51 @@
+.support-card {
+  padding-top: 16px;
+  position: relative;
+
+  &__badge {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 110%;
+    text-transform: uppercase;
+    padding: 10px 16px 8px;
+    background: linear-gradient(267.67deg, #2A6BA6 0%, #5598D5 100%), linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+    border-radius: 4px;
+    color: $white;
+  }
+
+  &__wrapper {
+    background: $white;
+    box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
+    border-radius: 32px;
+    padding: 40px 28px 40px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__sup-title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 16px;
+  }
+  &__price {
+    padding-top: 24px;
+    margin: auto auto 24px;
+  }
+}

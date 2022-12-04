@@ -1,0 +1,22 @@
+.s-main-product {
+  margin: 128px 0;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 56px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 33px;
+    margin-bottom: 40px;
+    justify-content: center;
+  }
+
+  &__text {
+    max-width: 887px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

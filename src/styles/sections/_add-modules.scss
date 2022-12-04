@@ -1,0 +1,17 @@
+.s-add-modules {
+  margin: 128px 0;
+
+  &__wrapper {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__title {
+    max-width: 310px;
+    width: 100%;
+  }
+
+  &__items {
+    width: 100%;
+  }
+}
