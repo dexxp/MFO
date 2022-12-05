@@ -6,7 +6,7 @@
 
 body {
   font-family: "AvenirNext", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .container {
@@ -2214,6 +2214,73 @@ body {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxMiAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMjRWMEwxMiAxMkwwIDI0WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzFfMzUwNykiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xXzM1MDciIHgxPSItOS45OTk5OSIgeTE9IjI3IiB4Mj0iOS42MjE3OSIgeTI9IjM0LjgyMjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzRDQTNGMiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4MEMyRkYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K");
 }
 
+.schedule-webinar-card {
+  max-width: 622px;
+  width: 100%;
+}
+.schedule-webinar-card + .schedule-webinar-card {
+  margin-top: 16px;
+}
+.schedule-webinar-card--past {
+  opacity: 0.5;
+}
+.schedule-webinar-card__wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 32px 40px 32px 32px;
+  background: #FFFFFF;
+  border-radius: 8px 24px 24px 8px;
+  border-left: 8px solid #57A6EE;
+  filter: drop-shadow(0px 4px 30px rgba(80, 106, 153, 0.1));
+}
+.schedule-webinar-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.schedule-webinar-card__info-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #3F5770;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.schedule-webinar-card__speaker {
+  align-items: flex-start;
+}
+.schedule-webinar-card__date {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3F5770;
+}
+.schedule-webinar-card__link {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #57A6EE;
+  text-decoration: none;
+}
+.schedule-webinar-card__details {
+  max-width: 360px;
+  width: 100%;
+}
+.schedule-webinar-card__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #3F5770;
+  margin-bottom: 16px;
+}
+#map {
+  max-width: 100% !important;
+  width: 100% !important;
+  height: 550px !important;
+}
+
 .header {
   top: 0;
   position: fixed;
@@ -3173,6 +3240,116 @@ body {
 }
 .p-record-webinars .webinars {
   margin: 128px 0;
+}
+
+.p-webinar-schedule__bg {
+  height: 650px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.p-webinar-schedule__title {
+  margin: 80px 0 40px;
+}
+.p-webinar-schedule__inner {
+  display: flex;
+  gap: 56px;
+}
+.p-webinar-schedule__calendar {
+  flex-shrink: 0;
+  width: 484px;
+  height: 412px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  border-radius: 48px;
+}
+.p-webinar-schedule__items + .p-webinar-schedule__items {
+  margin-top: 56px;
+}
+.p-webinar-schedule__block-title {
+  margin-bottom: 24px;
+  color: #434343;
+}
+.p-webinar-schedule .s-schedule-webinars__inner {
+  justify-content: flex-start;
+}
+.p-webinar-schedule .s-schedule-webinars__title {
+  max-width: 217px;
+  width: 100%;
+}
+.p-webinar-schedule .s-schedule-webinars__text {
+  max-width: 370px;
+  width: 100%;
+  margin-left: 75px;
+}
+.p-webinar-schedule .s-schedule-webinars .button {
+  margin-left: auto;
+  padding: 22px 40px;
+}
+
+.p-contacts__bg {
+  height: 960px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.p-contacts__map {
+  margin-top: 56px;
+}
+.p-contacts__title {
+  margin: 80px 0 24px;
+}
+.p-contacts__text {
+  margin-bottom: 56px;
+}
+.p-contacts__items {
+  display: flex;
+  gap: 95px;
+  align-items: flex-start;
+}
+.p-contacts__item > .p-contacts__item {
+  margin-top: 16px;
+}
+.p-contacts__item-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #434343;
+  margin-bottom: 4px;
+}
+.p-contacts__item-value {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #3F5770;
+  text-decoration: none;
+}
+.p-contacts__item--1 {
+  max-width: 133px;
+  width: 100%;
+}
+.p-contacts__item--2 {
+  max-width: 216px;
+  width: 100%;
+}
+.p-contacts__item--3 {
+  max-width: 244px;
+  width: 100%;
+}
+.p-contacts__item--4 {
+  max-width: 266px;
+  width: 100%;
+}
+.p-contacts__add-text {
+  margin-top: 7px;
+}
+.p-contacts__marker {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #3F5770;
 }
 
 .inner-case__wrapper {

@@ -1,0 +1,62 @@
+.p-webinar-schedule {
+  &__bg {
+    height: 650px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+  }
+
+  &__title {
+    margin: 80px 0 40px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 56px;
+  }
+
+  &__calendar {
+    flex-shrink: 0;
+    width: 484px;
+    height: 412px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+    border-radius: 48px;
+  }
+
+  &__items {
+    & + & {
+      margin-top: 56px;
+    }
+  }
+
+  &__block-title {
+    margin-bottom: 24px;
+    color: #434343;
+  }
+
+  .s-schedule-webinars {
+    &__inner {
+      justify-content: flex-start;
+    }
+
+    &__title {
+      max-width: 217px;
+      width: 100%;
+    }
+
+    &__text {
+      max-width: 370px;
+      width: 100%;
+      margin-left: 75px;
+    }
+
+    .button {
+      margin-left: auto;
+      padding: 22px 40px;
+    }
+  }
+
+}
