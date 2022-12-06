@@ -1,0 +1,60 @@
+.s-questions-remain {
+  margin-top: 128px;
+
+  &__wrapper {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 97px;
+    box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
+    border-radius: 48px;
+  }
+
+  &__header {
+    display: flex;
+    margin-bottom: 38px;
+  }
+
+  &__title {
+    max-width: 256px;
+    width: 100%;
+  }
+
+  &__text {
+    max-width: 574px;
+    width: 100%;
+  }
+
+  &__form {
+    input.input {
+      max-width: 314px;
+      width: 100%;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+
+      & + & {
+        margin-top: 16px;
+      }
+    }
+
+    textarea.input {
+      resize: none;
+      height: 240px;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .checkbox {
+      max-width: 335px;
+      width: 100%;
+    }
+  }
+
+  .button {
+    margin-top: 24px;
+  }
+}
