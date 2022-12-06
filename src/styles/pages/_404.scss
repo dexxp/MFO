@@ -1,0 +1,57 @@
+.p-404 {
+  &__wrapper {
+    padding: 170px 0 100px;
+    background-color: $primary-bg;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: calc(100vh - 88px);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 256px;
+    line-height: 100%;
+    display: flex;
+    gap: 176px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__img {
+    position: absolute;
+    width: 296px;
+    height: 342px;
+    bottom: calc(100% - 40px);
+  }
+
+  &__info {
+    margin: 0 auto;
+    position: relative;
+    max-width: 452px;
+    background: $white;
+    box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
+    border-radius: 40px;
+    padding: 56px 78px;
+  }
+
+  &__title-h2 {
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .button {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
