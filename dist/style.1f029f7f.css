@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "AvenirNext", sans-serif;
+  font-family: "Avenir Next Cyr", sans-serif;
   font-weight: 400;
 }
 
@@ -38,23 +38,34 @@ body {
 }
 
 @font-face {
-  font-family: "AvenirNext";
-  src: url("AvenirNextCyr-Bold.6b574f28.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Avenir Next Cyr";
+  src: url("AvenirNextCyr-Italic.f0dde6bc.eot");
+  src: local("Avenir Next Cyr Italic"), local("AvenirNextCyr-Italic"), url("AvenirNextCyr-Italic.f0dde6bc.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Italic.6646c89f.woff") format("woff"), url("AvenirNextCyr-Italic.a6552391.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
   font-display: swap;
 }
 @font-face {
-  font-family: "AvenirNext";
-  src: url("AvenirNextCyr-Regular.4b454052.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "AvenirNext";
-  src: url("AvenirNextCyr-Demi.65b8fea4.woff") format("woff");
+  font-family: "Avenir Next Cyr";
+  src: url("AvenirNextCyr-Medium.17d42b2c.eot");
+  src: local("Avenir Next Cyr Medium"), local("AvenirNextCyr-Medium"), url("AvenirNextCyr-Medium.17d42b2c.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Medium.83047ea7.woff") format("woff"), url("AvenirNextCyr-Medium.ca2edf91.ttf") format("truetype");
   font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url("AvenirNextCyr-Regular.cadee6f8.eot");
+  src: local("Avenir Next Cyr Regular"), local("AvenirNextCyr-Regular"), url("AvenirNextCyr-Regular.cadee6f8.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Regular.4b454052.woff") format("woff"), url("AvenirNextCyr-Regular.03719c0e.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir Next Cyr";
+  src: url("AvenirNextCyr-Bold.1c75518b.eot");
+  src: local("Avenir Next Cyr Bold"), local("AvenirNextCyr-Bold"), url("AvenirNextCyr-Bold.1c75518b.eot?#iefix") format("embedded-opentype"), url("AvenirNextCyr-Bold.6b574f28.woff") format("woff"), url("AvenirNextCyr-Bold.6ffb9750.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
@@ -1295,17 +1306,17 @@ body {
   padding: 37px 39px 37px 148px;
   min-height: 124px;
   background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
-  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
   border-radius: 32px;
   position: relative;
 }
 .rent__flag {
   width: 92px;
   height: 92px;
-  background-color: #fff;
-  border-radius: 0px 0px 16px 16px;
+  background-color: #FFFFFF;
+  border-radius: 0 0 16px 16px;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 32px;
   display: flex;
   align-items: center;
@@ -1315,7 +1326,16 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 125%;
-  color: #fff;
+  color: #FFFFFF;
+}
+.rent--orange {
+  background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+}
+.rent--orange .rent__descr {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
 .polls {
@@ -3288,6 +3308,74 @@ body {
   padding: 22px 40px;
 }
 
+.p-about-company__bg {
+  height: 800px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+}
+.p-about-company__title {
+  margin: 96px 0 24px;
+}
+.p-about-company__text {
+  max-width: 526px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.p-about-company__tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 570px;
+  width: 100%;
+  margin-bottom: 250px;
+}
+.p-about-company__tile {
+  max-width: 277px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  padding: 16px 24px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #57A6EE;
+}
+.p-about-company__tile-img {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-about-company__tile-img img {
+  max-width: 100%;
+}
+.p-about-company .s-schedule-webinars {
+  margin: 80px 0 128px;
+}
+.p-about-company .s-schedule-webinars__inner {
+  justify-content: flex-start;
+  align-items: center;
+}
+.p-about-company .s-schedule-webinars__title {
+  max-width: 287px;
+  width: 100%;
+}
+.p-about-company .s-schedule-webinars__text {
+  max-width: 370px;
+  width: 100%;
+  margin-left: 40px;
+}
+.p-about-company .s-schedule-webinars .button {
+  margin-left: auto;
+}
+
 .p-contacts__bg {
   height: 960px;
   background-size: 100% auto;
@@ -5170,6 +5258,78 @@ body {
 }
 .s-support-update__banner-button {
   margin-left: auto;
+}
+
+.s-history__wrapper {
+  display: flex;
+  gap: 16px;
+}
+.s-history__img img {
+  max-width: 720px;
+  width: 100%;
+  height: 514px;
+  object-fit: cover;
+  object-position: center;
+}
+.s-history .container {
+  max-width: 1343px;
+}
+.s-history__inner {
+  padding-top: 22px;
+  max-width: 607px;
+  width: 100%;
+}
+.s-history__title {
+  margin-bottom: 24px;
+}
+.s-history__check-list {
+  margin: 16px 0;
+}
+
+.s-about-digits {
+  margin: 128px 0;
+}
+.s-about-digits__title {
+  text-align: center;
+  margin: 0 auto 40px;
+}
+.s-about-digits__items {
+  display: flex;
+  gap: 33px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.s-teams {
+  margin: 128px 0;
+}
+.s-teams__title {
+  text-align: center;
+  margin: 0 auto 48px;
+}
+.s-teams__items {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 32px;
+  flex-wrap: wrap;
+}
+.s-teams__department {
+  margin-top: 48px;
+}
+.s-teams__department-title {
+  margin-bottom: 32px;
+}
+.s-teams__departments {
+  display: flex;
+  column-gap: 40px;
+  row-gap: 32px;
+}
+.s-teams__departments .s-teams__department-title {
+  max-width: 275px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
 }
 
 .primary-pagination .swiper-pagination-bullet {
