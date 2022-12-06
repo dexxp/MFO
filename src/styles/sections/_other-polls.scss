@@ -1,0 +1,13 @@
+.s-other-polls {
+  margin: 128px 0;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
