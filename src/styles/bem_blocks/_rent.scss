@@ -3,16 +3,16 @@
     padding: 37px 39px 37px 148px;
     min-height: 124px;
     background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
-    box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+    box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
     border-radius: 32px;
     position: relative;
     &__flag {
         width: 92px;
         height: 92px;
-        background-color: #fff;
-        border-radius: 0px 0px 16px 16px;
+        background-color: $white;
+        border-radius: 0 0 16px 16px;
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 32px;
         display: flex;
         align-items: center;
@@ -22,6 +22,17 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 125%;
-        color: #fff;
+        color: $white;
+    }
+
+    &--orange {
+        background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+
+        .rent__descr {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
     }
 }

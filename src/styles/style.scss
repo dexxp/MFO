@@ -1,28 +1,78 @@
 @import "base";
 
 @font-face {
-     font-family: "AvenirNext";
-     src: url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
-     font-weight: 700;
-     font-style: normal;
-     font-display: swap;
- }
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Italic.eot');
+  src: local('Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'),
+  url('../font/AvenirNextCyr-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../font/AvenirNextCyr-Italic.woff') format('woff'),
+  url('../font/AvenirNextCyr-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
 
- @font-face {
-     font-family: "AvenirNext";
-     src: url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
-     font-weight: 400;
-     font-style: normal;
-     font-display: swap;
- }
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Medium.eot');
+  src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+  url('../font/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../font/AvenirNextCyr-Medium.woff') format('woff'),
+  url('../font/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
- @font-face {
-     font-family: "AvenirNext";
-     src: url("../fonts/AvenirNextCyr-Demi.woff") format("woff");
-     font-weight: 600;
-     font-style: normal;
-     font-display: swap;
- }
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Regular.eot');
+  src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+  url('../font/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/AvenirNextCyr-Regular.woff') format('woff'),
+  url('../font/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  src: url('../font/AvenirNextCyr-Bold.eot');
+  src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+  url('../font/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/AvenirNextCyr-Bold.woff') format('woff'),
+  url('../font/AvenirNextCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+//
+//@font-face {
+//     font-family: "AvenirNext";
+//     src: url("../fonts/AvenirNextCyr-Bold.woff") format("woff");
+//     font-weight: 700;
+//     font-style: normal;
+//     font-display: swap;
+// }
+//
+// @font-face {
+//     font-family: "AvenirNext";
+//     src: url("../fonts/AvenirNextCyr-Regular.woff") format("woff");
+//     font-weight: 400;
+//     font-style: normal;
+//     font-display: swap;
+// }
+//
+// @font-face {
+//     font-family: "AvenirNext";
+//     src: url("../fonts/AvenirNextCyr-Demi.woff") format("woff");
+//     font-weight: 600;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
 
 @import "bem_blocks";

@@ -1,0 +1,37 @@
+.s-teams {
+  margin: 128px 0;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 48px;
+  }
+
+  &__items {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  &__department {
+    margin-top: 48px;
+
+    &-title {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__departments {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 32px;
+
+    .s-teams__department-title {
+      max-width: 275px;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 48px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.s-about-digits {
+  margin: 128px 0;
+
+  &__title {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 33px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
