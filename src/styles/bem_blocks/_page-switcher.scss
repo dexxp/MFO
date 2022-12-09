@@ -37,4 +37,12 @@
     letter-spacing: 0.01em;
     color: #434343;
   }
+
+  &__img {
+    border-radius: 40px;
+    img {
+      border-radius: 40px;
+      max-width: 100%;
+    }
+  }
 }

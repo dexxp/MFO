@@ -1,10 +1,10 @@
-.questions {
-    &__check-list {
-        margin: 16px 0 72px;
+.s-questions {
+    &__title {
+        max-width: 864px;
+        width: 100%;
+        margin-bottom: 16px;
     }
-    &__text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
+    &__check-list {
+        margin-top: 16px;
     }
 }

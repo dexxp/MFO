@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/style.scss">
+  <title>MFO</title>
+</head>
+
+<body>
+<div class="page-wrapper p-inner-case">
+  <include src="partials_block/page_blocks/header.html"></include>
+
+  <div class="page-wrapper__pattern page-wrapper__pattern--650 p-inner-case__pattern">
+    <img src="./img/page-pattern-3.svg" alt="">
+  </div>
+
+  <div class="container container--wide">
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Кейсы</a></li>
+      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Интеграционный модуль</a></li>
+    </ul>
+  </div>
+  <main class="main p-inner-case__main">
+    <section class="section p-inner-case__section p-inner-case__first-screen">
+      <div class="container">
+        <div class="page-switcher p-inner-case__page-switcher">
+          <div class="page-switcher__wrapper">
+            <div class="page-switcher__header">
+              <a href="#" class="page-switcher__button page-switcher__button-prev">
+                <img class="promo-case__button" src="./img/button-before.svg" alt="img">
+                <span>пред кейс</span>
+              </a>
+              <div class="page-switcher__center-box">
+                <time class="date date--md" datetime="2021-09-01">01.09.2021</time>
+                <h1 class="title title--level_h1 page-switcher__title">Как мы переводили на ЕПС известную МФО "Фаст Финанс" с большой сетью франчайзи</h1>
+              </div>
+              <a href="#" class="page-switcher__button page-switcher__button-next">
+                <span>след кейс</span>
+                <img src="./img/button-after.svg" alt="img">
+              </a>
+            </div>
+            <div class="page-switcher__body">
+              <div class="page-switcher__img">
+                <img src="./img/inner-case-1.jpg" alt="inner case">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section s-simple-text">
+      <div class="container container--narrow">
+        <div class="promo-text">
+          <p class="text text--lg">За долго до начала перехода на ЕПС и работы на ОСБУ нашим клиентом стала известная на рынке компания «Фаст Финанс». Наше сотрудничество не сразу получилось, было несколько интересных моментов, поэтому расскажем обо всем по порядку.</p>
+          <p class="text text--md">Все началось как обычно с демонстрации функционала. Мы провели демонстрационную сессию, где показали возможности нашей системы, у специалистов потенциального клиента выявили текущие задачи и потребности. Несмотря на то, что наша система является комплексной, ее часто используют в ограниченном виде, только для использования бухгалтерского учета. Так и сейчас ребятам нужен был только бухучет, т.к. весь управленческий учет (оформление клиента, скоринг и пр.) они делали в собственной разработанной системе. Поскольку они являются франчайзером и растут по модели франчайзинга, их информационная система являлась одним из преимуществом работы и имела свои «фишки».</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section banner">
+      <div class="container">
+        <div class="banner__wrapper">
+          <p class="text text--lg banner__text">Дальше мы выяснили, что у компании более 50 партнеров, и каждого партнера нужно вести в отдельной информационной базе.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section s-variants">
+      <div class="container">
+        <div class="container container--narrow">
+          <h2 class="title title--level_h3 title--blue s-variants__title">Мы определили следующие задачи, которые потребуется решить,<br>помимо покупки и настройки программы:</h2>
+          <div class="counter-list">
+            <ul class="counter-list__wrapper">
+              <li class="counter-list__item">
+                <h3 class="title title--level_h3 title--white counter-list__digit">1</h3>
+                <div class="counter-list__content">
+                  <p class="text text--md counter-list__text">Интеграция с фронт-офисной системой заказчика</p>
+                </div>
+              </li>
+              <li class="counter-list__item">
+                <h3 class="title title--level_h3 title--white counter-list__digit">2</h3>
+                <div class="counter-list__content">
+                  <p class="text text--md counter-list__text">Механизм обновлений большого количества информационных баз</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section">
+      <div class="container">
+        <div class="p-inner-case__img">
+          <img src="./img/inner-case-1-img.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section s-questions">
+      <div class="container container--narrow">
+        <h2 class="title title--blue title--level_h3 s-questions__title">По первой задаче мы решили:</h2>
+        <ul class="check-list s-questions__check-list">
+          <li class="check-list__item">
+            <span class="check-list__span">Сделать файловый обмен данными, используя общепринятый формат XML</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__span">Взять данный формат за основу для реализации нашего универсального загрузчика данных</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__span">Заложить около 2-х месяцев на реализацию</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section s-questions">
+      <div class="container container--narrow">
+        <h2 class="title title--blue title--level_h3 s-questions__title">Вторая задача оказалась не совсем стандартной:</h2>
+        <div class="text text--md s-questions__text">
+          <p>т.к. наша конфигурация является доработанной и обновлять ее имеющимися на рынке обновляторами не получится, пришлось покопаться и найти довольно изящное решение.</p>
+        </div>
+        <ul class="check-list s-questions__check-list">
+          <li class="check-list__item">
+            <span class="check-list__span">Было решено все базы соединить в единую цепочку, используя встроенный механизм «хранилище конфигурации»</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__span">С помощью специальных встроенных механизмов работы с 1С через командную строку мы придумали специальный скрипт, запуск которого последовательно производил бы последовательность действий автоматически: очистка баз от пользователей, создание резервной копии и обновление конфигурации из хранилища.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="section p-inner-case__section s-simple-text">
+      <div class="container container--narrow">
+        <div class="text text--md">
+          <p>
+            В итоге мы определили плановые действия и сроки и после согласования всех вопросов и проведения оплат принялись за работу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section banner">
+      <div class="container">
+        <div class="banner__wrapper">
+          <p class="text text--lg banner__text">Первая задача - написание интеграционного шлюза заняла у нас чуть больше времени, чем мы планировали, но в итоге все получилось.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section image-with-text">
+      <div class="container">
+        <div class="image-with-text__wrapper">
+          <div class="image-block">
+            <div class="image-block__img">
+              <img src="./img/inner-case-1-image-box.jpg" alt="">
+            </div>
+          </div>
+          <div class="image-with-text__text">
+            <p>
+              <b>Но в этот момент от заказчика вдруг приходит информация, что интеграция делаться не будет.</b>
+            </p>
+            <br>
+            <p>
+              Выяснилось, что старый менеджер проекта, который был его инициатором со стороны заказчика в компании больше не работает, и на смену ему пришел новый. Так бывает и это всегда риск, т.к. у нового человека есть всегда несколько мотивов и зачастую они не всегда продуктивны для уже начатых проектов. В результате на 1 год проект был отложен.
+            </p>
+            <br>
+            <p>
+              <b>Спустя год, мы снова созвонились и получили хорошие новости, что мы можем продолжать, тот менеджер проекта, который остановил проект, в компании больше не работает...</b>
+            </p>
+            <br>
+            <p>
+              Хорошо, что мы храним существующие наработки, поэтому все механизмы сохранились и мы продолжили работу. В результате у нас получилось сделать и интеграцию и механизм удобного обновления.
+            </p>
+            <br>
+            <p>
+              А дальше.....
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section s-simple-text">
+      <div class="container container--narrow">
+        <div class="text text--md">
+          <p>
+            Дальше был переход на ЕПС. Надо отдать должное главному бухгалтеру и его помощникам в компании «Фаст Финанс», они подошли к данной задаче с правильным подходом, когда нужно выполнить требования, но при этом без лишнего «фанатизма» к деталям, т.к. на запуске подобных проектов всегда будут сложности и лишний перфекционизм может похоронить проект до его запуска.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section banner">
+      <div class="container">
+        <div class="banner__wrapper">
+          <p class="text text--lg banner__text">Кроме того, очень важна квалификация специалистов бухгалтеров. Программный продукт — это средство автоматизации, ускорение операций, избавление от рутины, но никак не замена бухгалтера. Работая с компанией "Фаст Финанс" нам повезло, что там работают квалифицированные бухгалтеры и просто хорошие люди. Напомню, что на момент запуска это был 2017 год и ни у нас ни у них еще не было большого опыта работы на ЕПС и мы вместе изучали отраслевые стандарты и в ходе дискуссий определяли тот путь, по которому пойдет автоматизация работы на ЕПС в нашей системе.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section p-inner-case__section s-questions">
+      <div class="container container--narrow">
+        <h2 class="title title--blue title--level_h3 s-questions__title">Вместе мы определяли:</h2>
+        <ul class="check-list s-questions__check-list">
+          <li class="check-list__item">
+            <span class="check-list__span">Как будем вести учет зарплаты?</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__span">Будут ли в компании применяться нерыночные ставки по займам?</span>
+          </li>
+          <li class="check-list__item">
+            <span class="check-list__span">Каким образом компания будет рассчитывать резервы под обесценение и резервы на возможные потери по займам?</span>
+          </li>
+        </ul>
+        <p class="text text--md">В результате плотной работы в течение не менее 6 месяцев мы смогли перевести все подразделения компании на новые требования и сделать это в срок.</p>
+        <p class="text text--lg">В завершение хочется сказать слова благодарности компании «Фаст Финанс» за доверие и продуктивное сотрудничество в течение многих лет.</p>
+        <p class="text text--md">Мы всегда рады сотрудничеству. Обсудить проект можно обратившись по электронной почте
+          <a href="#" class="link">support@mfo1c.ru</a>.</p>
+      </div>
+    </section>
+    <section class="section s-switcher">
+      <div class="container">
+        <div class="s-switcher__wrapper">
+          <a href="#" class="page-switcher__button page-switcher__button-prev">
+            <img class="promo-case__button" src="./img/button-before.svg" alt="img">
+            <span>пред кейс</span>
+          </a>
+          <a href="#" class="page-switcher__button page-switcher__button-next">
+            <span>след кейс</span>
+            <img src="./img/button-after.svg" alt="img">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <include src="partials_block/page_blocks/footer.html"></include>
+</div>
+
+<script src="./scripts/main.js"></script>
+</body>
+
+</html>

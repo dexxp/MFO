@@ -1,11 +1,7 @@
 .capabilities {
 
   &__first-screen {
-    height: 778px;
-
-    .page-wrapper__bg {
-      bottom: -250px;
-    }
+    margin-bottom: 232px;
   }
 
   &__title {
@@ -20,14 +16,9 @@
   }
 
   &__item {
-    margin: 128px 0;
-    &:first-child {
-      margin-top: 0;
-    }
+    padding: 128px 0;
     &:nth-child(even) {
       background-color: #EEF7FF;
-      padding: 128px 0;
-      margin: 0;
     }
 
     &-wrapper {
