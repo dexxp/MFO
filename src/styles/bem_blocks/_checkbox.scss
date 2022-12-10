@@ -1,12 +1,61 @@
 .checkbox {
-  color: $white;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 145%;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  justify-content: center;
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__wrap {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    color: $white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid $white;
+      border-radius: 2px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  }
+
+  input:not(:disabled):not(:checked)+span:hover::before {
+    border-color: $white;
+  }
+
+  input:not(:disabled):active+span::before {
+    background-color: $white;
+    border-color: $white;
+  }
+
+  input:focus+span::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  input:focus:not(:checked)+span::before {
+    border-color: $white;
+  }
+
+  input:checked+span::before {
+    border-color: $white;
+    background-color: $white;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOSA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMSAzTDMuNSA1LjVMNy41IDEuNSIgc3Ryb2tlPSJ1cmwoI3BhaW50MF9saW5lYXJfODQ5XzU3NzI5KSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl84NDlfNTc3MjkiIHgxPSI3LjUiIHkxPSIxLjUiIHgyPSIwLjc2NDU3MyIgeTI9IjEuOTQ2MTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzRDQTNGMiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4MEMyRkYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K");
+  }
+
+  input:disabled+span::before {
+    background-color: $white;
+  }
 
   a {
     text-decoration: underline;

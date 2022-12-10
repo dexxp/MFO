@@ -1,10 +1,6 @@
-.transition {
+.p-transition {
   &__first-screen {
-    min-height: calc(666px - 87px);
-
-    .page-wrapper__bg {
-      bottom: -230px;
-    }
+    margin-bottom: 370px;
   }
 
   &__title {
@@ -17,5 +13,9 @@
     margin-top: 24px;
     max-width: 891px;
     width: 100%;
+  }
+
+  &__transition-banner {
+    margin-bottom: 128px;
   }
 }

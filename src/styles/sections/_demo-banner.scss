@@ -48,13 +48,17 @@
     &__access {
         padding: 21px 52px;
         background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(84.38deg, #F9D85F 0%, #FFE68C 100%), #F9D85F;
-        box-shadow: 0px 4px 30px rgba(249, 216, 95, 0.75);
         border-radius: 32px;
         text-decoration: none;
         font-size: 16px;
         line-height: 22px;
         font-weight: 500;
         color: #FFFFFD;
+        transition: .2s all;
+
+        &:hover {
+            box-shadow: 0 4px 30px rgba(249, 216, 95, 0.75);
+        }
     }
     &__circle {
         background-color: #fff;

@@ -14,9 +14,14 @@
   }
 
   &__text {
-    max-width: 887px;
+    max-width: 877px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
+
+    span {
+      color: $primary;
+      text-decoration: underline;
+    }
   }
 }

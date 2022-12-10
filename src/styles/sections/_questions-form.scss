@@ -26,8 +26,11 @@
   }
 
   &__form {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    &-wrap {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
   }
 }

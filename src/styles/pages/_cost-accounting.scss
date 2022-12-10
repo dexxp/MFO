@@ -1,15 +1,12 @@
 .p-cost-accounting {
 
-  &__bg {
-    height: 650px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
+  &__wrapper-outer {
+    padding: 100px 0 201px;
+    overflow: hidden;
   }
 
   &__title {
-    margin: 80px 0 16px;
+    margin: 0 0 16px;
     max-width: 390px;
     width: 100%;
   }
@@ -21,14 +18,29 @@
     margin-bottom: 16px;
   }
 
+  &__img {
+    position: absolute;
+    top: -14px;
+    right: -180px;
+    width: 570px;
+    height: 483px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTcwIiBoZWlnaHQ9IjQ4MyIgdmlld0JveD0iMCAwIDU3MCA0ODMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01NzAgMjg1QzU3MCAzNjEuOTE4IDUzOS41MjkgNDMxLjcxOSA0OTAgNDgyLjk5QzM1MC42NzcgNDgyLjk5IDIxOS4xODYgNDgzIDgwLjAwOTQgNDgzQzMwLjQ3NDcgNDMxLjcyNyAwIDM2MS45MjMgMCAyODVDMCAxMjcuNTk5IDEyNy41OTkgMCAyODUgMEM0NDIuNDAxIDAgNTcwIDEyNy41OTkgNTcwIDI4NVoiIGZpbGw9IiNEOUQ5RDkiLz4KPHBhdGggZD0iTTU3MCAyODVDNTcwIDM2MS45MTggNTM5LjUyOSA0MzEuNzE5IDQ5MCA0ODIuOTlDMzUwLjY3NyA0ODIuOTkgMjE5LjE4NiA0ODMgODAuMDA5NCA0ODNDMzAuNDc0NyA0MzEuNzI3IDAgMzYxLjkyMyAwIDI4NUMwIDEyNy41OTkgMTI3LjU5OSAwIDI4NSAwQzQ0Mi40MDEgMCA1NzAgMTI3LjU5OSA1NzAgMjg1WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzEzNjBfOTI0MCkiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xMzYwXzkyNDAiIHgxPSI1NzAiIHkxPSItMC4wMDA2NzI1NzQiIHgyPSItMjIuMjUzIiB5Mj0iMjQuMTQzOCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNDk2OUJDIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0IwREFGRiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+      position: absolute;
+      width: 423px;
+      height: 492px;
+      left: 81px;
+      top: -72px;
+    }
+  }
+
   &__text {
     margin-bottom: 40px;
     max-width: 487px;
     width: 100%;
-  }
-
-  &__button {
-    margin-bottom: 172px;
   }
 
   .s-schedule-webinars {

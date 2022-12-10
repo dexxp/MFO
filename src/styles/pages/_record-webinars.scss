@@ -16,4 +16,49 @@
   .webinars {
     margin: 128px 0;
   }
+
+  &__title-wrap {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    max-width: 426px;
+    width: 100%;
+
+    padding: 25px 32px;
+    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+
+    align-items: center;
+    gap: 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    color: $white;
+
+    &-icon {
+      line-height: 0;
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &-arrow {
+      height: 16px;
+      img {
+        height: 16px;
+        width: 16px;
+      }
+      margin-left: auto;
+    }
+  }
 }

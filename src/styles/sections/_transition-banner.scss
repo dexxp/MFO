@@ -1,9 +1,8 @@
 .s-transition-banner {
 
-  margin-bottom: 128px;
-
   &__wrapper {
     background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    border-radius: 24px;
   }
   &__inner {
     background-image: url("../img/banner-transition.png");

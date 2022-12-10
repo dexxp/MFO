@@ -1,4 +1,5 @@
 .button {
+  font-family: "Avenir Next Cyr";
   background: none;
   border: none;
   display: inline-flex;
@@ -36,12 +37,17 @@
     }
   }
   &-outlined {
-      border: 1px solid #FFFFFF;
-      border-radius: 32px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 22px;
-      color: #FFFFFF;
+    border: 1px solid $white;
+    border-radius: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
   }
   &-outlined-blue {
       border: 1px solid $primary;
@@ -103,9 +109,21 @@
   }
 
   &-white {
-      background-color: #fff;
-      color: #3F5770;
-      border-radius: 32px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #3F5770;
+    border-radius: 32px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+
+    &--blue {
+      color: $primary;
+
+    }
   }
 
   &-secondary {
@@ -125,7 +143,7 @@
       padding: 21px 85px;
     }
     &_lg {
-        padding: 21px 52px;
+      padding: 21px 52px;
     }
     &_sm {
       font-size: 14px;

@@ -14,4 +14,12 @@
       margin: 16px 0;
     }
   }
+
+  &__prompt {
+    right: -98px;
+
+    &:before {
+      width: 94px;
+    }
+  }
 }

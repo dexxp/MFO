@@ -7,6 +7,14 @@
     &--blue {
         background-color: $primary-bg;
     }
+
+    &--m72 {
+        margin: 72px 0;
+    }
+
+    &--m128 {
+        margin: 128px 0;
+    }
 }
 
 .p-inner-case {

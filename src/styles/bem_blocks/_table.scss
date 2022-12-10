@@ -64,10 +64,16 @@
   &__cell {
     padding: 32px 40px 32px 47px;
     display: flex;
-    gap: 10px;
+    align-items: center;
     border-bottom: 1px solid $primary;
     &-img {}
     &-details {}
+
+    &-wrap {
+      display: flex;
+      gap: 10px;
+    }
+
     &-title {
       font-weight: 400;
       font-size: 16px;

@@ -19,11 +19,27 @@
     z-index: 0;
 
     &--orange {
-      background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+      .button {
+        color: $secondary;
+        transition: .2s all;
+
+        &:hover {
+          background-color: darken($white, 5%);
+          color: darken($secondary, 5%);
+        }
+      }
     }
 
     &--blue {
-      background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+      .button {
+        color: $primary;
+        transition: .2s all;
+
+        &:hover {
+          background-color: darken($white, 5%);
+          color: darken($primary, 5%);
+        }
+      }
     }
 
     &-wrapper {
