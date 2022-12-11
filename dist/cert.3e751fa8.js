@@ -11960,7 +11960,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 window.addEventListener("DOMContentLoaded", function () {
   var certSlider = new _swiperBundle.default(".cert-slider__wrapper", {
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 5,
     loop: true,
     spaceBetween: 40,
     pagination: {
@@ -11970,6 +11970,26 @@ window.addEventListener("DOMContentLoaded", function () {
     navigation: {
       nextEl: ".cert-slider__button-next",
       prevEl: ".cert-slider__button-prev"
+    }
+  });
+  _ui.Fancybox.bind("[data-fancybox=\"cert-hor\"]", {
+    Image: {
+      Panzoom: {
+        zoomFriction: 0.5,
+        maxScale: function maxScale() {
+          return 2;
+        }
+      }
+    }
+  });
+  _ui.Fancybox.bind("[data-fancybox=\"cert\"]", {
+    Image: {
+      Panzoom: {
+        zoomFriction: 0.5,
+        maxScale: function maxScale() {
+          return 2;
+        }
+      }
     }
   });
 });
