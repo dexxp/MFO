@@ -7,12 +7,48 @@
         flex: 1;
         &__img {
             height: 400px;
+            img {
+                object-fit: cover;
+                object-position: center;
+            }
         }
     }
     &__text {
         flex: 1;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 140%;
     }
 }
+
+@include mq(md) {
+    .image-with-text {
+        &__wrapper {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .image-block {
+            &__img {
+                height: 320px;
+                max-width: 100%;
+                img {
+                    height: 320px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include mq(xs) {
+    .image-with-text {
+
+        .image-block {
+            &__img {
+                height: 163px;
+                img {
+                    height: 163px;
+                }
+            }
+        }
+    }
+}
+

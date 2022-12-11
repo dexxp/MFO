@@ -43,3 +43,11 @@ input, textarea {
     opacity: 1 !important;
   }
 }
+
+@include mq(md) {
+  .container {
+    &--wide {
+      padding: 0 20px;
+    }
+  }
+}

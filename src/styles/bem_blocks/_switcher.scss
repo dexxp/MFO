@@ -4,4 +4,27 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__button {
+    display: flex;
+    text-decoration: none;
+    gap: 16px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #434343;
+  }
+}
+
+@include mq(xs) {
+  .s-switcher {
+    &__button {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
 }

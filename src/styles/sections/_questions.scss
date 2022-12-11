@@ -8,3 +8,11 @@
         margin-top: 16px;
     }
 }
+
+@include mq(xs) {
+    .s-questions {
+        &__check-list {
+            margin: 16px 0;
+        }
+    }
+}

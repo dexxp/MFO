@@ -43,6 +43,51 @@
     img {
       border-radius: 40px;
       max-width: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+}
+
+@include mq(md) {
+  .page-switcher {
+    &__button {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .page-switcher {
+    &__title {
+      font-size: 24px;
+      max-width: 445px;
+    }
+
+  }
+}
+
+@include mq(xs) {
+  .page-switcher {
+    &__title {
+      font-size: 20px;
+      max-width: 255px;
+    }
+
+    &__button {
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
+
+    &__img {
+      img {
+        height: 163px;
+        width: 100%;
+      }
     }
   }
 }

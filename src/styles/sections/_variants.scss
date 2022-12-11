@@ -4,3 +4,11 @@
     margin: 0 auto 28px;
   }
 }
+
+@include mq(md) {
+  .s-variants {
+    &__title {
+
+    }
+  }
+}

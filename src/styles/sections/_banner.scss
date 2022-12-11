@@ -12,6 +12,22 @@
     &__wrapper {
         padding: 64px 98px;
         border-radius: 24px;
-        background-color: #EEF7FF;
+        background-color: $primary-bg;
+    }
+}
+
+@include mq(md) {
+    .banner {
+        &__wrapper {
+            padding: 32px;
+        }
+    }
+}
+
+@include mq(xs) {
+    .banner {
+        .text--lg {
+            font-size: 14px;
+        }
     }
 }
