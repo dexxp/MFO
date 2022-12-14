@@ -21,23 +21,63 @@
       background-color: #EEF7FF;
     }
 
-    &-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &-title {
+    .capabilities-card__title {
       margin-bottom: 24px;
     }
+  }
+}
 
-    &-details {
-      max-width: 553px;
-      width: 100%;
+@include mq(md) {
+  .capabilities {
+
+    &__main {
+      margin-bottom: 32px;
     }
 
-    &-check-list {
-      margin: 16px 0;
+    &__first-screen {
+      margin-bottom: 0;
+    }
+
+    &__item {
+      padding: 64px 0;
+    }
+
+    &__title {
+      margin-top: 40px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .nav-page {
+      &__list {
+        height: 480px;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .capabilities {
+    .page-wrapper__pattern--880 {
+      height: 460px;
+    }
+    &__title {
+      max-width: 320px;
+      width: 100%;
+      margin: 40px auto 0;
+      text-align: center;
+    }
+  }
+}
+
+@include mq(xs) {
+  .capabilities {
+
+    &__title {
+      max-width: 300px;
+    }
+    .page-wrapper__pattern--880 {
+      height: 410px;
     }
   }
 }

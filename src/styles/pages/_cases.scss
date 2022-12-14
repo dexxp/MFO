@@ -9,3 +9,47 @@
     margin-top: 48px;
   }
 }
+
+@include mq(md) {
+  .cases {
+
+    &__main {
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    &__inner {
+      justify-content: center;
+      margin: 24px 0 0;
+    }
+  }
+}
+
+@include mq(sm) {
+  .cases {
+
+    &__inner {
+      gap: 16px;
+
+      .case-card {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .cases {
+    &__inner {
+      .case-card {
+        max-width: 100%;
+      }
+    }
+  }
+}

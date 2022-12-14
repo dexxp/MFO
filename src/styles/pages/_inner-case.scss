@@ -21,20 +21,8 @@
   }
 }
 
-@include mq(xl) {
-  .p-inner-case {
-    .section > .container {
-      max-width: 1050px;
-    }
-  }
-}
-
 @include mq(md) {
   .p-inner-case {
-
-    .section > .container {
-      max-width: 900px;
-    }
 
     &__section {
       margin: 32px 0;
@@ -46,14 +34,6 @@
   }
 }
 
-@include mq(sm) {
-  .p-inner-case {
-
-    .section > .container {
-      max-width: 95%;
-    }
-  }
-}
 @include mq(xs) {
   .p-inner-case {
     &__pattern {

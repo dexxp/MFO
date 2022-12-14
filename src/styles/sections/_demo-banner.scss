@@ -28,6 +28,19 @@
     &__chip {
         display: flex;
         margin-bottom: 32px;
+        gap: 16px;
+        svg {
+            width: 47px;
+            height: 47px;
+
+            ellipse {
+                fill: #F9A321;
+            }
+
+            path {
+                fill: #FFC061;
+            }
+        }
     }
     &__span {
         display: block;
@@ -83,5 +96,93 @@
         color: #FFFFFF;
         max-width: 132px;
         width: 100%;
+    }
+}
+
+@include mq(md) {
+    .demo-banner {
+        &__inner {
+            background-size: contain;
+        }
+        &__title-h2 {
+            max-width: 564px;
+        }
+    }
+}
+
+@include mq(sm) {
+    .demo-banner {
+        &__chip {
+            width: 100%;
+            padding: 23px 0;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(271.68deg, #F9A321 0%, #FFC162 100%);
+            border-radius: 24px 24px 0 0;
+            align-items: center;
+            margin-bottom: 28px;
+
+            svg {
+                width: 32px;
+                height: 32px;
+
+                path {
+                    fill: #FFFFFF;
+                }
+            }
+        }
+
+        &__span {
+            max-width: 180px;
+        }
+
+
+        &__inner {
+            background-size: contain;
+            padding: 0 0 103px;
+        }
+
+        &__content {
+            padding: 0 28px 0 32px;
+        }
+
+        &__title-h2 {
+            margin-bottom: 16px;
+        }
+
+        &__title-h3 {
+            font-size: 18px;
+        }
+
+        &__btns {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+}
+
+@include mq(xs) {
+    .demo-banner {
+        &__title-h2 {
+            max-width: 285px;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        &__title-h3 {
+            font-weight: 400;
+            font-size: 14px;
+            text-transform: none;
+            line-height: 135%;
+            margin-bottom: 32px;
+            max-width: 255px;
+            width: 100%;
+        }
+
+        &__span {
+            max-width: 154px;
+            font-size: 12px;
+        }
     }
 }

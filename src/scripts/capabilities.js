@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
         slideShadows: false,
       },
       breakpoints: {
-        768: {
+        1250: {
           direction: "vertical",
         }
       },

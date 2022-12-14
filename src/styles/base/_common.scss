@@ -27,8 +27,6 @@ input, textarea {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -44,10 +42,27 @@ input, textarea {
   }
 }
 
+
 @include mq(md) {
   .container {
+    max-width: 900px;
+
     &--wide {
-      padding: 0 20px;
+      padding: 0 16px;
+      max-width: 100%;
     }
+  }
+}
+
+@include mq(sm) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+@include mq(xs) {
+  .container {
+
   }
 }
