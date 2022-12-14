@@ -6,12 +6,27 @@ import "swiper/swiper-bundle.css";
 window.addEventListener("DOMContentLoaded", () => {
   const certSlider = new Swiper(".cert-slider__wrapper", {
     centeredSlides: true,
-    slidesPerView: 5,
     loop: true,
-    spaceBetween: 40,
+    spaceBetween: 16,
+    slidesPerView: 2,
+
     pagination: {
       el: ".cert-slider__pagination",
       clickable: true,
+    },
+
+
+    breakpoints: {
+      600: {
+        slidesPerView: 4,
+
+        spaceBetween: 24,
+      },
+      1250: {
+        slidesPerView: 5,
+
+        spaceBetween: 40,
+      }
     },
     navigation: {
       nextEl: ".cert-slider__button-next",

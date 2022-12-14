@@ -3,9 +3,6 @@
     margin: 80px auto 24px;
     text-align: center;
   }
-  &__first-screen {
-    min-height: 980px;
-  }
   &__cert-slider {
     margin-top: 72px;
   }
@@ -17,4 +14,35 @@
   }
 
 
+}
+
+@include mq(xxl) {
+  .cert {
+    &__cert-slider {
+      margin-top: 0;
+    }
+  }
+}
+
+@include mq(md) {
+  .cert {
+
+    &__title {
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    &__cert-slider {
+      margin-top: 24px;
+      margin-bottom: 90px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .cert {
+    &__title {
+      max-width: 320px;
+    }
+  }
 }
