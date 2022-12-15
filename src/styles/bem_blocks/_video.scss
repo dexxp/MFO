@@ -114,3 +114,49 @@
     }
   }
 }
+
+
+@include mq(xs) {
+  .video {
+    $self: &;
+
+    max-width: 240px;
+
+    &__wrapper {
+      height: 150px;
+    }
+
+    &__preview {
+      height: 150px;
+    }
+
+
+
+    &__circle {
+      height: 48px;
+      width: 48px;
+    }
+
+    &--locked {
+      #{$self}__circle {
+        background-size: 24px 24px;
+      }
+    }
+
+    &--access {
+      #{$self}__circle {
+        background-size: 8px 16px;
+      }
+    }
+
+    &__time {
+      right: 10px;
+      bottom: 10px;
+    }
+
+    &__date {
+      left: 10px;
+      bottom: 10px;
+    }
+  }
+}

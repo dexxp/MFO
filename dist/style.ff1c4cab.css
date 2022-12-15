@@ -2307,6 +2307,12 @@ input, textarea {
   padding: 16px 24px;
   align-items: center;
 }
+.webinars__file-size {
+  color: #57A6EE;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
 .webinars__file-link {
   display: inline-flex;
   align-items: center;
@@ -2320,6 +2326,52 @@ input, textarea {
   color: #57A6EE;
 }
 
+@media screen and (max-width: 1250px) {
+  .webinars__videos {
+    justify-content: center;
+  }
+  .webinars__file {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .webinars__file-link {
+    align-items: flex-start;
+  }
+  .webinars__file-size {
+    padding-left: 32px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .webinars__videos {
+    gap: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .webinars__count-videos {
+    font-size: 12px;
+  }
+  .webinars__block-name {
+    font-size: 16px;
+  }
+  .webinars__file {
+    gap: 4px;
+  }
+  .webinars__file-link span {
+    font-size: 14px;
+  }
+  .webinars__file-link img {
+    width: 16px;
+    height: 16px;
+  }
+  .webinars__file-size {
+    font-size: 10px;
+    padding-left: 24px;
+  }
+}
 .module + .module {
   margin-top: 128px;
 }
@@ -2367,6 +2419,35 @@ input, textarea {
   width: 100%;
 }
 
+@media screen and (max-width: 1250px) {
+  .module__badge {
+    margin: 0 auto 16px;
+  }
+  .module__title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .module__header-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 980px) {
+  .module + .module {
+    margin-top: 72px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .module__info {
+    padding: 16px 28px;
+    font-size: 14px;
+    gap: 8px;
+  }
+  .module__info img {
+    width: 16px;
+    height: 16px;
+  }
+}
 .video {
   position: relative;
   max-width: 368px;
@@ -2461,6 +2542,35 @@ input, textarea {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxMiAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMjRWMEwxMiAxMkwwIDI0WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzFfMzUwNykiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xXzM1MDciIHgxPSItOS45OTk5OSIgeTE9IjI3IiB4Mj0iOS42MjE3OSIgeTI9IjM0LjgyMjEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iIzRDQTNGMiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4MEMyRkYiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K");
 }
 
+@media screen and (max-width: 600px) {
+  .video {
+    max-width: 240px;
+  }
+  .video__wrapper {
+    height: 150px;
+  }
+  .video__preview {
+    height: 150px;
+  }
+  .video__circle {
+    height: 48px;
+    width: 48px;
+  }
+  .video--locked .video__circle {
+    background-size: 24px 24px;
+  }
+  .video--access .video__circle {
+    background-size: 8px 16px;
+  }
+  .video__time {
+    right: 10px;
+    bottom: 10px;
+  }
+  .video__date {
+    left: 10px;
+    bottom: 10px;
+  }
+}
 .schedule-webinar-card {
   max-width: 622px;
   width: 100%;
@@ -5771,12 +5881,8 @@ input, textarea {
   width: 100%;
 }
 
-.p-video-lessons__bg {
-  height: 880px;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: center;
+.p-video-lessons__first-screen {
+  margin-bottom: 335px;
 }
 .p-video-lessons__title {
   margin: 80px 0 24px;
@@ -5798,7 +5904,6 @@ input, textarea {
 }
 .p-video-lessons .nav-page__list {
   height: 214px;
-  margin-bottom: 335px;
 }
 .p-video-lessons__download-files {
   margin: 128px 0;
@@ -5819,6 +5924,75 @@ input, textarea {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 1250px) {
+  .p-video-lessons__first-screen {
+    margin-bottom: 200px;
+  }
+  .p-video-lessons__pattern {
+    height: 900px;
+  }
+  .p-video-lessons .nav-page__list {
+    height: 270px;
+    align-items: center;
+  }
+  .p-video-lessons .title-prompt {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .p-video-lessons__title {
+    margin: 40px 0 16px;
+    text-align: center;
+  }
+  .p-video-lessons__text {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 16px;
+  }
+  .p-video-lessons .prompt {
+    margin-top: 0;
+    max-width: 442px;
+  }
+  .p-video-lessons .prompt__wrapper {
+    padding: 32px;
+  }
+  .p-video-lessons .prompt__img {
+    border: none;
+    width: 16px;
+    height: 16px;
+    position: static;
+    transform: translateX(0);
+    border-radius: 0;
+  }
+  .p-video-lessons .prompt__img img {
+    width: 16px;
+    height: 16px;
+  }
+  .p-video-lessons .prompt__text {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 980px) {
+  .p-video-lessons__pattern {
+    height: 750px;
+  }
+  .p-video-lessons__download-files {
+    margin: 72px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .p-video-lessons__first-screen {
+    margin-bottom: 158px;
+  }
+  .p-video-lessons__pattern {
+    height: 680px;
+  }
+  .p-video-lessons__download-files .text--lg {
+    text-align: center;
+  }
+  .p-video-lessons .prompt__wrapper {
+    padding: 16px;
+  }
+}
 .p-record-webinars__bg {
   height: 650px;
   background-size: 100% auto;

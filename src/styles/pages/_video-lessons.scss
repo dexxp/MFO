@@ -1,10 +1,6 @@
 .p-video-lessons {
-  &__bg {
-    height: 880px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
+  &__first-screen {
+    margin-bottom: 335px;
   }
 
   &__title {
@@ -32,7 +28,6 @@
 
   .nav-page__list {
     height: 214px;
-    margin-bottom: 335px;
   }
 
   &__download-files {
@@ -52,6 +47,102 @@
         line-height: 140%;
         color: $primary;
         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include mq(md) {
+  .p-video-lessons {
+
+    &__first-screen {
+      margin-bottom: 200px;
+    }
+
+    &__pattern {
+      height: 900px;
+    }
+
+    .nav-page {
+      &__list {
+        height: 270px;
+        align-items: center;
+      }
+    }
+
+    .title-prompt {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin: 40px 0 16px;
+      text-align: center;
+    }
+
+    &__text {
+      max-width: 600px;
+      text-align: center;
+      margin: 0 auto 16px;
+    }
+
+    .prompt {
+      margin-top: 0;
+      max-width: 442px;
+      &__wrapper {
+        padding: 32px;
+      }
+      &__img {
+        border: none;
+        width: 16px;
+        height: 16px;
+        position: static;
+        transform: translateX(0);
+        border-radius: 0;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      &__text {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-video-lessons {
+    &__pattern {
+      height: 750px;
+    }
+    &__download-files {
+      margin: 72px 0;
+    }
+
+  }
+}
+
+@include mq(xs) {
+  .p-video-lessons {
+    &__first-screen {
+      margin-bottom: 158px;
+    }
+
+    &__pattern {
+      height: 680px;
+    }
+
+    &__download-files {
+      .text--lg {
+        text-align: center;
+      }
+    }
+
+    .prompt {
+      &__wrapper {
+        padding: 16px;
       }
     }
   }

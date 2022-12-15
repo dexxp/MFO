@@ -48,6 +48,13 @@
     padding: 16px 24px;
     align-items: center;
 
+    &-size {
+      color: $primary;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+    }
+
     &-link {
       display: inline-flex;
       align-items: center;
@@ -60,5 +67,70 @@
         color: #57A6EE;
       }
     }
+  }
+}
+
+@include mq(md) {
+  .webinars {
+    &__videos {
+      justify-content: center;
+    }
+
+    &__file {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      &-link {
+        align-items: flex-start;
+      }
+
+      &-size {
+        padding-left: 32px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .webinars {
+    &__videos {
+      gap: 0;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@include mq(xs) {
+  .webinars {
+    &__count-videos {
+      font-size: 12px;
+    }
+    &__block {
+      &-name {
+        font-size: 16px;
+      }
+    }
+
+    &__file {
+      gap: 4px;
+      &-link {
+        span {
+          font-size: 14px;
+        }
+
+        img {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &-size {
+        font-size: 10px;
+        padding-left: 24px;
+      }
+    }
+
   }
 }
