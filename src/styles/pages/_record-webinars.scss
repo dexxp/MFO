@@ -1,14 +1,9 @@
 .p-record-webinars {
-  &__bg {
-    height: 650px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
-  }
-  &__nav-page {
+
+  &__first-screen {
     margin-bottom: 306px;
   }
+
   &__title {
     margin: 80px 0 24px;
   }
@@ -23,8 +18,7 @@
 
   &__button {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -18px;
     right: 0;
 
     max-width: 426px;
@@ -62,3 +56,65 @@
     }
   }
 }
+
+@include mq(md) {
+  .p-record-webinars {
+    &__title {
+      text-align: center;
+    }
+
+    &__first-screen {
+      margin-bottom: 180px;
+    }
+
+    .nav-page {
+      &__list {
+        max-width: 460px;
+        width: 100%;
+        margin: 16px auto;
+        align-items: center;
+      }
+
+      &__item {
+        max-width: 100%;
+        width: fit-content;
+      }
+    }
+
+    &__button {
+      position: static;
+      display: flex;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-record-webinars {
+    .webinars {
+      margin: 72px 0;
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-record-webinars {
+    &__button {
+      gap: 10px;
+      width: 100%;
+      padding: 16px;
+      &-icon {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      &-arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+
