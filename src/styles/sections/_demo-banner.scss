@@ -145,7 +145,11 @@
 
 @include mq(xs) {
     .demo-banner {
+        &__wrapper {
+            border-radius: 24px;
+        }
         &__inner {
+            border-radius: 24px;
             position: relative;
             overflow: hidden;
             background-size: 160% auto;
