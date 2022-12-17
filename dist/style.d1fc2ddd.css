@@ -2459,6 +2459,7 @@ input, textarea {
     padding: 16px 24px;
     font-size: 14px;
     gap: 8px;
+    font-weight: 600;
   }
   .module__info img {
     width: 16px;
@@ -6118,6 +6119,7 @@ input, textarea {
     width: 100%;
     padding: 16px;
     border-radius: 8px;
+    font-weight: 600;
   }
   .p-record-webinars__button-icon img {
     width: 24px;
