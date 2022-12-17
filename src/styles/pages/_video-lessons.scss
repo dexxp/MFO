@@ -24,6 +24,10 @@
   &__text {
     max-width: 479px;
     width: 100%;
+
+    p + p {
+      margin-top: 16px;
+    }
   }
 
   .nav-page__list {
@@ -83,15 +87,7 @@
     &__text {
       max-width: 600px;
       text-align: center;
-      margin: 0 auto;
-
-      p {
-        margin-bottom: 16px;
-      }
-
-      br {
-        display: none;
-      }
+      margin: 0 auto 16px;
     }
 
     .prompt {

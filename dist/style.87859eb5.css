@@ -2450,10 +2450,13 @@ input, textarea {
   .module__header {
     margin-right: 16px;
   }
+  .module__info {
+    border-radius: 8px;
+  }
 }
 @media screen and (max-width: 600px) {
   .module__info {
-    padding: 16px 28px;
+    padding: 16px 24px;
     font-size: 14px;
     gap: 8px;
   }
@@ -5909,6 +5912,9 @@ input, textarea {
   max-width: 479px;
   width: 100%;
 }
+.p-video-lessons__text p + p {
+  margin-top: 16px;
+}
 .p-video-lessons .nav-page__list {
   height: 214px;
 }
@@ -5953,13 +5959,7 @@ input, textarea {
   .p-video-lessons__text {
     max-width: 600px;
     text-align: center;
-    margin: 0 auto;
-  }
-  .p-video-lessons__text p {
-    margin-bottom: 16px;
-  }
-  .p-video-lessons__text br {
-    display: none;
+    margin: 0 auto 16px;
   }
   .p-video-lessons .prompt {
     margin-top: 0;
@@ -6046,7 +6046,7 @@ input, textarea {
   right: 0;
   max-width: 426px;
   width: 100%;
-  padding: 25px 32px;
+  padding: 20px 32px;
   background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
   backdrop-filter: blur(10px);
   border-radius: 16px;

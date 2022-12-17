@@ -83,13 +83,17 @@
     &__header {
       margin-right: 16px;
     }
+
+    &__info {
+      border-radius: 8px;
+    }
   }
 }
 
 @include mq(xs) {
   .module {
     &__info {
-      padding: 16px 28px;
+      padding: 16px 24px;
       font-size: 14px;
       gap: 8px;
       img {
