@@ -87,11 +87,23 @@
       width: fit-content;
       margin: 0 auto;
     }
+
+    .demo-banner {
+      margin-bottom: 64px;
+    }
   }
 }
 
 @include mq(sm) {
   .p-record-webinars {
+    .nav-page {
+      &__list {
+        align-items: flex-start;
+      }
+    }
+    .swiper {
+      padding: 0 16px 0 0;
+    }
     .webinars {
       margin: 72px 0;
     }
@@ -104,6 +116,7 @@
       gap: 10px;
       width: 100%;
       padding: 16px;
+      border-radius: 8px;
       &-icon {
         img {
           width: 24px;

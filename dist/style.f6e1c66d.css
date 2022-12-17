@@ -2352,9 +2352,13 @@ input, textarea {
   .webinars__blocks {
     gap: 72px;
   }
+  .webinars__wrapper .container {
+    padding-right: 0;
+  }
   .webinars__block-header {
     padding-bottom: 8px;
     margin-bottom: 24px;
+    margin-right: 16px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2442,6 +2446,9 @@ input, textarea {
 @media screen and (max-width: 980px) {
   .module + .module {
     margin-top: 72px;
+  }
+  .module__header {
+    margin-right: 16px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -3601,29 +3608,8 @@ input, textarea {
 .demo-banner__access:hover {
   box-shadow: 0 4px 30px rgba(249, 216, 95, 0.75);
 }
-.demo-banner__circle {
-  background-color: #fff;
-  border-radius: 100%;
-  width: 64px;
-  align-items: center;
-  justify-content: center;
-  height: 64px;
-  display: inline-flex;
-}
-.demo-banner__video {
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  text-decoration: none;
-}
-.demo-banner__video-span {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  max-width: 132px;
-  width: 100%;
+.demo-banner .button-circle__img {
+  padding-left: 3px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -3675,6 +3661,20 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .demo-banner__inner {
+    position: relative;
+    overflow: hidden;
+    background-size: 160% auto;
+    background-position-x: 76%;
+  }
+  .demo-banner__inner:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+  }
   .demo-banner__title-h2 {
     max-width: 285px;
     width: 100%;
@@ -5472,7 +5472,7 @@ input, textarea {
 
 @media screen and (max-width: 1250px) {
   .cases__main {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
   .cases__title {
     text-align: center;
@@ -5520,7 +5520,7 @@ input, textarea {
 
 @media screen and (max-width: 1250px) {
   .capabilities__main {
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
   .capabilities__first-screen {
     margin-bottom: 0;
@@ -5953,7 +5953,13 @@ input, textarea {
   .p-video-lessons__text {
     max-width: 600px;
     text-align: center;
-    margin: 0 auto 16px;
+    margin: 0 auto;
+  }
+  .p-video-lessons__text p {
+    margin-bottom: 16px;
+  }
+  .p-video-lessons__text br {
+    display: none;
   }
   .p-video-lessons .prompt {
     margin-top: 0;
@@ -5977,8 +5983,30 @@ input, textarea {
   .p-video-lessons .prompt__text {
     text-align: left;
   }
+  .p-video-lessons .demo-banner {
+    margin-bottom: 64px;
+  }
 }
 @media screen and (max-width: 980px) {
+  .p-video-lessons .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0 16px 0 0;
+    z-index: 1;
+  }
+  .p-video-lessons .swiper-pointer-events {
+    touch-action: pan-y;
+  }
+  .p-video-lessons .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+  }
   .p-video-lessons__pattern {
     height: 750px;
   }
@@ -6069,8 +6097,17 @@ input, textarea {
     width: fit-content;
     margin: 0 auto;
   }
+  .p-record-webinars .demo-banner {
+    margin-bottom: 64px;
+  }
 }
 @media screen and (max-width: 980px) {
+  .p-record-webinars .nav-page__list {
+    align-items: flex-start;
+  }
+  .p-record-webinars .swiper {
+    padding: 0 16px 0 0;
+  }
   .p-record-webinars .webinars {
     margin: 72px 0;
   }
@@ -6080,6 +6117,7 @@ input, textarea {
     gap: 10px;
     width: 100%;
     padding: 16px;
+    border-radius: 8px;
   }
   .p-record-webinars__button-icon img {
     width: 24px;

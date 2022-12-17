@@ -83,7 +83,15 @@
     &__text {
       max-width: 600px;
       text-align: center;
-      margin: 0 auto 16px;
+      margin: 0 auto;
+
+      p {
+        margin-bottom: 16px;
+      }
+
+      br {
+        display: none;
+      }
     }
 
     .prompt {
@@ -109,11 +117,38 @@
         text-align: left;
       }
     }
+
+    .demo-banner {
+      margin-bottom: 64px;
+    }
   }
 }
 
 @include mq(sm) {
   .p-video-lessons {
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0 16px 0 0;
+      z-index: 1;
+    }
+
+    .swiper-pointer-events {
+      touch-action: pan-y;
+    }
+
+    .swiper-slide {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition-property: transform;
+    }
+
     &__pattern {
       height: 750px;
     }

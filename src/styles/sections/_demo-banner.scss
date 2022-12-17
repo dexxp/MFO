@@ -73,29 +73,10 @@
             box-shadow: 0 4px 30px rgba(249, 216, 95, 0.75);
         }
     }
-    &__circle {
-        background-color: #fff;
-        border-radius: 100%;
-        width: 64px;
-        align-items: center;
-        justify-content: center;
-        height: 64px;
-        display: inline-flex;
-    }
-    &__video {
-        display: inline-flex;
-        align-items: center;
-        gap: 16px;
-        text-decoration: none;
-    }
-    &__video-span {
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        max-width: 132px;
-        width: 100%;
+    .button-circle {
+        &__img {
+            padding-left: 3px;
+        }
     }
 }
 
@@ -164,6 +145,21 @@
 
 @include mq(xs) {
     .demo-banner {
+        &__inner {
+            position: relative;
+            overflow: hidden;
+            background-size: 160% auto;
+            background-position-x: 76%;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                height: 2px;
+                background-color: $white;
+            }
+        }
+
         &__title-h2 {
             max-width: 285px;
             width: 100%;

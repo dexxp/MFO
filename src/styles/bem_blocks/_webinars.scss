@@ -105,10 +105,18 @@
       gap: 72px;
     }
 
+    &__wrapper {
+      .container {
+        padding-right: 0;
+      }
+    }
+
     &__block {
+
       &-header {
         padding-bottom: 8px;
         margin-bottom: 24px;
+        margin-right: 16px;
       }
     }
   }
