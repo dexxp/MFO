@@ -6030,6 +6030,9 @@ input, textarea {
   .p-video-lessons__pattern {
     height: 680px;
   }
+  .p-video-lessons .prompt__wrapper {
+    border-radius: 8px;
+  }
   .p-video-lessons__download-files .text--lg {
     text-align: center;
   }

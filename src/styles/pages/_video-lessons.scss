@@ -165,6 +165,12 @@
       height: 680px;
     }
 
+    .prompt {
+      &__wrapper {
+        border-radius: 8px;
+      }
+    }
+
     &__download-files {
       .text--lg {
         text-align: center;
