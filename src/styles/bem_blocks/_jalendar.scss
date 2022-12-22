@@ -119,6 +119,12 @@
   top: 4px;
   cursor: pointer;
   color: #fff;
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOSAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgMTdMMTcgOU0xNyA5TDkgMU0xNyA5TDEgOSIgc3Ryb2tlPSJ1cmwoI3BhaW50MF9saW5lYXJfOF8yNDkzKSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl84XzI0OTMiIHgxPSItMC41MDAwMzQiIHkxPSIxIiB4Mj0iMC4xMTk3ODEiIHkyPSIxNy42MjkyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGOUEzMjEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRkZDMTYyIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==");
 }
 .jalendar .jalendar-container .jalendar-pages > .header .prv-m i,
 .jalendar .jalendar-container .jalendar-pages > .header .nxt-m i {
@@ -126,6 +132,7 @@
 }
 .jalendar .jalendar-container .jalendar-pages > .header .prv-m {
   left: 10px;
+  transform: rotate(180deg);
 }
 .jalendar .jalendar-container .jalendar-pages > .header .nxt-m {
   right: 10px;
@@ -392,3 +399,36 @@
 .jalendar .jalendar-container .jalendar-pages .add-event .events .events-list .event-single a a {
   color: #333;
 }
+
+@include mq(xs) {
+
+  .jalendar .jalendar-container .jalendar-pages > .header h1 {
+    font-size: 16px;
+  }
+  .jalendar .jalendar-container .jalendar-pages > .header h2 {
+    font-size: 12px;
+  }
+  .jalendar .jalendar-container .jalendar-pages .days .day.have-event span:before {
+    width: 4px;
+    height: 4px;
+  }
+  .jalendar .jalendar-container .jalendar-pages .days .day {
+    height: 32px;
+    font-size: 12px;
+  }
+  .jalendar .jalendar-container .jalendar-pages .days .day.this-month span {
+    font-size: 12px;
+  }
+
+  .jalendar .jalendar-container .jalendar-pages .days .day span {
+
+    width: 35px;
+    height: 35px;
+
+  }
+
+
+}
+
+
+

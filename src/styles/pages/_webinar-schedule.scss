@@ -11,14 +11,21 @@
     }
   }
 
+  &__webinars {
+    max-width: 100%;
+    width: 100%;
+  }
+
 
   &__calendar {
+    position: sticky;
+    top: 88px;
     flex-shrink: 0;
 
     padding: 48px;
 
     width: 484px;
-    height: 590px;
+    height: 577px;
 
     background: #FFFFFF;
     box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
@@ -29,7 +36,7 @@
       justify-content: center;
       width: 100%;
       padding: 21px 10px;
-      margin-top: 40px;
+      margin-top: 27px;
     }
 
     .jalendar {
@@ -44,6 +51,8 @@
   }
 
   &__items {
+    max-width: 100%;
+    width: 100%;
     & + & {
       margin-top: 56px;
     }
@@ -76,4 +85,44 @@
     }
   }
 
+}
+
+@include mq(md) {
+  .p-webinar-schedule {
+    &__title {
+      text-align: center;
+      margin: 40px 0 24px;
+    }
+
+    &__inner {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 24px;
+    }
+
+    &__calendar {
+      position: static;
+    }
+
+    &__webinars, &__items {
+      width: auto;
+    }
+
+    &__items {
+      & + & {
+        margin-top: 64px;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-webinar-schedule {
+    &__calendar {
+      height: auto;
+      padding: 32px;
+      max-width: 500px;
+      width: 100%;
+    }
+  }
 }

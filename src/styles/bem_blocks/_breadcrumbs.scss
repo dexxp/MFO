@@ -1,61 +1,41 @@
 .breadcrumbs {
-  display: flex;
-  padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.5);
+  padding: 0 16px;
+  color: #BDBDBD;
+  font-size: 14px;
+  line-height: 32px;
+  white-space: nowrap;
   border-radius: 16px;
-  list-style-type: none;
-  gap: 12px;
+  background-color: rgba($white, 0.5);
 
-  &__item {
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    &:last-child {
-      &::after {
-        display: none;
-      }
-    }
-
-    &::after {
-      content: "/";
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 115%;
-      position: absolute;
-      right: -9px;
-      color: rgba(67, 67, 67, 0.35);
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    &:hover {
+      text-decoration: underline;
     }
   }
 
-  &__link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 115%;
-    color: rgba(67, 67, 67, 0.35);
-    text-decoration: none;
+  .breadcrumb_last {
+    display: inline-block;
+  }
+
+  &-container {
+    overflow-x: auto;
   }
 }
 
 @include mq(md) {
   .breadcrumbs {
-    padding: 0;
-    margin-top: 10px;
-    background: none;
+    padding: 10px 0;
+    border-radius: unset;
+    background-color: transparent;
 
-    &__item {
-      flex-shrink: 0;
-    }
-
-    &__link {
-      padding: 6px 12px;
-      background-color: $white;
-      border-radius: 20px;
-    }
-
-    &-container {
-      padding: 0 16px 10px;
-      overflow: auto;
+    a,
+    .breadcrumb_last {
+      padding: 0 12px;
+      border-radius: 16px;
+      background-color: #F7FBFF;
     }
   }
 }

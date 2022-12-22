@@ -18,11 +18,24 @@
     <img src="./img/page-pattern-3.svg" alt="">
   </div>
 
-  <div class="container container--wide">
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Переход на ЕПС, ОСБУ и XBRL в программе «Моя МФО»</a></li>
-    </ul>
+  <div class="container container--wide breadcrumbs-container">
+    <div class="breadcrumbs">
+    <span>
+
+      <span>
+        <a href="http://mfo-local.ru/">Главная</a>
+      </span>
+      /
+      <span>
+        <a href="http://mfo-local.ru/">Обучение</a>
+      </span>
+      /
+      <span class="breadcrumb_last" aria-current="page">
+        Расписание вебинаров
+      </span>
+
+    </span>
+    </div>
   </div>
 
   <main class="p-webinar-schedule__main">
@@ -311,6 +324,7 @@
     $(function(){
       const webinarsStatic = $(".p-webinar-schedule__webinars");
       const filterItems = $("#filter-items");
+
       const template = (currentDate, {date, datePretty, time, author, link, title, description }) => {
         const [d1, m1, y1] = currentDate.split("-").map(el => parseInt(el));
         const [d2, m2, y2] = date.split("-").map(el => parseInt(el));
@@ -400,7 +414,6 @@
           $(filterItems).html("");
           $(webinarsStatic).hide();
           $(filterItems).show();
-          $(filterItems).css({maxWidth: "100%", width: "100%"});
 
           const today = $('.today').data('date');
 
@@ -422,6 +435,8 @@
         $(webinarsStatic).show();
         $(filterItems).hide();
       });
+
+      $(".today").addClass("selected");
     });
   });
 </script>

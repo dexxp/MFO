@@ -57,6 +57,11 @@
       line-height: 22px;
       background: transparent;
       color: $primary;
+
+    &:hover {
+      color: $white;
+      background: $primary;
+    }
   }
 
   &-circle {
