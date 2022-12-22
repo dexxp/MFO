@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.2b611398.css">
+  <link rel="stylesheet" href="style.b5443261.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>Расписание вебинаров</title>
 </head>
 
@@ -300,6 +302,7 @@
         <div class="p-webinar-schedule__wrapper">
           <h1 class="title title--level_h1 p-webinar-schedule__title">Расписание вебинаров</h1>
           <div class="p-webinar-schedule__inner">
+            <div id="filter-items" class="p-webinar-schedule__items"></div>
             <div class="p-webinar-schedule__webinars">
               <div class="p-webinar-schedule__items">
                 <div class="schedule-webinar-card">
@@ -424,19 +427,60 @@
                   <div class="schedule-webinar-card__wrapper">
                     <div class="schedule-webinar-card__info">
                       <div class="schedule-webinar-card__info-item schedule-webinar-card__date">
-                        <img src="calendar.e80c75da.svg" alt="">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_320_1851)">
+                            <path d="M0 11.6246C0.10562 11.499 0.204561 11.367 0.317696 11.2489C1.09002 10.4453 1.64776 9.50684 2.05939 8.4778C2.51986 7.32728 2.7599 6.12875 2.81626 4.89223C2.81876 4.84088 2.82503 4.78995 2.83045 4.729H15.99C15.9608 5.09887 15.9424 5.46165 15.9011 5.8215C15.7232 7.37904 15.2845 8.85476 14.4984 10.2186C14.1222 10.8711 13.6784 11.4722 13.1399 12.002C12.9854 12.154 12.8155 12.2216 12.5964 12.2212C8.60241 12.217 4.60805 12.2162 0.6141 12.2224C0.327297 12.2228 0.121484 12.1377 0 11.8747V11.6246H0Z" fill="#57A6EE"></path>
+                            <path d="M2.8434 13.1558H3.05213C6.23368 13.1558 9.41523 13.1529 12.5968 13.1591C13.0681 13.16 13.4547 13.0047 13.7899 12.6782C14.695 11.7974 15.3567 10.7537 15.8706 9.60946C15.9044 9.5339 15.9365 9.4575 15.9862 9.34229C15.9933 9.41743 15.9992 9.45416 15.9992 9.49048C15.9996 11.162 16 12.8335 15.9992 14.5046C15.9992 14.8402 15.8113 15.0302 15.4794 15.0302C11.4387 15.0306 7.39801 15.0306 3.35731 15.0302C3.03377 15.0302 2.84465 14.839 2.8434 14.5146C2.84215 14.0679 2.8434 13.6208 2.8434 13.1554V13.1558Z" fill="#57A6EE"></path>
+                            <path d="M15.9996 3.77422H2.8434C2.8434 3.72496 2.8434 3.6757 2.8434 3.62602C2.8434 3.23569 2.8434 2.84495 2.8434 2.45462C2.84382 2.08476 3.01957 1.90692 3.38569 1.9065C4.07828 1.90608 4.77086 1.9065 5.46303 1.9065H5.6559C5.6559 1.75538 5.65465 1.61219 5.6559 1.46858C5.65882 1.17553 5.85086 0.970554 6.12138 0.969301C6.39232 0.968049 6.58812 1.17219 6.59229 1.46399C6.59438 1.60384 6.59229 1.74411 6.59229 1.89523H8.93597C8.93597 1.75663 8.93514 1.61803 8.93597 1.47902C8.93806 1.17469 9.1301 0.967631 9.40688 0.969301C9.68325 0.970971 9.87069 1.1772 9.8732 1.48445C9.87445 1.61887 9.8732 1.75329 9.8732 1.8969H12.2482C12.2482 1.74703 12.2465 1.60259 12.2482 1.45856C12.2524 1.17636 12.444 0.973476 12.7082 0.969301C12.98 0.965127 13.1796 1.16885 13.1846 1.45815C13.1871 1.60259 13.185 1.74703 13.185 1.9065H13.3674C14.0705 1.9065 14.7735 1.90566 15.4761 1.9065C15.8113 1.90692 15.9962 2.09227 15.9971 2.42874C15.9983 2.87125 15.9971 3.31334 15.9971 3.7738L15.9996 3.77422Z" fill="#57A6EE"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_320_1851">
+                              <rect width="16" height="16" fill="white"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg>
                         <span>3 сентября</span>
                       </div>
                       <div class="schedule-webinar-card__info-item schedule-webinar-card__time">
-                        <img src="clock.52b92273.svg" alt="">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_320_1857)">
+                            <path d="M0 8.99533V7.99544C0.0192047 7.84639 0.0400793 7.69776 0.057614 7.54872C0.242981 5.9873 0.823714 4.58577 1.84574 3.39508C3.71151 1.22161 6.08872 0.258875 8.94353 0.558218C10.7909 0.751934 12.3845 1.5339 13.6725 2.86612C15.6706 4.93229 16.3799 7.40427 15.8084 10.2198C15.1792 13.3206 12.5235 15.856 9.40946 16.3699C9.10761 16.4196 8.80326 16.4538 8.50016 16.4952H7.50026C7.39798 16.4822 7.29569 16.4685 7.1934 16.4572C5.75097 16.2998 4.43378 15.8113 3.2698 14.9409C1.56643 13.6679 0.509759 11.985 0.124413 9.88919C0.0701388 9.5936 0.0409143 9.29342 0 8.99533ZM8.56904 6.01318C8.56904 5.34185 8.56988 4.67011 8.56779 3.99878C8.56779 3.91653 8.56403 3.83053 8.54107 3.75246C8.46091 3.48443 8.2004 3.32286 7.92569 3.36001C7.64179 3.39842 7.4343 3.62178 7.43388 3.91444C7.43096 5.44456 7.43263 6.97508 7.43263 8.5052C7.43263 8.70351 7.52949 8.85005 7.67937 8.96987C8.61038 9.71384 9.5393 10.4599 10.4732 11.2005C10.5555 11.2657 10.6619 11.3174 10.7642 11.3371C11.031 11.388 11.2698 11.2531 11.3767 11.0143C11.4865 10.7701 11.4255 10.5071 11.2034 10.3284C10.3684 9.65622 9.53178 8.98573 8.6922 8.31941C8.60119 8.24719 8.56529 8.17538 8.56612 8.05848C8.57197 7.37671 8.56904 6.69495 8.56904 6.01276V6.01318Z" fill="#57A6EE"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_320_1857">
+                              <rect width="15.9996" height="16" fill="white" transform="translate(0 0.5)"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg>
                         <span>10:00–12:00</span>
                       </div>
                       <div class="schedule-webinar-card__info-item schedule-webinar-card__speaker">
-                        <img src="people.1853e3b5.svg" alt="">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_320_1861)">
+                            <path d="M8.26594 0C8.47376 0.0414863 8.68315 0.0774932 8.8898 0.125633C10.307 0.457914 11.5179 1.81013 11.7085 3.25667C11.8342 4.2089 11.6956 5.10907 11.1578 5.91414C10.4436 6.98378 9.45495 7.60647 8.14735 7.69492C6.43076 7.81116 5.01866 6.80101 4.37758 5.4304C3.77564 4.14315 4.01908 2.42812 4.96269 1.36122C5.54194 0.706441 6.23977 0.254788 7.10393 0.0790587C7.25109 0.0497052 7.39943 0.0262225 7.54737 0C7.78689 0 8.02642 0 8.26594 0Z" fill="#57A6EE"></path>
+                            <path d="M8.00098 15.9996C6.73056 15.9996 5.46014 15.9996 4.18933 15.9996C3.5459 15.9996 2.93848 15.8705 2.40424 15.4896C1.79252 15.0536 1.43088 14.4544 1.36709 13.7136C1.2532 12.3903 1.40701 11.0921 1.90328 9.85377C2.20112 9.11054 2.64807 8.47142 3.38269 8.08161C3.83865 7.83973 4.32788 7.72428 4.83902 7.73563C4.99557 7.73915 5.16073 7.81742 5.30319 7.8957C5.54428 8.02838 5.76855 8.19158 6.00337 8.336C7.3372 9.15673 8.67219 9.15633 10.0052 8.33365C10.1645 8.23542 10.3309 8.14383 10.4757 8.02681C10.8843 7.6961 11.341 7.69336 11.8216 7.79472C12.7558 7.99159 13.4141 8.54422 13.8678 9.36651C14.3159 10.179 14.5171 11.0631 14.6063 11.9743C14.6529 12.4498 14.6736 12.9304 14.6673 13.4083C14.6493 14.784 13.6642 15.8395 12.2952 15.9699C12.0987 15.9887 11.9007 15.9988 11.7034 15.9992C10.4694 16.002 9.23539 16.0004 8.00137 16.0004L8.00098 15.9996Z" fill="#57A6EE"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_320_1861">
+                              <rect width="16" height="16" fill="white"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg>
                         <span>Бесщетников Антон</span>
                       </div>
                       <a href="#" class="schedule-webinar-card__info-item schedule-webinar-card__link">
-                        <img src="link.faa5d736.svg" alt="">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_320_1866)">
+                            <path d="M15.9993 4.66166C15.9596 4.88028 15.9278 5.10107 15.8795 5.31753C15.7013 6.12132 15.3066 6.80822 14.7308 7.38977C13.9292 8.20006 13.124 9.00601 12.313 9.80691C11.8 10.3134 11.0106 10.1063 10.8367 9.42739C10.771 9.17052 10.8244 8.93169 10.9796 8.71812C11.0279 8.65102 11.0871 8.59113 11.1455 8.53196C11.9212 7.75487 12.6997 6.97994 13.4739 6.20141C14.3333 5.33701 14.5165 4.04691 13.927 3.04687C13.0403 1.54391 11.0589 1.29138 9.81213 2.52592C9.017 3.31311 8.22981 4.10824 7.43756 4.8976C7.11792 5.2158 6.73118 5.28362 6.37114 5.09097C5.89709 4.83771 5.74196 4.18184 6.11572 3.79798C7.04794 2.83979 7.9513 1.84118 8.9701 0.98256C10.9146 -0.656043 13.8383 -0.183438 15.2669 1.92633C15.658 2.50355 15.8896 3.14499 15.9697 3.83983C15.9762 3.89539 15.9892 3.95023 15.9993 4.00578V4.66166Z" fill="#57A6EE"></path>
+                            <path d="M4.03625 16.0002C3.78588 15.9562 3.53046 15.9316 3.28658 15.8638C1.64654 15.4085 0.562071 14.3659 0.146468 12.715C-0.248211 11.1464 0.168835 9.7582 1.29587 8.59798C2.07946 7.79202 2.88397 7.00627 3.67909 6.21042C3.93019 5.95861 4.22602 5.85038 4.57452 5.95428C4.89416 6.04952 5.09691 6.26959 5.17339 6.59356C5.23256 6.84465 5.17988 7.07987 5.02692 7.28767C4.97785 7.35405 4.91941 7.41466 4.86097 7.47383C4.0846 8.25092 3.30534 9.02512 2.53186 9.8051C1.72157 10.6219 1.51305 11.7749 1.98638 12.7814C2.75265 14.4106 4.88333 14.7729 6.18498 13.49C6.98588 12.7006 7.77524 11.9004 8.57181 11.1067C8.89578 10.7842 9.28685 10.7222 9.65267 10.9256C10.1087 11.1803 10.2299 11.798 9.90304 12.2056C9.87995 12.2338 9.85758 12.2634 9.83233 12.2886C8.97298 13.1444 8.12446 14.0116 7.25068 14.8522C6.55657 15.5204 5.7066 15.8739 4.74985 15.9742C4.70944 15.9785 4.66976 15.9908 4.62935 15.9987H4.03625V16.0002Z" fill="#57A6EE"></path>
+                            <path d="M5.50818 11.3146C5.20586 11.2951 4.93529 11.145 4.7816 10.8239C4.62864 10.5036 4.66904 10.1976 4.88334 9.91551C4.92374 9.86212 4.97064 9.81234 5.01826 9.76471C6.60059 8.18167 8.18219 6.59935 9.76523 5.01702C10.1123 4.66997 10.5034 4.59926 10.8814 4.81211C11.3245 5.06176 11.4507 5.66352 11.1419 6.06902C11.0914 6.13468 11.0344 6.19601 10.976 6.25518C9.40158 7.83101 7.82575 9.40539 6.25209 10.9819C6.05727 11.1775 5.84009 11.3138 5.50818 11.3153V11.3146Z" fill="#57A6EE"></path>
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_320_1866">
+                              <rect width="16" height="16" fill="white"></rect>
+                            </clipPath>
+                          </defs>
+                        </svg>
                         <span>Ссылка</span>
                       </a>
                     </div>
@@ -450,7 +494,19 @@
                 </div>
               </div>
             </div>
-            <div class="p-webinar-schedule__calendar"></div>
+            <div class="p-webinar-schedule__calendar">
+              <div id="myCalendar" class="jalendar">
+                <div class="added-event" data-id="0" data-type="holiday" data-link="https://ya.ru" data-date="6-12-2022" data-date-pretty="6 декабря" data-time="10:00-12:00" data-author="Бесщетников Антон" data-title="Введение" data-description="Вторая часть вебинара для бухгалтеров по&nbsp;вопросам работы в программе, порядке действий в тех или иных ситуаций, по&nbsp;проверке отчетности, закрытии месяца и&nbsp;прочим вопросам, с которыми сталкивается бухгалтер МФО при работе в нашей системе. ">
+                </div>
+                <div class="added-event" data-id="1" data-type="holiday" data-link="https://ya.ru" data-date="23-12-2022" data-date-pretty="23 декабря" data-time="10:00-12:00" data-author="Бесщетников Антон" data-title="Бухгалтерский учет в программе «Моя&nbsp;МФО». Часть 1" data-description="Вторая часть вебинара для бухгалтеров по&nbsp;вопросам работы в программе, порядке действий в тех или иных ситуаций, по&nbsp;проверке отчетности, закрытии месяца и&nbsp;прочим вопросам, с которыми сталкивается бухгалтер МФО при работе в нашей системе. ">
+                </div>
+                <div class="added-event" data-id="2" data-type="holiday" data-link="https://ya.ru" data-date="23-12-2022" data-date-pretty="23 декабря" data-time="10:00-12:00" data-author="Бесщетников Антон" data-title="Бухгалтерский учет в программе «Моя&nbsp;МФО». Часть 2" data-description="Вторая часть вебинара для бухгалтеров по&nbsp;вопросам работы в программе, порядке действий в тех или иных ситуаций, по&nbsp;проверке отчетности, закрытии месяца и&nbsp;прочим вопросам, с которыми сталкивается бухгалтер МФО при работе в нашей системе. ">
+                </div>
+                <div class="added-event" data-id="3" data-type="holiday" data-link="https://google.com" data-date="24-12-2022" data-date-pretty="24 декабря" data-time="10:00-12:00" data-author="Бесщетников Антон" data-title="Бухгалтерский учет в программе «Моя&nbsp;МФО». Часть 3" data-description="Вторая часть вебинара для бухгалтеров по&nbsp;вопросам работы в программе, порядке действий в тех или иных ситуаций, по&nbsp;проверке отчетности, закрытии месяца и&nbsp;прочим вопросам, с которыми сталкивается бухгалтер МФО при работе в нашей системе. ">
+                </div>
+              </div>
+              <div class="button button-outlined-blue p-webinar-schedule__calendar-button">Сброс фильтра</div>
+            </div>
           </div>
         </div>
       </div>
@@ -749,8 +805,92 @@
 
 </div>
 
+
 <script src="header.07594abc.js" type="module"></script>
 <script src="accordion-menu.660cc4d2.js"></script>
+
+<script src="jalendar.min.913ac56f.js"></script>
+
+<script lang="type/javascript">function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e2) { throw _e2; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e3) { didErr = true; err = _e3; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+jQuery(document).ready(function ($) {
+  $(function () {
+    var webinarsStatic = $(".p-webinar-schedule__webinars");
+    var filterItems = $("#filter-items");
+    var template = function template(currentDate, _ref) {
+      var date = _ref.date,
+        datePretty = _ref.datePretty,
+        time = _ref.time,
+        author = _ref.author,
+        link = _ref.link,
+        title = _ref.title,
+        description = _ref.description;
+      var _currentDate$split$ma = currentDate.split("-").map(function (el) {
+          return parseInt(el);
+        }),
+        _currentDate$split$ma2 = _slicedToArray(_currentDate$split$ma, 3),
+        d1 = _currentDate$split$ma2[0],
+        m1 = _currentDate$split$ma2[1],
+        y1 = _currentDate$split$ma2[2];
+      var _date$split$map = date.split("-").map(function (el) {
+          return parseInt(el);
+        }),
+        _date$split$map2 = _slicedToArray(_date$split$map, 3),
+        d2 = _date$split$map2[0],
+        m2 = _date$split$map2[1],
+        y2 = _date$split$map2[2];
+      var past = y2 < y1 || y2 === y1 && m2 < m1 || y2 === y1 && m2 === m1 && d2 < d1;
+      return "\n          <div class=\"schedule-webinar-card ".concat(past ? 'schedule-webinar-card--past' : '', "\">\n            <div class=\"schedule-webinar-card__wrapper\">\n              <div class=\"schedule-webinar-card__info\">\n                <div class=\"schedule-webinar-card__info-item schedule-webinar-card__date\">\n                  <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <g clip-path=\"url(#clip0_320_1851)\">\n                      <path d=\"M0 11.6246C0.10562 11.499 0.204561 11.367 0.317696 11.2489C1.09002 10.4453 1.64776 9.50684 2.05939 8.4778C2.51986 7.32728 2.7599 6.12875 2.81626 4.89223C2.81876 4.84088 2.82503 4.78995 2.83045 4.729H15.99C15.9608 5.09887 15.9424 5.46165 15.9011 5.8215C15.7232 7.37904 15.2845 8.85476 14.4984 10.2186C14.1222 10.8711 13.6784 11.4722 13.1399 12.002C12.9854 12.154 12.8155 12.2216 12.5964 12.2212C8.60241 12.217 4.60805 12.2162 0.6141 12.2224C0.327297 12.2228 0.121484 12.1377 0 11.8747V11.6246H0Z\" fill=\"#57A6EE\"/>\n                      <path d=\"M2.8434 13.1558H3.05213C6.23368 13.1558 9.41523 13.1529 12.5968 13.1591C13.0681 13.16 13.4547 13.0047 13.7899 12.6782C14.695 11.7974 15.3567 10.7537 15.8706 9.60946C15.9044 9.5339 15.9365 9.4575 15.9862 9.34229C15.9933 9.41743 15.9992 9.45416 15.9992 9.49048C15.9996 11.162 16 12.8335 15.9992 14.5046C15.9992 14.8402 15.8113 15.0302 15.4794 15.0302C11.4387 15.0306 7.39801 15.0306 3.35731 15.0302C3.03377 15.0302 2.84465 14.839 2.8434 14.5146C2.84215 14.0679 2.8434 13.6208 2.8434 13.1554V13.1558Z\" fill=\"#57A6EE\"/>\n                      <path d=\"M15.9996 3.77422H2.8434C2.8434 3.72496 2.8434 3.6757 2.8434 3.62602C2.8434 3.23569 2.8434 2.84495 2.8434 2.45462C2.84382 2.08476 3.01957 1.90692 3.38569 1.9065C4.07828 1.90608 4.77086 1.9065 5.46303 1.9065H5.6559C5.6559 1.75538 5.65465 1.61219 5.6559 1.46858C5.65882 1.17553 5.85086 0.970554 6.12138 0.969301C6.39232 0.968049 6.58812 1.17219 6.59229 1.46399C6.59438 1.60384 6.59229 1.74411 6.59229 1.89523H8.93597C8.93597 1.75663 8.93514 1.61803 8.93597 1.47902C8.93806 1.17469 9.1301 0.967631 9.40688 0.969301C9.68325 0.970971 9.87069 1.1772 9.8732 1.48445C9.87445 1.61887 9.8732 1.75329 9.8732 1.8969H12.2482C12.2482 1.74703 12.2465 1.60259 12.2482 1.45856C12.2524 1.17636 12.444 0.973476 12.7082 0.969301C12.98 0.965127 13.1796 1.16885 13.1846 1.45815C13.1871 1.60259 13.185 1.74703 13.185 1.9065H13.3674C14.0705 1.9065 14.7735 1.90566 15.4761 1.9065C15.8113 1.90692 15.9962 2.09227 15.9971 2.42874C15.9983 2.87125 15.9971 3.31334 15.9971 3.7738L15.9996 3.77422Z\" fill=\"#57A6EE\"/>\n                    </g>\n                    <defs>\n                      <clipPath id=\"clip0_320_1851\">\n                        <rect width=\"16\" height=\"16\" fill=\"white\"/>\n                      </clipPath>\n                    </defs>\n                  </svg>\n                  <span>").concat(datePretty, "</span>\n                </div>\n                <div class=\"schedule-webinar-card__info-item schedule-webinar-card__time\">\n                  <svg width=\"16\" height=\"17\" viewBox=\"0 0 16 17\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <g clip-path=\"url(#clip0_320_1857)\">\n                      <path d=\"M0 8.99533V7.99544C0.0192047 7.84639 0.0400793 7.69776 0.057614 7.54872C0.242981 5.9873 0.823714 4.58577 1.84574 3.39508C3.71151 1.22161 6.08872 0.258875 8.94353 0.558218C10.7909 0.751934 12.3845 1.5339 13.6725 2.86612C15.6706 4.93229 16.3799 7.40427 15.8084 10.2198C15.1792 13.3206 12.5235 15.856 9.40946 16.3699C9.10761 16.4196 8.80326 16.4538 8.50016 16.4952H7.50026C7.39798 16.4822 7.29569 16.4685 7.1934 16.4572C5.75097 16.2998 4.43378 15.8113 3.2698 14.9409C1.56643 13.6679 0.509759 11.985 0.124413 9.88919C0.0701388 9.5936 0.0409143 9.29342 0 8.99533ZM8.56904 6.01318C8.56904 5.34185 8.56988 4.67011 8.56779 3.99878C8.56779 3.91653 8.56403 3.83053 8.54107 3.75246C8.46091 3.48443 8.2004 3.32286 7.92569 3.36001C7.64179 3.39842 7.4343 3.62178 7.43388 3.91444C7.43096 5.44456 7.43263 6.97508 7.43263 8.5052C7.43263 8.70351 7.52949 8.85005 7.67937 8.96987C8.61038 9.71384 9.5393 10.4599 10.4732 11.2005C10.5555 11.2657 10.6619 11.3174 10.7642 11.3371C11.031 11.388 11.2698 11.2531 11.3767 11.0143C11.4865 10.7701 11.4255 10.5071 11.2034 10.3284C10.3684 9.65622 9.53178 8.98573 8.6922 8.31941C8.60119 8.24719 8.56529 8.17538 8.56612 8.05848C8.57197 7.37671 8.56904 6.69495 8.56904 6.01276V6.01318Z\" fill=\"#57A6EE\"/>\n                    </g>\n                    <defs>\n                      <clipPath id=\"clip0_320_1857\">\n                        <rect width=\"15.9996\" height=\"16\" fill=\"white\" transform=\"translate(0 0.5)\"/>\n                      </clipPath>\n                    </defs>\n                  </svg>\n                  <span>").concat(time, "</span>\n                </div>\n                <div class=\"schedule-webinar-card__info-item schedule-webinar-card__speaker\">\n                  <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                    <g clip-path=\"url(#clip0_320_1861)\">\n                      <path d=\"M8.26594 0C8.47376 0.0414863 8.68315 0.0774932 8.8898 0.125633C10.307 0.457914 11.5179 1.81013 11.7085 3.25667C11.8342 4.2089 11.6956 5.10907 11.1578 5.91414C10.4436 6.98378 9.45495 7.60647 8.14735 7.69492C6.43076 7.81116 5.01866 6.80101 4.37758 5.4304C3.77564 4.14315 4.01908 2.42812 4.96269 1.36122C5.54194 0.706441 6.23977 0.254788 7.10393 0.0790587C7.25109 0.0497052 7.39943 0.0262225 7.54737 0C7.78689 0 8.02642 0 8.26594 0Z\" fill=\"#57A6EE\"/>\n                      <path d=\"M8.00098 15.9996C6.73056 15.9996 5.46014 15.9996 4.18933 15.9996C3.5459 15.9996 2.93848 15.8705 2.40424 15.4896C1.79252 15.0536 1.43088 14.4544 1.36709 13.7136C1.2532 12.3903 1.40701 11.0921 1.90328 9.85377C2.20112 9.11054 2.64807 8.47142 3.38269 8.08161C3.83865 7.83973 4.32788 7.72428 4.83902 7.73563C4.99557 7.73915 5.16073 7.81742 5.30319 7.8957C5.54428 8.02838 5.76855 8.19158 6.00337 8.336C7.3372 9.15673 8.67219 9.15633 10.0052 8.33365C10.1645 8.23542 10.3309 8.14383 10.4757 8.02681C10.8843 7.6961 11.341 7.69336 11.8216 7.79472C12.7558 7.99159 13.4141 8.54422 13.8678 9.36651C14.3159 10.179 14.5171 11.0631 14.6063 11.9743C14.6529 12.4498 14.6736 12.9304 14.6673 13.4083C14.6493 14.784 13.6642 15.8395 12.2952 15.9699C12.0987 15.9887 11.9007 15.9988 11.7034 15.9992C10.4694 16.002 9.23539 16.0004 8.00137 16.0004L8.00098 15.9996Z\" fill=\"#57A6EE\"/>\n                    </g>\n                    <defs>\n                      <clipPath id=\"clip0_320_1861\">\n                        <rect width=\"16\" height=\"16\" fill=\"white\"/>\n                      </clipPath>\n                    </defs>\n                  </svg>\n                  <span>").concat(author, "</span>\n                </div>\n                <a href=\"").concat(link, "\" class=\"schedule-webinar-card__info-item schedule-webinar-card__link\">\n                  <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n                  <g clip-path=\"url(#clip0_320_1866)\">\n                  <path d=\"M15.9993 4.66166C15.9596 4.88028 15.9278 5.10107 15.8795 5.31753C15.7013 6.12132 15.3066 6.80822 14.7308 7.38977C13.9292 8.20006 13.124 9.00601 12.313 9.80691C11.8 10.3134 11.0106 10.1063 10.8367 9.42739C10.771 9.17052 10.8244 8.93169 10.9796 8.71812C11.0279 8.65102 11.0871 8.59113 11.1455 8.53196C11.9212 7.75487 12.6997 6.97994 13.4739 6.20141C14.3333 5.33701 14.5165 4.04691 13.927 3.04687C13.0403 1.54391 11.0589 1.29138 9.81213 2.52592C9.017 3.31311 8.22981 4.10824 7.43756 4.8976C7.11792 5.2158 6.73118 5.28362 6.37114 5.09097C5.89709 4.83771 5.74196 4.18184 6.11572 3.79798C7.04794 2.83979 7.9513 1.84118 8.9701 0.98256C10.9146 -0.656043 13.8383 -0.183438 15.2669 1.92633C15.658 2.50355 15.8896 3.14499 15.9697 3.83983C15.9762 3.89539 15.9892 3.95023 15.9993 4.00578V4.66166Z\" fill=\"#57A6EE\"/>\n                  <path d=\"M4.03625 16.0002C3.78588 15.9562 3.53046 15.9316 3.28658 15.8638C1.64654 15.4085 0.562071 14.3659 0.146468 12.715C-0.248211 11.1464 0.168835 9.7582 1.29587 8.59798C2.07946 7.79202 2.88397 7.00627 3.67909 6.21042C3.93019 5.95861 4.22602 5.85038 4.57452 5.95428C4.89416 6.04952 5.09691 6.26959 5.17339 6.59356C5.23256 6.84465 5.17988 7.07987 5.02692 7.28767C4.97785 7.35405 4.91941 7.41466 4.86097 7.47383C4.0846 8.25092 3.30534 9.02512 2.53186 9.8051C1.72157 10.6219 1.51305 11.7749 1.98638 12.7814C2.75265 14.4106 4.88333 14.7729 6.18498 13.49C6.98588 12.7006 7.77524 11.9004 8.57181 11.1067C8.89578 10.7842 9.28685 10.7222 9.65267 10.9256C10.1087 11.1803 10.2299 11.798 9.90304 12.2056C9.87995 12.2338 9.85758 12.2634 9.83233 12.2886C8.97298 13.1444 8.12446 14.0116 7.25068 14.8522C6.55657 15.5204 5.7066 15.8739 4.74985 15.9742C4.70944 15.9785 4.66976 15.9908 4.62935 15.9987H4.03625V16.0002Z\" fill=\"#57A6EE\"/>\n                  <path d=\"M5.50818 11.3146C5.20586 11.2951 4.93529 11.145 4.7816 10.8239C4.62864 10.5036 4.66904 10.1976 4.88334 9.91551C4.92374 9.86212 4.97064 9.81234 5.01826 9.76471C6.60059 8.18167 8.18219 6.59935 9.76523 5.01702C10.1123 4.66997 10.5034 4.59926 10.8814 4.81211C11.3245 5.06176 11.4507 5.66352 11.1419 6.06902C11.0914 6.13468 11.0344 6.19601 10.976 6.25518C9.40158 7.83101 7.82575 9.40539 6.25209 10.9819C6.05727 11.1775 5.84009 11.3138 5.50818 11.3153V11.3146Z\" fill=\"#57A6EE\"/>\n                  </g>\n                  <defs>\n                  <clipPath id=\"clip0_320_1866\">\n                  <rect width=\"16\" height=\"16\" fill=\"white\"/>\n                  </clipPath>\n                  </defs>\n                  </svg>\n                  <span>\u0421\u0441\u044B\u043B\u043A\u0430</span>\n                </a>\n              </div>\n              <div class=\"schedule-webinar-card__details\">\n                <h3 class=\"schedule-webinar-card__title\">").concat(title, "</h3>\n                <div class=\"text text--md schedule-webinar-card__text\">\n                  <p>").concat(description, "</p>\n                </div>\n              </div>\n            </div>\n          </div>\n        ");
+    };
+    $('#myCalendar').jalendar({
+      type: 'selector',
+      color: '#52D3D5',
+      color2: '#52D5A4',
+      dayWithZero: false,
+      monthWithZero: false,
+      lang: "RU",
+      done: function done() {
+        $(filterItems).html("");
+        $(webinarsStatic).hide();
+        $(filterItems).show();
+        $(filterItems).css({
+          maxWidth: "100%",
+          width: "100%"
+        });
+        var today = $('.today').data('date');
+        var currentDate = $('#myCalendar input.data1').val();
+        var events = $('#myCalendar .added-event');
+        var _iterator = _createForOfIteratorHelper(events),
+          _step;
+        try {
+          for (_iterator.s(); !(_step = _iterator.n()).done;) {
+            var event = _step.value;
+            if ($(event).data('date') === currentDate) {
+              var data = $(event).data();
+              $(filterItems).append(template(today, data));
+            }
+          }
+        } catch (err) {
+          _iterator.e(err);
+        } finally {
+          _iterator.f();
+        }
+      }
+    });
+    $('#myCalendarInput').jalendar({
+      type: 'selector'
+    });
+    $('.p-webinar-schedule__calendar-button').click(function () {
+      $(webinarsStatic).show();
+      $(filterItems).hide();
+    });
+  });
+});</script>
 
 </body>
 

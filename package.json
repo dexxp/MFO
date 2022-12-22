@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
+    "src": "^1.1.2",
     "swiper": "^8.4.4"
   }
 }

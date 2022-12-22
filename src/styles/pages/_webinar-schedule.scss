@@ -1,12 +1,4 @@
 .p-webinar-schedule {
-  &__bg {
-    height: 650px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
-  }
-
   &__title {
     margin: 80px 0 40px;
   }
@@ -14,16 +6,41 @@
   &__inner {
     display: flex;
     gap: 56px;
+    #filter-items {
+      display: none;
+    }
   }
+
 
   &__calendar {
     flex-shrink: 0;
+
+    padding: 48px;
+
     width: 484px;
-    height: 412px;
+    height: 590px;
 
     background: #FFFFFF;
-    box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+    box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
     border-radius: 48px;
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 21px 10px;
+      margin-top: 40px;
+    }
+
+    .jalendar {
+      width: 100%;
+      .jalendar-pages {
+        background: #FFFFFF !important;
+        border-radius: 48px !important;
+        width: 100%;
+      }
+    }
+
   }
 
   &__items {
