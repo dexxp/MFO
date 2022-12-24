@@ -2638,6 +2638,9 @@ input, textarea {
   color: #57A6EE;
   text-decoration: none;
 }
+.schedule-webinar-card__link:hover {
+  text-decoration: underline;
+}
 .schedule-webinar-card__details {
   max-width: 360px;
   width: 100%;
@@ -2664,6 +2667,8 @@ input, textarea {
     flex-wrap: wrap;
     max-width: 280px;
     width: 100%;
+    column-gap: 16px;
+    row-gap: 8px;
   }
   .schedule-webinar-card__link {
     margin-left: auto;
@@ -6672,7 +6677,7 @@ input, textarea {
 }
 .p-webinar-schedule__calendar {
   position: sticky;
-  top: 88px;
+  top: 144px;
   flex-shrink: 0;
   padding: 48px;
   width: 484px;

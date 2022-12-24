@@ -61,6 +61,10 @@
     line-height: 140%;
     color: $primary;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__details {
@@ -97,6 +101,8 @@
       flex-wrap: wrap;
       max-width: 280px;
       width: 100%;
+      column-gap: 16px;
+      row-gap: 8px;
     }
 
     &__link {
