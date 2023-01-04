@@ -1,16 +1,4 @@
 .p-learn {
-  &__main {
-    padding-top: 80px;
-  }
-
-  &__bg {
-    height: 478px;
-
-    img {
-      object-fit: cover;
-    }
-  }
-
   &__title {
     margin-bottom: 79px;
   }
@@ -20,5 +8,27 @@
     flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 32px;
+  }
+}
+
+@include mq(md) {
+  .p-learn {
+    .title-prompt {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__inner {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-learn {
+    &__inner {
+      gap: 16px;
+    }
   }
 }

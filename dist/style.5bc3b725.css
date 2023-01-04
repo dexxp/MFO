@@ -2766,6 +2766,17 @@ input, textarea {
   min-height: 467px;
   display: flex;
 }
+.more-card__img {
+  line-height: 0;
+}
+.more-card__img-mobile {
+  line-height: 0;
+  display: none;
+}
+.more-card__img-mobile img {
+  width: 100%;
+  height: 100%;
+}
 .more-card__bg-img {
   position: absolute;
   height: 100%;
@@ -2778,6 +2789,10 @@ input, textarea {
   object-fit: cover;
   object-position: center;
   opacity: 0.07;
+  border-radius: 48px;
+}
+.more-card__img {
+  position: absolute;
 }
 .more-card__title {
   margin-bottom: 16px;
@@ -2829,7 +2844,162 @@ input, textarea {
 .more-card--bg_dark .more-card__wrapper {
   background: linear-gradient(9.18deg, #2D2D2D 13.91%, #888888 86.09%);
 }
+.more-card__cost-program .more-card__img {
+  position: absolute;
+  right: 44px;
+  top: 61px;
+}
+.more-card__cost-program .more-card__img img {
+  width: 145px;
+  height: 344px;
+}
+.more-card__cost-program .more-card__img-mobile {
+  width: 210px;
+  height: 128px;
+}
+.more-card__services-accounting .more-card__img {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.more-card__services-accounting .more-card__img img {
+  width: 100%;
+  height: 100%;
+}
+.more-card__services-accounting .more-card__img-mobile {
+  width: 127px;
+  height: 147px;
+}
+.more-card__transition .more-card__title {
+  max-width: 240px;
+  height: 108px;
+  display: flex;
+  align-items: center;
+}
+.more-card__transition .more-card__img {
+  right: 23px;
+  top: 89px;
+}
+.more-card__transition .more-card__img img {
+  width: 289px;
+  height: 310px;
+}
+.more-card__transition .more-card__img-mobile {
+  width: 148px;
+  height: 159px;
+}
+.more-card__transition .more-card__text {
+  max-width: 257px;
+}
+.more-card__capabilities .more-card__text {
+  max-width: 250px;
+}
+.more-card__capabilities .more-card__img {
+  right: 54px;
+  top: 117px;
+}
+.more-card__capabilities .more-card__img img {
+  width: 175px;
+  height: 255px;
+}
+.more-card__capabilities .more-card__img-mobile {
+  width: 108px;
+  height: 159px;
+}
+.more-card__video-lessons .more-card__img {
+  right: 0;
+  top: 81px;
+}
+.more-card__video-lessons .more-card__img img {
+  width: 379px;
+  height: 317px;
+}
+.more-card__video-lessons .more-card__img-mobile {
+  width: 224px;
+  height: 140px;
+}
+.more-card__outsourcing .more-card__wrapper {
+  background: linear-gradient(270.53deg, #4CA3F2 0%, #80C2FF 100%);
+}
+.more-card__outsourcing .more-card__img {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.more-card__outsourcing .more-card__img img {
+  width: 100%;
+  height: 100%;
+}
+.more-card__outsourcing .more-card__img-mobile {
+  width: 127px;
+  height: 147px;
+}
+.more-card__record-webinars .more-card__title {
+  max-width: 283px;
+}
+.more-card__record-webinars .more-card__text {
+  max-width: 333px;
+}
+.more-card__record-webinars .more-card__img {
+  top: 60px;
+  right: 109px;
+}
+.more-card__record-webinars .more-card__img img {
+  width: 215px;
+  height: 349px;
+}
+.more-card__record-webinars .more-card__img-mobile {
+  width: 241px;
+}
 
+@media screen and (max-width: 1250px) {
+  .more-card {
+    max-width: 90%;
+  }
+  .more-card__inner {
+    flex-direction: column-reverse;
+    padding: 36px 23px 48px !important;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    min-height: auto;
+  }
+  .more-card__title {
+    margin-bottom: 8px;
+  }
+  .more-card__text {
+    margin-bottom: 24px;
+  }
+  .more-card__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .more-card .button {
+    width: 263px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .more-card__img {
+    display: none;
+  }
+  .more-card__img-mobile {
+    display: block;
+  }
+  .more-card__transition .more-card__title {
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .more-card {
+    max-width: 100%;
+  }
+}
 .jalendar-input {
   position: relative;
   width: 280px;
@@ -3293,6 +3463,105 @@ input, textarea {
   .jalendar .jalendar-container .jalendar-pages .days .day span {
     width: 35px;
     height: 35px;
+  }
+}
+.icon-card {
+  max-width: 368px;
+  width: 100%;
+  min-height: 466px;
+}
+.icon-card__wrapper {
+  position: relative;
+  background-color: black;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 56px;
+  border-radius: 40px;
+  z-index: 0;
+}
+.icon-card__bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.07;
+  z-index: -1;
+}
+.icon-card__bg-img img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.icon-card__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.icon-card__button {
+  margin-top: 32px;
+}
+.icon-card__title {
+  margin-top: 16px;
+}
+.icon-card__text {
+  margin-top: 17px;
+}
+.icon-card--color_dark .icon-card__wrapper {
+  background: linear-gradient(9.18deg, #2D2D2D 13.91%, #888888 86.09%);
+}
+.icon-card--color_yellow .icon-card__wrapper {
+  background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+}
+.icon-card--color_blue .icon-card__wrapper {
+  background: linear-gradient(90.53deg, #346A97 0%, #1C394F 100%);
+}
+.icon-card--color_pink .icon-card__wrapper {
+  background: linear-gradient(267.67deg, #FD6853 0%, #FFA564 100%);
+}
+
+@media screen and (max-width: 1250px) {
+  .icon-card {
+    max-width: 90%;
+    min-height: auto;
+  }
+  .icon-card__wrapper {
+    padding: 36px 40px 48px;
+  }
+  .icon-card__wrap {
+    display: flex;
+    align-items: center;
+    max-width: 382px;
+    width: fit-content;
+    gap: 16px;
+    justify-content: center;
+  }
+  .icon-card__icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+  }
+  .icon-card__icon img {
+    max-width: 100%;
+  }
+  .icon-card__title {
+    text-align: left;
+    margin: 0;
+  }
+  .icon-card__button {
+    margin-top: 24px;
+    width: 263px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 980px) {
+  .icon-card {
+    max-width: 100%;
   }
 }
 .header {
@@ -6211,12 +6480,6 @@ input, textarea {
   align-items: center;
 }
 
-.p-cost__bg {
-  height: 478px;
-}
-.p-cost__bg img {
-  object-fit: cover;
-}
 .p-cost__title {
   margin: 80px 0;
 }
@@ -6233,14 +6496,49 @@ input, textarea {
   margin-bottom: 32px;
 }
 
-.p-learn__main {
-  padding-top: 80px;
+@media screen and (max-width: 1250px) {
+  .p-cost .title-prompt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-cost__title {
+    margin: 40px 0 8px;
+  }
+  .p-cost__prompt {
+    margin: 0 0 24px;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+    position: static;
+  }
+  .p-cost__prompt:before {
+    display: none;
+  }
+  .p-cost__prompt .prompt__wrapper {
+    padding: 0;
+    border: none;
+    gap: 0;
+  }
+  .p-cost__prompt .prompt__img {
+    height: 16px;
+    width: 16px;
+    position: static;
+    border: none;
+    padding: 0;
+  }
+  .p-cost__prompt .prompt__img img {
+    max-width: 100%;
+  }
+  .p-cost__inner {
+    justify-content: center;
+    gap: 20px;
+  }
 }
-.p-learn__bg {
-  height: 478px;
-}
-.p-learn__bg img {
-  object-fit: cover;
+@media screen and (max-width: 980px) {
+  .p-cost__inner {
+    gap: 16px;
+  }
 }
 .p-learn__title {
   margin-bottom: 79px;
@@ -6252,14 +6550,21 @@ input, textarea {
   margin-bottom: 32px;
 }
 
-.p-about-program__main {
-  padding-top: 80px;
+@media screen and (max-width: 1250px) {
+  .p-learn .title-prompt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-learn__inner {
+    justify-content: center;
+    gap: 20px;
+  }
 }
-.p-about-program__bg {
-  height: 478px;
-}
-.p-about-program__bg img {
-  object-fit: cover;
+@media screen and (max-width: 980px) {
+  .p-learn__inner {
+    gap: 16px;
+  }
 }
 .p-about-program__title {
   margin-bottom: 79px;
@@ -6271,6 +6576,22 @@ input, textarea {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 1250px) {
+  .p-about-program .title-prompt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-about-program__inner {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .p-about-program__inner {
+    gap: 16px;
+  }
+}
 .p-polls-clients__bg {
   height: 478px;
 }

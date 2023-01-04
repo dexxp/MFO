@@ -1,12 +1,4 @@
 .p-cost {
-  &__bg {
-    height: 478px;
-
-    img {
-      object-fit: cover;
-    }
-  }
-
   &__title {
     margin: 80px 0;
   }
@@ -26,5 +18,60 @@
     flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 32px;
+  }
+}
+
+@include mq(md) {
+  .p-cost {
+    .title-prompt {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      margin: 40px 0 8px;
+    }
+
+    &__prompt {
+      margin: 0 0 24px;
+      max-width: 100%;
+      justify-content: center;
+      display: flex;
+      position: static;
+      &:before {
+        display: none;
+      }
+
+      .prompt__wrapper {
+        padding: 0;
+        border: none;
+        gap: 0;
+      }
+
+      .prompt__img {
+        height: 16px;
+        width: 16px;
+        img {
+          max-width: 100%;
+        }
+        position: static;
+        border: none;
+        padding: 0;
+      }
+    }
+
+    &__inner {
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-cost {
+    &__inner {
+      gap: 16px;
+    }
   }
 }
