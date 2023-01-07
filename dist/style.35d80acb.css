@@ -7651,6 +7651,27 @@ input, textarea {
     height: 163px;
   }
 }
+.p-license-agreement__wrapper {
+  max-width: 875px;
+  width: 100%;
+  margin: 0 auto;
+}
+.p-license-agreement__title {
+  margin-bottom: 24px;
+}
+.p-license-agreement .link {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1250px) {
+  .p-license-agreement__wrapper {
+    padding-bottom: 80px;
+  }
+  .p-license-agreement__title {
+    margin-bottom: 16px;
+    text-align: left;
+  }
+}
 .primary-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;

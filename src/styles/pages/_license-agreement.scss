@@ -1,0 +1,28 @@
+.p-license-agreement {
+  &__wrapper {
+    max-width: 875px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  .link {
+    font-weight: 600;
+  }
+}
+
+@include mq(md) {
+  .p-license-agreement {
+    &__wrapper {
+      padding-bottom: 80px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      text-align: left;
+    }
+  }
+}
