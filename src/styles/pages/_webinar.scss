@@ -22,3 +22,36 @@
     text-align: center;
   }
 }
+
+@include mq(md) {
+  .p-webinar {
+    .page-switcher__header {
+      margin-bottom: 32px;
+    }
+
+    &__download-button {
+      margin: 0 0 32px;
+    }
+
+    .s-schedule-webinars {
+
+      &__inner {
+        padding-left: 23px;
+        padding-right: 23px;
+      }
+
+      &__text {
+        max-width: 500px;
+      }
+
+      .button {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        gap: 8px;
+        img {
+          width: 16px;
+        }
+      }
+    }
+  }
+}
