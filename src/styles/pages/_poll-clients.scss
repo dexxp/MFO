@@ -1,24 +1,12 @@
 .p-poll-clients {
-  &__bg {
-    height: 650px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
-  }
-
   &__title {
-    margin: 80px 0 24px;
+    margin-bottom: 24px;
   }
 
   &__text {
     max-width: 878px;
     width: 100%;
     margin-bottom: 40px;
-  }
-
-  &__items {
-
   }
 
   &__item {
@@ -31,6 +19,23 @@
     img {
       border-radius: 8px;
       max-width: 100%;
+    }
+  }
+}
+
+@include mq(md) {
+  .p-poll-clients {
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      max-width: 600px;
+      margin: 0 auto 24px;
+      text-align: center;
+    }
+
+    &__item {
     }
   }
 }

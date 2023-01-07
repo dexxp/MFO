@@ -1650,14 +1650,13 @@ input, textarea {
 
 .polls {
   max-width: 975px;
-  box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
   border-radius: 16px;
-  min-height: 88px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 56px;
-  padding-right: 48px;
+  padding: 33px 48px 33px 56px;
   position: relative;
   background-color: #FFFFFF;
 }
@@ -1675,6 +1674,24 @@ input, textarea {
   bottom: 0;
 }
 
+@media screen and (max-width: 1250px) {
+  .polls__descr {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .polls {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 17px 16px;
+  }
+  .polls__descr {
+    font-size: 16px;
+  }
+  .polls img {
+    width: 9px;
+  }
+}
 .team {
   max-width: 363px;
   display: flex;
@@ -6444,6 +6461,13 @@ input, textarea {
   gap: 12px;
 }
 
+.s-other-polls {
+  margin: 72px 0;
+}
+.s-other-polls__title {
+  margin-bottom: 16px;
+}
+
 .s-questions-remain {
   margin-top: 128px;
 }
@@ -6702,6 +6726,9 @@ input, textarea {
   .p-webinar__download-button {
     margin: 0 0 32px;
   }
+  .p-webinar__download-button img {
+    width: 16px;
+  }
   .p-webinar .s-schedule-webinars__inner {
     padding-left: 23px;
     padding-right: 23px;
@@ -6882,16 +6909,6 @@ input, textarea {
     gap: 16px;
   }
 }
-.p-polls-clients__bg {
-  height: 478px;
-}
-.p-polls-clients__bg img {
-  height: 478px;
-  object-fit: cover;
-}
-.p-polls-clients__main {
-  padding-top: 80px;
-}
 .p-polls-clients__text {
   max-width: 878px;
   width: 100%;
@@ -6906,6 +6923,24 @@ input, textarea {
   margin-top: 12px;
 }
 
+@media screen and (max-width: 1250px) {
+  .p-polls-clients__title {
+    margin-bottom: 16px;
+  }
+  .p-polls-clients__text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .p-polls-clients__inner {
+    margin: 24px 0 72px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .p-polls-clients .polls + .polls {
+    margin-top: 8px;
+  }
+}
 .p-eps-expert__first-screen-img {
   position: absolute;
   top: -44px;
@@ -7436,15 +7471,8 @@ input, textarea {
   margin-left: auto;
 }
 
-.p-poll-clients__bg {
-  height: 650px;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: center;
-}
 .p-poll-clients__title {
-  margin: 80px 0 24px;
+  margin-bottom: 24px;
 }
 .p-poll-clients__text {
   max-width: 878px;
@@ -7462,6 +7490,16 @@ input, textarea {
   max-width: 100%;
 }
 
+@media screen and (max-width: 1250px) {
+  .p-poll-clients__title {
+    margin-bottom: 16px;
+  }
+  .p-poll-clients__text {
+    max-width: 600px;
+    margin: 0 auto 24px;
+    text-align: center;
+  }
+}
 .p-contacts__bg {
   height: 960px;
   background-size: 100% auto;

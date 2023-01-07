@@ -1,17 +1,4 @@
 .p-polls-clients {
-  &__bg {
-    height: 478px;
-
-    img {
-      height: 478px;
-      object-fit: cover;
-    }
-  }
-
-  &__main {
-    padding-top: 80px;
-  }
-
   &__text {
     max-width: 878px;
     width: 100%;
@@ -27,5 +14,31 @@
 
   .polls + .polls {
     margin-top: 12px;
+  }
+}
+
+@include mq(md) {
+  .p-polls-clients {
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    &__inner {
+      margin: 24px 0 72px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-polls-clients {
+    .polls + .polls {
+      margin-top: 8px;
+    }
   }
 }
