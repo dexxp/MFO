@@ -9,6 +9,14 @@
       & + & {
         border-left: 1px solid $primary;
       }
+
+      &--left {
+        border-top-left-radius: 24px;
+      }
+
+      &--right {
+        border-top-right-radius: 24px;
+      }
     }
 
     & > * {
@@ -77,7 +85,7 @@
     }
 
     &-title {
-      font-weight: 400;
+      font-weight: 600;
       font-size: 16px;
       line-height: 140%;
       color: #434343;
@@ -96,6 +104,74 @@
 
     &:last-child {
       border-right: 1px solid $primary;
+    }
+  }
+}
+
+@include mq(sm) {
+  .table {
+
+    max-width: 580px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    &__first-cell {
+      padding: 20px 2px 20px 22px;
+      width: 139px;
+      font-size: 10px;
+      flex-basis: auto;
+      flex-shrink: 0;
+    }
+
+    &__header {
+      &-title {
+        padding: 21px 24px;
+        height: 105px;
+        width: 220px;
+        flex-basis: auto;
+        flex-shrink: 0;
+
+        .title {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__body {
+      &-title {
+        padding: 32px 24px;
+        width: 139px;
+        font-size: 12px;
+        flex-basis: auto;
+        flex-shrink: 0;
+      }
+    }
+
+
+    &__cell {
+      padding: 19px 20px;
+      width: 220px;
+      flex-basis: auto;
+      flex-shrink: 0;
+
+      &-title {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .table {
+    max-width: 600px;
+    padding: 0 0 0 16px;
+
+    &__cell {
+      &-text {
+        margin-top: 2px;
+        font-size: 12px;
+      }
     }
   }
 }

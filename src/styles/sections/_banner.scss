@@ -26,6 +26,11 @@
 
 @include mq(xs) {
     .banner {
+        &__title {
+            margin-bottom: 0;
+            font-size: 16px;
+        }
+
         .text--lg {
             font-size: 14px;
         }

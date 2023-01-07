@@ -4,3 +4,32 @@
     margin-bottom: 40px;
   }
 }
+
+
+@include mq(md) {
+  .s-why-choice {
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-why-choice {
+    .container {
+      padding-right: 0;
+    }
+
+    .table {
+      overflow-y: auto;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-why-choice {
+    .container {
+      padding: 0;
+    }
+  }
+}

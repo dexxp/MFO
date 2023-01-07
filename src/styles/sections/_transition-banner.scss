@@ -9,6 +9,7 @@
     background-position: center;
     background-size: cover;
     display: flex;
+
     gap: 32px;
     align-items: center;
     padding: 42px 165px 42px 195px;
@@ -17,5 +18,37 @@
     text-transform: uppercase;
     max-width: 485px;
     width: 100%;
+  }
+}
+
+@include mq(md) {
+  .s-transition-banner {
+    &__inner {
+      flex-direction: column;
+      padding: 40px 35px;
+      gap: 16px;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-transition-banner {
+    &__inner {
+      background-image: url("../img/home-banner-bg-mobile.svg") !important;
+      border-radius: 32px;
+    }
+
+    &__img {
+      width: 72px;
+      height: 72px;
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
 }

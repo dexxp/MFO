@@ -7,3 +7,12 @@
     margin: 24px 0 16px;
   }
 }
+
+
+@include mq(md) {
+  .s-how-work {
+    &__text {
+      margin: 16px 0;
+    }
+  }
+}

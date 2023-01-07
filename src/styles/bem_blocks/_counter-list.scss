@@ -75,7 +75,7 @@
     }
 
     &__item {
-      padding: 24px 40px;
+      padding: 24px 40px !important;
     }
     &__digit {
       width: 32px;
@@ -90,6 +90,10 @@
     }
     &__content {
       max-width: 247px;
+    }
+
+    &__add-info {
+      text-align: left;
     }
   }
 }

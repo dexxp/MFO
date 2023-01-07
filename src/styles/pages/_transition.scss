@@ -6,7 +6,6 @@
   &__title {
     max-width: 579px;
     width: 100%;
-    margin-top: 80px;
   }
 
   &__text {
@@ -17,5 +16,54 @@
 
   &__transition-banner {
     margin-bottom: 128px;
+  }
+}
+
+@include mq(md) {
+  .p-transition {
+    &__first-screen {
+      margin-bottom: 250px;
+    }
+
+    &__text {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 600px;
+    }
+
+    &__transition-banner {
+      margin-top: 32px;
+      margin-bottom: 72px;
+    }
+
+    .section--m72 {
+      margin: 32px 0;
+    }
+
+    .banner {
+      margin-top: 32px;
+      margin-bottom: 72px;
+    }
+
+    .center-slider {
+      margin: 32px 0;
+    }
+
+    .s-why-choice {
+      margin: 72px 0;
+    }
+
+    .other-services {
+      margin: 72px 0;
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-transition {
+    &__first-screen {
+      margin-bottom: 158px;
+    }
   }
 }
