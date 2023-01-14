@@ -8,6 +8,28 @@
   &__items {
     display: flex;
     gap: 25px;
+    justify-content: center;
   }
 
+}
+
+
+@include mq(md) {
+  .s-add-licenses {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__items {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-add-licenses {
+    &__items {
+      gap: 16px;
+    }
+  }
 }

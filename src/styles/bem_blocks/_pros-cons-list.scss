@@ -33,3 +33,17 @@
     }
   }
 }
+
+@include mq(sm) {
+  .pros-list {
+    &__item {
+      font-size: 14px;
+    }
+  }
+
+  .cons-list {
+    &__item {
+      font-size: 14px;
+    }
+  }
+}

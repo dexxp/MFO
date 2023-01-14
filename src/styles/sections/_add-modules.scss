@@ -15,3 +15,15 @@
     width: 100%;
   }
 }
+
+@include mq(md) {
+  .s-add-modules {
+    &__wrapper {
+      display: block;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}

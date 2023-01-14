@@ -2,4 +2,10 @@
   &--primary {
     color: $primary;
   }
+
+  &--fw {
+    &_600 {
+      font-weight: 600;
+    }
+  }
 }

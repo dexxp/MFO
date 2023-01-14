@@ -1,9 +1,10 @@
 .products {
+    max-width: 368px;
     &__wrapper {
         max-width: 368px;
-        min-height: 530px;
+        width: 100%;
         padding: 56px 71px 48px 73px;
-        box-shadow: 0px 4px 30px rgba(80, 106, 153, 0.1);
+        box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
         border-radius: 32px;
         display: flex;
         flex-direction: column;
@@ -43,5 +44,38 @@
         font-size: 16px;
         line-height: 22px;
         color: #57A6EE;
+    }
+}
+
+@include mq(md) {
+    .products {
+
+        max-width: 253px;
+
+        &__wrapper {
+            padding: 40px 32px 32px;
+        }
+
+        &__image {
+            margin: 0 auto 16px;
+            max-width: 123px;
+            width: 100%;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__name {
+            font-size: 14px;
+        }
+
+        &__descr {
+            font-size: 14px;
+        }
+
+        .button {
+            padding: 16px 70px;
+            font-size: 14px;
+        }
     }
 }

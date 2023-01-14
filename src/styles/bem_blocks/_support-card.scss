@@ -1,9 +1,11 @@
 .support-card {
-  padding-top: 16px;
   position: relative;
 
+  max-width: 368px;
+  width: 100%;
+
   &__badge {
-    top: 0;
+    top: -16px;
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
@@ -47,5 +49,41 @@
   &__price {
     padding-top: 24px;
     margin: auto auto 24px;
+  }
+}
+
+@include mq(md) {
+  .support-card {
+    &__badge {
+      top: -14px;
+      font-size: 10px;
+      padding: 10px 25px 8px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .support-card {
+    max-width: 343px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__sup-title {
+      margin-bottom: 0;
+    }
+
+    &__wrapper {
+      padding: 40px 43px 40px 32px;
+    }
+
+    .button {
+      padding: 16px 99px;
+    }
+
+    &__price {
+      padding-top: 16px;
+    }
   }
 }

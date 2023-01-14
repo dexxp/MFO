@@ -2,6 +2,9 @@
   padding-top: 16px;
   position: relative;
 
+  max-width: 368px;
+  width: 100%;
+
   &__wrapper {
     padding: 56px 72px 48px;
     background: $white;
@@ -65,5 +68,54 @@
   &__price {
     margin-bottom: 24px;
     text-align: center;
+  }
+}
+
+@include mq(md) {
+  .product-card {
+    max-width: 253px;
+
+    &__badge {
+      font-size: 10px;
+    }
+
+    &__wrapper {
+      padding: 40px 32px 32px;
+    }
+
+    &__img {
+      max-width: 123px;
+      width: 100%;
+      margin: 0 auto 16px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    &__for {
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    &__text {
+      font-size: 14px;
+      min-height: 34px;
+    }
+
+    .button {
+      font-size: 14px;
+      padding: 16px 70px;
+      margin-left: 2px;
+    }
+
+    &:nth-child(1), &:nth-child(2) {
+      order: 1;
+    }
   }
 }

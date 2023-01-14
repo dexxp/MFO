@@ -18,3 +18,43 @@
     justify-content: center;
   }
 }
+
+@include mq(md) {
+  .s-add-products {
+    &__title {
+      margin-bottom: 16px;
+    }
+    &__text {
+      margin-bottom: 24px;
+    }
+
+    &__items {
+      gap: 16px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-add-products {
+    .container {
+      padding: 0;
+    }
+
+    &__text {
+      padding: 0 16px;
+    }
+
+    &__title {
+      padding: 0 16px;
+    }
+
+    &__swiper {
+      padding: 0 16px !important;
+    }
+
+    &__items {
+      gap: 0;
+      justify-content: flex-start;
+    }
+  }
+}

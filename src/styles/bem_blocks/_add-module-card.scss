@@ -16,7 +16,7 @@
 
   &__text {
     &-lg {
-      font-weight: 400;
+      font-weight: 600;
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 0;
@@ -29,5 +29,45 @@
 
   &__button {
     padding: 21px 38px;
+  }
+}
+
+@include mq(sm) {
+  .add-module-card {
+    &__wrapper {
+
+    }
+
+    &__text {
+      &-lg {
+        font-size: 16px;
+        max-width: 213px;
+        width: 100%;
+      }
+
+      & + .add-module-card__text-md {
+        margin-top: 0;
+      }
+    }
+
+    .button {
+      border: none;
+      border-radius: 0;
+      padding: 15px 0;
+
+      &:hover {
+        color: $primary;
+        border: none;
+        background: transparent;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .add-module-card {
+    &__wrapper {
+      padding: 16px 24px;
+    }
   }
 }

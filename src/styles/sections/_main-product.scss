@@ -25,3 +25,38 @@
     }
   }
 }
+
+@include mq(md) {
+  .s-main-product {
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__items {
+      gap: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .s-main-product {
+    .container {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__text {
+      padding: 0 16px;
+    }
+
+    &__swiper {
+      padding: 0 16px !important;
+    }
+
+    &__items {
+      gap: 0;
+      justify-content: flex-start;
+    }
+  }
+}

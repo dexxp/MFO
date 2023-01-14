@@ -8,5 +8,27 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
+  }
+}
+
+@include mq(md) {
+  .s-add-services {
+    &__items {
+      gap: 16px;
+    }
+
+    &__title {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-add-services {
+    &__title {
+      max-width: 315px;
+      width: 100%;
+    }
   }
 }

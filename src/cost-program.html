@@ -17,18 +17,30 @@
       <img src="./img/page-pattern-3.svg" alt="">
     </div>
 
-    <div class="container container--wide">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Стоимость</a></li>
-        <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Стоимость программы</a></li>
-      </ul>
+    <div class="container container--wide breadcrumbs-container">
+      <div class="breadcrumbs">
+    <span>
+
+      <span>
+        <a href="http://mfo-local.ru/">Главная</a>
+      </span>
+      /
+      <span>
+        <a href="http://mfo-local.ru/">Стоимость</a>
+      </span>
+      /
+      <span>
+        <a href="http://mfo-local.ru/">Стоимость программы</a>
+      </span>
+
+    </span>
+      </div>
     </div>
 
     <main class="p-cost-program__main">
       <section class="p-cost-program__first-screen">
         <div class="container container--narrow">
-          <h1 class="title title--level_h1 p-cost-program__title">Стоимость программы</h1>
+          <h1 class="title title--level_h1 title--main p-cost-program__title">Стоимость программы</h1>
           <div class="text text--md p-cost-program__text">
             <p><span class="marker marker--primary">Конфигурация «Моя МФО»: Учет в МФО и КПК</span> (далее «Моя МФО») является дополнением к типовой конфигурации «1С:Бухгалтерия предприятия 8» редакция 3.0. В конфигурации «Моя МФО» сохраняется весь функционал типовой конфигурации «1С:Бухгалтерия предприятия 8». Данный программный продукт расширяет возможности типовой конфигурации, превращая ее в специализированное отраслевое решение.</p>
           </div>
@@ -39,50 +51,54 @@
         <div class="container">
           <div class="s-main-product__wrapper">
             <h2 class="title title--level_h1 s-main-product__title">Основной продукт</h2>
-            <div class="s-main-product__items">
-              <div class="product-card">
-                <div class="product-card__badge product-card__badge--outlined">только для КПК</div>
-                <div class="product-card__wrapper">
-                  <div class="product-card__img">
-                    <img src="./img/main-product/1.png" alt="">
+            <div class="s-main-product__slider">
+              <div class="swiper s-main-product__swiper">
+                <div class="swiper-wrapper s-main-product__items">
+                  <div class="swiper-slide product-card">
+                    <div class="product-card__badge product-card__badge--outlined">только&nbsp;для&nbsp;КПК</div>
+                    <div class="product-card__wrapper">
+                      <div class="product-card__img">
+                        <img src="./img/main-product/1.png" alt="">
+                      </div>
+                      <h3 class="title title--level_h4 title--blue product-card__title">Конфигурация «Моя&nbsp;МФО» КПК Лайт</h3>
+                      <p class="text text--md product-card__for">КПК</p>
+                      <div class="text text--md product-card__text">
+                        <p>менее 300 займов за&nbsp;последний квартал</p>
+                      </div>
+                      <h3 class="price product-card__price">19 490 руб</h3>
+                      <a href="#" class="button button-primary button--size_xl product-card__button">Купить</a>
+                    </div>
                   </div>
-                  <h3 class="title title--level_h4 title--blue product-card__title">Конфигурация «Моя&nbsp;МФО» КПК Лайт</h3>
-                  <p class="text text--md product-card__for">КПК</p>
-                  <div class="text text--md product-card__text">
-                    <p>менее 300 займов за&nbsp;последний квартал</p>
+                  <div class="swiper-slide product-card">
+                    <div class="product-card__badge product-card__badge--outlined">только&nbsp;для&nbsp;КПК</div>
+                    <div class="product-card__wrapper">
+                      <div class="product-card__img">
+                        <img src="./img/main-product/2.png" alt="">
+                      </div>
+                      <h3 class="title title--level_h4 title--blue product-card__title">Конфигурация «Моя&nbsp;МФО» КПК Лайт+</h3>
+                      <p class="text text--md product-card__for">КПК</p>
+                      <div class="text text--md product-card__text">
+                        <p>менее 1200 займов за&nbsp;последний квартал</p>
+                      </div>
+                      <h3 class="price product-card__price">24 490 руб</h3>
+                      <a href="#" class="button button-primary button--size_xl product-card__button">Купить</a>
+                    </div>
                   </div>
-                  <h3 class="title title--level_h2 product-card__price">19 490 руб</h3>
-                  <a href="#" class="button button-primary button--size_xl product-card__button">Купить</a>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-card__badge product-card__badge--outlined">только для КПК</div>
-                <div class="product-card__wrapper">
-                  <div class="product-card__img">
-                    <img src="./img/main-product/2.png" alt="">
+                  <div class="swiper-slide product-card">
+                    <div class="product-card__badge product-card__badge--contain">Рекомендуем</div>
+                    <div class="product-card__wrapper">
+                      <div class="product-card__img">
+                        <img src="./img/main-product/3.png" alt="">
+                      </div>
+                      <h3 class="title title--level_h4 title--blue product-card__title">Конфигурация «Моя&nbsp;МФО» Максимум</h3>
+                      <p class="text text--md product-card__for">КПК / МКК / МФК</p>
+                      <div class="text text--md product-card__text">
+                        <p>без ограничений</p>
+                      </div>
+                      <h3 class="price product-card__price">38 900 руб</h3>
+                      <a href="#" class="button button-primary button--size_xl product-card__button">Купить</a>
+                    </div>
                   </div>
-                  <h3 class="title title--level_h4 title--blue product-card__title">Конфигурация «Моя&nbsp;МФО» КПК Лайт+</h3>
-                  <p class="text text--md product-card__for">КПК</p>
-                  <div class="text text--md product-card__text">
-                    <p>менее 1200 займов за&nbsp;последний квартал</p>
-                  </div>
-                  <h3 class="title title--level_h2 product-card__price">24 490 руб</h3>
-                  <a href="#" class="button button-primary button--size_xl product-card__button">Купить</a>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-card__badge product-card__badge--contain">Рекомендуем</div>
-                <div class="product-card__wrapper">
-                  <div class="product-card__img">
-                    <img src="./img/main-product/3.png" alt="">
-                  </div>
-                  <h3 class="title title--level_h4 title--blue product-card__title">Конфигурация «Моя&nbsp;МФО» Максимум</h3>
-                  <p class="text text--md product-card__for">КПК / МКК / МФК</p>
-                  <div class="text text--md product-card__text">
-                    <p>без ограничений</p>
-                  </div>
-                  <h3 class="title title--level_h2 product-card__price">38 900 руб</h3>
-                  <a href="#" class="button button-primary button--size_xl product-card__button">Купить</a>
                 </div>
               </div>
             </div>
@@ -96,16 +112,16 @@
       <section class="section s-add-modules">
         <div class="container">
           <div class="s-add-modules__wrapper">
-            <h2 class="title title--level_h1 s-add-modules__title">Дополнительные модули</h2>
+            <h2 class="title title--level_h1 title--tac-md s-add-modules__title">Дополнительные модули</h2>
             <div class="s-add-modules__items">
               <div class="add-module-card">
                 <div class="add-module-card__wrapper">
                   <div class="add-module-card__name">
-                    <p class="text text--lg add-module-card__text-lg">Блок обмена с БКИ</p>
+                    <p class="text text--lg add-module-card__text-lg">Блок обмена с&nbsp;БКИ</p>
                     <p class="text text--md add-module-card__text-md">НБКИ, Эквифакс</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
@@ -115,7 +131,7 @@
                     <p class="text text--lg add-module-card__text-lg">Рассылка SMS</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
@@ -125,49 +141,49 @@
                     <p class="text text--lg add-module-card__text-lg">Рассылка голосовых сообщений</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
               <div class="add-module-card">
                 <div class="add-module-card__wrapper">
                   <div class="add-module-card__name">
-                    <p class="text text--lg add-module-card__text-lg">Проверка паспорта на действительность</p>
+                    <p class="text text--lg add-module-card__text-lg">Проверка паспорта на&nbsp;действительность</p>
                     <p class="text text--md add-module-card__text-md">по сайту УФМС</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
               <div class="add-module-card">
                 <div class="add-module-card__wrapper">
                   <div class="add-module-card__name">
-                    <p class="text text--lg add-module-card__text-lg">Проверка по сайта судебных приставов</p>
+                    <p class="text text--lg add-module-card__text-lg">Проверка по&nbsp;сайта судебных приставов</p>
                     <p class="text text--md add-module-card__text-md">автоматически</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
               <div class="add-module-card">
                 <div class="add-module-card__wrapper">
                   <div class="add-module-card__name">
-                    <p class="text text--lg add-module-card__text-lg">Проверка по базе Финмониторинга</p>
+                    <p class="text text--lg add-module-card__text-lg">Проверка по&nbsp;базе Финмониторинга</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
               <div class="add-module-card">
                 <div class="add-module-card__wrapper">
                   <div class="add-module-card__name">
-                    <p class="text text--lg add-module-card__text-lg">Связь с сайтом</p>
+                    <p class="text text--lg add-module-card__text-lg">Связь с&nbsp;сайтом</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
@@ -177,14 +193,14 @@
                     <p class="text text--lg add-module-card__text-lg">Обучающие видео-ролики</p>
                   </div>
                   <div class="add-module-card__info">
-                    <h3 class="title title--level_h2 add-module-card__price">0 руб</h3>
+                    <h3 class="price add-module-card__price">0 руб</h3>
                   </div>
                 </div>
               </div>
               <div class="add-module-card">
                 <div class="add-module-card__wrapper">
                   <div class="add-module-card__name">
-                    <p class="text text--lg add-module-card__text-lg">Готовый сайт для МФО</p>
+                    <p class="text text--lg add-module-card__text-lg">Готовый сайт для&nbsp;МФО</p>
                     <p class="text text--md add-module-card__text-md">с личным кабинетом</p>
                   </div>
                   <div class="add-module-card__info">
@@ -209,7 +225,7 @@
                     <img src="./icons/license-card/1.svg" alt="">
                   </div>
                   <p class="text text--sm license-card__text">на 1 рабочее место</p>
-                  <h3 class="title title--level_h2 license-card__price">5 690 руб</h3>
+                  <h3 class="price license-card__price">5 690 руб</h3>
                   <a href="#" class="button button-outlined-blue license-card__button">Подробнее</a>
                 </div>
               </div>
@@ -220,7 +236,7 @@
                     <img src="./icons/license-card/2.svg" alt="">
                   </div>
                   <p class="text text--sm license-card__text">на 5 рабочих мест</p>
-                  <h3 class="title title--level_h2 license-card__price">27 027 руб</h3>
+                  <h3 class="price license-card__price">27 027 руб</h3>
                   <a href="#" class="button button-outlined-blue license-card__button">Подробнее</a>
                 </div>
               </div>
@@ -231,7 +247,7 @@
                     <img src="./icons/license-card/3.svg" alt="">
                   </div>
                   <p class="text text--sm license-card__text">на 10 рабочих мест</p>
-                  <h3 class="title title--level_h2 license-card__price">52 210 руб</h3>
+                  <h3 class="price license-card__price">52 210 руб</h3>
                   <a href="#" class="button button-outlined-blue license-card__button">Подробнее</a>
                 </div>
               </div>
@@ -242,7 +258,7 @@
                     <img src="./icons/license-card/4.svg" alt="">
                   </div>
                   <p class="text text--sm license-card__text">на 20 рабочих мест</p>
-                  <h3 class="title title--level_h2 license-card__price">96 730 руб</h3>
+                  <h3 class="price license-card__price">96 730 руб</h3>
                   <a href="#" class="button button-outlined-blue license-card__button">Подробнее</a>
                 </div>
               </div>
@@ -253,7 +269,7 @@
                     <img src="./icons/license-card/5.svg" alt="">
                   </div>
                   <p class="text text--sm license-card__text">на 50 рабочих мест</p>
-                  <h3 class="title title--level_h2 license-card__price">227 600 руб</h3>
+                  <h3 class="price license-card__price">227 600 руб</h3>
                   <a href="#" class="button button-outlined-blue license-card__button">Подробнее</a>
                 </div>
               </div>
@@ -266,7 +282,7 @@
         <div class="s-support-update__wrapper-outer" style="background-image: url('./img/common/blue-bg.svg');">
           <div class="container">
             <div class="s-support-update__wrapper">
-              <h2 class="title title--level_h1 title--white s-support-update__title">Поддержка и обновление</h2>
+              <h2 class="title title--level_h1 title--white s-support-update__title">Поддержка и&nbsp;обновление</h2>
               <div class="text text--md text--white s-support-update__text">
                 <p>Поддержка и сервисное обслуживание зарегистрированных пользователей осуществляется в&nbsp;рамках подписки на&nbsp;сопровождение данной надстройки.</p>
                 <br>
@@ -286,7 +302,7 @@
                       <li class="cons-list__item">приоритет поддержки — повышенный</li>
                       <li class="cons-list__item">обновление базы клиента специалистом компании релизами модуля «Моя&nbsp;МФО» и&nbsp;по&nbsp;запросу «1С:&nbsp;Бухгалтерия»</li>
                     </ul>
-                    <h3 class="title title--level_h2 support-card__price">3 900 руб/мес</h3>
+                    <h3 class="price support-card__price">3 900 руб/мес</h3>
                     <a href="#" class="button button-primary button--size_xl">Купить</a>
                   </div>
                 </div>
@@ -304,7 +320,7 @@
                     <ul class="cons-list support-card__cons-list">
                       <li class="cons-list__item">обновление базы клиента специалистом компании релизами модуля «Моя&nbsp;МФО» и&nbsp;по&nbsp;запросу «1С:&nbsp;Бухгалтерия»</li>
                     </ul>
-                    <h3 class="title title--level_h2 support-card__price">4 900 руб/мес</h3>
+                    <h3 class="price support-card__price">4 900 руб/мес</h3>
                     <a href="#" class="button button-primary button--size_xl">Купить</a>
                   </div>
                 </div>
@@ -319,14 +335,16 @@
                       <li class="pros-list__item">приоритет поддержки — повышенный</li>
                       <li class="pros-list__item">обновление базы клиента специалистом компании релизами модуля «Моя&nbsp;МФО» и&nbsp;по&nbsp;запросу «1С:&nbsp;Бухгалтерия»</li>
                     </ul>
-                    <h3 class="title title--level_h2 support-card__price">7 900 руб/мес</h3>
+                    <h3 class="price support-card__price">7 900 руб/мес</h3>
                     <a href="#" class="button button-primary button--size_xl">Купить</a>
                   </div>
                 </div>
               </div>
               <div class="s-support-update__banner">
-                <div class="s-support-update__banner-img"></div>
-                <h3 class="title title--level_h3 s-support-update__banner-title">Установка и настройка производится бесплатно</h3>
+                <div class="s-support-update__banner-img">
+                  <img src="./img/surprice.svg" alt="">
+                </div>
+                <h3 class="title title--level_h2 s-support-update__banner-title">Установка и настройка производится бесплатно</h3>
                 <a href="#" class="button button-outlined-blue button--size_xl s-support-update__banner-button">Заказать</a>
               </div>
             </div>
@@ -339,25 +357,29 @@
           <div class="s-add-products__wrapper">
             <h2 class="title title--level_h1 s-add-products__title">Дополнительные программные продукты</h2>
             <div class="text text--md s-add-products__text">
-              <p>Поскольку система сделана на&nbsp;базе <span class="marker marker--primary">1С: Бухгалтерия 3.0</span> предполагается, что&nbsp;она должна быть у&nbsp;вас куплена или&nbsp;взята в&nbsp;аренду. Стоимость зависит от&nbsp;количества необходимых лицензий, подробнее можно уточнить у&nbsp;специалистов компании. Ниже представлены стоимости обоих вариантов на&nbsp;1 пользователя.</p>
+              <p>Поскольку система сделана на&nbsp;базе <span class="marker marker--fw_600 marker--primary">1С: Бухгалтерия 3.0</span> предполагается, что&nbsp;она должна быть у&nbsp;вас куплена или&nbsp;взята в&nbsp;аренду. Стоимость зависит от&nbsp;количества необходимых лицензий, подробнее можно уточнить у&nbsp;специалистов компании. Ниже представлены стоимости обоих вариантов на&nbsp;1 пользователя.</p>
             </div>
-            <div class="s-add-products__items">
-              <div class="products">
-                <div class="products__wrapper">
-                  <img src="./img/products-image.jpg" alt="" class="products__image">
-                  <h3 class="products__name">1С: Бухгалтерия предприятия ПРОФ</h3>
-                  <p class="products__descr">редакция 3.0</p>
-                  <span class="products__price">13 000 руб</span>
-                  <a href="#" class="button products__action">Купить</a>
-                </div>
-              </div>
-              <div class="products">
-                <div class="products__wrapper">
-                  <img src="./img/products-image-1.jpg" alt="" class="products__image">
-                  <h3 class="products__name">Аренда сервера с&nbsp;лицензиями фирмы 1С</h3>
-                  <p class="products__descr">ежемесячная подписка</p>
-                  <span class="products__price">от 990 руб/мес</span>
-                  <a href="#" class="button products__action">Купить</a>
+            <div class="s-add-products__slider">
+              <div class="swiper s-add-products__swiper">
+                <div class="swiper-wrapper s-add-products__items">
+                  <div class="swiper-slide products">
+                    <div class="products__wrapper">
+                      <img src="./img/products-image.jpg" alt="" class="products__image">
+                      <h3 class="products__name">1С: Бухгалтерия предприятия ПРОФ</h3>
+                      <p class="products__descr">редакция 3.0</p>
+                      <span class="price products__price">13 000 руб</span>
+                      <a href="#" class="button button-outlined-blue products__action">Купить</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide products">
+                    <div class="products__wrapper">
+                      <img src="./img/products-image-1.jpg" alt="" class="products__image">
+                      <h3 class="products__name">Аренда сервера с&nbsp;лицензиями фирмы 1С</h3>
+                      <p class="products__descr">ежемесячная подписка</p>
+                      <span class="price products__price">от 990 руб/мес</span>
+                      <a href="#" class="button button-outlined-blue products__action">Купить</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -374,24 +396,23 @@
                 <div class="add-services__wrapper">
                   <div class="add-services__name-wrapper">
                     <img src="./icons/add-services/1.svg" alt="" class="add-services__image">
-                    <h3 class="add-services__name">Групповое обучение персонала</h3>
+                    <h3 class="add-services__name">Групповое обучение<br>персонала</h3>
                   </div>
                   <div class="add-services__price-wrapper">
-                    <span class="add-services__price">2 400 руб/ч</span>
-                    <button class="add-services__action">Подробнее</button>
+                    <span class="price add-services__price">2 400 руб/ч</span>
+                    <a href="#" class="button button-outlined-blue add-services__action">Подробнее</a>
                   </div>
-
                 </div>
               </div>
               <div class="add-services">
                 <div class="add-services__wrapper">
                   <div class="add-services__name-wrapper">
                     <img src="./icons/add-services/2.svg" alt="" class="add-services__image">
-                    <h3 class="add-services__name">Сопровождение 1С, услуги программиста 1С</h3>
+                    <h3 class="add-services__name">Сопровождение 1С,<br>услуги программиста 1С</h3>
                   </div>
                   <div class="add-services__price-wrapper">
-                    <span class="add-services__price">2 400 руб/ч</span>
-                    <button class="add-services__action">Подробнее</button>
+                    <span class="price add-services__price">2 400 руб/ч</span>
+                    <a href="#" class="button button-outlined-blue add-services__action">Подробнее</a>
                   </div>
 
                 </div>
@@ -401,13 +422,13 @@
                   <div class="add-services__name-wrapper">
                     <img src="./icons/add-services/3.svg" alt="" class="add-services__image">
                     <div class="add-services__details">
-                      <h3 class="add-services__name">Дополнительное сопровождение по&nbsp;переходу на ЕПС и ОСБУ</h3>
+                      <h3 class="add-services__name">Дополнительное сопровождение<br>по&nbsp;переходу на ЕПС и ОСБУ</h3>
                       <p class="add-services__subname">10 часов</p>
                     </div>
                   </div>
                   <div class="add-services__price-wrapper">
-                    <span class="add-services__price">15 000 руб</span>
-                    <button class="add-services__action">Подробнее</button>
+                    <span class="price add-services__price">15 000 руб</span>
+                    <a href="#" class="button button-outlined-blue add-services__action">Подробнее</a>
                   </div>
 
                 </div>
@@ -417,15 +438,63 @@
                   <div class="add-services__name-wrapper">
                     <img src="./icons/add-services/4.svg" alt="" class="add-services__image">
                     <div class="add-services__details">
-                      <h3 class="add-services__name">Дополнительное сопровождение по&nbsp;переходу на ЕПС и ОСБУ</h3>
+                      <h3 class="add-services__name">Дополнительное сопровождение<br>по&nbsp;переходу на ЕПС и ОСБУ</h3>
                       <p class="add-services__subname">20 часов</p>
                     </div>
                   </div>
                   <div class="add-services__price-wrapper">
-                    <span class="add-services__price">28 000 руб</span>
-                    <button class="add-services__action">Подробнее</button>
+                    <span class="price add-services__price">28 000 руб</span>
+                    <a href="#" class="button button-outlined-blue add-services__action">Подробнее</a>
                   </div>
 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-cost-program__cards">
+        <div class="container">
+          <div class="p-cost-program__cards-wrapper">
+            <div class="more-card more-card--size_wide more-card--bg_blue more-card__outsourcing">
+              <div class="more-card__wrapper">
+                <div class="more-card__bg-img">
+                  <img src="./img/more-card/2.jpg" alt="">
+                </div>
+                <div class="more-card__inner">
+                  <div class="more-card__details">
+                    <h2 class="title title--level_h1 title--white more-card__title">Аутсорсинг бухгалтерии</h2>
+                    <div class="text text--md text--white more-card__text">
+                      <p>Наша компания оказывает услуги по ведению бухгалтерского учета, в том числе с учетом перехода на новые отраслевые стандарты</p>
+                    </div>
+                    <a href="#" class="button button-primary button--size_lg more-card__button">Подробнее</a>
+                  </div>
+                  <div class="more-card__img">
+                    <img src="./img/more-card/outsourcing.png" alt="">
+                  </div>
+                  <div class="more-card__img-mobile">
+                    <img src="./img/more-card/services-accounting-mobile.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="icon-card icon-card--color_dark icon-card--no-btn">
+              <div class="icon-card__wrapper">
+                <div class="icon-card__bg-img">
+                  <img src="./img/icon-card/sec.jpg">
+                </div>
+                <div class="icon-card__inner">
+                  <div class="icon-card__wrap">
+                    <div class="icon-card__icon">
+                      <img src="./img/icon-card/lock.svg" alt="">
+                    </div>
+                    <h3 class="title title--white title--level_h1 icon-card__title">Защита</h3>
+                  </div>
+                  <div class="text text--white text--md icon-card__text">
+                    <p>Конфигурация является защищенной и&nbsp;содержит фрагменты кода, не&nbsp;подлежащие изменению пользователями</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -439,6 +508,8 @@
 
 <script src="./scripts/header.js" type="module"></script>
 <script src="./scripts/accordion-menu.js"></script>
+<script src="./scripts/cost-program.js"></script>
+
 
 </body>
 

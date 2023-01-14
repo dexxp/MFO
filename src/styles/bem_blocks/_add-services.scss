@@ -15,6 +15,10 @@
 
     &__image {
         margin-right: 24px;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     &__name {
@@ -38,22 +42,50 @@
     &__price-wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__price {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        color: #3F5770;
-        margin-right: 125px;
     }
 
     &__action {
         padding: 21px 38px;
-        color: #57A6EE;
-        border: 1px solid #57A6EE;
-        border-radius: 32px;
-        background-color: #fff;
-        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+@include mq(md) {
+    .add-services {
+        max-width: 440px;
+
+        &__wrapper {
+            padding: 24px;
+        }
+
+        &__name {
+            font-size: 16px;
+        }
+
+        &__action {
+            font-size: 14px;
+            padding: 16px 27px;
+        }
+    }
+}
+
+@include mq(sm) {
+    .add-services {
+        max-width: 343px;
+
+        &__name-wrapper {
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        &__image {
+            margin-right: 16px;
+            width: 56px;
+            height: 56px;
+        }
     }
 }

@@ -1,23 +1,71 @@
 .p-cost-program {
   &__first-screen {
-
-  }
-
-  &__bg {
-    height: 650px;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: center;
+    margin-bottom: 330px;
   }
 
   &__title {
-    margin: 80px 0 24px;
+    margin-bottom: 24px;
   }
 
   &__text {
-    margin-bottom: 330px;
     max-width: 887px;
     width: 100%;
+
+    .marker {
+      font-weight: 600;
+    }
+  }
+
+  &__cards {
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+  }
+}
+
+@include mq(md) {
+  .p-cost-program {
+    &__first-screen {
+      margin-bottom: 280px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section + .section {
+      margin: 72px 0 0;
+    }
+
+    &__cards {
+      margin-top: 72px;
+      margin-bottom: 64px;
+      &-wrapper {
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-cost-program {
+    &__first-screen {
+      margin-bottom: 157px;
+    }
+
+    &__cards {
+      &-wrapper {
+        gap: 16px;
+      }
+    }
   }
 }
