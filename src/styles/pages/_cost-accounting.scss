@@ -64,3 +64,115 @@
     }
   }
 }
+
+@include mq(xl) {
+  .p-cost-accounting {
+    &__img {
+      img {
+        top: -50px;
+      }
+    }
+  }
+}
+
+@include mq(md) {
+  .p-cost-accounting {
+    &__title {
+      margin: 0 auto 8px;
+    }
+
+    &__subtitle {
+      margin: 0 auto 16px;
+      font-size: 16px;
+      max-width: 255px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__text {
+      margin: 0 auto 46px;
+      text-align: center;
+    }
+
+    &__wrapper-outer {
+      padding-top: 40px;
+      padding-bottom: 60px;
+    }
+
+    &__img {
+      position: relative;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+      background: linear-gradient(267.67deg, #4969BC 0%, #B0DAFF 100%), #D9D9D9;
+      width: 262px;
+      height: 262px;
+      border-radius: 100%;
+
+      img {
+        top: -30px;
+        left: 23px;
+        width: 219px;
+        height: 255px;
+      }
+    }
+
+    .s-schedule-webinars {
+      .button {
+        justify-content: center;
+      }
+    }
+
+    .infoblock {
+      &__wrapper {
+        gap: 13px;
+        padding-left: 156px;
+        padding-right: 156px;
+      }
+
+      &__icon {
+        position: static;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__button {
+      position: relative;
+      top: -59px;
+      display: flex;
+      width: 311px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-cost-accounting {
+    .infoblock {
+      &__wrapper {
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-cost-accounting {
+    .infoblock {
+      &__wrapper {
+        padding: 0;
+        border: none;
+        gap: 8px;
+      }
+
+      &__icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 3px;
+      }
+    }
+  }
+}

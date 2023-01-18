@@ -34,3 +34,53 @@
     }
   }
 }
+
+@include mq(md) {
+  .s-what-benefit {
+    margin-top: 38px;
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__inner {
+      padding-bottom: 0;
+    }
+
+    &__img {
+      img {
+        width: 444px;
+        height: 477px;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-what-benefit {
+    &__img {
+      display: none;
+    }
+
+    &__title {
+      margin: 0 auto 16px;
+      text-align: center;
+    }
+
+    &__text-lg {
+      margin: 0 auto 16px;
+      text-align: center;
+    }
+
+    &__inner {
+      max-width: 600px;
+    }
+
+    &__wrapper {
+      justify-content: center;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-what-benefit {}
+}

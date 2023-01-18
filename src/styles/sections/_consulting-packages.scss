@@ -9,3 +9,31 @@
     gap: 32px;
   }
 }
+
+@include mq(md) {
+  .s-consulting-packages {
+    margin: 72px 0 0;
+    &__items {
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+}
+
+@include mq(sm) {
+}
+
+@include mq(xs) {
+  .s-consulting-packages {
+    overflow: hidden;
+
+    &__items {
+      gap: 0;
+      justify-content: flex-start;
+    }
+
+    &__swiper {
+      overflow: initial !important;
+    }
+  }
+}

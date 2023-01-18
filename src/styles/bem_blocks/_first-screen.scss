@@ -26,3 +26,24 @@
     }
   }
 }
+
+@include mq(xs) {
+  .first-screen {
+    margin-bottom: 38px;
+    &__wrapper-outer {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9IjMyNCIgdmlld0JveD0iMCAwIDM3NSAzMjQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2RfMTk3OF8yNSkiPgo8cGF0aCBkPSJNMzc1IDEyNi4zNlYzMjRIMFYxMDIuMjVDMjUuMzkgODYuMjM5OCA2OC40MSA2Ni43MTk4IDEyOS45NiA3MC40Njk4QzIxOS45OCA3NS45NDk4IDIzMC4xMyAxMTIuMjIgMjk1LjI3IDEyNS40OEMzMzEuNTYgMTMyLjg3IDM1OC4zNyAxMzAuMTkgMzc1IDEyNi4zNloiIGZpbGw9IiNGMkY5RkYiLz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzE5NzhfMjUiIHg9Ii03MCIgeT0iMC4wMDE0NjQ4NCIgd2lkdGg9IjUxNSIgaGVpZ2h0PSIzOTMuOTk5IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIzNSIvPgo8ZmVDb21wb3NpdGUgaW4yPSJoYXJkQWxwaGEiIG9wZXJhdG9yPSJvdXQiLz4KPGZlQ29sb3JNYXRyaXggdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMC4zMjk0MTIgMCAwIDAgMCAwLjY1ODgyNCAwIDAgMCAwIDAuOTYwNzg0IDAgMCAwIDAuMTUgMCIvPgo8ZmVCbGVuZCBtb2RlPSJub3JtYWwiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9ImVmZmVjdDFfZHJvcFNoYWRvd18xOTc4XzI1Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzE5NzhfMjUiIHJlc3VsdD0ic2hhcGUiLz4KPC9maWx0ZXI+CjwvZGVmcz4KPC9zdmc+Cg==") !important;
+      background-repeat: no-repeat;
+    }
+
+    &__wave-bottom {
+      height: 96px;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzc1IiBoZWlnaHQ9Ijk3IiB2aWV3Qm94PSIwIDAgMzc1IDk3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMzc1IDkuMjc5OTdWOTYuOTk5OUgwVjAuOTM5OTQxQzE0LjMzIDQuMTM5OTQgMzIuMTEgMTEuOTc5OSA1NC40MSAyOS40Mjk5Qzk2LjY4IDYyLjUwOTkgMjEwLjA1IDc5LjE3OTkgMjc3Ljg4IDM4LjE1OTlDMzIxLjc4IDExLjYwOTkgMzU0LjExIDYuNDI5OTcgMzc1IDkuMjc5OTdaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      img {
+        display: none;
+      }
+    }
+  }
+}

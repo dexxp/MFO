@@ -15,11 +15,20 @@
   <div class="page-wrapper__pattern page-wrapper__pattern--200">
   </div>
 
-  <div class="container container--wide">
-    <ul class="breadcrumbs">
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-      <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Переход на ЕПС, ОСБУ и XBRL в программе «Моя МФО»</a></li>
-    </ul>
+  <div class="container container--wide breadcrumbs-container">
+    <div class="breadcrumbs">
+    <span>
+
+      <span>
+        <a href="http://mfo-local.ru/">Главная</a>
+      </span>
+      /
+      <span>
+        <a href="http://mfo-local.ru/">Услуги по ведению бухгалтерского учета</a>
+      </span>
+
+    </span>
+    </div>
   </div>
 
   <main class="p-cost-accounting__main">
@@ -27,7 +36,7 @@
       <div class="first-screen__wrapper-outer p-cost-accounting__wrapper-outer" style="background-image: url('./img/page-pattern-2.svg');">
         <div class="container container--narrow">
           <div class="first-screen__wrapper p-cost-accounting__wrapper">
-            <h1 class="title title--level_h1 p-cost-accounting__title">Услуги по ведению бухгалтерского учета</h1>
+            <h1 class="title title--level_h1 title--main p-cost-accounting__title">Услуги по ведению бухгалтерского учета</h1>
             <h2 class="title title--level_h2 title--blue p-cost-accounting__subtitle">Аутсорсинг бухгалтерии в МФО и КПК</h2>
             <div class="text text--md p-cost-accounting__text">
               <p>Наша компания оказывает услуги по ведению бухгалтерского учета у тех компаний, которые используют наше программное обеспечение. </p>
@@ -117,61 +126,66 @@
         <div class="container">
           <div class="s-maintenance-packages__inner">
             <h2 class="title title--level_h1 title--white s-maintenance-packages__title">пакеты сопровождения</h2>
-            <div class="s-maintenance-packages__items">
-              <div class="escort-packages">
-                <div class="escort-packages__wrapper">
-                  <h3 class="escort-packages__init">пакет</h3>
-                  <h3 class="escort-packages__name">«старт»</h3>
-                  <ul class="escort-packages__list">
-                    <li class="escort-packages__item">до 40 операций*</li>
-                    <li class="escort-packages__item">до 3 сотрудников</li>
-                    <li class="escort-packages__item">до 1 подразделения</li>
-                    <li class="escort-packages__item">до 3 займов от&nbsp;учредителя</li>
-                  </ul>
-                  <span class="escort-packages__price">23 000 руб/мес</span>
-                  <a href="#" class="button escort-packages__action">Купить</a>
-                </div>
-              </div>
-              <div class="escort-packages">
-                <div class="escort-packages__wrapper">
-                  <h3 class="escort-packages__init">пакет</h3>
-                  <h3 class="escort-packages__name">«старт»</h3>
-                  <ul class="escort-packages__list">
-                    <li class="escort-packages__item">до 40 операций*</li>
-                    <li class="escort-packages__item">до 3 сотрудников</li>
-                    <li class="escort-packages__item">до 1 подразделения</li>
-                    <li class="escort-packages__item">до 3 займов от&nbsp;учредителя</li>
-                  </ul>
-                  <span class="escort-packages__price">23 000 руб/мес</span>
-                  <a href="#" class="button escort-packages__action">Купить</a>
-                </div>
-              </div>
-              <div class="escort-packages">
-                <div class="escort-packages__wrapper">
-                  <h3 class="escort-packages__init">пакет</h3>
-                  <h3 class="escort-packages__name">«старт»</h3>
-                  <ul class="escort-packages__list">
-                    <li class="escort-packages__item">до 40 операций*</li>
-                    <li class="escort-packages__item">до 3 сотрудников</li>
-                    <li class="escort-packages__item">до 1 подразделения</li>
-                    <li class="escort-packages__item">до 3 займов от&nbsp;учредителя</li>
-                  </ul>
-                  <span class="escort-packages__price">23 000 руб/мес</span>
-                  <a href="#" class="button escort-packages__action">Купить</a>
-                </div>
-              </div>
-              <div class="escort-packages">
-                <div class="escort-packages__wrapper">
-                  <h3 class="escort-packages__init">пакет</h3>
-                  <h3 class="escort-packages__name">«старт»</h3>
-                  <ul class="escort-packages__list">
-                    <li class="escort-packages__item">до 40 операций*</li>
-                    <li class="escort-packages__item">до 3 сотрудников</li>
-                    <li class="escort-packages__item">до 1 подразделения</li>
-                    <li class="escort-packages__item">до 3 займов от&nbsp;учредителя</li>
-                  </ul>
-                  <span class="escort-packages__price">23 000 руб/мес</span>
-                  <a href="#" class="button escort-packages__action">Купить</a>
+            <div class="s-maintenance-packages__slider">
+              <div class="swiper s-maintenance-packages__swiper">
+                <div class="swiper-wrapper s-maintenance-packages__items">
+                  <div class="swiper-slide escort-packages escort-packages--1">
+                    <div class="escort-packages__wrapper">
+                      <h3 class="escort-packages__init">пакет</h3>
+                      <h3 class="escort-packages__name">«старт»</h3>
+                      <ul class="escort-packages__list">
+                        <li class="escort-packages__item">до 40 операций*</li>
+                        <li class="escort-packages__item">до 3 сотрудников</li>
+                        <li class="escort-packages__item">до 1 подразделения</li>
+                        <li class="escort-packages__item">до 3 займов от&nbsp;учредителя</li>
+                      </ul>
+                      <span class="price escort-packages__price">23 000 руб/мес</span>
+                      <a href="#" class="button escort-packages__action">Купить</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide escort-packages escort-packages--2">
+                    <div class="escort-packages__wrapper">
+                      <h3 class="escort-packages__init">пакет</h3>
+                      <h3 class="escort-packages__name">«Стандарт»</h3>
+                      <ul class="escort-packages__list">
+                        <li class="escort-packages__item">до 60-70 операций*</li>
+                        <li class="escort-packages__item">до 7 сотрудников</li>
+                        <li class="escort-packages__item">до 3 подразделений</li>
+                        <li class="escort-packages__item">до 6 займов от&nbsp;учредителя</li>
+                      </ul>
+                      <span class="price escort-packages__price">32 535 руб/мес</span>
+                      <a href="#" class="button escort-packages__action">Купить</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide escort-packages escort-packages--3">
+                    <div class="escort-packages__badge">Рекомендуем</div>
+                    <div class="escort-packages__wrapper">
+                      <h3 class="escort-packages__init">пакет</h3>
+                      <h3 class="escort-packages__name">«профи»</h3>
+                      <ul class="escort-packages__list">
+                        <li class="escort-packages__item">до 80-90 операций*</li>
+                        <li class="escort-packages__item">до 15 сотрудников</li>
+                        <li class="escort-packages__item">до 6 подразделений</li>
+                        <li class="escort-packages__item">до 10 займов от&nbsp;учредителя</li>
+                      </ul>
+                      <span class="price escort-packages__price">54 155 руб/мес</span>
+                      <a href="#" class="button escort-packages__action">Купить</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide escort-packages escort-packages--4">
+                    <div class="escort-packages__wrapper">
+                      <h3 class="escort-packages__init">пакет</h3>
+                      <h3 class="escort-packages__name">«профи+»</h3>
+                      <ul class="escort-packages__list">
+                        <li class="escort-packages__item">до 100-120 операций*</li>
+                        <li class="escort-packages__item">до 25 сотрудников</li>
+                        <li class="escort-packages__item">до 10 подразделений</li>
+                        <li class="escort-packages__item">свыше 10 займов от&nbsp;учредителя</li>
+                      </ul>
+                      <span class="price escort-packages__price">68 425 руб/мес</span>
+                      <a href="#" class="button escort-packages__action">Купить</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -217,23 +231,31 @@
         <div class="container">
           <div class="s-consulting-packages__inner">
             <h2 class="title title--level_h1 s-consulting-packages__title">Консультационные пакеты</h2>
-            <div class="s-consulting-packages__items">
-              <div class="consultation-package">
-                <div class="consultation-package__wrapper">
-                  <img class="consultation-package__image" src="./img/package-image.jpg" alt="">
-                  <h3 class="consultation-package__name">10 часов</h3>
-                  <p class="consultation-package__descr">10 консультационных часов с&nbsp;профессиональным бухгалтером/аудитором (часы делятся на онлайн-сеансы по 1-2 ч)</p>
-                  <span class="consultation-package__price">15 000 руб</span>
-                  <button class="consultation-package__action">Купить</button>
-                </div>
-              </div>
-              <div class="consultation-package">
-                <div class="consultation-package__wrapper">
-                  <img class="consultation-package__image" src="./img/package-image.jpg" alt="">
-                  <h3 class="consultation-package__name">10 часов</h3>
-                  <p class="consultation-package__descr">10 консультационных часов с&nbsp;профессиональным бухгалтером/аудитором (часы делятся на онлайн-сеансы по 1-2 ч)</p>
-                  <span class="consultation-package__price">15 000 руб</span>
-                  <button class="consultation-package__action">Купить</button>
+            <div class="s-consulting-packages__slider">
+              <div class="swiper s-consulting-packages__swiper">
+                <div class="swiper-wrapper s-consulting-packages__items">
+                  <div class="swiper-slide consultation-package">
+                    <div class="consultation-package__wrapper">
+                      <div class="consultation-package__img">
+                        <img src="./img/package-image.jpg" alt="">
+                      </div>
+                      <h3 class="consultation-package__name">10 часов</h3>
+                      <p class="consultation-package__descr">10 консультационных часов с&nbsp;профессиональным бухгалтером/аудитором (часы делятся на онлайн-сеансы по 1-2 ч)</p>
+                      <span class="price consultation-package__price">15 000 руб</span>
+                      <button class="consultation-package__action">Купить</button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide consultation-package">
+                    <div class="consultation-package__wrapper">
+                      <div class="consultation-package__img">
+                        <img src="./img/one-consult.jpg" alt="">
+                      </div>
+                      <h3 class="consultation-package__name">Разовая консультация</h3>
+                      <p class="consultation-package__descr">Онлайн консультация с&nbsp;профессиональным бухгалтером/аудитором (длительность 1 ч)</p>
+                      <span class="price consultation-package__price">от 990 руб/мес</span>
+                      <button class="consultation-package__action">Купить</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -276,6 +298,7 @@
 <script src="./scripts/header.js" type="module"></script>
 <script src="./scripts/accordion-menu.js"></script>
 <script src="./scripts/accordion.js"></script>
+<script src="./scripts/cost-accounting.js"></script>
 
 </body>
 
