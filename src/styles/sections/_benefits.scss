@@ -12,3 +12,16 @@
     gap: 33px;
   }
 }
+
+@include mq(md) {
+  .s-benefits {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__items {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+}

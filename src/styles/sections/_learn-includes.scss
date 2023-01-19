@@ -6,3 +6,18 @@
     margin-bottom: 42px;
   }
 }
+
+@include mq(md) {
+  .s-learn-includes {
+    margin: 72px 0;
+    &__title {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-learn-includes {
+    margin-top: 0;
+  }
+}

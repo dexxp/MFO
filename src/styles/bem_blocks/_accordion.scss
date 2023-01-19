@@ -53,3 +53,56 @@
     width: 100%;
   }
 }
+
+@include mq(md) {
+  .accordion {
+    &__wrapper {
+      max-width: 800px;
+    }
+
+    &__header {
+      padding: 21px 40px 0;
+    }
+
+    &__body {
+      padding: 0 40px;
+    }
+
+    &__item {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .accordion {
+    &__header {
+      padding: 16px 0 0;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__item {
+      border-bottom: 1px solid $primary;
+      box-shadow: none;
+      border-radius: 0;
+      padding-bottom: 16px;
+
+      & + & {
+        margin-top: 0;
+      }
+
+      &:first-child {
+        border-top: 1px solid $primary;
+      }
+    }
+  }
+}

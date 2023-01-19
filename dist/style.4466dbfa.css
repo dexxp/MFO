@@ -2319,6 +2319,45 @@ input, textarea {
   width: 100%;
 }
 
+@media screen and (max-width: 1250px) {
+  .accordion__wrapper {
+    max-width: 800px;
+  }
+  .accordion__header {
+    padding: 21px 40px 0;
+  }
+  .accordion__body {
+    padding: 0 40px;
+  }
+  .accordion__item {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .accordion__header {
+    padding: 16px 0 0;
+  }
+  .accordion__header img {
+    width: 24px;
+    height: 24px;
+  }
+  .accordion__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .accordion__item {
+    border-bottom: 1px solid #57A6EE;
+    box-shadow: none;
+    border-radius: 0;
+    padding-bottom: 16px;
+  }
+  .accordion__item + .accordion__item {
+    margin-top: 0;
+  }
+  .accordion__item:first-child {
+    border-top: 1px solid #57A6EE;
+  }
+}
 .benefit-card {
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #DEEFFF;
@@ -2348,6 +2387,22 @@ input, textarea {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1250px) {
+  .benefit-card__wrapper {
+    padding: 40px 32px;
+  }
+  .benefit-card__img {
+    margin: 0 auto 16px;
+  }
+  .benefit-card__title {
+    margin: 0 auto 8px;
+    text-align: center;
+  }
+  .benefit-card__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 .product-card {
   padding-top: 16px;
   position: relative;
@@ -6534,6 +6589,19 @@ input, textarea {
   margin-bottom: 42px;
 }
 
+@media screen and (max-width: 1250px) {
+  .s-learn-includes {
+    margin: 72px 0;
+  }
+  .s-learn-includes__title {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s-learn-includes {
+    margin-top: 0;
+  }
+}
 .s-benefits {
   margin: 128px 0;
 }
@@ -6547,6 +6615,15 @@ input, textarea {
   gap: 33px;
 }
 
+@media screen and (max-width: 1250px) {
+  .s-benefits__title {
+    margin-bottom: 24px;
+  }
+  .s-benefits__items {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
 .s-what-benefit__wrapper {
   display: flex;
   align-items: flex-end;
@@ -7674,7 +7751,7 @@ input, textarea {
   height: 407px;
 }
 .p-eps-expert__wrapper-outer {
-  padding: 80px 0 181px;
+  padding: 0 0 181px;
 }
 .p-eps-expert__wave-bottom {
   position: absolute;
@@ -7721,6 +7798,53 @@ input, textarea {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1250px) {
+  .p-eps-expert__wrapper-outer {
+    padding: 0 0 140px;
+  }
+  .p-eps-expert__title {
+    margin-bottom: 8px;
+  }
+  .p-eps-expert__subtitle {
+    margin: 0 auto 16px;
+    text-align: center;
+  }
+  .p-eps-expert__text {
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+  .p-eps-expert__first-screen-img {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0;
+  }
+  .p-eps-expert__first-screen-img img {
+    width: 237px;
+    height: 157px;
+  }
+  .p-eps-expert__first-screen-button {
+    display: flex;
+    width: 311px;
+    margin: 0 auto;
+    justify-content: center;
+    background: #3F5770;
+  }
+  .p-eps-expert .s-schedule-webinars {
+    margin: 72px 0;
+  }
+  .p-eps-expert .s-schedule-webinars__title {
+    max-width: 361px;
+  }
+  .p-eps-expert .s-schedule-webinars .button {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .p-eps-expert__wrapper-outer {
+    padding-bottom: 120px;
+  }
+}
 .p-cost-accounting__wrapper-outer {
   padding: 100px 0 201px;
   overflow: hidden;

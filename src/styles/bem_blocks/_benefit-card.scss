@@ -33,3 +33,25 @@
     margin-bottom: 8px;
   }
 }
+
+@include mq(md) {
+  .benefit-card {
+    &__wrapper {
+      padding: 40px 32px;
+    }
+
+    &__img {
+      margin: 0 auto 16px;
+    }
+
+    &__title {
+      margin: 0 auto 8px;
+      text-align: center;
+    }
+
+    &__text {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
