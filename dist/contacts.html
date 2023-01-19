@@ -307,33 +307,54 @@
   <main class="p-contacts__main">
     <section class="p-contacts__first-screen">
       <div class="container">
-        <h1 class="title title--level_h1 p-contacts__title">Контакты</h1>
+        <h1 class="title title--level_h1 title--main p-contacts__title">Контакты</h1>
         <div class="text text--md p-contacts__text">
-          <p>По всем вопросам вы можете обращаться по телефону, либо по электронной почте.</p>
+          <p>По всем вопросам вы можете обращаться по&nbsp;телефону, либо по&nbsp;электронной почте.</p>
         </div>
         <div class="p-contacts__items">
           <div class="p-contacts__item p-contacts__item--1">
             <div class="p-contacts__item-title">График работы:</div>
+            <div class="p-contacts__item-line"></div>
             <p class="p-contacts__item-value">пн-пт 9:00&nbsp;-&nbsp;19:00</p>
           </div>
           <div class="p-contacts__item p-contacts__item--2">
             <div class="p-contacts__item-title">Эл. почта:</div>
+            <div class="p-contacts__item-line"></div>
             <a href="#" class="p-contacts__item-value">info@mfo1c.ru</a>
             <div class="p-contacts__item">
               <div class="p-contacts__item-title">Тех. поддержка:</div>
+              <div class="p-contacts__item-line"></div>
               <a href="#" class="p-contacts__item-value">support@mfo1c.ru</a>
             </div>
             <div class="p-contacts__item">
               <div class="p-contacts__item-title">Фин. отдел:</div>
+              <div class="p-contacts__item-line"></div>
               <a href="#" class="p-contacts__item-value">finance@mfo1c.ru</a>
             </div>
           </div>
           <div class="p-contacts__item p-contacts__item--3">
             <div class="p-contacts__item-title">Телефон:</div>
+            <div class="p-contacts__item-line"></div>
             <a href="#" class="p-contacts__item-value">+7 (812) 383-99-35</a>
             <p class="p-contacts__add-text">доб. <span class="p-contacts__marker">«1»</span> — Тех. поддержка</p>
             <p class="p-contacts__add-text">доб. <span class="p-contacts__marker">«2»</span> — Отдел продаж</p>
             <p class="p-contacts__add-text">доб. <span class="p-contacts__marker">«3»</span> — Финансовый отдел</p>
+            <div class="p-contacts__item p-contacts__item--md">
+              <div class="p-contacts__item-title">Тех. поддержка:</div>
+              <div class="p-contacts__item-line"></div>
+              <p class="p-contacts__add-text">доб. <span class="p-contacts__marker">«1»</span></p>
+            </div>
+            <div class="p-contacts__item p-contacts__item--md">
+              <div class="p-contacts__item-title">Отдел продаж:</div>
+              <div class="p-contacts__item-line"></div>
+              <p class="p-contacts__add-text">доб. <span class="p-contacts__marker">«2»</span></p>
+            </div>
+            <div class="p-contacts__item p-contacts__item--md">
+              <div class="p-contacts__item-title">Финансовый отдел:</div>
+              <div class="p-contacts__item-line"></div>
+              <p class="p-contacts__add-text">доб. <span class="p-contacts__marker">«3»</span></p>
+            </div>
+
           </div>
           <div class="p-contacts__item p-contacts__item--4">
             <div class="p-contacts__item-title">Адрес:</div>
@@ -355,7 +376,7 @@
           <div class="s-questions-remain__header">
             <h2 class="title title--level_h1 title--white s-questions-remain__title">Остались вопросы?</h2>
             <div class="text text--md text--white s-questions-remain__text">
-              <p>Мы заинтересованы в том, чтобы на любом этапе работы с программой «Моя МФО» Вам все было понятно и удобно. Поэтому если у Вас возник вопрос, то мы с радостью проконсультируем в индивидуальном формате.</p>
+              <p>Мы заинтересованы в&nbsp;том, чтобы на&nbsp;любом этапе работы с&nbsp;программой «Моя&nbsp;МФО» Вам все было понятно и&nbsp;удобно. Поэтому если у&nbsp;Вас возник вопрос, то&nbsp;мы с&nbsp;радостью проконсультируем в&nbsp;индивидуальном формате.</p>
             </div>
           </div>
           <form action="#" class="s-questions-remain__form">
@@ -665,20 +686,20 @@
 <script src="/header.92890792.js" type="module"></script>
 <script src="/accordion-menu.cbe6efe3.js"></script>
 <script>ymaps.ready(init);
+var center = [59.910446564193705, 30.387822999999987];
 function init() {
-  var myMap = new ymaps.Map("map", {
-      center: [59.910447, 30.387823],
-      zoom: 15
-    }, {
-      searchControlProvider: 'yandex#search'
-    }),
-    myPlacemark = new ymaps.Placemark([59.910447, 30.387823], {}, {
-      iconLayout: 'default#image',
-      iconImageHref: '/placemark.svg',
-      iconImageSize: [30, 42],
-      iconImageOffset: [-5, -38]
-    });
-  myMap.geoObjects.add(myPlacemark);
+  var map = new ymaps.Map("map", {
+    zoom: 17,
+    center: center
+  });
+  var placemark = new ymaps.Placemark(center, {}, {
+    iconLayout: "default#image",
+    iconImageSize: [49, 65],
+    iconImageHref: "https://psv4.userapi.com/c236331/u181407498/docs/d43/d97bb907d12f/placemark.png?extra=VztU2lBgsNy1fOc8ICNavnop8zSpfpZi_V8soe_8OMT4aHalJkMlxk2k5OYgFx5p9efdYVIo4DiRBgsPmiCj4kBHLtc_5D498y68n8G_qNbXvhxPOu4nV5b2a8HKXZAV07I5S1_k4L11_yFjWQW7iLY12LI",
+    iconImageOffset: [-24, -65]
+  });
+  map.geoObjects.add(placemark);
+  map.controls.remove('trafficControl');
 }</script>
 
 </body>

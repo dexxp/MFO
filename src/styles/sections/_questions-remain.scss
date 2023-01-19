@@ -59,3 +59,84 @@
     margin-top: 24px;
   }
 }
+
+@include mq(md) {
+  .s-questions-remain {
+    margin: 64px 0;
+
+    &__wrapper {
+      padding: 40px 54px
+    }
+  }
+}
+
+@include mq(sm) {
+  .s-questions-remain {
+    &__wrapper {
+      padding: 48px 18px;
+    }
+
+    &__header {
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 16px;
+    }
+
+    &__form {
+      input.input {
+        max-width: 100%;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    &__form-wrapper {
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      gap: 8px;
+    }
+
+    .button {
+      width: 263px;
+      justify-content: center;
+      margin-top: 0;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-questions-remain {
+
+    &__wrapper {
+      border-radius: 24px;
+    }
+    &__form-wrapper {
+      max-width: 320px;
+    }
+
+    &__form {
+      textarea.input {
+        height: 104px;
+        margin-top: -8px;
+      }
+    }
+    .checkbox {
+      a {
+        font-size: 12px;
+      }
+    }
+  }
+}

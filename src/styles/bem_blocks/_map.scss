@@ -2,4 +2,96 @@
   max-width: 100% !important;
   width: 100% !important;
   height: 550px !important;
+
+  [class*="-inner-panes"] {
+    border-radius: 48px;
+  }
+
+  [class*="-map-bg"] {
+    border-radius: 48px;
+  }
+
+  [class*="-controls__toolbar_left"] {
+
+    [class*="-controls__control_toolbar"]:first-child {
+      margin-left: 32px !important;
+    }
+  }
+
+  [class*="-controls__toolbar_right"] {
+    [class*="-controls__control_toolbar"]:last-child {
+      margin-right: 32px !important;
+    }
+  }
+
+  [class*="-controls__bottom"] {
+    [class*="-controls__control"]:last-child {
+      margin-right: 16px !important;
+      margin-bottom: 16px !important;
+    }
+  }
+
+  [class*="-copyright_logo_no"] {
+    margin-right: 26px !important;
+    top: -35px !important;
+  }
+
+  [class*="-map-copyrights-promo"] {
+    margin-left: 32px;
+    margin-bottom: 10px;
+  }
+}
+
+@include mq(md) {
+  #map {
+    height: 400px !important;
+  }
+}
+
+@include mq(sm) {
+  #map {
+    height: 360px !important;
+
+    [class*="-inner-panes"] {
+      border-radius: 24px;
+    }
+
+    [class*="-map-bg"] {
+      border-radius: 24px;
+    }
+  }
+}
+
+@include mq(xs) {
+  #map {
+    height: 320px !important;
+
+    [class*="-controls__toolbar_left"] {
+
+      [class*="-controls__control_toolbar"]:first-child {
+        margin-left: 16px !important;
+      }
+    }
+
+    [class*="-controls__toolbar_right"] {
+      [class*="-controls__control_toolbar"]:last-child {
+        margin-right: 16px !important;
+      }
+    }
+
+    [class*="-controls__bottom"] {
+      [class*="-controls__control"]:last-child {
+        margin-right: 0px !important;
+      }
+    }
+
+    [class*="-copyright_logo_no"] {
+      margin-right: 10px !important;
+    }
+
+    [class*="-map-copyrights-promo"] {
+      margin-left: 16px;
+      margin-bottom: 10px;
+    }
+  }
 }

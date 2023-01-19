@@ -12,7 +12,7 @@
   }
 
   &__title {
-    margin: 80px 0 24px;
+    margin-bottom: 24px;
   }
 
   &__text {
@@ -63,6 +63,10 @@
       max-width: 266px;
       width: 100%;
     }
+
+    &--md {
+      display: none;
+    }
   }
 
   &__add-text {
@@ -74,5 +78,115 @@
     font-size: 24px;
     line-height: 33px;
     color: #3F5770;
+  }
+}
+
+@include mq(md) {
+  .p-contacts {
+    &__items {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 40px;
+    }
+
+
+
+    &__item {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      &-title {
+        margin-bottom: 0;
+      }
+
+      &-line {
+        flex: 1;
+        background: #C4E0FA;
+        align-self: flex-end;
+        height: 1px;
+        margin: 0 5px 5px;
+      }
+
+      &-value {
+        font-size: 22px;
+      }
+
+
+      &--1, &--2, &--3 {
+        border-top: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+        padding: 24px 0;
+      }
+
+      &--4 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      &--md {
+        .p-contacts__add-text {
+          display: block;
+        }
+      }
+    }
+
+    &__add-text {
+      display: none;
+    }
+
+    &__map {
+      margin-top: 24px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-contacts {
+    &__map {
+      margin-top: 16px;
+    }
+
+    &__item {
+      &-title {
+        font-size: 14px;
+      }
+
+      & > .p-contacts__item {
+        margin-top: 8px;
+      }
+
+      &-line {
+        margin-bottom: 8px;
+      }
+
+      &-value {
+        font-size: 14px;
+      }
+
+      &--4 {
+        .p-contacts__item-value {
+          line-height: 19px;
+        }
+      }
+    }
+
+    &__marker, &__add-text {
+      font-size: 14px;
+    }
   }
 }
