@@ -13,3 +13,16 @@
     justify-content: center;
   }
 }
+
+@include mq(md) {
+  .s-about-digits {
+    margin: 72px 0;
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__items {
+      gap: 16px;
+    }
+  }
+}

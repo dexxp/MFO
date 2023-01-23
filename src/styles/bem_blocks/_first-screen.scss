@@ -24,6 +24,16 @@
       height: auto;
       object-fit: cover;
     }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      height: 7px;
+      width: 100%;
+      z-index: 10;
+      background: $white;
+    }
   }
 }
 

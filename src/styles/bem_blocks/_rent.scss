@@ -40,12 +40,6 @@
     }
 }
 
-@include mq(md) {
-    .rent {
-
-    }
-}
-
 @include mq(sm) {
     .rent {
         max-width: 343px;
@@ -66,6 +60,13 @@
         &__descr {
             font-size: 16px;
             padding-top: 27px;
+        }
+
+        &--orange {
+
+            .rent__descr {
+                font-size: 16px;
+            }
         }
     }
 }

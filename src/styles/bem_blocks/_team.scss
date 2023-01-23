@@ -1,5 +1,6 @@
 .team {
     max-width: 363px;
+    width: 100%;
     display: flex;
     align-items: center;
     &__image {
@@ -7,15 +8,16 @@
         margin-right: 24px;
     }
     &__username {
-        display: block;
+        display: flex;
+        flex-direction: column;
         font-weight: 700;
         font-size: 18px;
         line-height: 120%;
         color: #3F5770;
         margin-bottom: 8px;
-        &__name {
-            margin-bottom: 4px;
-        }
+    }
+    &__name {
+        margin-bottom: 4px;
     }
     &__job {
         font-weight: 400;
@@ -26,7 +28,6 @@
         margin-bottom: 8px;
     }
     &__link {
-        display: block;
         display: flex;
         align-items: center;
     }
@@ -38,5 +39,28 @@
     }
     &__svg {
         margin-right: 8px;
+    }
+}
+
+@include mq(md) {
+    .team {
+        flex-direction: column;
+        max-width: 179px;
+        gap: 16px;
+        justify-content: center;
+
+        &__image {
+            margin-right: 0;
+        }
+
+        &__name {
+            margin-bottom: 0;
+        }
+
+        &__link {
+            justify-content: center;
+        }
+
+        text-align: center;
     }
 }

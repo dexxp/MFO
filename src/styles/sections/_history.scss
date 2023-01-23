@@ -1,10 +1,11 @@
 .s-history {
-  &__wrapper {
-    display: flex;
-    gap: 16px;
-  }
 
   &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+
     img {
       max-width: 720px;
       width: 100%;
@@ -16,6 +17,7 @@
   }
 
   .container {
+    position: relative;
     max-width: 1343px;
   }
 
@@ -23,6 +25,7 @@
     padding-top: 22px;
     max-width: 607px;
     width: 100%;
+    margin-left: auto;
   }
 
   &__title {
@@ -31,5 +34,65 @@
 
   &__check-list {
     margin: 16px 0;
+  }
+}
+
+@include mq(xl) {
+  .s-history {
+    .container {
+      max-width: 1170px;
+    }
+
+    &__img {
+      left: -7vw;
+      img {
+        height: auto;
+        max-width: 650px;
+      }
+    }
+  }
+}
+
+@include mq(md) {
+  .s-history {
+    margin: 64px 0 32px;
+
+    &__title {
+      text-align: center;
+      margin-bottom: 3px;
+    }
+
+    &__img {
+      position: static;
+    }
+
+    .container {
+      max-width: 900px;
+    }
+
+    &__inner {
+      max-width: 100%;
+    }
+
+    &__img {
+      line-height: 0;
+      max-width: 486px;
+      width: 100%;
+      margin: 0 auto;
+      padding-right: 40px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-history {
+    &__img {
+      max-width: 356px;
+      padding-right: 10px;
+    }
   }
 }
