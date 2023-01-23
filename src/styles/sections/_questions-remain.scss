@@ -120,11 +120,27 @@
 @include mq(xs) {
   .s-questions-remain {
 
+    &__text {
+      max-width: 309px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
     &__wrapper {
       border-radius: 24px;
     }
     &__form-wrapper {
       max-width: 320px;
+    }
+
+    textarea.input, input.input {
+      max-width: 263px;
+      width: 100%;
+    }
+
+    .button {
+      max-width: 263px;
+      width: 100%;
     }
 
     &__form {
