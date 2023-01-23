@@ -1,0 +1,15 @@
+.subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+@include mq(xs) {
+  .subtitle {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

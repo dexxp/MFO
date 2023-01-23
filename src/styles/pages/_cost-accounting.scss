@@ -12,9 +12,6 @@
   }
 
   &__subtitle {
-    line-height: 27px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     margin-bottom: 16px;
   }
 
@@ -83,7 +80,6 @@
 
     &__subtitle {
       margin: 0 auto 16px;
-      font-size: 16px;
       max-width: 255px;
       width: 100%;
       text-align: center;
@@ -172,6 +168,10 @@
         width: 16px;
         height: 16px;
         margin-top: 3px;
+      }
+
+      &__descr {
+        font-size: 14px;
       }
     }
   }
