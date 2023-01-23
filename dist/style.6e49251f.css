@@ -1986,7 +1986,8 @@ input, textarea {
   .polls {
     margin: 0 auto;
     max-width: 600px;
-    padding: 17px 16px;
+    padding: 20px 16px;
+    border-radius: 8px;
   }
   .polls__descr {
     font-size: 16px;
@@ -2733,7 +2734,7 @@ input, textarea {
 
 @media screen and (max-width: 980px) {
   .license-card__wrapper {
-    padding: 24px 16px;
+    padding: 24px 15px;
   }
   .license-card__price {
     margin-bottom: 16px;
@@ -2839,7 +2840,7 @@ input, textarea {
 }
 
 .cons-list {
-  list-style-image: url("cons.dd4b5531.svg");
+  list-style-image: url("cons.4944da9c.svg");
   padding-left: 16px;
   align-self: flex-start;
 }
@@ -5018,6 +5019,9 @@ input, textarea {
     height: 163px;
   }
 }
+.demo-banner {
+  margin-bottom: 64px;
+}
 .demo-banner__wrapper {
   background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
   border-radius: 48px;
@@ -5035,12 +5039,14 @@ input, textarea {
 .demo-banner__title-h2 {
   max-width: 698px;
   width: 100%;
-  margin: 0 0 24px;
+  margin: 0 0 16px;
 }
 .demo-banner__title-h3 {
   max-width: 493px;
   width: 100%;
   margin: 0 0 40px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .demo-banner__chip {
@@ -5172,6 +5178,7 @@ input, textarea {
     margin-bottom: 32px;
     max-width: 255px;
     width: 100%;
+    letter-spacing: 0;
   }
   .demo-banner__span {
     max-width: 154px;
@@ -7170,6 +7177,9 @@ input, textarea {
 }
 
 @media screen and (max-width: 1250px) {
+  .s-main-product {
+    margin: 72px 0;
+  }
   .s-main-product__title {
     margin-bottom: 16px;
   }
@@ -7374,6 +7384,7 @@ input, textarea {
   }
   .s-support-update__items {
     gap: 24px;
+    margin-bottom: 24px;
   }
   .s-support-update__banner {
     flex-direction: column;
@@ -7961,6 +7972,9 @@ input, textarea {
 }
 
 @media screen and (max-width: 1250px) {
+  .p-webinar__main {
+    padding-top: 48px;
+  }
   .p-webinar .page-switcher__header {
     margin-bottom: 32px;
   }
@@ -7969,6 +7983,9 @@ input, textarea {
   }
   .p-webinar__download-button img {
     width: 16px;
+  }
+  .p-webinar .text--lg {
+    font-size: 14px;
   }
   .p-webinar .s-schedule-webinars__inner {
     padding-left: 23px;
@@ -9291,6 +9308,9 @@ input, textarea {
 }
 .p-license-agreement .link {
   font-weight: 600;
+}
+.p-license-agreement .link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1250px) {

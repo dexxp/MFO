@@ -25,6 +25,10 @@
 
 @include mq(md) {
   .p-webinar {
+    &__main {
+      padding-top: 48px;
+    }
+
     .page-switcher__header {
       margin-bottom: 32px;
     }
@@ -35,6 +39,10 @@
       img {
         width: 16px;
       }
+    }
+
+    .text--lg {
+      font-size: 14px;
     }
 
     .s-schedule-webinars {

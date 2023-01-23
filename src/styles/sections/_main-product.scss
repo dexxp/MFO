@@ -28,6 +28,7 @@
 
 @include mq(md) {
   .s-main-product {
+    margin: 72px 0;
     &__title {
       margin-bottom: 16px;
     }
