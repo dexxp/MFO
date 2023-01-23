@@ -50,8 +50,15 @@
   .s-schedule-webinars {
     &__wrapper {
       background: #3F5770;
-      box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
       border-radius: 24px;
+    }
+
+    &--no-change-bg {
+      .s-schedule-webinars {
+        &__wrapper {
+          background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
+        }
+      }
     }
 
     &__inner {
@@ -71,6 +78,15 @@
     .button {
       margin: 0 !important;
       width: 263px;
+    }
+
+    &__button-group {
+      flex-direction: column;
+      gap: 16px;
+
+      .button {
+        justify-content: center;
+      }
     }
   }
 }

@@ -4,6 +4,10 @@
   line-height: 27px;
 
   color: #3F5770;
+
+  &--white {
+    color: $white;
+  }
 }
 
 @include mq(sm) {

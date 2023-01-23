@@ -13,3 +13,11 @@
     flex-wrap: wrap;
   }
 }
+
+@include mq(md) {
+  .s-services {
+    &__cards {
+      gap: 16px;
+    }
+  }
+}

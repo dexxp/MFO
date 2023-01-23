@@ -1,4 +1,5 @@
 .s-cost-lk {
+  overflow: hidden;
   &__title {
     margin: 0 auto 56px;
     max-width: 364px;
@@ -8,5 +9,22 @@
   &__inner {
     display: flex;
     gap: 32px;
+  }
+
+  &__swiper {
+    overflow: initial !important;
+  }
+}
+
+@include mq(md) {
+  .s-cost-lk {
+    &__title {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    &__inner {
+      gap: 0;
+    }
   }
 }

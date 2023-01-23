@@ -1,28 +1,31 @@
 .rent {
     max-width: 368px;
-    padding: 37px 39px 37px 148px;
-    min-height: 124px;
+    width: 100%;
+    padding: 0 32px 32px 32px;
     background: linear-gradient(90.53deg, #4CA3F2 0%, #80C2FF 100%);
     box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
     border-radius: 32px;
     position: relative;
+    display: flex;
+    gap: 24px;
+
     &__flag {
         width: 92px;
         height: 92px;
         background-color: $white;
         border-radius: 0 0 16px 16px;
-        position: absolute;
-        top: 0;
-        left: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
     }
+
     &__descr {
         font-weight: 600;
         font-size: 20px;
         line-height: 125%;
         color: $white;
+        padding-top: 37px;
     }
 
     &--orange {
@@ -33,6 +36,51 @@
             font-size: 22px;
             line-height: 120%;
             text-transform: uppercase;
+        }
+    }
+}
+
+@include mq(md) {
+    .rent {
+
+    }
+}
+
+@include mq(sm) {
+    .rent {
+        max-width: 343px;
+        padding: 0 52px 18px 48px;
+        gap: 22px;
+
+        &__flag {
+            width: 72px;
+            height: 72px;
+            left: 48px;
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        &__descr {
+            font-size: 16px;
+            padding-top: 27px;
+        }
+    }
+}
+
+@include mq(xs) {
+    .rent {
+        &--xs-br-none {
+
+            .rent__descr {
+                padding-top: 37px;
+            }
+
+            br {
+                display: none;
+            }
         }
     }
 }

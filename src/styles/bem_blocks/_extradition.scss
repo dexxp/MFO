@@ -1,6 +1,7 @@
 .extradition {
     max-width: 368px;
     width: 100%;
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -11,26 +12,34 @@
         position: relative;
         height: 100%;
     }
+
     &__image {
         margin-bottom: 16px;
     }
+
+    &__wrap {
+        height: 50px;
+        margin-bottom: 16px;
+    }
+
     &__name {
         font-weight: 600;
         font-size: 18px;
         line-height: 110%;
         color: #57A6EE;
-        margin-bottom: 8px;
         max-width: 115px;
         text-align: center;
         width: 100%;
     }
+
     &__descr {
         font-weight: 400;
         font-size: 16px;
         line-height: 140%;
         color: #434343;
-        margin-bottom: 16px;
+        margin-top: 8px;
     }
+
     &__price {
         font-weight: 700;
         font-size: 24px;
@@ -38,12 +47,14 @@
         color: #3F5770;
         margin-bottom: 24px;
     }
+
     &__button {
         padding: 21px 85px;
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
     }
+
     &__marker {
         position: absolute;
         max-width: 102px;
@@ -57,5 +68,53 @@
         border-radius: 4px;
         padding: 10px 16px 8px 16px;
         top: -15px;
+    }
+}
+
+@include mq(sm) {
+    .extradition {
+        max-width: 280px;
+        &__wrapper {
+            padding: 40px 32px 32px;
+        }
+
+        &__wrap {
+            height: 48px;
+        }
+
+        &__name {
+            font-size: 16px;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        &__descr {
+            font-size: 14px;
+        }
+
+        &__img {
+            max-width: 123px;
+            width: 100%;
+            margin: 0 auto 12px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__marker {
+            font-size: 10px;
+        }
+
+        .button {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+}
+
+@include mq(xs) {
+    .extradition {
+        max-width: 253px;
     }
 }

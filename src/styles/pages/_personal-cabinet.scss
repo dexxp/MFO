@@ -8,6 +8,7 @@
   }
 
   &__title {
+    margin-top: 0;
     margin-bottom: 16px;
   }
 
@@ -58,6 +59,75 @@
       display: flex;
       gap: 24px;
       align-items: center;
+    }
+  }
+}
+
+@include mq(md) {
+  .p-personal-cabinet {
+    &__main {
+      padding-top: 40px;
+    }
+
+    &__promo {
+      margin-bottom: 185px;
+
+      &-box {
+        margin: 0 auto;
+      }
+
+      &-img {
+        position: static;
+        margin: 5px auto;
+        text-align: center;
+
+        img {
+          margin-right: 22px;
+          width: 290px;
+          height: 196px;
+        }
+      }
+
+      .button {
+        width: 311px;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
+      }
+
+      &-text {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__subtitle {
+      margin: 0 auto 16px;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-personal-cabinet {
+    &__promo {
+      margin-bottom: 158px;
+      &-text {
+        max-width: 303px;
+      }
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    .s-schedule-webinars {
+      margin-top: 16px;
     }
   }
 }
