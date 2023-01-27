@@ -1939,6 +1939,7 @@ input, textarea {
     max-width: 343px;
     padding: 0 52px 18px 48px;
     gap: 22px;
+    border-radius: 16px;
   }
   .rent__flag {
     width: 72px;
