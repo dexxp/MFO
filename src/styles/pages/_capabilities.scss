@@ -23,6 +23,9 @@
 
     .capabilities-card__title {
       margin-bottom: 24px;
+
+      max-width: 480px;
+      width: 100%;
     }
   }
 }
@@ -53,6 +56,13 @@
         align-items: center;
       }
     }
+
+    .capabilities-card__title-mobile {
+      margin-top: 0;
+      max-width: 560px;
+      width: 100%;
+    }
+
   }
 }
 
