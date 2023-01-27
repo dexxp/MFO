@@ -1,0 +1,23 @@
+.s-simple-text {
+  .text {
+    p + p {
+      margin-top: 16px;
+    }
+
+    .link {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-simple-text {
+    .text {
+      .link {
+        font-size: 14px;
+      }
+    }
+  }
+}

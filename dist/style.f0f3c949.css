@@ -926,6 +926,8 @@ input, textarea {
     padding: 24px 40px !important;
     border-radius: 8px;
     margin-left: 16px;
+    max-width: 327px;
+    width: 100%;
   }
   .counter-list__digit {
     width: 32px;
@@ -7805,6 +7807,18 @@ input, textarea {
     font-size: 12px;
   }
 }
+.s-simple-text .text p + p {
+  margin-top: 16px;
+}
+.s-simple-text .text .link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .s-simple-text .text .link {
+    font-size: 14px;
+  }
+}
 .cases__title {
   margin-top: 80px;
 }
@@ -9315,6 +9329,9 @@ input, textarea {
   border-radius: 24px;
   object-fit: cover;
   object-position: center;
+}
+.p-inner-case__text .link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1250px) {
