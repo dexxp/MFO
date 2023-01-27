@@ -1157,7 +1157,7 @@ input, textarea {
 }
 @media screen and (max-width: 980px) {
   .consultation-package {
-    max-width: 253px;
+    max-width: 45%;
   }
   .consultation-package__wrapper {
     padding: 40px 21px 32px;
@@ -1185,6 +1185,11 @@ input, textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .consultation-package {
+    max-width: 253px;
   }
 }
 .infoblock__wrapper {
@@ -2455,7 +2460,7 @@ input, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 31px 56px 0;
+  padding: 31px 40px 0 56px;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -2463,7 +2468,7 @@ input, textarea {
   transition: all 0.2s;
 }
 .accordion__header--active {
-  padding-bottom: 15px;
+  padding-bottom: 8px;
 }
 .accordion__header--active img {
   transform: rotate(180deg);
@@ -2484,7 +2489,7 @@ input, textarea {
     max-width: 800px;
   }
   .accordion__header {
-    padding: 21px 40px 0;
+    padding: 21px 24px 0 40px;
   }
   .accordion__body {
     padding: 0 40px;
@@ -2496,6 +2501,9 @@ input, textarea {
 @media screen and (max-width: 600px) {
   .accordion__header {
     padding: 16px 0 0;
+  }
+  .accordion__header--active {
+    padding-bottom: 4px;
   }
   .accordion__header img {
     width: 24px;
@@ -2620,6 +2628,7 @@ input, textarea {
   text-align: center;
   margin: 0 auto 16px;
   min-height: 38px;
+  line-height: 120%;
 }
 .product-card__price {
   margin-bottom: 24px;
@@ -2678,7 +2687,7 @@ input, textarea {
   border-radius: 8px;
 }
 .add-module-card__text-lg {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 0;
@@ -2738,6 +2747,7 @@ input, textarea {
 .license-card__text {
   text-align: center;
   margin-bottom: 4px;
+  line-height: 24px;
 }
 .license-card__price {
   text-align: center;
@@ -2749,14 +2759,22 @@ input, textarea {
 
 @media screen and (max-width: 980px) {
   .license-card__wrapper {
-    padding: 24px 15px;
+    padding: 24px 45px;
   }
   .license-card__price {
     margin-bottom: 16px;
   }
+  .license-card__text {
+    line-height: 17px;
+  }
   .license-card__button {
     padding: 15px 27px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .license-card__wrapper {
+    padding: 24px 15px;
   }
 }
 .support-card {
@@ -2826,7 +2844,7 @@ input, textarea {
     margin-bottom: 0;
   }
   .support-card__wrapper {
-    padding: 40px 43px 40px 32px;
+    padding: 40px 36px 40px 32px;
   }
   .support-card .button {
     padding: 16px 99px;
@@ -5167,7 +5185,7 @@ input, textarea {
     padding: 0 0 103px;
   }
   .demo-banner__content {
-    padding: 0 28px 0 32px;
+    padding: 16px 28px 0 48px;
   }
   .demo-banner__title-h2 {
     margin-bottom: 16px;
@@ -5217,6 +5235,9 @@ input, textarea {
     max-width: 255px;
     width: 100%;
     letter-spacing: 0;
+  }
+  .demo-banner__content {
+    padding: 0 28px 0 32px;
   }
   .demo-banner__span {
     max-width: 154px;
@@ -7298,6 +7319,11 @@ input, textarea {
 }
 @media screen and (max-width: 980px) {
   .s-add-licenses__items {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s-add-licenses__items {
     gap: 16px;
   }
 }
@@ -7402,6 +7428,9 @@ input, textarea {
   text-align: center;
   max-width: 774px;
   width: 100%;
+}
+.s-support-update__text p + p {
+  margin-top: 16px;
 }
 .s-support-update__banner {
   display: flex;
@@ -8485,7 +8514,7 @@ input, textarea {
   }
   .p-cost-accounting__subtitle {
     margin: 0 auto 16px;
-    max-width: 255px;
+    max-width: 560px;
     width: 100%;
     text-align: center;
   }
@@ -8542,6 +8571,9 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .p-cost-accounting__subtitle {
+    max-width: 225px;
+  }
   .p-cost-accounting .infoblock__wrapper {
     padding: 0;
     border: none;
@@ -8600,8 +8632,15 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .p-cost-program__pattern {
+    height: 513px;
+  }
   .p-cost-program__first-screen {
     margin-bottom: 157px;
+  }
+  .p-cost-program__text {
+    max-width: 313px;
+    width: 100%;
   }
   .p-cost-program__cards-wrapper {
     gap: 16px;
@@ -9365,7 +9404,7 @@ input, textarea {
 }
 @media screen and (max-width: 600px) {
   .p-inner-case__pattern {
-    height: 410px;
+    height: 513px;
   }
   .p-inner-case .title--level_h3 {
     max-width: 343px;
