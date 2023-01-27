@@ -385,7 +385,7 @@ input, textarea {
 @media screen and (max-width: 600px) {
   .check-list__item {
     margin-bottom: 5px;
-    padding-left: 2px;
+    padding-left: 6px;
   }
   .check-list__span {
     font-size: 14px;
@@ -494,6 +494,11 @@ input, textarea {
   line-height: 22px;
 }
 
+@media screen and (max-width: 600px) {
+  .date--md {
+    font-size: 12px;
+  }
+}
 .link {
   text-decoration: none;
 }
@@ -919,6 +924,8 @@ input, textarea {
   }
   .counter-list__item {
     padding: 24px 40px !important;
+    border-radius: 8px;
+    margin-left: 16px;
   }
   .counter-list__digit {
     width: 32px;
@@ -1059,7 +1066,7 @@ input, textarea {
     flex-shrink: 0;
   }
   .table__cell {
-    padding: 19px 20px;
+    padding: 19px 12px;
     width: 220px;
     flex-basis: auto;
     flex-shrink: 0;
@@ -4944,9 +4951,15 @@ input, textarea {
 .p-inner-case .s-questions__check-list {
   margin-top: 16px;
 }
+.p-inner-case .s-questions .text .link:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 600px) {
   .p-inner-case .s-questions__check-list {
     margin: 16px 0;
+  }
+  .p-inner-case .s-questions .text .link {
+    font-size: 14px;
   }
 }
 
@@ -4973,16 +4986,19 @@ input, textarea {
 
 @media screen and (max-width: 1250px) {
   .banner__wrapper {
-    padding: 32px;
+    padding: 56px;
   }
 }
 @media screen and (max-width: 600px) {
   .banner__title {
-    margin-bottom: 0;
+    margin-bottom: 8px;
     font-size: 16px;
   }
   .banner .text--lg {
     font-size: 14px;
+  }
+  .banner__wrapper {
+    padding: 32px;
   }
 }
 .image-with-text__wrapper {
@@ -5001,6 +5017,9 @@ input, textarea {
 }
 .image-with-text__text {
   flex: 1;
+}
+.image-with-text__text p + p {
+  margin-top: 12px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -5193,13 +5212,14 @@ input, textarea {
 }
 .s-transition-banner__wrapper {
   background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
-  border-radius: 24px;
+  border-radius: 32px;
 }
 .s-transition-banner__inner {
   background-image: url("banner-transition.3a3b3d62.png");
   background-position: center;
   background-size: cover;
   display: flex;
+  border-radius: 32px;
   gap: 32px;
   align-items: center;
   padding: 42px 165px 42px 195px;
@@ -5223,7 +5243,6 @@ input, textarea {
 @media screen and (max-width: 980px) {
   .s-transition-banner__inner {
     background-image: url("home-banner-bg-mobile.3a1398c2.svg") !important;
-    border-radius: 32px;
   }
   .s-transition-banner__img {
     width: 72px;
@@ -5357,6 +5376,9 @@ input, textarea {
 .s-transition-steps__text-md {
   margin: 16px 0;
 }
+.s-transition-steps__subtitle {
+  line-height: 120%;
+}
 .s-transition-steps__prompt {
   right: -98px;
 }
@@ -5375,7 +5397,6 @@ input, textarea {
   .s-transition-steps__subtitle {
     text-align: center;
     margin: 0 auto;
-    max-width: 238px;
   }
   .s-transition-steps__counter-list {
     margin: 24px 0 32px;
@@ -5423,6 +5444,9 @@ input, textarea {
 @media screen and (max-width: 600px) {
   .s-transition-steps .prompt__text {
     max-width: 287px;
+  }
+  .s-transition-steps__subtitle {
+    max-width: 238px;
   }
 }
 .s-how-work__title {
@@ -5611,6 +5635,9 @@ input, textarea {
   align-items: center;
   margin-bottom: 16px;
 }
+.s-questions-form input {
+  width: 248px;
+}
 
 @media screen and (max-width: 1250px) {
   .s-questions-form__header {
@@ -5676,6 +5703,7 @@ input, textarea {
   margin: 0 auto 56px;
   max-width: 364px;
   width: 100%;
+  text-align: center;
 }
 .s-cost-lk__inner {
   display: flex;
@@ -7917,7 +7945,7 @@ input, textarea {
 }
 .p-transition__text {
   margin-top: 24px;
-  max-width: 891px;
+  max-width: 902px;
   width: 100%;
 }
 .p-transition__transition-banner {
@@ -7936,7 +7964,9 @@ input, textarea {
   }
   .p-transition__transition-banner {
     margin-top: 32px;
-    margin-bottom: 72px;
+  }
+  .p-transition__transition-banner {
+    margin-bottom: 72px !important;
   }
   .p-transition .section--m72 {
     margin: 32px 0;
@@ -7957,7 +7987,13 @@ input, textarea {
 }
 @media screen and (max-width: 600px) {
   .p-transition__first-screen {
-    margin-bottom: 158px;
+    margin-bottom: 174px;
+  }
+  .p-transition__title {
+    max-width: 288px;
+  }
+  .p-transition__text {
+    max-width: 323px;
   }
 }
 .p-webinar__main {
@@ -8057,7 +8093,7 @@ input, textarea {
 }
 .p-personal-cabinet .s-schedule-webinars__button-group {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
 }
 
@@ -8105,9 +8141,6 @@ input, textarea {
   }
   .p-personal-cabinet__promo-text {
     max-width: 303px;
-  }
-  .p-personal-cabinet__title {
-    font-size: 14px;
   }
   .p-personal-cabinet .s-schedule-webinars {
     margin-top: 16px;
@@ -9289,7 +9322,7 @@ input, textarea {
     margin: 32px 0;
   }
   .p-inner-case .s-switcher {
-    margin-bottom: 32px;
+    margin-bottom: 72px;
   }
 }
 @media screen and (max-width: 600px) {
