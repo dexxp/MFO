@@ -10,7 +10,7 @@
 
   &__text {
     margin-top: 24px;
-    max-width: 891px;
+    max-width: 902px;
     width: 100%;
   }
 
@@ -34,7 +34,10 @@
 
     &__transition-banner {
       margin-top: 32px;
-      margin-bottom: 72px;
+    }
+
+    &__transition-banner {
+      margin-bottom: 72px !important;
     }
 
     .section--m72 {
@@ -63,7 +66,15 @@
 @include mq(xs) {
   .p-transition {
     &__first-screen {
-      margin-bottom: 158px;
+      margin-bottom: 174px;
+    }
+
+    &__title {
+      max-width: 288px;
+    }
+
+    &__text {
+      max-width: 323px;
     }
   }
 }

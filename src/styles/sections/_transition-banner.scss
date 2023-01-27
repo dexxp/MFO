@@ -2,13 +2,14 @@
 
   &__wrapper {
     background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
-    border-radius: 24px;
+    border-radius: 32px;
   }
   &__inner {
     background-image: url("../img/banner-transition.png");
     background-position: center;
     background-size: cover;
     display: flex;
+    border-radius: 32px;
 
     gap: 32px;
     align-items: center;
@@ -39,7 +40,6 @@
   .s-transition-banner {
     &__inner {
       background-image: url("../img/home-banner-bg-mobile.svg") !important;
-      border-radius: 32px;
     }
 
     &__img {

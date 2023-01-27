@@ -15,6 +15,10 @@
     }
   }
 
+  &__subtitle {
+    line-height: 120%;
+  }
+
   &__prompt {
     right: -98px;
 
@@ -39,7 +43,6 @@
     &__subtitle {
       text-align: center;
       margin: 0 auto;
-      max-width: 238px;
     }
 
     &__counter-list {
@@ -106,6 +109,10 @@
       &__text {
         max-width: 287px;
       }
+
+    }
+    &__subtitle {
+      max-width: 238px;
     }
   }
 }

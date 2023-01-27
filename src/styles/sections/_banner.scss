@@ -19,7 +19,7 @@
 @include mq(md) {
     .banner {
         &__wrapper {
-            padding: 32px;
+            padding: 56px;
         }
     }
 }
@@ -27,12 +27,16 @@
 @include mq(xs) {
     .banner {
         &__title {
-            margin-bottom: 0;
+            margin-bottom: 8px;
             font-size: 16px;
         }
 
         .text--lg {
             font-size: 14px;
+        }
+
+        &__wrapper {
+            padding: 32px;
         }
     }
 }
