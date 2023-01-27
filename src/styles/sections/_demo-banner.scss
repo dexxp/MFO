@@ -127,7 +127,7 @@
         }
 
         &__content {
-            padding: 0 28px 0 32px;
+            padding: 16px 28px 0 48px;
         }
 
         &__title-h2 {
@@ -186,6 +186,10 @@
             max-width: 255px;
             width: 100%;
             letter-spacing: 0;
+        }
+
+        &__content {
+            padding: 0 28px 0 32px;
         }
 
         &__span {

@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 31px 56px 0;
+    padding: 31px 40px 0 56px;
     cursor: pointer;
     transition: all .2s;
 
@@ -30,7 +30,7 @@
     }
 
     &--active {
-      padding-bottom: 15px;
+      padding-bottom: 8px;
       img {
         transform: rotate(180deg);
       }
@@ -61,7 +61,7 @@
     }
 
     &__header {
-      padding: 21px 40px 0;
+      padding: 21px 24px 0 40px;
     }
 
     &__body {
@@ -78,6 +78,10 @@
   .accordion {
     &__header {
       padding: 16px 0 0;
+
+      &--active {
+        padding-bottom: 4px;
+      }
 
       img {
         width: 24px;

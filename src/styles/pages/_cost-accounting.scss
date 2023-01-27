@@ -80,7 +80,7 @@
 
     &__subtitle {
       margin: 0 auto 16px;
-      max-width: 255px;
+      max-width: 560px;
       width: 100%;
       text-align: center;
     }
@@ -157,6 +157,10 @@
 
 @include mq(xs) {
   .p-cost-accounting {
+    &__subtitle {
+      max-width: 225px;
+    }
+
     .infoblock {
       &__wrapper {
         padding: 0;

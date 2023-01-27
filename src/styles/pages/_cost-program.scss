@@ -58,8 +58,17 @@
 
 @include mq(xs) {
   .p-cost-program {
+    &__pattern {
+      height: 513px;
+    }
+
     &__first-screen {
       margin-bottom: 157px;
+    }
+
+    &__text {
+      max-width: 313px;
+      width: 100%;
     }
 
     &__cards {

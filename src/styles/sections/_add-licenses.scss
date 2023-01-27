@@ -29,6 +29,14 @@
 @include mq(sm) {
   .s-add-licenses {
     &__items {
+      gap: 20px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-add-licenses {
+    &__items {
       gap: 16px;
     }
   }
