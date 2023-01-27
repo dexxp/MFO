@@ -55,7 +55,7 @@
 
     &__button-group {
       display: flex;
-      gap: 24px;
+      gap: 16px;
       align-items: center;
     }
   }
@@ -117,10 +117,6 @@
       &-text {
         max-width: 303px;
       }
-    }
-
-    &__title {
-      font-size: 14px;
     }
 
     .s-schedule-webinars {
