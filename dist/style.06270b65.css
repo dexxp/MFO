@@ -9341,6 +9341,9 @@ input, textarea {
   .p-inner-case .s-switcher {
     margin-bottom: 72px;
   }
+  .p-inner-case__pattern {
+    height: 482px;
+  }
 }
 @media screen and (max-width: 600px) {
   .p-inner-case__pattern {
