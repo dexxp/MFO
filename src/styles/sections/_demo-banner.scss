@@ -102,7 +102,7 @@
             display: flex;
             justify-content: center;
             background: linear-gradient(271.68deg, #F9A321 0%, #FFC162 100%);
-            border-radius: 24px 24px 0 0;
+            border-radius: 48px 48px 0 0;
             align-items: center;
             margin-bottom: 28px;
 
@@ -165,6 +165,10 @@
                 height: 2px;
                 background-color: $white;
             }
+        }
+
+        &__chip {
+            border-radius: 24px 24px 0 0;
         }
 
         &__title-h2 {

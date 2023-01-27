@@ -280,7 +280,7 @@
   .more-card {
     $self: &;
 
-    max-width: 90%;
+    max-width: 100%;
 
     &__inner {
       flex-direction: column-reverse;
@@ -326,6 +326,14 @@
       #{$self}__title {
         height: auto;
       }
+    }
+  }
+}
+
+@include mq(sm) {
+  .more-card {
+    &__title {
+      font-size: 18px;
     }
   }
 }

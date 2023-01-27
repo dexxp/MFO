@@ -3639,7 +3639,7 @@ input, textarea {
 
 @media screen and (max-width: 1250px) {
   .more-card {
-    max-width: 90%;
+    max-width: 100%;
   }
   .more-card__inner {
     flex-direction: column-reverse;
@@ -3676,6 +3676,11 @@ input, textarea {
   }
   .more-card__transition .more-card__title {
     height: auto;
+  }
+}
+@media screen and (max-width: 980px) {
+  .more-card__title {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -4209,7 +4214,7 @@ input, textarea {
 
 @media screen and (max-width: 1250px) {
   .icon-card {
-    max-width: 90%;
+    max-width: 100%;
     min-height: auto;
   }
   .icon-card__wrapper {
@@ -4259,6 +4264,9 @@ input, textarea {
 @media screen and (max-width: 980px) {
   .icon-card {
     max-width: 100%;
+  }
+  .icon-card__title {
+    font-size: 18px;
   }
 }
 .price {
@@ -5140,7 +5148,7 @@ input, textarea {
     display: flex;
     justify-content: center;
     background: linear-gradient(271.68deg, #F9A321 0%, #FFC162 100%);
-    border-radius: 24px 24px 0 0;
+    border-radius: 48px 48px 0 0;
     align-items: center;
     margin-bottom: 28px;
   }
@@ -5191,6 +5199,9 @@ input, textarea {
     bottom: 0;
     height: 2px;
     background-color: #FFFFFF;
+  }
+  .demo-banner__chip {
+    border-radius: 24px 24px 0 0;
   }
   .demo-banner__title-h2 {
     max-width: 285px;
@@ -7875,6 +7886,8 @@ input, textarea {
 }
 .capabilities__item .capabilities-card__title {
   margin-bottom: 24px;
+  max-width: 480px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -7895,6 +7908,11 @@ input, textarea {
   .capabilities .nav-page__list {
     height: 480px;
     align-items: center;
+  }
+  .capabilities .capabilities-card__title-mobile {
+    margin-top: 0;
+    max-width: 560px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 980px) {

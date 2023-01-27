@@ -84,7 +84,7 @@
 
 @include mq(md) {
   .icon-card {
-    max-width: 90%;
+    max-width: 100%;
     min-height: auto;
 
     &__wrapper {
@@ -146,8 +146,8 @@
   .icon-card {
     max-width: 100%;
 
-    &__wrap {
-
+    &__title {
+      font-size: 18px;
     }
   }
 }
