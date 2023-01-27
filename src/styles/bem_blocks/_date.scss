@@ -11,3 +11,11 @@
     line-height: 22px;
   }
 }
+
+@include mq(xs) {
+  .date {
+    &--md {
+      font-size: 12px;
+    }
+  }
+}

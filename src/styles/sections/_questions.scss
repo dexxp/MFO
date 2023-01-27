@@ -7,12 +7,26 @@
     &__check-list {
         margin-top: 16px;
     }
+
+    .text {
+        .link {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 @include mq(xs) {
     .s-questions {
         &__check-list {
             margin: 16px 0;
+        }
+
+        .text {
+            .link {
+                font-size: 14px;
+            }
         }
     }
 }

@@ -15,6 +15,10 @@
     }
     &__text {
         flex: 1;
+
+        p + p {
+            margin-top: 12px;
+        }
     }
 }
 
