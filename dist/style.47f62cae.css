@@ -7843,6 +7843,12 @@ input, textarea {
     height: 104px;
     margin-top: -8px;
   }
+  .s-questions-remain .checkbox__wrap::before {
+    margin-right: 12px;
+  }
+  .s-questions-remain .checkbox {
+    padding: 0 28px;
+  }
   .s-questions-remain .checkbox a {
     font-size: 12px;
   }
@@ -9250,6 +9256,13 @@ input, textarea {
     width: 100%;
     text-align: center;
     margin: 0 auto 40px;
+  }
+  .p-contacts__add-text {
+    line-height: 135%;
+    margin-top: 0;
+  }
+  .p-contacts__marker {
+    line-height: 135%;
   }
   .p-contacts__item {
     max-width: 800px;

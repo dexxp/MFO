@@ -72,6 +72,7 @@
 
 @include mq(sm) {
   .s-questions-remain {
+
     &__wrapper {
       padding: 48px 18px;
     }
@@ -149,7 +150,13 @@
         margin-top: -8px;
       }
     }
+
+    .checkbox__wrap::before {
+      margin-right: 12px;
+    }
+
     .checkbox {
+      padding: 0 28px;
       a {
         font-size: 12px;
       }

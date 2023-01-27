@@ -99,6 +99,15 @@
       margin: 0 auto 40px;
     }
 
+    &__add-text {
+      line-height: 135%;
+      margin-top: 0;
+    }
+
+    &__marker {
+      line-height: 135%;
+    }
+
     &__item {
       max-width: 800px;
       width: 100%;
@@ -127,6 +136,7 @@
         font-size: 22px;
         line-height: 135%;
       }
+
 
       &--1 {
         border-top: 1px solid $primary;
