@@ -9,6 +9,12 @@
     margin-bottom: 24px;
   }
 
+  &__text {
+    p + p {
+      margin-top: 12px;
+    }
+  }
+
   .link {
     font-weight: 600;
 

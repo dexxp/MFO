@@ -9437,6 +9437,9 @@ input, textarea {
 .p-license-agreement__title {
   margin-bottom: 24px;
 }
+.p-license-agreement__text p + p {
+  margin-top: 12px;
+}
 .p-license-agreement .link {
   font-weight: 600;
 }
