@@ -10,30 +10,33 @@
   &-primary {
     position: relative;
     padding: 14px 28px;
-    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+
     border-radius: 40px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
     color: $white;
     z-index: 1;
     gap: 10px;
     align-items: center;
+
+    transition: all 0.5s ease-out;
     &:before {
       position: absolute;
       content: "";
-      background: linear-gradient(84deg, #f9a321 0%, #ffc162 100%);
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       border-radius: 40px;
-      z-index: -1;
+      background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
       opacity: 0;
-      transition: all 0.5s ease-out;
+      z-index: -1;
+      transition: all 0.2s ease-out;
     }
     &:hover:before {
-        opacity: 1;
+      opacity: 1;
     }
   }
   &-outlined {
@@ -128,6 +131,7 @@
     &--blue {
       color: $primary;
 
+
     }
   }
 
@@ -162,8 +166,21 @@
       align-items: center;
       border-radius: 100%;
       background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
-      &:hover {
-          background: linear-gradient(0deg, #F9A321 0%, #FFC162 100%), linear-gradient(0deg, #4CA3F2 0%, #80C2FF 100%);
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100px;
+        background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.2s ease-out;
+      }
+      &:hover:before {
+        opacity: 1;
       }
   }
 }

@@ -247,6 +247,10 @@
           height: 147px;
         }
       }
+
+      &__button:before {
+        display: none;
+      }
     }
   }
 
