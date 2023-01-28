@@ -7371,6 +7371,11 @@ input, textarea {
 .s-add-products {
   margin: 128px 0;
 }
+.s-add-products__wrapper-outer {
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
 .s-add-products__title {
   max-width: 435px;
   width: 100%;
@@ -7388,6 +7393,9 @@ input, textarea {
   gap: 33px;
   justify-content: center;
 }
+.s-add-products__swiper {
+  overflow: initial !important;
+}
 
 @media screen and (max-width: 1250px) {
   .s-add-products__title {
@@ -7401,18 +7409,6 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
-  .s-add-products .container {
-    padding: 0;
-  }
-  .s-add-products__text {
-    padding: 0 16px;
-  }
-  .s-add-products__title {
-    padding: 0 16px;
-  }
-  .s-add-products__swiper {
-    padding: 0 16px !important;
-  }
   .s-add-products__items {
     gap: 0;
     justify-content: flex-start;

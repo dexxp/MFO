@@ -1,21 +1,36 @@
 .s-add-products {
   margin: 128px 0;
+
+
+  &__wrapper-outer {
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+  }
+
+
   &__title {
     max-width: 435px;
     width: 100%;
     text-align: center;
     margin: 0 auto 24px;
   }
+
   &__text {
     max-width: 873px;
     width: 100%;
     margin: 0 auto 56px;
     text-align: center;
   }
+
   &__items {
     display: flex;
     gap: 33px;
     justify-content: center;
+  }
+
+  &__swiper {
+    overflow: initial !important;
   }
 }
 
@@ -36,22 +51,6 @@
 
 @include mq(xs) {
   .s-add-products {
-    .container {
-      padding: 0;
-    }
-
-    &__text {
-      padding: 0 16px;
-    }
-
-    &__title {
-      padding: 0 16px;
-    }
-
-    &__swiper {
-      padding: 0 16px !important;
-    }
-
     &__items {
       gap: 0;
       justify-content: flex-start;
