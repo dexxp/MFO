@@ -1,4 +1,9 @@
 .p-license-agreement {
+  background: $primary-bg;
+  .footer {
+    background: $primary-bg;
+  }
+
   &__wrapper {
     max-width: 875px;
     width: 100%;

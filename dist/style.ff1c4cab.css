@@ -9523,6 +9523,12 @@ input, textarea {
     height: 163px;
   }
 }
+.p-license-agreement {
+  background: #EEF7FF;
+}
+.p-license-agreement .footer {
+  background: #EEF7FF;
+}
 .p-license-agreement__wrapper {
   max-width: 875px;
   width: 100%;
