@@ -1039,9 +1039,49 @@ input, textarea {
 
 @media screen and (max-width: 980px) {
   .table {
-    max-width: 580px;
+    max-width: 800px;
     width: 100%;
     margin: 0 auto;
+  }
+  .table__first-cell {
+    padding: 20px 49px 20px 22px;
+    font-size: 12px;
+    flex-basis: auto;
+    max-width: 280px;
+    width: 100%;
+  }
+  .table__header-title {
+    padding: 18px 30px 15px 18px;
+    flex-basis: auto;
+    max-width: 280px;
+    width: 100%;
+  }
+  .table__header-title .title {
+    font-size: 16px;
+  }
+  .table__body-title {
+    padding: 32px 24px;
+    font-size: 14px;
+    flex-basis: auto;
+    max-width: 280px;
+    width: 100%;
+  }
+  .table__cell {
+    padding: 19px 12px;
+    max-width: 280px;
+    width: 100%;
+    flex-basis: auto;
+  }
+  .table__cell-title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .table {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 0 16px;
   }
   .table__first-cell {
     padding: 20px 2px 20px 22px;
@@ -1075,12 +1115,6 @@ input, textarea {
   }
   .table__cell-title {
     font-size: 14px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .table {
-    max-width: 600px;
-    padding: 0 0 0 16px;
   }
   .table__cell-text {
     margin-top: 2px;
@@ -5323,15 +5357,13 @@ input, textarea {
     margin-bottom: 24px;
   }
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 600px) {
   .s-why-choice .container {
     padding-right: 0;
   }
   .s-why-choice .table {
     overflow-y: auto;
   }
-}
-@media screen and (max-width: 600px) {
   .s-why-choice .container {
     padding: 0;
   }
