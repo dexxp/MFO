@@ -46,9 +46,9 @@ window.addEventListener("DOMContentLoaded", () => {
     Fancybox.bind(`[data-fancybox="gallery-${i+1}"]`, {
       Image: {
         Panzoom: {
-          zoomFriction: 0.5,
+          zoomFriction: 0,
           maxScale: function () {
-            return 2;
+            return 0;
           },
         },
       },

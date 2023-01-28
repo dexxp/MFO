@@ -6450,6 +6450,9 @@ input, textarea {
   .s-functions__items {
     max-height: 2005px;
   }
+  .s-functions__items--opened {
+    max-height: 10000px;
+  }
   .s-functions__items .capabilities-card:nth-child(4) {
     margin-top: 0;
   }
@@ -6507,7 +6510,10 @@ input, textarea {
     background-image: none !important;
   }
   .s-functions__items {
-    height: 1811px;
+    max-height: 1811px;
+  }
+  .s-functions__items--opened {
+    max-height: 10000px;
   }
   .s-functions .capabilities-card__details {
     max-width: 343px;

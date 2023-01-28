@@ -12012,9 +12012,9 @@ window.addEventListener("DOMContentLoaded", function () {
     _ui.Fancybox.bind("[data-fancybox=\"gallery-".concat(i + 1, "\"]"), {
       Image: {
         Panzoom: {
-          zoomFriction: 0.5,
+          zoomFriction: 0,
           maxScale: function maxScale() {
-            return 2;
+            return 0;
           }
         }
       }
