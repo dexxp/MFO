@@ -40,9 +40,12 @@
 
     &__text {
       &-lg {
-        font-size: 16px;
-        max-width: 213px;
+        max-width: 400px;
         width: 100%;
+      }
+
+      &-md {
+        font-size: 14px;
       }
 
       & + .add-module-card__text-md {
@@ -66,6 +69,14 @@
 
 @include mq(xs) {
   .add-module-card {
+    &__text {
+      &-lg {
+        max-width: 213px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
     &__wrapper {
       padding: 16px 24px;
     }
