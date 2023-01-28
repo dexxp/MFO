@@ -27,8 +27,12 @@
     width: 100%;
   }
 
-  &__check-list {
-    margin: 16px 0;
+  &__text + &__check-list {
+    margin-top: 16px;
+  }
+
+  &__check-list + &__text {
+    margin-top: 16px;
   }
 }
 
@@ -41,9 +45,13 @@
 
       &-mobile {
         display: block;
-        margin: 80px auto 0;
+        margin: 0 auto 24px;
         text-align: center;
       }
+    }
+
+    .vertical-slider {
+      margin-bottom: 24px;
     }
 
     &__wrapper {
@@ -61,10 +69,14 @@
 
 @include mq(xs) {
   .capabilities-card {
-    &__title {
-      &-mobile {
-        margin-top: 40px;
-      }
+    &__title-mobile {
+      margin-bottom: 16px;
+      max-width: 343px;
+      width: 100%;
+    }
+
+    .vertical-slider {
+      margin-bottom: 16px;
     }
   }
 }

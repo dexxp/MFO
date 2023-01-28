@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/swiper/swiper-bundle.js":[function(require,module,exports) {
+})({"vfVQ":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -9223,7 +9223,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
   Swiper.use(modules);
   return Swiper;
 });
-},{}],"../node_modules/@fancyapps/ui/dist/fancybox.esm.js":[function(require,module,exports) {
+},{}],"a2rU":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11945,66 +11945,11 @@ class R extends l {
 exports.Fancybox = R;
 R.version = "4.0.31", R.defaults = M, R.openers = new Map(), R.Plugins = O, R.bind("[data-fancybox]");
 for (const [t, e] of Object.entries(R.Plugins || {})) "function" == typeof e.create && e.create(R);
-},{}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-  return bundleURL;
-}
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-  return '/';
-}
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-    cssTimeout = null;
-  }, 50);
-}
-module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/@fancyapps/ui/dist/fancybox.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/swiper/swiper-bundle.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"scripts/capabilities.js":[function(require,module,exports) {
+},{}],"aEdo":[function(require,module,exports) {
+
+},{}],"yypP":[function(require,module,exports) {
+
+},{}],"Dk34":[function(require,module,exports) {
 "use strict";
 
 var _swiperBundle = _interopRequireDefault(require("swiper/swiper-bundle"));
@@ -12025,11 +11970,11 @@ window.addEventListener("DOMContentLoaded", function () {
     _step;
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var verticalSlider = _step.value;
-      var wrapper = verticalSlider.querySelector(".vertical-slider__wrapper");
-      var pagination = verticalSlider.querySelector(".vertical-slider__pagination");
-      var buttonNext = verticalSlider.querySelector(".vertical-slider__button-next");
-      var buttonPrev = verticalSlider.querySelector(".vertical-slider__button-prev");
+      var _verticalSlider = _step.value;
+      var wrapper = _verticalSlider.querySelector(".vertical-slider__wrapper");
+      var pagination = _verticalSlider.querySelector(".vertical-slider__pagination");
+      var buttonNext = _verticalSlider.querySelector(".vertical-slider__button-next");
+      var buttonPrev = _verticalSlider.querySelector(".vertical-slider__button-prev");
       var swiper = new _swiperBundle.default(wrapper, {
         direction: "horizontal",
         centeredSlides: true,
@@ -12062,185 +12007,98 @@ window.addEventListener("DOMContentLoaded", function () {
   } finally {
     _iterator.f();
   }
-  _ui.Fancybox.bind('[data-fancybox="gallery"]', {
-    Image: {
-      Panzoom: {
-        zoomFriction: 0.5,
-        maxScale: function maxScale() {
-          return 2;
-        }
-      }
-    }
-  });
-});
-},{"swiper/swiper-bundle":"../node_modules/swiper/swiper-bundle.js","@fancyapps/ui":"../node_modules/@fancyapps/ui/dist/fancybox.esm.js","@fancyapps/ui/dist/fancybox.css":"../node_modules/@fancyapps/ui/dist/fancybox.css","swiper/swiper-bundle.css":"../node_modules/swiper/swiper-bundle.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55398" + '/');
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-          if (didAccept) {
-            handled = true;
+  for (var i = 0; i < verticalSliders.length; i++) {
+    var verticalSlider = verticalSliders[i];
+    _ui.Fancybox.bind("[data-fancybox=\"gallery-".concat(i + 1, "\"]"), {
+      Image: {
+        Panzoom: {
+          zoomFriction: 0.5,
+          maxScale: function maxScale() {
+            return 2;
           }
         }
-      });
-
-      // Enable HMR for CSS by default.
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
       }
+    });
+  }
+  var swiperClientsOne = new _swiperBundle.default(".clients-slider-one", {
+    slidesPerView: 'auto',
+    spaceBetween: 60,
+    centeredSlides: true,
+    speed: 8000,
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false
     }
-    if (data.type === 'reload') {
-      ws.close();
-      ws.onclose = function () {
-        location.reload();
-      };
+  });
+  var swiperClientsTwo = new _swiperBundle.default(".clients-slider-two", {
+    slidesPerView: 'auto',
+    spaceBetween: 60,
+    centeredSlides: true,
+    speed: 8000,
+    loop: true,
+    //allowTouchMove: false, // можно ещё отключить свайп
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+      reverseDirection: true
     }
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
+  });
+  var toggleFunctions = document.querySelector(".s-functions__toggle");
+  var functionWrap = document.querySelector(".s-functions__items");
+  toggleFunctions.addEventListener("click", function (e) {
+    e.preventDefault();
+    var functionOpened = functionWrap.classList.contains("s-functions__items--opened");
+    if (functionOpened) {} else {
+      toggleFunctions.innerHTML = "Свернуть";
+      functionWrap.classList.add("s-functions__items--opened");
+      setTimeout(function () {
+        toggleFunctions.style.display = "none";
+      }, 500);
     }
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
+  });
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  observer.observe(document.querySelector('.s-realization__wrapper'));
+  var mql = window.matchMedia('(max-width: 1250px)');
+  var casesSlider, reviewsSlider;
+  var breakpointChecker = function breakpointChecker() {
+    if (mql.matches !== true) {
+      if (casesSlider !== undefined) {
+        casesSlider.destroy(true, true);
+        reviewsSlider.destroy(true, true);
+      }
+    } else {
+      return enableSwiper();
     }
   };
-}
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-  if (overlay) {
-    overlay.remove();
-  }
-}
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID;
-
-  // html encode message and stack trace
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return [];
-  }
-  var parents = [];
-  var k, d, dep;
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-  return parents;
-}
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-  if (!modules) {
-    return;
-  }
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-  if (checkedAssets[id]) {
-    return;
-  }
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
+  var enableSwiper = function enableSwiper() {
+    casesSlider = new _swiperBundle.default('.s-cases__slider', {
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      loop: false,
+      centeredSlides: false,
+      spaceBetween: 16
     });
-  }
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
+    reviewsSlider = new _swiperBundle.default('.s-reviews__slider', {
+      slidesPerView: 'auto',
+      slidesPerGroup: 1,
+      loop: false,
+      spaceBetween: 0,
+      centeredSlides: false
     });
-    return true;
-  }
-}
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","scripts/capabilities.js"], null)
-//# sourceMappingURL=/capabilities.7e257ed7.js.map
+  };
+  mql.addEventListener("change", breakpointChecker);
+  breakpointChecker();
+});
+},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}]},{},["Dk34"], null)

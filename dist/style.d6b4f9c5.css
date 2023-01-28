@@ -2247,8 +2247,11 @@ input, textarea {
   max-width: 553px;
   width: 100%;
 }
-.capabilities-card__check-list {
-  margin: 16px 0;
+.capabilities-card__text + .capabilities-card__check-list {
+  margin-top: 16px;
+}
+.capabilities-card__check-list + .capabilities-card__text {
+  margin-top: 16px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -2257,8 +2260,11 @@ input, textarea {
   }
   .capabilities-card__title-mobile {
     display: block;
-    margin: 80px auto 0;
+    margin: 0 auto 24px;
     text-align: center;
+  }
+  .capabilities-card .vertical-slider {
+    margin-bottom: 24px;
   }
   .capabilities-card__wrapper {
     flex-direction: column-reverse;
@@ -2270,7 +2276,12 @@ input, textarea {
 }
 @media screen and (max-width: 600px) {
   .capabilities-card__title-mobile {
-    margin-top: 40px;
+    margin-bottom: 16px;
+    max-width: 343px;
+    width: 100%;
+  }
+  .capabilities-card .vertical-slider {
+    margin-bottom: 16px;
   }
 }
 .reviews-card {
@@ -2710,9 +2721,11 @@ input, textarea {
 
 @media screen and (max-width: 980px) {
   .add-module-card__text-lg {
-    font-size: 16px;
-    max-width: 213px;
+    max-width: 400px;
     width: 100%;
+  }
+  .add-module-card__text-md {
+    font-size: 14px;
   }
   .add-module-card__text + .add-module-card__text-md {
     margin-top: 0;
@@ -2729,6 +2742,11 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .add-module-card__text-lg {
+    max-width: 213px;
+    font-size: 16px;
+    line-height: 20px;
+  }
   .add-module-card__wrapper {
     padding: 16px 24px;
   }
@@ -6376,15 +6394,13 @@ input, textarea {
 .s-functions__items {
   display: flex;
   flex-direction: column;
-  gap: 64px;
-}
-.s-functions__items-hidden {
-  max-height: 0;
+  max-height: 1401px;
   overflow: hidden;
-  opacity: 0;
-  transition: all 4s ease-out;
+  gap: 64px;
+  transition: all 1s ease-in;
 }
 .s-functions__items .capabilities-card:nth-child(4) {
+  width: 100%;
   position: absolute;
   top: 100%;
   transform: translateY(-50%);
@@ -6393,6 +6409,9 @@ input, textarea {
 }
 .s-functions__items .capabilities-card:nth-child(4) .capabilities-card__title-mobile {
   display: none;
+}
+.s-functions__items--opened {
+  max-height: 10000px;
 }
 .s-functions__items--opened .capabilities-card {
   display: block;
@@ -6403,8 +6422,8 @@ input, textarea {
   pointer-events: all;
   opacity: 1;
 }
-.s-functions__items--opened .s-functions__items-hidden {
-  opacity: 1;
+.s-functions__items--opened + .s-functions__button {
+  margin-top: 0;
 }
 .s-functions__prompt:before {
   width: 268px;
@@ -6423,7 +6442,19 @@ input, textarea {
   .s-functions__title-prompt {
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 0;
+    margin-bottom: 40px;
+  }
+  .s-functions .capabilities-card + .capabilities-card {
+    margin-top: 40px;
+  }
+  .s-functions__items {
+    max-height: 2005px;
+  }
+  .s-functions__items .capabilities-card:nth-child(4) {
+    margin-top: 0;
+  }
+  .s-functions__items--opened .capabilities-card:nth-child(4) {
+    margin-top: 40px;
   }
   .s-functions__title {
     text-align: center;
@@ -6474,6 +6505,12 @@ input, textarea {
 @media screen and (max-width: 600px) {
   .s-functions__wrapper-outer {
     background-image: none !important;
+  }
+  .s-functions__items {
+    height: 1811px;
+  }
+  .s-functions .capabilities-card__details {
+    max-width: 343px;
   }
   .s-functions .capabilities-card:nth-child(4) {
     top: 105%;
@@ -9691,18 +9728,34 @@ input, textarea {
 }
 .vertical-slider {
   position: relative;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.vertical-slider__wrapper-outer {
+  position: relative;
+  padding: 16px 0;
 }
 .vertical-slider__wrapper {
+  position: relative;
   height: 356px;
-  width: 553px;
-  padding: 80px 55px !important;
-  margin: 50px 0;
+  max-width: 513px;
+  width: 100%;
+  overflow: initial !important;
+  padding: 50px 0 !important;
+}
+.vertical-slider__inner {
+  overflow: hidden;
+  padding: 0 60px;
+  margin: 0 -60px;
 }
 .vertical-slider .swiper-wrapper {
   max-width: 513px;
   width: 100%;
 }
 .vertical-slider__pagination {
+  position: static !important;
+  transform: none !important;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -9737,6 +9790,8 @@ input, textarea {
 .vertical-slider__item img {
   max-width: 100%;
   border-radius: 4px;
+}
+.vertical-slider .swiper-slide-active {
   box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
 }
 .vertical-slider__button {
@@ -9753,35 +9808,44 @@ input, textarea {
   cursor: pointer;
 }
 .vertical-slider__button-next {
-  bottom: 24px;
+  bottom: 0;
 }
 .vertical-slider__button-next svg {
   transform: rotate(180deg);
 }
 .vertical-slider__button-prev {
-  top: 26px;
+  top: 0;
 }
 
 @media screen and (max-width: 1250px) {
+  .vertical-slider {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .vertical-slider__wrapper-outer {
+    padding: 0;
+  }
   .vertical-slider__wrapper {
-    height: 295px;
-    padding: 30px 55px 46px !important;
-    margin: 30px 0;
+    height: 260px;
+    padding: 0 !important;
+  }
+  .vertical-slider__inner {
+    padding: 40px;
+    margin: -40px;
   }
   .vertical-slider__button {
     margin: 0;
+    top: 50%;
     transform: translateY(-50%);
   }
   .vertical-slider__button-next {
-    top: 50%;
-    left: calc(100% - 26px);
-    bottom: 0;
+    right: -26px;
+    left: auto;
   }
   .vertical-slider__button-next svg {
     transform: rotate(90deg);
   }
   .vertical-slider__button-prev {
-    top: 50%;
     left: -26px;
   }
   .vertical-slider__button-prev svg {
@@ -9795,31 +9859,26 @@ input, textarea {
 }
 @media screen and (max-width: 600px) {
   .vertical-slider {
-    max-width: 359px;
-    width: 100%;
-    padding: 0 20px;
+    gap: 16px;
   }
   .vertical-slider__wrapper {
-    height: 185px;
-    max-width: 343px;
+    height: 140px;
+    max-width: 275px;
     width: 100%;
-    padding: 0 20px !important;
-    margin: 20px 0;
   }
   .vertical-slider__button {
     width: 32px;
     height: 32px;
-    transform: translateY(-105%);
   }
   .vertical-slider__button svg {
     width: 10px;
     height: 12px;
   }
   .vertical-slider__button-next {
-    left: calc(100% - 32px);
+    right: -16px;
   }
   .vertical-slider__button-prev {
-    left: 0;
+    left: -16px;
   }
   .vertical-slider__item a:before {
     display: none;

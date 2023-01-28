@@ -1,10 +1,27 @@
 .vertical-slider {
   position: relative;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+
+  &__wrapper-outer {
+    position: relative;
+    padding: 16px 0;
+  }
+
   &__wrapper {
+    position: relative;
     height: 356px;
-    width: 553px;
-    padding: 80px 55px !important;
-    margin: 50px 0;
+    max-width: 513px;
+    width: 100%;
+    overflow: initial !important;
+    padding: 50px 0 !important;
+  }
+
+  &__inner {
+    overflow: hidden;
+    padding: 0 60px;
+    margin: 0 -60px;
   }
 
   .swiper-wrapper {
@@ -13,6 +30,8 @@
   }
 
   &__pagination {
+    position: static !important;
+    transform: none !important;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -54,6 +73,11 @@
     img {
       max-width: 100%;
       border-radius: 4px;
+    }
+  }
+
+  .swiper-slide {
+    &-active {
       box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
     }
   }
@@ -71,13 +95,13 @@
     transition: all 0.5s ease-out;
     cursor: pointer;
     &-next {
-      bottom: 24px;
+      bottom: 0;
       svg {
         transform: rotate(180deg);
       }
     }
     &-prev {
-      top: 26px;
+      top: 0;
     }
 
   }
@@ -85,27 +109,36 @@
 
 @include mq(md) {
   .vertical-slider {
+    flex-direction: column;
+    gap: 24px;
 
+    &__wrapper-outer {
+      padding: 0;
+    }
 
     &__wrapper {
-      height: 295px;
-      padding: 30px 55px 46px !important;
-      margin: 30px 0;
+      height: 260px;
+      padding: 0 !important;
+    }
+
+    &__inner {
+      padding: 40px;
+      margin: -40px;
     }
 
     &__button {
       margin: 0;
+
+      top: 50%;
       transform: translateY(-50%);
       &-next {
-        top: 50%;
-        left: calc(100% - 26px);
-        bottom: 0;
+        right: -26px;
+        left: auto;
         svg {
           transform: rotate(90deg);
         }
       }
       &-prev {
-        top: 50%;
         left: -26px;
         svg {
           transform: rotate(-90deg);
@@ -123,32 +156,27 @@
 
 @include mq(xs) {
   .vertical-slider {
-    max-width: 359px;
-    width: 100%;
-    padding: 0 20px;
+    gap: 16px;
 
     &__wrapper {
-      height: 185px;
-      max-width: 343px;
+      height: 140px;
+      max-width: 275px;
       width: 100%;
-      padding: 0 20px !important;
-      margin: 20px 0;
     }
 
     &__button {
       width: 32px;
       height: 32px;
-      transform: translateY(-105%);
       svg {
         width: 10px;
         height: 12px;
       }
 
       &-next {
-        left: calc(100% - 32px)
+       right: -16px;
       }
       &-prev {
-        left: 0;
+       left: -16px;
       }
     }
 
