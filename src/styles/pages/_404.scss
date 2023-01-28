@@ -1,12 +1,18 @@
 .p-404 {
+  background: #EEF7FF;
+
   &__wrapper {
-    padding: 170px 0 100px;
+    padding: 102px 0 0;
     background-color: $primary-bg;
     background-position-y: bottom;
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    min-height: calc(100vh - 88px);
+    .button {
+      display: flex;
+      width: fit-content;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -42,6 +48,7 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 16px;
+    font-weight: 700;
   }
 
   &__text {
@@ -49,9 +56,62 @@
     margin-bottom: 32px;
   }
 
-  .button {
-    display: flex;
-    width: fit-content;
-    margin: 0 auto;
+  .footer {
+    background: #EEF7FF;
+  }
+}
+
+@include mq(md) {
+  .p-404 {
+    &__wrapper {
+      padding-bottom: 72px;
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-404 {
+    &__wrapper {
+      padding-top: 95px;
+      .button {
+        width: 263px;
+        justify-content: center;
+      }
+    }
+
+    &__title {
+      gap: 113px;
+    }
+
+    &__info {
+      padding: 48px 24px;
+    }
+
+    &__text {
+      max-width: 296px;
+      margin: 0 auto 24px;
+    }
+
+    &__img {
+      width: 184px;
+      height: 213px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: calc(100% - 30px);
+    }
+
+    &__title-h2 {
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      font-size: 128px;
+    }
+  }
+}
+
+@include mq(xs) {
+  .p-404 {
+
   }
 }
