@@ -1094,8 +1094,9 @@ input, textarea {
 .consultation-package__wrapper {
   cursor: default;
   max-width: 569px;
+  min-height: 726px;
   background-color: #fff;
-  padding: 56px 83px 64px;
+  padding: 56px 84px 64px;
   box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
   border-radius: 32px;
   display: flex;
@@ -1124,12 +1125,13 @@ input, textarea {
 .consultation-package__descr {
   font-weight: 400;
   font-size: 18px;
-  line-height: 125%;
+  line-height: 22px;
   color: #434343;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .consultation-package__price {
+  margin-top: auto;
   margin-bottom: 24px;
 }
 .consultation-package__action {
@@ -1150,6 +1152,7 @@ input, textarea {
   }
   .consultation-package__wrapper {
     padding: 50px 28px 50px;
+    min-height: 672px;
   }
   .consultation-package__img {
     max-width: 200px;
@@ -1161,6 +1164,7 @@ input, textarea {
   }
   .consultation-package__wrapper {
     padding: 40px 21px 32px;
+    min-height: 502px;
   }
   .consultation-package__name {
     height: 40px;
@@ -1181,6 +1185,7 @@ input, textarea {
     width: 100%;
     margin: 0 auto 16px;
     font-size: 14px;
+    line-height: 17px;
     height: 85px;
     display: flex;
     justify-content: center;
@@ -7197,6 +7202,11 @@ input, textarea {
 .s-consulting-packages {
   margin: 128px auto 32px;
 }
+.s-consulting-packages__wrapper {
+  overflow: hidden;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+}
 .s-consulting-packages__title {
   text-align: center;
   margin: 0 auto 40px;
@@ -7204,6 +7214,9 @@ input, textarea {
 .s-consulting-packages__items {
   display: flex;
   gap: 32px;
+}
+.s-consulting-packages__swiper {
+  overflow: initial !important;
 }
 
 @media screen and (max-width: 1250px) {
@@ -7216,15 +7229,9 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
-  .s-consulting-packages {
-    overflow: hidden;
-  }
   .s-consulting-packages__items {
     gap: 0;
     justify-content: flex-start;
-  }
-  .s-consulting-packages__swiper {
-    overflow: initial !important;
   }
 }
 .s-main-product {

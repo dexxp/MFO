@@ -1,5 +1,12 @@
 .s-consulting-packages {
   margin: 128px auto 32px;
+
+  &__wrapper {
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+  }
+
   &__title {
     text-align: center;
     margin: 0 auto 40px;
@@ -7,6 +14,10 @@
   &__items {
     display: flex;
     gap: 32px;
+  }
+
+  &__swiper {
+    overflow: initial !important;
   }
 }
 
@@ -25,15 +36,11 @@
 
 @include mq(xs) {
   .s-consulting-packages {
-    overflow: hidden;
+
 
     &__items {
       gap: 0;
       justify-content: flex-start;
-    }
-
-    &__swiper {
-      overflow: initial !important;
     }
   }
 }

@@ -5,8 +5,9 @@
     &__wrapper {
         cursor: default;
         max-width: 569px;
+        min-height: 726px;
         background-color: #fff;
-        padding: 56px 83px 64px;
+        padding: 56px 84px 64px;
         box-shadow: 0 4px 30px rgba(80, 106, 153, 0.1);
         border-radius: 32px;
         display: flex;
@@ -36,12 +37,13 @@
     &__descr {
         font-weight: 400;
         font-size: 18px;
-        line-height: 125%;
+        line-height: 22px;
         color: #434343;
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 20px;
     }
     &__price {
+        margin-top: auto;
         margin-bottom: 24px;
     }
     &__action {
@@ -62,6 +64,7 @@
         max-width: 363px;
         &__wrapper {
             padding: 50px 28px 50px;
+            min-height: 672px;
         }
 
         &__img {
@@ -75,7 +78,7 @@
         max-width: 45%;
         &__wrapper {
             padding: 40px 21px 32px;
-
+            min-height: 502px;
         }
 
         &__name {
@@ -95,11 +98,11 @@
         }
 
         &__descr {
-
             max-width: 238px;
             width: 100%;
             margin: 0 auto 16px;
             font-size: 14px;
+            line-height: 17px;
             height: 85px;
             display: flex;
             justify-content: center;
