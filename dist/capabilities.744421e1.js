@@ -11949,9 +11949,13 @@ for (const [t, e] of Object.entries(R.Plugins || {})) "function" == typeof e.cre
 
 },{}],"yypP":[function(require,module,exports) {
 
-},{}],"Dk34":[function(require,module,exports) {
+},{}],"oe8E":[function(require,module,exports) {
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.verticalSlider = void 0;
 var _swiperBundle = _interopRequireDefault(require("swiper/swiper-bundle"));
 var _ui = require("@fancyapps/ui");
 require("@fancyapps/ui/dist/fancybox.css");
@@ -11964,17 +11968,17 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-window.addEventListener("DOMContentLoaded", function () {
+var verticalSlider = function verticalSlider() {
   var verticalSliders = _toConsumableArray(document.querySelectorAll(".vertical-slider"));
   var _iterator = _createForOfIteratorHelper(verticalSliders),
     _step;
   try {
     for (_iterator.s(); !(_step = _iterator.n()).done;) {
-      var _verticalSlider = _step.value;
-      var wrapper = _verticalSlider.querySelector(".vertical-slider__wrapper");
-      var pagination = _verticalSlider.querySelector(".vertical-slider__pagination");
-      var buttonNext = _verticalSlider.querySelector(".vertical-slider__button-next");
-      var buttonPrev = _verticalSlider.querySelector(".vertical-slider__button-prev");
+      var _verticalSlider2 = _step.value;
+      var wrapper = _verticalSlider2.querySelector(".vertical-slider__wrapper");
+      var pagination = _verticalSlider2.querySelector(".vertical-slider__pagination");
+      var buttonNext = _verticalSlider2.querySelector(".vertical-slider__button-next");
+      var buttonPrev = _verticalSlider2.querySelector(".vertical-slider__button-prev");
       var swiper = new _swiperBundle.default(wrapper, {
         direction: "horizontal",
         centeredSlides: true,
@@ -12008,7 +12012,23 @@ window.addEventListener("DOMContentLoaded", function () {
     _iterator.f();
   }
   for (var i = 0; i < verticalSliders.length; i++) {
-    var verticalSlider = verticalSliders[i];
+    var _verticalSlider = verticalSliders[i];
+    var slides = _toConsumableArray(_verticalSlider.querySelectorAll(".swiper-slide")).filter(function (slide) {
+      return slide.classList.contains("swiper-slide-duplicate");
+    });
+    var _iterator2 = _createForOfIteratorHelper(slides),
+      _step2;
+    try {
+      for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+        var slide = _step2.value;
+        var a = slide.querySelector("a");
+        a.dataset.fancybox = "";
+      }
+    } catch (err) {
+      _iterator2.e(err);
+    } finally {
+      _iterator2.f();
+    }
     _ui.Fancybox.bind("[data-fancybox=\"gallery-".concat(i + 1, "\"]"), {
       Image: {
         Panzoom: {
@@ -12020,85 +12040,18 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-  var swiperClientsOne = new _swiperBundle.default(".clients-slider-one", {
-    slidesPerView: 'auto',
-    spaceBetween: 60,
-    centeredSlides: true,
-    speed: 8000,
-    loop: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false
-    }
-  });
-  var swiperClientsTwo = new _swiperBundle.default(".clients-slider-two", {
-    slidesPerView: 'auto',
-    spaceBetween: 60,
-    centeredSlides: true,
-    speed: 8000,
-    loop: true,
-    //allowTouchMove: false, // можно ещё отключить свайп
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-      // или сделать так, чтобы восстанавливался autoplay после взаимодействия
-      reverseDirection: true
-    }
-  });
-  var toggleFunctions = document.querySelector(".s-functions__toggle");
-  var functionWrap = document.querySelector(".s-functions__items");
-  toggleFunctions.addEventListener("click", function (e) {
-    e.preventDefault();
-    var functionOpened = functionWrap.classList.contains("s-functions__items--opened");
-    if (functionOpened) {} else {
-      toggleFunctions.innerHTML = "Свернуть";
-      functionWrap.classList.add("s-functions__items--opened");
-      setTimeout(function () {
-        toggleFunctions.style.display = "none";
-      }, 500);
-    }
-  });
-  var observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('active');
-      } else {
-        entry.target.classList.remove('active');
-      }
-    });
-  }, {
-    threshold: 0.1
-  });
-  observer.observe(document.querySelector('.s-realization__wrapper'));
-  var mql = window.matchMedia('(max-width: 1250px)');
-  var casesSlider, reviewsSlider;
-  var breakpointChecker = function breakpointChecker() {
-    if (mql.matches !== true) {
-      if (casesSlider !== undefined) {
-        casesSlider.destroy(true, true);
-        reviewsSlider.destroy(true, true);
-      }
-    } else {
-      return enableSwiper();
-    }
-  };
-  var enableSwiper = function enableSwiper() {
-    casesSlider = new _swiperBundle.default('.s-cases__slider', {
-      slidesPerView: 'auto',
-      slidesPerGroup: 1,
-      loop: false,
-      centeredSlides: false,
-      spaceBetween: 16
-    });
-    reviewsSlider = new _swiperBundle.default('.s-reviews__slider', {
-      slidesPerView: 'auto',
-      slidesPerGroup: 1,
-      loop: false,
-      spaceBetween: 0,
-      centeredSlides: false
-    });
-  };
-  mql.addEventListener("change", breakpointChecker);
-  breakpointChecker();
+};
+exports.verticalSlider = verticalSlider;
+},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}],"QrGZ":[function(require,module,exports) {
+"use strict";
+
+var _swiperBundle = _interopRequireDefault(require("swiper/swiper-bundle"));
+var _ui = require("@fancyapps/ui");
+require("@fancyapps/ui/dist/fancybox.css");
+require("swiper/swiper-bundle.css");
+var _verticalSlider = require("./sliders/verticalSlider");
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+window.addEventListener("DOMContentLoaded", function () {
+  (0, _verticalSlider.verticalSlider)();
 });
-},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}]},{},["Dk34"], null)
+},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP","./sliders/verticalSlider":"oe8E"}]},{},["QrGZ"], null)
