@@ -10,23 +10,31 @@
     margin-top: 40px;
   }
 
+  &__link-contain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
   &__card {
     position: relative;
     max-width: 569px;
     width: 100%;
-    box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
+
     border-radius: 24px;
     z-index: 0;
+    transition: 0.4s all;
+
+    &:hover {
+      filter: drop-shadow(0px 4px 60px rgba(85, 118, 157, 0.4))
+    }
 
     &--orange {
       .button {
         color: $secondary;
         transition: .2s all;
-
-        &:hover {
-          background-color: darken($white, 5%);
-          color: darken($secondary, 5%);
-        }
       }
     }
 
@@ -34,11 +42,6 @@
       .button {
         color: $primary;
         transition: .2s all;
-
-        &:hover {
-          background-color: darken($white, 5%);
-          color: darken($primary, 5%);
-        }
       }
     }
 

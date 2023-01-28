@@ -5344,29 +5344,31 @@ input, textarea {
   gap: 32px;
   margin-top: 40px;
 }
+.other-services__link-contain {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
 .other-services__card {
   position: relative;
   max-width: 569px;
   width: 100%;
-  box-shadow: 0 4px 60px rgba(85, 118, 157, 0.15);
   border-radius: 24px;
   z-index: 0;
+  transition: 0.4s all;
+}
+.other-services__card:hover {
+  filter: drop-shadow(0px 4px 60px rgba(85, 118, 157, 0.4));
 }
 .other-services__card--orange .button {
   color: #F8AE35;
   transition: 0.2s all;
 }
-.other-services__card--orange .button:hover {
-  background-color: #f2f2f2;
-  color: #f7a41c;
-}
 .other-services__card--blue .button {
   color: #57A6EE;
   transition: 0.2s all;
-}
-.other-services__card--blue .button:hover {
-  background-color: #f2f2f2;
-  color: #409aec;
 }
 .other-services__card-wrapper {
   padding: 64px 97px 64px 64px;
