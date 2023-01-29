@@ -71,7 +71,7 @@
     position: relative;
     z-index: 1;
     padding: 20px 59px;
-    transition-property: background, border;
+    transition-property: none;
 
     &:before {
       position: absolute;
@@ -93,7 +93,8 @@
     &:hover {
       border: none;
       color: $white;
-      padding: 21px 60px;
+      background: transparent;
+      padding: 20px 60px;
     }
   }
 }
