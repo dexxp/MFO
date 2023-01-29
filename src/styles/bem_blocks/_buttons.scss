@@ -53,17 +53,37 @@
     }
   }
   &-outlined-blue {
-      border: 1px solid $primary;
-      border-radius: 32px;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-      background: transparent;
-      color: $primary;
+    border: 1px solid $primary;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    background: transparent;
+    color: $primary;
+
+    position: relative;
+    z-index: 0;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 40px;
+      background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.2s ease-out;
+    }
+
+    &:hover:before {
+      opacity: 1;
+    }
 
     &:hover {
       color: $white;
-      background: $primary;
     }
   }
 
@@ -160,27 +180,27 @@
   }
 
   &-slider {
-      width: 48px;
-      height: 48px;
-      justify-content: center;
-      align-items: center;
-      border-radius: 100%;
-      background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
-      &:before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 100px;
-        background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
-        opacity: 0;
-        z-index: -1;
-        transition: all 0.2s ease-out;
-      }
-      &:hover:before {
-        opacity: 1;
-      }
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%), linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px;
+      background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.2s ease-out;
+    }
+    &:hover:before {
+      opacity: 1;
+    }
   }
 }

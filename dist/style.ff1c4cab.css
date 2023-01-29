@@ -182,10 +182,27 @@ input, textarea {
   line-height: 22px;
   background: transparent;
   color: #57A6EE;
+  position: relative;
+  z-index: 0;
+}
+.button-outlined-blue:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s ease-out;
+}
+.button-outlined-blue:hover:before {
+  opacity: 1;
 }
 .button-outlined-blue:hover {
   color: #FFFFFF;
-  background: #57A6EE;
 }
 .button-circle {
   align-items: center;
@@ -1572,6 +1589,24 @@ input, textarea {
   letter-spacing: 0.01em;
   color: #434343;
 }
+.page-switcher__button svg {
+  fill: none;
+}
+.page-switcher__button svg rect {
+  stroke: url(#paint0_linear_1_1093);
+}
+.page-switcher__button svg path {
+  stroke: url(#paint1_linear_1_1093);
+}
+.page-switcher__button:hover svg {
+  fill: url(#paint0_linear_1_1093);
+}
+.page-switcher__button:hover svg path {
+  stroke: #FFFFFF;
+}
+.page-switcher__button:hover {
+  color: #57A6EE;
+}
 .page-switcher__img {
   border-radius: 40px;
 }
@@ -1604,7 +1639,7 @@ input, textarea {
     font-size: 20px;
     max-width: 255px;
   }
-  .page-switcher__button img {
+  .page-switcher__button svg {
     height: 32px;
     width: 32px;
   }
@@ -3525,10 +3560,9 @@ input, textarea {
   color: #434343;
 }
 
-@media screen and (max-width: 600px) {
-  .s-switcher__button img {
-    width: 32px;
-    height: 32px;
+@media screen and (max-width: 1250px) {
+  .s-switcher__button span {
+    display: block;
   }
 }
 .more-card {

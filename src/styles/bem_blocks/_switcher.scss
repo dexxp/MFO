@@ -18,12 +18,11 @@
   }
 }
 
-@include mq(xs) {
+@include mq(md) {
   .s-switcher {
     &__button {
-      img {
-        width: 32px;
-        height: 32px;
+      span {
+        display: block;
       }
     }
   }

@@ -44,6 +44,29 @@
     line-height: 125%;
     letter-spacing: 0.01em;
     color: #434343;
+    svg {
+      fill: none;
+
+      rect {
+        stroke: url(#paint0_linear_1_1093);
+      }
+
+      path {
+        stroke: url(#paint1_linear_1_1093);
+      }
+    }
+
+    &:hover svg {
+      fill: url(#paint0_linear_1_1093);
+
+      path {
+        stroke: $white;
+      }
+    }
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   &__img {
@@ -94,7 +117,7 @@
     }
 
     &__button {
-      img {
+      svg {
         height: 32px;
         width: 32px;
       }
