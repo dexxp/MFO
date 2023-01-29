@@ -2418,6 +2418,12 @@ input, textarea {
   background: #EEF7FF;
   max-width: 390px;
   width: 100%;
+  height: auto !important;
+}
+.reviews-card__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .reviews-card:first-child {
   border-radius: 16px 0 0 16px;
@@ -2435,6 +2441,9 @@ input, textarea {
 }
 .reviews-card__text {
   margin-bottom: 24px;
+}
+.reviews-card__logotype {
+  margin-top: auto;
 }
 .reviews-card__logotype img {
   object-fit: contain;
@@ -5707,7 +5716,7 @@ input, textarea {
   position: relative;
   z-index: 1;
   padding: 20px 59px;
-  transition-property: background, border;
+  transition-property: none;
 }
 .s-schedule-webinars .button-outlined:before {
   position: absolute;
@@ -5728,7 +5737,8 @@ input, textarea {
 .s-schedule-webinars .button-outlined:hover {
   border: none;
   color: #FFFFFF;
-  padding: 21px 60px;
+  background: transparent;
+  padding: 20px 60px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -6451,7 +6461,6 @@ input, textarea {
 }
 .s-reviews__items {
   display: flex;
-  align-items: center;
   margin-bottom: 48px;
 }
 .s-reviews__title {
