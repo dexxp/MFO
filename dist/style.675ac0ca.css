@@ -2443,6 +2443,9 @@ input, textarea {
 .reviews-card__text {
   margin-bottom: 24px;
 }
+.reviews-card__text p + p {
+  margin-top: 8px;
+}
 .reviews-card__logotype {
   margin-top: auto;
 }
