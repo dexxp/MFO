@@ -586,8 +586,10 @@ input, textarea {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.3;
-  text-decoration: underline;
   color: #57A6EE;
+}
+.link-nav:hover {
+  text-decoration: underline;
 }
 .link-dark {
   font-weight: 500;
@@ -5687,11 +5689,18 @@ input, textarea {
   color: #FFFFFF;
   font-weight: 600;
 }
+.s-schedule-webinars .button-primary svg path {
+  fill: #FFFFFF;
+  transition: 0.2s all;
+}
 .s-schedule-webinars .button-primary:before {
   background: #FFFFFF;
 }
 .s-schedule-webinars .button-primary:hover {
   color: #57A6EE;
+}
+.s-schedule-webinars .button-primary:hover svg path {
+  fill: #57A6EE;
 }
 
 @media screen and (max-width: 1250px) {
@@ -7440,10 +7449,6 @@ input, textarea {
   text-align: center;
   margin: 0 auto;
 }
-.s-main-product__text span {
-  color: #57A6EE;
-  text-decoration: underline;
-}
 
 @media screen and (max-width: 1250px) {
   .s-main-product {
@@ -7471,6 +7476,11 @@ input, textarea {
   .s-main-product__items {
     gap: 0;
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .s-main-product__text a {
+    font-size: 14px;
   }
 }
 .s-add-modules {
@@ -8311,8 +8321,9 @@ input, textarea {
     padding-bottom: 16px;
     gap: 8px;
   }
-  .p-webinar .s-schedule-webinars .button img {
+  .p-webinar .s-schedule-webinars .button svg {
     width: 16px;
+    flex-shrink: 0;
   }
 }
 .p-personal-cabinet__bg {

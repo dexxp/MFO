@@ -18,11 +18,6 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
-
-    span {
-      color: $primary;
-      text-decoration: underline;
-    }
   }
 }
 
@@ -58,6 +53,16 @@
     &__items {
       gap: 0;
       justify-content: flex-start;
+    }
+  }
+}
+
+@include mq(xs) {
+  .s-main-product {
+    &__text {
+      a {
+        font-size: 14px;
+      }
     }
   }
 }
