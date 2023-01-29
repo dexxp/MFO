@@ -47,10 +47,10 @@
 
   .button-primary {
     &:before {
-      display: none;
-    }
-    &:hover {
       background: $white;
+    }
+
+    &:hover {
       color: $primary;
     }
   }

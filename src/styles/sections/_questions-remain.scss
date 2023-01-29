@@ -55,8 +55,15 @@
     }
   }
 
-  .button {
+  .button-primary {
     margin-top: 24px;
+    &:before {
+      background: $white;
+    }
+
+    &:hover {
+      color: $primary;
+    }
   }
 }
 

@@ -36,6 +36,7 @@
   }
 
   .swiper-slide {
+    pointer-events: none;
     &__img {
       display: block;
       overflow: hidden;
@@ -67,7 +68,7 @@
       }
 
       &:hover:before {
-        background-color: #f9a321;
+        background-color: $primary;
         opacity: 1;
       }
     }
@@ -87,6 +88,7 @@
     }
 
     &-active {
+      pointer-events: all;
 
       .swiper-slide__img {
         width: 779px;

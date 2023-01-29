@@ -51,6 +51,14 @@
   &__button {
     margin-top: auto;
     width: fit-content;
+
+    &:before {
+      background: $white;
+    }
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   &__details {
@@ -246,10 +254,6 @@
           width: 127px;
           height: 147px;
         }
-      }
-
-      &__button:before {
-        display: none;
       }
     }
   }

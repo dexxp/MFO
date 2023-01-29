@@ -95,6 +95,7 @@
     border-radius: 34px;
 
     &__img {
+      padding-left: 3px;
       background-color: $white;
       border-radius: 100%;
       width: 64px;
@@ -115,17 +116,6 @@
       transition: .2s all;
     }
 
-    &--blue {
-      #{$self}__text {
-        color: white;
-      }
-
-      &:hover {
-        background: $white;
-        color: $primary;
-      }
-    }
-
     &:hover {
       background-color: $primary;
     }
@@ -133,9 +123,27 @@
     &:hover &__text {
       color: $white;
     }
+
+    &--blue {
+      #{$self}__text {
+        color: white;
+      }
+
+      &:hover {
+        background: $white;
+      }
+
+      &:hover #{$self}__text {
+        color: $primary;
+      }
+    }
   }
 
   &-white {
+    position: relative;
+
+    z-index: 1;
+
     font-size: 16px;
     background-color: #fff;
     color: #3F5770;
@@ -143,27 +151,65 @@
     font-weight: 600;
 
     &:hover {
-      background-color: $primary;
-      color: $white;
+      color: $primary;
     }
 
     &--blue {
       color: $primary;
 
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.2s ease-out;
+      }
 
+      &:hover:before {
+        opacity: 1;
+      }
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 
   &-secondary {
-      background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    position: relative;
+    background: linear-gradient(267.67deg, #4CA3F2 0%, #80C2FF 100%);
+    border-radius: 40px;
+    padding: 21px 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    z-index: 1;
+    gap: 10px;
+    align-items: center;
+
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border-radius: 40px;
-      padding: 21px 40px;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 22px;
-      color: $white;
-      gap: 10px;
-      align-items: center;
+      background: linear-gradient(267.67deg, #F9A321 0%, #FFC162 100%);
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.2s ease-out;
+    }
+    &:hover:before {
+      opacity: 1;
+    }
   }
 
   &--size {
