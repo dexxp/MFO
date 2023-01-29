@@ -4,6 +4,15 @@
 
   max-width: 368px;
   width: 100%;
+  z-index: 0;
+
+  &__link-contain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 
   &__wrapper {
     padding: 56px 72px 48px;
@@ -69,6 +78,14 @@
   &__price {
     margin-bottom: 24px;
     text-align: center;
+  }
+
+  &:hover .button-primary {
+    color: $white;
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 

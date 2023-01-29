@@ -28,7 +28,7 @@
     transition: 0.4s all;
 
     &:hover {
-      filter: drop-shadow(0px 4px 60px rgba(85, 118, 157, 0.4))
+      box-shadow: 0px 10px 30px rgba(85, 118, 157, 0.35);
     }
 
     &--orange {

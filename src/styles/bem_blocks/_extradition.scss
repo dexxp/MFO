@@ -2,6 +2,18 @@
     max-width: 368px;
     width: 100%;
 
+    position: relative;
+    z-index: 0;
+
+    &__link-contain {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -69,6 +81,14 @@
         border-radius: 4px;
         padding: 10px 16px 8px 16px;
         top: -15px;
+    }
+
+    &:hover &__button {
+        color: $white;
+
+        &::before {
+            opacity: 1;
+        }
     }
 }
 

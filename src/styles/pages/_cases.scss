@@ -1,4 +1,14 @@
 .cases {
+  background: $primary-bg;
+
+  .footer {
+    background: $primary-bg;
+  }
+
+  &__pattern {
+    display: none;
+  }
+
   &__title {
     margin-top: 80px;
   }

@@ -2,6 +2,17 @@
     max-width: 569px;
     width: 100%;
 
+    position: relative;
+    z-index: 0;
+
+    &__link-contain {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
     &__wrapper {
         cursor: default;
         max-width: 569px;
@@ -56,6 +67,12 @@
         color: #fff;
         border: none;
         cursor: pointer;
+    }
+
+    &:hover &__action {
+        &::before {
+            opacity: 1;
+        }
     }
 }
 

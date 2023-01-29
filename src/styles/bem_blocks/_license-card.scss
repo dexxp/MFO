@@ -1,4 +1,15 @@
 .license-card {
+  position: relative;
+  z-index: 0;
+
+  &__link-contain {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
   &__wrapper {
     padding: 32px 24px;
     background: #F9F9F9;
@@ -35,6 +46,14 @@
 
   &__button {
     padding: 21px 38px;
+  }
+
+  &:hover .button-outlined-blue {
+    color: $white;
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 

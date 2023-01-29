@@ -3,6 +3,17 @@
     max-width: 268px;
     width: 100%;
     padding-top: 15px;
+
+    z-index: 0;
+
+    &__link-contain {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
     &__wrapper {
         max-width: 268px;
         width: 100%;
@@ -77,6 +88,12 @@
         font-size: 16px;
         line-height: 22px;
         color: #fff;
+    }
+
+    &:hover &__action {
+        &::before {
+            opacity: 1;
+        }
     }
 }
 
