@@ -4,6 +4,15 @@
   max-width: 390px;
   width: 100%;
 
+
+  height: auto !important;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
   &:first-child {
     border-radius: 16px 0 0 16px;
   }
@@ -27,6 +36,7 @@
   }
 
   &__logotype {
+    margin-top: auto;
     img {
       object-fit: contain;
       object-position: center;
