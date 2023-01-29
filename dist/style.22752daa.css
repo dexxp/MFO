@@ -1154,10 +1154,11 @@ input, textarea {
 }
 @media screen and (max-width: 600px) {
   .table {
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 0 16px;
+    overflow-x: scroll;
+  }
+  .table__wrapper {
+    width: 582px;
+    margin: 0 16px;
   }
   .table__first-cell {
     padding: 20px 2px 20px 22px;
@@ -5461,9 +5462,6 @@ input, textarea {
 @media screen and (max-width: 600px) {
   .s-why-choice .container {
     padding-right: 0;
-  }
-  .s-why-choice .table {
-    overflow-y: auto;
   }
   .s-why-choice .container {
     padding: 0;
