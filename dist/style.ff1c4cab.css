@@ -144,7 +144,6 @@ input, textarea {
   z-index: 1;
   gap: 10px;
   align-items: center;
-  transition: all 0.5s ease-out;
 }
 .button-primary:before {
   position: absolute;
@@ -5649,6 +5648,13 @@ input, textarea {
   color: #FFFFFF;
   font-weight: 600;
 }
+.s-schedule-webinars .button-primary:before {
+  display: none;
+}
+.s-schedule-webinars .button-primary:hover {
+  background: #FFFFFF;
+  color: #57A6EE;
+}
 
 @media screen and (max-width: 1250px) {
   .s-schedule-webinars__wrapper {
@@ -8612,16 +8618,18 @@ input, textarea {
   }
 }
 .p-cost-accounting__wrapper-outer {
-  padding: 100px 0 201px;
+  padding: 100px 0 174px;
   overflow: hidden;
 }
 .p-cost-accounting__title {
   margin: 0 0 16px;
-  max-width: 390px;
+  max-width: 440px;
   width: 100%;
 }
 .p-cost-accounting__subtitle {
   margin-bottom: 16px;
+  max-width: 440px;
+  width: 100%;
 }
 .p-cost-accounting__img {
   position: absolute;
@@ -8661,6 +8669,11 @@ input, textarea {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1770px) {
+  .p-cost-accounting__img img {
+    top: -60px;
+  }
+}
 @media screen and (max-width: 1530px) {
   .p-cost-accounting__img img {
     top: -50px;
@@ -8729,8 +8742,11 @@ input, textarea {
   }
 }
 @media screen and (max-width: 600px) {
+  .p-cost-accounting__title {
+    max-width: 325px;
+  }
   .p-cost-accounting__subtitle {
-    max-width: 225px;
+    max-width: 343px;
   }
   .p-cost-accounting .infoblock__wrapper {
     padding: 0;

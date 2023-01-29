@@ -1,18 +1,20 @@
 .p-cost-accounting {
 
   &__wrapper-outer {
-    padding: 100px 0 201px;
+    padding: 100px 0 174px;
     overflow: hidden;
   }
 
   &__title {
     margin: 0 0 16px;
-    max-width: 390px;
+    max-width: 440px;
     width: 100%;
   }
 
   &__subtitle {
     margin-bottom: 16px;
+    max-width: 440px;
+    width: 100%;
   }
 
   &__img {
@@ -58,6 +60,16 @@
 
     .button {
       margin-left: auto;
+    }
+  }
+}
+
+@include mq(xxl) {
+  .p-cost-accounting {
+    &__img {
+      img {
+        top: -60px;
+      }
     }
   }
 }
@@ -157,8 +169,12 @@
 
 @include mq(xs) {
   .p-cost-accounting {
+    &__title {
+      max-width: 325px;
+    }
+
     &__subtitle {
-      max-width: 225px;
+      max-width: 343px;
     }
 
     .infoblock {

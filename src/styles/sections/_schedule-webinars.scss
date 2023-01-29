@@ -44,6 +44,16 @@
     color: $white;
     font-weight: 600;
   }
+
+  .button-primary {
+    &:before {
+      display: none;
+    }
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
+  }
 }
 
 @include mq(md) {
