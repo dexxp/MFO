@@ -46,12 +46,24 @@
   }
 
   .button-primary {
+    svg {
+      path {
+        fill: $white;
+
+        transition: .2s all;
+      }
+    }
+
     &:before {
       background: $white;
     }
 
     &:hover {
       color: $primary;
+    }
+
+    &:hover svg path {
+      fill: $primary;
     }
   }
 }
