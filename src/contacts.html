@@ -9,6 +9,7 @@
   <title>Контакты</title>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=346206ea-0348-4f93-af26-6a975ad29fbf&lang=ru_RU" type="text/javascript">
   </script>
+  <script src="https://unpkg.com/imask"></script>
 </head>
 
 <body>
@@ -112,7 +113,7 @@
             <div class="s-questions-remain__form-wrapper">
               <input type="text" class="input input-primary" placeholder="Ваше имя">
               <input type="text" class="input input-primary" placeholder="E-mail">
-              <input type="text" class="input input-primary" placeholder="Телефон">
+              <input type="phone" class="input input-primary" placeholder="Телефон">
             </div>
 
             <div class="s-questions-remain__form-wrapper">
@@ -144,6 +145,8 @@
 
 <script src="./scripts/header.js" type="module"></script>
 <script src="./scripts/accordion-menu.js"></script>
+<script src="./scripts/input.js"></script>
+
 <script type="text/javascript">
   ymaps.ready(init);
   const center = [59.910446564193705,30.387822999999987];
