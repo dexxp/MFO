@@ -17,6 +17,7 @@ export const verticalSlider = () => {
     const swiper = new Swiper(wrapper, {
       direction: "horizontal",
       centeredSlides: true,
+      allowTouchMove: true,
       loop: true,
       effect: "coverflow",
       coverflowEffect: {
@@ -29,6 +30,7 @@ export const verticalSlider = () => {
       breakpoints: {
         1250: {
           direction: "vertical",
+          allowTouchMove: false,
         }
       },
       pagination: {
