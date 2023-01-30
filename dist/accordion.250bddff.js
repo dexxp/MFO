@@ -126,23 +126,16 @@ function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symb
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 window.addEventListener("DOMContentLoaded", function () {
-  // const acc = document.getElements("accordion");
-  // var i;
-  //
-  // for (i = 0; i < acc.length; i++) {
-  //   acc[i].addEventListener("click", function() {
-  //     this.classList.toggle("active");
-  //     var panel = this.nextElementSibling;
-  //     if (panel.style.maxHeight) {
-  //       panel.style.maxHeight = null;
-  //     } else {
-  //       panel.style.maxHeight = panel.scrollHeight + "px";
-  //     }
-  //   });
-  // }
-
   var acc = document.querySelector(".accordion");
   var accItems = _toConsumableArray(acc.querySelectorAll(".accordion__item"));
+  var activeClass = "accordion__header--active";
+  var changeStyle = function changeStyle(body) {
+    if (body.style.maxHeight) {
+      body.style.maxHeight = null;
+    } else {
+      body.style.maxHeight = body.scrollHeight + "px";
+    }
+  };
   var _iterator = _createForOfIteratorHelper(accItems),
     _step;
   try {
@@ -151,11 +144,28 @@ window.addEventListener("DOMContentLoaded", function () {
       var toggle = accItem.querySelector(".accordion__header");
       var body = accItem.querySelector(".accordion__body");
       toggle.addEventListener("click", function (e) {
-        this.classList.toggle("accordion__header--active");
-        if (body.style.maxHeight) {
-          body.style.maxHeight = null;
-        } else {
-          body.style.maxHeight = body.scrollHeight + "px";
+        var isOpen = toggle.classList.contains(activeClass);
+        var currentActives = _toConsumableArray(acc.querySelectorAll(".".concat(activeClass)));
+        if (currentActives.length > 0) {
+          var _iterator2 = _createForOfIteratorHelper(currentActives),
+            _step2;
+          try {
+            for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+              var currentActive = _step2.value;
+              console.log(currentActive);
+              var bodyActive = currentActive.nextElementSibling;
+              currentActive.classList.remove(activeClass);
+              changeStyle(bodyActive);
+            }
+          } catch (err) {
+            _iterator2.e(err);
+          } finally {
+            _iterator2.f();
+          }
+        }
+        if (!isOpen) {
+          this.classList.add(activeClass);
+          changeStyle(body);
         }
       });
     };

@@ -2731,7 +2731,7 @@ input, textarea {
   transition: max-height 0.2s ease-out;
 }
 .accordion__text {
-  max-width: 522px;
+  max-width: 720px;
   width: 100%;
 }
 
@@ -2747,6 +2747,9 @@ input, textarea {
   }
   .accordion__item {
     padding-bottom: 20px;
+  }
+  .accordion__text {
+    max-width: 522px;
   }
 }
 @media screen and (max-width: 600px) {
