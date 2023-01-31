@@ -1,5 +1,6 @@
 .s-main-product {
   margin: 128px 0;
+  overflow: hidden;
 
   &__title {
     text-align: center;
@@ -11,6 +12,10 @@
     gap: 33px;
     margin-bottom: 40px;
     justify-content: center;
+  }
+
+  &__swiper {
+    overflow: initial !important;
   }
 
   &__text {

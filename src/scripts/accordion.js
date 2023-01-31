@@ -20,6 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("click", function(e) {
       const isOpen = toggle.classList.contains(activeClass);
 
+
       const currentActives = [...acc.querySelectorAll(`.${activeClass}`)];
       if (currentActives.length > 0) {
         for (const currentActive of currentActives) {

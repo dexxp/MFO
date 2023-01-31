@@ -19,6 +19,16 @@
     }
   }
 
+  &--bg {
+    &_blue {
+      background: $primary-bg;
+
+      .footer {
+        background: $primary-bg;
+      }
+    }
+  }
+
   &__pattern {
     position: absolute;
     top: 0;
