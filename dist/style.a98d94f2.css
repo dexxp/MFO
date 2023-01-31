@@ -5184,6 +5184,12 @@ input, textarea {
   object-fit: cover;
   bottom: 0;
 }
+.page-wrapper--bg_blue {
+  background: #EEF7FF;
+}
+.page-wrapper--bg_blue .footer {
+  background: #EEF7FF;
+}
 .page-wrapper__pattern {
   position: absolute;
   top: 0;
@@ -7607,6 +7613,7 @@ input, textarea {
 }
 .s-main-product {
   margin: 128px 0;
+  overflow: hidden;
 }
 .s-main-product__title {
   text-align: center;
@@ -7617,6 +7624,9 @@ input, textarea {
   gap: 33px;
   margin-bottom: 40px;
   justify-content: center;
+}
+.s-main-product__swiper {
+  overflow: initial !important;
 }
 .s-main-product__text {
   max-width: 877px;
