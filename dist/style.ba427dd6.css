@@ -8012,7 +8012,7 @@ input, textarea {
 .s-teams__departments {
   display: flex;
   column-gap: 40px;
-  row-gap: 32px;
+  flex-wrap: wrap;
 }
 .s-teams__departments .s-teams__department-title {
   max-width: 275px;
@@ -9950,6 +9950,18 @@ input, textarea {
   .p-license-agreement__title {
     margin-bottom: 16px;
     text-align: left;
+  }
+}
+.p-reviews__title {
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1250px) {
+  .p-reviews__title {
+    margin-bottom: 16px;
+  }
+  .p-reviews__main {
+    padding-bottom: 64px;
   }
 }
 .primary-pagination .swiper-pagination-bullet {

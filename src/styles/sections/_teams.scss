@@ -25,7 +25,7 @@
   &__departments {
     display: flex;
     column-gap: 40px;
-    row-gap: 32px;
+    flex-wrap: wrap;
 
     .s-teams__department-title {
       max-width: 275px;
