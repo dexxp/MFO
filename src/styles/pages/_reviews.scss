@@ -1,0 +1,17 @@
+.p-reviews {
+  &__title {
+    margin-bottom: 24px;
+  }
+}
+
+@include mq(md) {
+  .p-reviews {
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__main {
+      padding-bottom: 64px;
+    }
+  }
+}
