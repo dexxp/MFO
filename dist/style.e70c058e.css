@@ -9434,7 +9434,6 @@ input, textarea {
   position: relative;
 }
 .p-about-company__img {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTcwIiBoZWlnaHQ9IjQ4MyIgdmlld0JveD0iMCAwIDU3MCA0ODMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01NzAgMjg1QzU3MCAzNjEuOTE4IDUzOS41MjkgNDMxLjcxOSA0OTAgNDgyLjk5QzM1MC42NzcgNDgyLjk5IDIxOS4xODYgNDgzIDgwLjAwOTQgNDgzQzMwLjQ3NDcgNDMxLjcyNyAwIDM2MS45MjMgMCAyODVDMCAxMjcuNTk5IDEyNy41OTkgMCAyODUgMEM0NDIuNDAxIDAgNTcwIDEyNy41OTkgNTcwIDI4NVoiIGZpbGw9IiNEOUQ5RDkiLz4KPHBhdGggZD0iTTU3MCAyODVDNTcwIDM2MS45MTggNTM5LjUyOSA0MzEuNzE5IDQ5MCA0ODIuOTlDMzUwLjY3NyA0ODIuOTkgMjE5LjE4NiA0ODMgODAuMDA5NCA0ODNDMzAuNDc0NyA0MzEuNzI3IDAgMzYxLjkyMyAwIDI4NUMwIDEyNy41OTkgMTI3LjU5OSAwIDI4NSAwQzQ0Mi40MDEgMCA1NzAgMTI3LjU5OSA1NzAgMjg1WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzEzNTZfMTAwOTEpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTM1Nl8xMDA5MSIgeDE9IjU3MCIgeTE9Ii0wLjAwMDY3MjU3NCIgeDI9Ii0yMi4yNTMiIHkyPSIyNC4xNDM4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0OTY5QkMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQjBEQUZGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==");
   position: absolute;
   top: -10px;
   right: 0;
@@ -9448,7 +9447,7 @@ input, textarea {
   width: 510px;
   height: 542px;
   left: 26px;
-  top: -59px;
+  top: -16px;
 }
 .p-about-company__title {
   margin: 0 0 24px;
@@ -9513,12 +9512,17 @@ input, textarea {
   margin-left: auto;
 }
 
+@media screen and (max-width: 1770px) {
+  .p-about-company__img img {
+    top: 0;
+  }
+}
 @media screen and (max-width: 1250px) {
   .p-about-company__first-screen {
     margin-bottom: 64px;
   }
   .p-about-company__wrapper-outer {
-    padding: 40px 0 300px;
+    padding: 40px 0 270px;
   }
   .p-about-company__title {
     margin: 0 auto 16px;
@@ -9549,16 +9553,15 @@ input, textarea {
     margin: 0 auto;
     top: 270px;
     left: 0;
-    background: linear-gradient(267.67deg, #4969BC 0%, #B0DAFF 100%), #D9D9D9;
-    width: 313px;
-    height: 313px;
+    width: 332px;
+    height: 200px;
     border-radius: 100%;
   }
   .p-about-company__img img {
-    top: -24px;
-    left: -2px;
-    width: 294px;
-    height: 312px;
+    top: -58px;
+    left: 0;
+    width: 332px;
+    height: 353px;
   }
   .p-about-company__tiles {
     margin: 0 auto;
@@ -9575,11 +9578,21 @@ input, textarea {
     margin-bottom: 6px;
   }
   .p-about-company__wrapper-outer {
-    padding-bottom: 285px;
+    padding-bottom: 274px;
   }
   .p-about-company__text {
     max-width: 323px;
     width: 100%;
+    margin-bottom: 22px;
+  }
+  .p-about-company__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 0;
+  }
+  .p-about-company__img img {
+    top: -25px;
   }
 }
 .p-poll-clients__title {
