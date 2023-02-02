@@ -5,7 +5,7 @@
   }
 
   &__wrapper-outer {
-    padding: 96px 0 128px;
+    padding: 96px 0 173px;
     overflow: hidden;
   }
 
@@ -14,22 +14,19 @@
   }
 
   &__img {
-    //background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTcwIiBoZWlnaHQ9IjQ4MyIgdmlld0JveD0iMCAwIDU3MCA0ODMiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01NzAgMjg1QzU3MCAzNjEuOTE4IDUzOS41MjkgNDMxLjcxOSA0OTAgNDgyLjk5QzM1MC42NzcgNDgyLjk5IDIxOS4xODYgNDgzIDgwLjAwOTQgNDgzQzMwLjQ3NDcgNDMxLjcyNyAwIDM2MS45MjMgMCAyODVDMCAxMjcuNTk5IDEyNy41OTkgMCAyODUgMEM0NDIuNDAxIDAgNTcwIDEyNy41OTkgNTcwIDI4NVoiIGZpbGw9IiNEOUQ5RDkiLz4KPHBhdGggZD0iTTU3MCAyODVDNTcwIDM2MS45MTggNTM5LjUyOSA0MzEuNzE5IDQ5MCA0ODIuOTlDMzUwLjY3NyA0ODIuOTkgMjE5LjE4NiA0ODMgODAuMDA5NCA0ODNDMzAuNDc0NyA0MzEuNzI3IDAgMzYxLjkyMyAwIDI4NUMwIDEyNy41OTkgMTI3LjU5OSAwIDI4NSAwQzQ0Mi40MDEgMCA1NzAgMTI3LjU5OSA1NzAgMjg1WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzEzNTZfMTAwOTEpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMTM1Nl8xMDA5MSIgeDE9IjU3MCIgeTE9Ii0wLjAwMDY3MjU3NCIgeDI9Ii0yMi4yNTMiIHkyPSIyNC4xNDM4IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0OTY5QkMiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjQjBEQUZGIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==");
     position: absolute;
-    top: -10px;
+    top: 0;
     right: 0;
-    width: 570px;
-    height: 483px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 474px;
+    height: 504px;
 
     img {
       position: absolute;
-      width: 510px;
-      height: 542px;
+      width: 474px;
+      height: 504px;
 
-      left: 26px;
-      top: -16px;
+      left: -24px;
+      top: -70px;
     }
   }
 
@@ -38,50 +35,64 @@
   }
 
   &__text {
-    max-width: 526px;
+    max-width: 688px;
     width: 100%;
-    margin-bottom: 32px;
-  }
+    line-height: 28px;
+    margin-bottom: 16px;
 
-  &__tiles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    max-width: 570px;
-    width: 100%;
-  }
+    p + p {
+      margin-top: 12px;
+    }
 
-  &__tile {
-    max-width: 277px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    display: flex;
-    gap: 16px;
-    padding: 16px 24px;
-    align-items: center;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 125%;
+    p {
+      span {
+        position: relative;
 
-    color: $primary;
+        &::after, &::before {
+          display: block;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 12px;
+          height: 10px;
+          position: absolute;
+          top: 2px;
+        }
+      }
 
-    &-img {
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      span.start-qoute {
+        &::before {
+          content: "";
+          background-image: url("../icons/left-quote.svg");
+          left: -18px;
+        }
+      }
 
-      img {
-        max-width: 100%;
+      span.end-qoute {
+        &::after {
+          content: "";
+          background-image: url("../icons/end-quote.svg");
+          right: -18px;
+        }
       }
     }
   }
 
-  &__tiles-mobile {
-    display: none;
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+
+  &__sign {
+    max-width: 119px;
+    width: 100%;
+    line-height: 0;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   .s-schedule-webinars {
@@ -113,7 +124,7 @@
   .p-about-company {
     &__img {
       img {
-        top: 0;
+        top: -62px;
       }
     }
   }
@@ -127,7 +138,7 @@
     }
 
     &__wrapper-outer {
-      padding: 40px 0 270px;
+      padding: 40px 0 135px;
     }
 
     &__title {
@@ -135,54 +146,75 @@
       text-align: center;
     }
 
-    &__tiles {
-      display: none;
-    }
-
-    &__tiles-mobile {
-      margin-bottom: 64px;
-      display: block;
-      &-wrapper {
-        margin: 0 auto;
-        justify-content: center;
-        max-width: 800px;
-        width: 100%;
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
-    }
-
     &__text {
-      margin: 0 auto 48px;
-      text-align: center;
+      margin: 0 auto 10px;
+    }
+
+    &__box {
+      max-width: 688px;
+      width: 100%;
+      margin: 0 auto;
+      gap: 23px;
     }
 
     &__img {
-      position: absolute;
+      position: relative;
       margin: 0 auto;
-      top: 270px;
-      left: 0;
+      top: auto;
+      left: auto;
       width: 332px;
       height: 200px;
-      border-radius: 100%;
 
       img {
-        top: -58px;
-        left: 0;
+        top: 25px;
+        left: -18px;
         width: 332px;
         height: 353px;
       }
     }
 
-    &__tiles {
-      margin: 0 auto;
+    &__text {
+      p {
+        span {
+          &::after, &::before {
+            width: 10px;
+            height: 8px;
+          }
+        }
+
+        span.start-qoute {
+          &::before {
+            left: -14px;
+          }
+        }
+
+        span.end-qoute {
+          &::after {
+            right: -14px;
+          }
+        }
+      }
     }
 
     .s-schedule-webinars {
       margin: 32px 0 72px;
       .button {
         justify-content: center;
+      }
+    }
+  }
+}
+
+@include mq(sm) {
+  .p-about-company {
+    &__inner {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+
+    &__img {
+      img {
+
       }
     }
   }
@@ -195,23 +227,54 @@
     }
 
     &__wrapper-outer {
-      padding-bottom: 274px;
+      padding-bottom: 321px;
     }
 
     &__text {
-      max-width: 323px;
+      max-width: 100%;
       width: 100%;
-      margin-bottom: 22px;
+      font-size: 14px;
+      line-height: 19px;
+
+      p {
+        span {
+          &::after, &::before {
+            width: 8px;
+            height: 7px;
+          }
+        }
+
+        span.start-qoute {
+          &::before {
+            left: -11px;
+          }
+        }
+
+        span.end-qoute {
+          &::after {
+            right: -11px;
+          }
+        }
+      }
+
+      p + p {
+        margin-top: 8px;
+      }
+    }
+
+    &__box {
+      margin-bottom: 8px;
+    }
+
+    &__sign {
+      max-width: 94px;
     }
 
     &__img {
-      position: relative;
-      top: 0;
-      left: 0;
       height: 0;
 
       img {
-        top: -25px;
+        top: 0;
       }
     }
   }
