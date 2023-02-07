@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  position: relative;
   font-family: "Avenir Next Cyr", sans-serif;
   font-weight: 400;
 }
@@ -4629,6 +4634,39 @@ input, textarea {
   .subtitle {
     font-size: 14px;
     line-height: 19px;
+  }
+}
+.scroll-top-button {
+  position: fixed;
+  display: none;
+  bottom: 40px;
+  right: 88px;
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.scroll-top-button:before {
+  background: #3F5770;
+}
+
+@media screen and (max-width: 1250px) {
+  .scroll-top-button {
+    right: 52px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scroll-top-button {
+    width: 52px;
+    height: 52px;
+    right: 24px;
+    bottom: 24px;
+  }
+  .scroll-top-button svg {
+    height: 15px;
+    width: 10px;
   }
 }
 .header {

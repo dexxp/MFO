@@ -1,0 +1,36 @@
+.scroll-top-button {
+  position: fixed;
+  display: none;
+  bottom: 40px;
+  right: 88px;
+
+  width: 72px;
+  height: 72px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  &:before {
+    background: #3F5770;
+  }
+}
+
+@include mq(md) {
+  .scroll-top-button {
+    right: 52px;
+  }
+}
+
+@include mq(xs) {
+  .scroll-top-button {
+    width: 52px;
+    height: 52px;
+    right: 24px;
+    bottom: 24px;
+    svg {
+      height: 15px;
+      width: 10px;
+    }
+  }
+}
