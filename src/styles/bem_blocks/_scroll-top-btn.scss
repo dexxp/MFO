@@ -1,6 +1,7 @@
 .scroll-top-button {
   position: fixed;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   bottom: 40px;
   right: 88px;
 

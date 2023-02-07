@@ -2,15 +2,17 @@ window.addEventListener("DOMContentLoaded", () => {
   const btnUp = {
     el: document.querySelector('.scroll-top-button'),
     show() {
-      this.el.style.display = "inline-flex";
+      this.el.style.opacity = "1";
+      this.el.style.pointerEvents = "all";
     },
     hide() {
-      this.el.style.display = "none";
+      this.el.style.opacity = "0";
+      this.el.style.pointerEvents = "none";
     },
     addEventListener() {
       window.addEventListener('scroll', () => {
         const scrollY = window.scrollY || document.documentElement.scrollTop;
-        scrollY > 1300 ? this.show() : this.hide();
+        scrollY > 950 ? this.show() : this.hide();
       });
       document.querySelector('.scroll-top-button').onclick = () => {
         window.scrollBy({

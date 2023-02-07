@@ -122,16 +122,18 @@ window.addEventListener("DOMContentLoaded", function () {
   var btnUp = {
     el: document.querySelector('.scroll-top-button'),
     show: function show() {
-      this.el.style.display = "inline-flex";
+      this.el.style.opacity = "1";
+      this.el.style.pointerEvents = "all";
     },
     hide: function hide() {
-      this.el.style.display = "none";
+      this.el.style.opacity = "0";
+      this.el.style.pointerEvents = "none";
     },
     addEventListener: function addEventListener() {
       var _this = this;
       window.addEventListener('scroll', function () {
         var scrollY = window.scrollY || document.documentElement.scrollTop;
-        scrollY > 1300 ? _this.show() : _this.hide();
+        scrollY > 950 ? _this.show() : _this.hide();
       });
       document.querySelector('.scroll-top-button').onclick = function () {
         window.scrollBy({
