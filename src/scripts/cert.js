@@ -34,23 +34,19 @@ window.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  Fancybox.bind(`[data-fancybox="cert-hor"]`, {
-    Image: {
-      Panzoom: {
-        zoomFriction: 0.5,
-        maxScale: function () {
-          return 2;
-        },
-      },
-    },
-  });
+  const slides = [...document.querySelector(".cert-slider__wrapper").querySelectorAll(".swiper-slide")].filter(slide => slide.classList.contains("swiper-slide-duplicate"));
+  for (const slide of slides) {
+    console.log(slide);
+    const a = slide.querySelector("a");
+    a.dataset.fancybox = "";
+  }
 
-  Fancybox.bind(`[data-fancybox="cert"]`, {
+  Fancybox.bind(`[data-fancybox="cert`, {
     Image: {
       Panzoom: {
-        zoomFriction: 0.5,
+        zoomFriction: 0,
         maxScale: function () {
-          return 2;
+          return 0;
         },
       },
     },

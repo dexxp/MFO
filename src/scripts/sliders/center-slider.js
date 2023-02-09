@@ -26,11 +26,20 @@ export const centerSlider = () => {
     },
   });
 
-  Fancybox.bind('[data-fancybox="gallery"]', {
-    Thumbs: {
-      Carousel: {
-        fill: false,
-        center: true,
+  const slides = [...document.querySelector(".center-slider__wrapper").querySelectorAll(".swiper-slide")].filter(slide => slide.classList.contains("swiper-slide-duplicate"));
+  for (const slide of slides) {
+    console.log(slide);
+    const a = slide.querySelector("a");
+    a.dataset.fancybox = "";
+  }
+
+  Fancybox.bind(`[data-fancybox="gallery`, {
+    Image: {
+      Panzoom: {
+        zoomFriction: 0,
+        maxScale: function () {
+          return 0;
+        },
       },
     },
   });

@@ -498,6 +498,9 @@ input, textarea {
 .text--lg + .text--md {
   margin-top: 16px;
 }
+.text--fw_600 {
+  font-weight: 600;
+}
 
 @media screen and (max-width: 1250px) {
   .text--lg {

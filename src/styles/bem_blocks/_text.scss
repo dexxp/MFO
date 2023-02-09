@@ -36,6 +36,12 @@
       margin-top: 16px;
     }
   }
+
+  &--fw {
+    &_600 {
+      font-weight: 600;
+    }
+  }
 }
 
 @include mq(md) {

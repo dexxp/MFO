@@ -11949,58 +11949,81 @@ for (const [t, e] of Object.entries(R.Plugins || {})) "function" == typeof e.cre
 
 },{}],"yypP":[function(require,module,exports) {
 
-},{}],"Onsr":[function(require,module,exports) {
+},{}],"JBWM":[function(require,module,exports) {
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.centerSlider = void 0;
 var _swiperBundle = _interopRequireDefault(require("swiper/swiper-bundle"));
 var _ui = require("@fancyapps/ui");
 require("@fancyapps/ui/dist/fancybox.css");
 require("swiper/swiper-bundle.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-window.addEventListener("DOMContentLoaded", function () {
-  var certSlider = new _swiperBundle.default(".cert-slider__wrapper", {
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+var centerSlider = function centerSlider() {
+  var centerSlider = new _swiperBundle.default(".center-slider__wrapper", {
     centeredSlides: true,
     loop: true,
-    spaceBetween: 16,
-    slidesPerView: 2,
+    effect: "coverflow",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 3,
+      depth: 100,
+      modifier: 3,
+      slideShadows: false
+    },
     pagination: {
-      el: ".cert-slider__pagination",
+      el: '.swiper-pagination',
+      type: 'bullets',
       clickable: true
     },
-    breakpoints: {
-      600: {
-        slidesPerView: 4,
-        spaceBetween: 24
-      },
-      1250: {
-        slidesPerView: 5,
-        spaceBetween: 40
-      }
-    },
     navigation: {
-      nextEl: ".cert-slider__button-next",
-      prevEl: ".cert-slider__button-prev"
+      nextEl: '.center-slider__button-next',
+      prevEl: '.center-slider__button-prev'
     }
   });
-  _ui.Fancybox.bind("[data-fancybox=\"cert-hor\"]", {
+  var slides = _toConsumableArray(document.querySelector(".center-slider__wrapper").querySelectorAll(".swiper-slide")).filter(function (slide) {
+    return slide.classList.contains("swiper-slide-duplicate");
+  });
+  var _iterator = _createForOfIteratorHelper(slides),
+    _step;
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var slide = _step.value;
+      console.log(slide);
+      var a = slide.querySelector("a");
+      a.dataset.fancybox = "";
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+  _ui.Fancybox.bind("[data-fancybox=\"gallery", {
     Image: {
       Panzoom: {
-        zoomFriction: 0.5,
+        zoomFriction: 0,
         maxScale: function maxScale() {
-          return 2;
+          return 0;
         }
       }
     }
   });
-  _ui.Fancybox.bind("[data-fancybox=\"cert\"]", {
-    Image: {
-      Panzoom: {
-        zoomFriction: 0.5,
-        maxScale: function maxScale() {
-          return 2;
-        }
-      }
-    }
-  });
+};
+exports.centerSlider = centerSlider;
+},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}],"oeTc":[function(require,module,exports) {
+"use strict";
+
+var _centerSlider = require("./sliders/center-slider");
+window.addEventListener("DOMContentLoaded", function () {
+  (0, _centerSlider.centerSlider)();
 });
-},{"swiper/swiper-bundle":"vfVQ","@fancyapps/ui":"a2rU","@fancyapps/ui/dist/fancybox.css":"aEdo","swiper/swiper-bundle.css":"yypP"}]},{},["Onsr"], null)
+},{"./sliders/center-slider":"JBWM"}]},{},["oeTc"], null)
