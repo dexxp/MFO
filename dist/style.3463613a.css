@@ -2548,6 +2548,10 @@ input, textarea {
 }
 .reviews-card__logotype {
   margin-top: auto;
+  min-height: 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .reviews-card__logotype img {
   object-fit: contain;

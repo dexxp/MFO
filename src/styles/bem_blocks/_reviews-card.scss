@@ -41,6 +41,10 @@
 
   &__logotype {
     margin-top: auto;
+    min-height: 64px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     img {
       object-fit: contain;
       object-position: center;
