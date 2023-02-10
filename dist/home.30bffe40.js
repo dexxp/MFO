@@ -12058,7 +12058,7 @@ window.addEventListener("DOMContentLoaded", function () {
   var swiperClientsOne = new _swiperBundle.default(".clients-slider-one", {
     slidesPerView: 'auto',
     spaceBetween: 60,
-    centeredSlides: true,
+    centeredSlides: false,
     speed: 8000,
     loop: true,
     autoplay: {
@@ -12069,7 +12069,7 @@ window.addEventListener("DOMContentLoaded", function () {
   var swiperClientsTwo = new _swiperBundle.default(".clients-slider-two", {
     slidesPerView: 'auto',
     spaceBetween: 60,
-    centeredSlides: true,
+    centeredSlides: false,
     speed: 8000,
     loop: true,
     autoplay: {
