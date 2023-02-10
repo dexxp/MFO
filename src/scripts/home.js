@@ -13,7 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 'auto',
     spaceBetween: 60,
     centeredSlides: true,
-    allowTouchMove: false,
     speed: 8000,
     loop: true,
     autoplay: {
@@ -26,10 +25,8 @@ window.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 'auto',
     spaceBetween: 60,
     centeredSlides: true,
-    allowTouchMove: false,
     speed: 8000,
     loop: true,
-    //allowTouchMove: false, // можно ещё отключить свайп
     autoplay: {
       delay: 0,
       disableOnInteraction: false, // или сделать так, чтобы восстанавливался autoplay после взаимодействия
